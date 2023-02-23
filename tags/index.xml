@@ -3,7 +3,15 @@
     <title>Tags - Tag - My New Hugo FixIt Site</title>
     <link>http://rumah-it.org/tags/</link>
     <description>Tags - Tag - My New Hugo FixIt Site</description>
-    <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 09 Feb 2023 10:59:58 &#43;0700</lastBuildDate><atom:link href="http://rumah-it.org/tags/" rel="self" type="application/rss+xml" /><item>
+    <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 23 Feb 2023 09:11:03 &#43;0700</lastBuildDate><atom:link href="http://rumah-it.org/tags/" rel="self" type="application/rss+xml" /><item>
+  <title>draft</title>
+  <link>http://rumah-it.org/tags/draft/</link>
+  <pubDate>Thu, 23 Feb 2023 09:11:03 &#43;0700</pubDate>
+  <author>Author</author>
+  <guid>http://rumah-it.org/tags/draft/</guid>
+  <description><![CDATA[]]></description>
+</item>
+<item>
   <title>Jaringan Komputer</title>
   <link>http://rumah-it.org/tags/jaringan-komputer/</link>
   <pubDate>Thu, 09 Feb 2023 10:59:58 &#43;0700</pubDate>
@@ -73,14 +81,6 @@
   <pubDate>Thu, 09 Feb 2023 07:18:42 &#43;0700</pubDate>
   <author>Author</author>
   <guid>http://rumah-it.org/tags/operating-system/</guid>
-  <description><![CDATA[]]></description>
-</item>
-<item>
-  <title>Virtual Box</title>
-  <link>http://rumah-it.org/tags/virtual-box/</link>
-  <pubDate>Thu, 09 Feb 2023 07:18:42 &#43;0700</pubDate>
-  <author>Author</author>
-  <guid>http://rumah-it.org/tags/virtual-box/</guid>
   <description><![CDATA[]]></description>
 </item>
 </channel>
