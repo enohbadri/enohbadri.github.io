@@ -4,11 +4,11 @@
     <link>http://rumah-it.com/categories/</link>
     <description>Categories - Category - enohbadrie</description>
     <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 23 Feb 2023 14:57:50 &#43;0700</lastBuildDate><atom:link href="http://rumah-it.com/categories/" rel="self" type="application/rss+xml" /><item>
-  <title>Administrasi Sistem Jaringan</title>
-  <link>http://rumah-it.com/categories/administrasi-sistem-jaringan/</link>
+  <title>Github</title>
+  <link>http://rumah-it.com/categories/github/</link>
   <pubDate>Thu, 23 Feb 2023 14:57:50 &#43;0700</pubDate>
   <author>Author</author>
-  <guid>http://rumah-it.com/categories/administrasi-sistem-jaringan/</guid>
+  <guid>http://rumah-it.com/categories/github/</guid>
   <description><![CDATA[]]></description>
 </item>
 <item>
@@ -49,6 +49,14 @@
   <pubDate>Thu, 09 Feb 2023 10:55:38 &#43;0700</pubDate>
   <author>Author</author>
   <guid>http://rumah-it.com/categories/teknologi-layanan-jaringan/</guid>
+  <description><![CDATA[]]></description>
+</item>
+<item>
+  <title>Administrasi Sistem Jaringan</title>
+  <link>http://rumah-it.com/categories/administrasi-sistem-jaringan/</link>
+  <pubDate>Thu, 09 Feb 2023 07:18:42 &#43;0700</pubDate>
+  <author>Author</author>
+  <guid>http://rumah-it.com/categories/administrasi-sistem-jaringan/</guid>
   <description><![CDATA[]]></description>
 </item>
 </channel>
