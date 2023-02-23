@@ -155,15 +155,15 @@
   </figure></p>
 <p>Cara Mengatasi Git Push Rejected - Kali ini saya akan membagikan tips ketika sedang git push namun rejected, saya sudah mencari referensi kemana mana namun membuahkan solusi, error rejected yang di maksud anda bisa lihat seperti gambar di bawah ini</p>
 <p>Error tersebut terjadi ketika akan melakukan perintah git push origin master dan seketika itu muncul error notifikasi error rejected</p>
-<p>$ git push origin master
-To <a href="https://github.com/acchoblues/CalendarEventManagement.git"target="_blank" rel="external nofollow noopener noreferrer">https://github.com/acchoblues/CalendarEventManagement.git<i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true"></i></a>
-! [rejected]        master -&gt; master (non-fast-forward)
-error: failed to push some refs to &lsquo;<a href="https://github.com/acchoblues/CalendarEventManagement.git%27"target="_blank" rel="external nofollow noopener noreferrer">https://github.com/acchoblues/CalendarEventManagement.git'<i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true"></i></a>
-hint: Updates were rejected because the tip of your current branch is behind
-hint: its remote counterpart. Integrate the remote changes (e.g.
-hint: &lsquo;git pull &hellip;&rsquo;) before pushing again.
-hint: See the &lsquo;Note about fast-forwards&rsquo; in &lsquo;git push &ndash;help&rsquo; for details.</p>
-<p>setelah pencarian yang panjang akhirnya saya menemukan solusi, ternyata kode git push yang saya gunakan ada yang kurang dibagian akhir saya menggunakan
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ git push origin master
+</span></span><span style="display:flex;"><span>To https://github.com/acchoblues/CalendarEventManagement.git
+</span></span><span style="display:flex;"><span> ! <span style="color:#f92672">[</span>rejected<span style="color:#f92672">]</span>        master -&gt; master <span style="color:#f92672">(</span>non-fast-forward<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>error: failed to push some refs to <span style="color:#e6db74">&#39;https://github.com/acchoblues/CalendarEventManagement.git&#39;</span>
+</span></span><span style="display:flex;"><span>hint: Updates were rejected because the tip of your current branch is behind
+</span></span><span style="display:flex;"><span>hint: its remote counterpart. Integrate the remote changes <span style="color:#f92672">(</span>e.g.
+</span></span><span style="display:flex;"><span>hint: <span style="color:#e6db74">&#39;git pull ...&#39;</span><span style="color:#f92672">)</span> before pushing again.
+</span></span><span style="display:flex;"><span>hint: See the <span style="color:#e6db74">&#39;Note about fast-forwards&#39;</span> in <span style="color:#e6db74">&#39;git push --help&#39;</span> <span style="color:#66d9ef">for</span> details.
+</span></span></code></pre></div><p>setelah pencarian yang panjang akhirnya saya menemukan solusi, ternyata kode git push yang saya gunakan ada yang kurang dibagian akhir saya menggunakan
 git push origin master berkali - kali pu hasilnya tetap sama rejected, ternyata untuk mengatasi masalah tersebut hanya butuh penambahan saat melakukan git push dengan &ndash;force atau -f  maka saya coba menggunakan git push origin master &ndash;force dan berhasil upload ke github atau anda juga bisa menggunakan kode push yang ini git push origin master -f</p>
 <p>Jadi jangan khawatir dan bingung lagi jika anda menemukan error rejected saat git push ke repository anda di github, semoga informasi singkat ini berguna bagi anda yang membacanya, tetap semangat dan jangan pernah menyerah.</p>
 <p>Selamat Mencoba</p></div><div class="post-footer" id="post-footer">
