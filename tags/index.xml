@@ -4,11 +4,19 @@
     <link>http://rumah-it.com/tags/</link>
     <description>Tags - Tag - enohbadrie</description>
     <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 23 Feb 2023 14:57:50 &#43;0700</lastBuildDate><atom:link href="http://rumah-it.com/tags/" rel="self" type="application/rss+xml" /><item>
-  <title>draft</title>
-  <link>http://rumah-it.com/tags/draft/</link>
+  <title>Operating System</title>
+  <link>http://rumah-it.com/tags/operating-system/</link>
   <pubDate>Thu, 23 Feb 2023 14:57:50 &#43;0700</pubDate>
   <author>Author</author>
-  <guid>http://rumah-it.com/tags/draft/</guid>
+  <guid>http://rumah-it.com/tags/operating-system/</guid>
+  <description><![CDATA[]]></description>
+</item>
+<item>
+  <title>Virtual Box</title>
+  <link>http://rumah-it.com/tags/virtual-box/</link>
+  <pubDate>Thu, 23 Feb 2023 14:57:50 &#43;0700</pubDate>
+  <author>Author</author>
+  <guid>http://rumah-it.com/tags/virtual-box/</guid>
   <description><![CDATA[]]></description>
 </item>
 <item>
@@ -73,14 +81,6 @@
   <pubDate>Thu, 09 Feb 2023 10:55:38 &#43;0700</pubDate>
   <author>Author</author>
   <guid>http://rumah-it.com/tags/dial-plan/</guid>
-  <description><![CDATA[]]></description>
-</item>
-<item>
-  <title>Operating System</title>
-  <link>http://rumah-it.com/tags/operating-system/</link>
-  <pubDate>Thu, 09 Feb 2023 07:18:42 &#43;0700</pubDate>
-  <author>Author</author>
-  <guid>http://rumah-it.com/tags/operating-system/</guid>
   <description><![CDATA[]]></description>
 </item>
 </channel>
