@@ -1,62 +1,62 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
     <title>Categories - Category - My New Hugo FixIt Site</title>
-    <link>http://rumah-it.org/categories/</link>
+    <link>http://rumah-it.com/categories/</link>
     <description>Categories - Category - My New Hugo FixIt Site</description>
-    <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 23 Feb 2023 09:37:38 &#43;0700</lastBuildDate><atom:link href="http://rumah-it.org/categories/" rel="self" type="application/rss+xml" /><item>
+    <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 23 Feb 2023 09:37:38 &#43;0700</lastBuildDate><atom:link href="http://rumah-it.com/categories/" rel="self" type="application/rss+xml" /><item>
   <title>draft</title>
-  <link>http://rumah-it.org/categories/draft/</link>
+  <link>http://rumah-it.com/categories/draft/</link>
   <pubDate>Thu, 23 Feb 2023 09:37:38 &#43;0700</pubDate>
   <author>Author</author>
-  <guid>http://rumah-it.org/categories/draft/</guid>
+  <guid>http://rumah-it.com/categories/draft/</guid>
   <description><![CDATA[]]></description>
 </item>
 <item>
   <title>Jariangan Berdasarkan Luas</title>
-  <link>http://rumah-it.org/categories/jariangan-berdasarkan-luas/</link>
+  <link>http://rumah-it.com/categories/jariangan-berdasarkan-luas/</link>
   <pubDate>Thu, 09 Feb 2023 10:59:58 &#43;0700</pubDate>
   <author>Author</author>
-  <guid>http://rumah-it.org/categories/jariangan-berdasarkan-luas/</guid>
+  <guid>http://rumah-it.com/categories/jariangan-berdasarkan-luas/</guid>
   <description><![CDATA[]]></description>
 </item>
 <item>
   <title>Administrasi Infrastruktur Jaringan</title>
-  <link>http://rumah-it.org/categories/administrasi-infrastruktur-jaringan/</link>
+  <link>http://rumah-it.com/categories/administrasi-infrastruktur-jaringan/</link>
   <pubDate>Thu, 09 Feb 2023 10:58:51 &#43;0700</pubDate>
   <author>Author</author>
-  <guid>http://rumah-it.org/categories/administrasi-infrastruktur-jaringan/</guid>
+  <guid>http://rumah-it.com/categories/administrasi-infrastruktur-jaringan/</guid>
   <description><![CDATA[]]></description>
 </item>
 <item>
   <title>Infrastruktur Jaringan</title>
-  <link>http://rumah-it.org/categories/infrastruktur-jaringan/</link>
+  <link>http://rumah-it.com/categories/infrastruktur-jaringan/</link>
   <pubDate>Thu, 09 Feb 2023 10:57:43 &#43;0700</pubDate>
   <author>Author</author>
-  <guid>http://rumah-it.org/categories/infrastruktur-jaringan/</guid>
+  <guid>http://rumah-it.com/categories/infrastruktur-jaringan/</guid>
   <description><![CDATA[]]></description>
 </item>
 <item>
   <title>Cyber Crime</title>
-  <link>http://rumah-it.org/categories/cyber-crime/</link>
+  <link>http://rumah-it.com/categories/cyber-crime/</link>
   <pubDate>Thu, 09 Feb 2023 10:56:50 &#43;0700</pubDate>
   <author>Author</author>
-  <guid>http://rumah-it.org/categories/cyber-crime/</guid>
+  <guid>http://rumah-it.com/categories/cyber-crime/</guid>
   <description><![CDATA[]]></description>
 </item>
 <item>
   <title>Teknologi Layanan Jaringan</title>
-  <link>http://rumah-it.org/categories/teknologi-layanan-jaringan/</link>
+  <link>http://rumah-it.com/categories/teknologi-layanan-jaringan/</link>
   <pubDate>Thu, 09 Feb 2023 10:55:38 &#43;0700</pubDate>
   <author>Author</author>
-  <guid>http://rumah-it.org/categories/teknologi-layanan-jaringan/</guid>
+  <guid>http://rumah-it.com/categories/teknologi-layanan-jaringan/</guid>
   <description><![CDATA[]]></description>
 </item>
 <item>
   <title>Administrasi Sistem Jaringan</title>
-  <link>http://rumah-it.org/categories/administrasi-sistem-jaringan/</link>
+  <link>http://rumah-it.com/categories/administrasi-sistem-jaringan/</link>
   <pubDate>Thu, 09 Feb 2023 07:18:42 &#43;0700</pubDate>
   <author>Author</author>
-  <guid>http://rumah-it.org/categories/administrasi-sistem-jaringan/</guid>
+  <guid>http://rumah-it.com/categories/administrasi-sistem-jaringan/</guid>
   <description><![CDATA[]]></description>
 </item>
 </channel>
