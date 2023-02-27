@@ -4,11 +4,19 @@
     <link>http://rumah-it.com/tags/</link>
     <description>Tags - Tag - enohbadrie</description>
     <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 27 Feb 2023 11:51:31 &#43;0700</lastBuildDate><atom:link href="http://rumah-it.com/tags/" rel="self" type="application/rss+xml" /><item>
-  <title>draft</title>
-  <link>http://rumah-it.com/tags/draft/</link>
+  <title>Cisco</title>
+  <link>http://rumah-it.com/tags/cisco/</link>
   <pubDate>Mon, 27 Feb 2023 11:51:31 &#43;0700</pubDate>
   <author>Author</author>
-  <guid>http://rumah-it.com/tags/draft/</guid>
+  <guid>http://rumah-it.com/tags/cisco/</guid>
+  <description><![CDATA[]]></description>
+</item>
+<item>
+  <title>Routing</title>
+  <link>http://rumah-it.com/tags/routing/</link>
+  <pubDate>Mon, 27 Feb 2023 11:51:31 &#43;0700</pubDate>
+  <author>Author</author>
+  <guid>http://rumah-it.com/tags/routing/</guid>
   <description><![CDATA[]]></description>
 </item>
 <item>
@@ -73,14 +81,6 @@
   <pubDate>Thu, 09 Feb 2023 10:57:43 &#43;0700</pubDate>
   <author>Author</author>
   <guid>http://rumah-it.com/tags/topologi/</guid>
-  <description><![CDATA[]]></description>
-</item>
-<item>
-  <title>Carding</title>
-  <link>http://rumah-it.com/tags/carding/</link>
-  <pubDate>Thu, 09 Feb 2023 10:56:50 &#43;0700</pubDate>
-  <author>Author</author>
-  <guid>http://rumah-it.com/tags/carding/</guid>
   <description><![CDATA[]]></description>
 </item>
 </channel>
