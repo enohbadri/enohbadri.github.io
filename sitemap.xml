@@ -2,8 +2,11 @@
   xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml"
   ><url>
+      <loc>http://rumah-it.com/categories/</loc><lastmod>2023-02-27T11:51:31&#43;07:00</lastmod></url><url>
+      <loc>http://rumah-it.com/tags/draft/</loc><lastmod>2023-02-27T11:51:31&#43;07:00</lastmod></url><url>
+      <loc>http://rumah-it.com/categories/draft/</loc><lastmod>2023-02-27T11:51:31&#43;07:00</lastmod></url><url>
+      <loc>http://rumah-it.com/</loc><lastmod>2023-02-27T11:51:31&#43;07:00</lastmod></url><url>
+      <loc>http://rumah-it.com/posts/</loc><lastmod>2023-02-27T11:51:31&#43;07:00</lastmod></url><url>
+      <loc>http://rumah-it.com/tags/</loc><lastmod>2023-02-27T11:51:31&#43;07:00</lastmod></url><url>
       <loc>http://rumah-it.com/friends/</loc><lastmod>2023-02-08T14:40:35&#43;07:00</lastmod></url><url>
-      <loc>http://rumah-it.com/offline/</loc></url><url>
-      <loc>http://rumah-it.com/categories/</loc></url><url>
-      <loc>http://rumah-it.com/</loc></url><url>
-      <loc>http://rumah-it.com/tags/</loc></url></urlset>
+      <loc>http://rumah-it.com/offline/</loc></url></urlset>
