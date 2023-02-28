@@ -193,14 +193,54 @@
 <li>2 bauh Personal Computer</li>
 </ol>
 <p>Di sini kita hanya akan menggunakan dua jenis kabel saja, yaitu kabel crossover dan kabel straigt. Perlu di jadikan catatan untuk menghubungkan router selain menggunakan kabel jenis crossover kita juga bisa melakukannya dengan menggunakan kabel serial. Sebenarnya sama saja kita mau menggunakan kabel jenis apa saja kita akan tetap bisa melakukan uji konektifitas jaringan kita. Apabila anda tidak percaya anda dapat membuktikannya sendiri. Kami juga akan mencoba untuk membuatkan tutorialnya di lain kesempatan.Setelah memahami kabel yang akan kita gunakan maka selanjutnya kita akan mencoba untuk merancang konfigurasi terhadap komponen komponen yang telah di susun di atas. Untuk lebih jelasnya silahkan anda lihat pada tabel di bawah ini.</p>
-<p>Nama Komponen IP Address SubnetMask Gateway
-PC 0 10.0.27.254 255.0.0.0 10.0.27.1
-PC 1 172.31.27.254 255.255.0.0 172.31.27.1
-ROUTER 0 fa 0/0 255.255.255.0 -
-ROUTER 0 fa 0/1 192.168.27.1
-10.0.27.1 255.0.0.0 -
-ROUTER 1 fa 0/0 192.168.27.2 255.255.255.0 -
-ROUTER 1 fa 0/1 172.31.27.1 255.255.0.0 -</p>
+<table>
+<thead>
+<tr>
+<th>Nama Komponen</th>
+<th>IP Address</th>
+<th>SubnetMask</th>
+<th>Gateway</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PC 0</td>
+<td>10.0.27.254</td>
+<td>255.0.0.0</td>
+<td>10.0.27.1</td>
+</tr>
+<tr>
+<td>PC 1</td>
+<td>172.31.27.254</td>
+<td>255.255.0.0</td>
+<td>172.31.27.1</td>
+</tr>
+<tr>
+<td>ROUTER 0 fa 0/0</td>
+<td>192.168.27.1</td>
+<td>255.255.255.0</td>
+<td>-</td>
+</tr>
+<tr>
+<td>ROUTER 0 fa 0/1</td>
+<td>10.0.27.1</td>
+<td>255.0.0.0</td>
+<td>-</td>
+</tr>
+<tr>
+<td>ROUTER 1 fa 0/0</td>
+<td>192.168.27.2</td>
+<td>255.255.255.0</td>
+<td>-</td>
+</tr>
+<tr>
+<td>ROUTER 1 fa 0/1</td>
+<td>172.31.27.1</td>
+<td>255.255.0.0</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
 <p>Untuk membuat anda mudah dalam memahami saya telah berikan warna yang sama untuk
 konfigurasi yang sama ataupun saling berhubungan. Dari pengelompokan di atas jelas terlihat ada 3 komponen warna maka itu bisa kita sebut sebagai jaringan yang akan anda design ini memiliki 3 segmen. Sekarang kita akan mulai untuk masuk kedalam konfigurasi jaringan tersebut. Untuk awalan silahkan anda siapkan terlebih dahulu aplikasi Packet Tracer anda hingga lembar kerja Paket Tracer telah siap untuk di gunakan.</p>
 <p><figure><a class="lightgallery" href="/posts/static_routing_cisco/cisco1.png" data-thumbnail="/posts/static_routing_cisco/cisco1.png" data-sub-html="<h2>Static Routing</h2><p>Cisco</p>"><img loading="lazy" src="cisco1.png" srcset="/posts/static_routing_cisco/cisco1.png, cisco1.png 1.5x, /posts/static_routing_cisco/cisco1.png 2x" sizes="auto" data-title="Cisco" data-alt="Static Routing" width="400" height="323" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></a><figcaption class="image-caption">Static Routing</figcaption>
