@@ -3,7 +3,7 @@
     <title>Administrasi Infrastruktur Jaringan - Category - enohbadrie</title>
     <link>http://rumah-it.com/categories/administrasi-infrastruktur-jaringan/</link>
     <description>Administrasi Infrastruktur Jaringan - Category - enohbadrie</description>
-    <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 27 Feb 2023 11:51:31 &#43;0700</lastBuildDate><atom:link href="http://rumah-it.com/categories/administrasi-infrastruktur-jaringan/" rel="self" type="application/rss+xml" /><item>
+    <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 28 Feb 2023 10:49:28 &#43;0700</lastBuildDate><atom:link href="http://rumah-it.com/categories/administrasi-infrastruktur-jaringan/" rel="self" type="application/rss+xml" /><item>
   <title>CISCO PT, Static Routing</title>
   <link>http://rumah-it.com/posts/static_routing_cisco/</link>
   <pubDate>Mon, 27 Feb 2023 11:51:31 &#43;0700</pubDate>
@@ -20,6 +20,14 @@
   <guid>http://rumah-it.com/posts/pengertian_osi_layer/</guid>
   <description><![CDATA[<p><figure><a class="lightgallery" href="/posts/pengertian_osi_layer/osi_works.png" data-thumbnail="/posts/pengertian_osi_layer/osi_works.png" data-sub-html="<h2>Pengertian dan Cara Kerja OSI Layer</h2><p>7 Osi Layer</p>"></a><figcaption class="image-caption">Pengertian dan Cara Kerja OSI Layer</figcaption>
   </figure></p>]]></description>
+</item>
+<item>
+  <title>Cara Cepat Menghitung VLSM</title>
+  <link>http://rumah-it.com/posts/cara_cepat_menghitung_vlsm/</link>
+  <pubDate>Tue, 28 Feb 2023 10:49:28 &#43;0700</pubDate>
+  <author>Enoh Badrie</author>
+  <guid>http://rumah-it.com/posts/cara_cepat_menghitung_vlsm/</guid>
+  <description><![CDATA[Cara Cepat Menghitung VLSM]]></description>
 </item>
 </channel>
 </rss>
