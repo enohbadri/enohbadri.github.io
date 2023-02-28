@@ -4,6 +4,14 @@
     <link>http://rumah-it.com/posts/</link>
     <description>All Posts | enohbadrie</description>
     <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 28 Feb 2023 10:49:28 &#43;0700</lastBuildDate><atom:link href="http://rumah-it.com/posts/" rel="self" type="application/rss+xml" /><item>
+  <title>Cara Cepat Menghitung VLSM</title>
+  <link>http://rumah-it.com/posts/cara_cepat_menghitung_vlsm/</link>
+  <pubDate>Tue, 28 Feb 2023 10:49:28 &#43;0700</pubDate>
+  <author>Enoh Badrie</author>
+  <guid>http://rumah-it.com/posts/cara_cepat_menghitung_vlsm/</guid>
+  <description><![CDATA[Cara Cepat Menghitung VLSM]]></description>
+</item>
+<item>
   <title>CISCO PT, Static Routing</title>
   <link>http://rumah-it.com/posts/static_routing_cisco/</link>
   <pubDate>Mon, 27 Feb 2023 11:51:31 &#43;0700</pubDate>
@@ -83,14 +91,6 @@
   <guid>http://rumah-it.com/posts/installasi_win_server_v-box/</guid>
   <description><![CDATA[<p><figure><a class="lightgallery" href="/posts/installasi_win_server_v-box/step25.png" data-thumbnail="/posts/installasi_win_server_v-box/step25.png" data-sub-html="<h2>Installasi Windows Server 2008</h2><p>Dekstop Windows Server 2008</p>"></a><figcaption class="image-caption">Installasi Windows Server 2008</figcaption>
   </figure></p>]]></description>
-</item>
-<item>
-  <title>Cara Cepat Menghitung VLSM</title>
-  <link>http://rumah-it.com/posts/cara_cepat_menghitung_vlsm/</link>
-  <pubDate>Tue, 28 Feb 2023 10:49:28 &#43;0700</pubDate>
-  <author>Enoh Badrie</author>
-  <guid>http://rumah-it.com/posts/cara_cepat_menghitung_vlsm/</guid>
-  <description><![CDATA[Cara Cepat Menghitung VLSM]]></description>
 </item>
 </channel>
 </rss>
