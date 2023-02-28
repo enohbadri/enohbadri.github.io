@@ -10,7 +10,7 @@
 <meta name="description" content="Cara Cepat Menghitung VLSM" /><meta name="keywords" content='VLSM, CIDR' /><meta itemprop="name" content="Cara Cepat Menghitung VLSM">
 <meta itemprop="description" content="Cara Cepat Menghitung VLSM"><meta itemprop="datePublished" content="2023-02-28T10:49:28+07:00" />
 <meta itemprop="dateModified" content="2023-02-28T10:49:28+07:00" />
-<meta itemprop="wordCount" content="0">
+<meta itemprop="wordCount" content="424">
 <meta itemprop="keywords" content="VLSM,CIDR," /><meta property="og:title" content="Cara Cepat Menghitung VLSM" />
 <meta property="og:description" content="Cara Cepat Menghitung VLSM" />
 <meta property="og:type" content="article" />
@@ -31,7 +31,7 @@
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "http:\/\/rumah-it.com\/posts\/cara_cepat_menghitung_vlsm\/"
-    },"genre": "posts","keywords": "VLSM, CIDR","wordcount":  0 ,
+    },"genre": "posts","keywords": "VLSM, CIDR","wordcount":  424 ,
     "url": "http:\/\/rumah-it.com\/posts\/cara_cepat_menghitung_vlsm\/","datePublished": "2023-02-28T10:49:28+07:00","dateModified": "2023-02-28T10:49:28+07:00","publisher": {
       "@type": "Organization",
       "name": ""},"author": {
@@ -213,7 +213,8 @@
   </div>
   <div class="search-dropdown mobile">
     <div id="search-dropdown-mobile"></div>
-  </div><main class="container" data-page-style="normal"><aside class="toc" id="toc-auto"></aside>
+  </div><main class="container" data-page-style="normal"><aside class="toc" id="toc-auto"><h2 class="toc-title">Contents&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
+      <div class="toc-content always-active" id="toc-content-auto"></div></aside>
 
   <aside class="aside-custom">
     </aside>
@@ -225,12 +226,211 @@
       <div class="post-meta-line"><span class="post-author"><a href="https://" title="Author" rel=" author" class="author"><i class="fa-solid fa-user-circle" aria-hidden="true"></i>
     Enoh Badrie</a></span>
           <span class="post-category">included in <a href="/categories/administrasi-infrastruktur-jaringan/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> Administrasi Infrastruktur Jaringan</a></span></div>
-      <div class="post-meta-line"><span title=2023-02-28&#32;10:49:28><i class="fa-regular fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-02-28">2023-02-28</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw" aria-hidden="true"></i> 0 words</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw" aria-hidden="true"></i> 0 minutes</span>&nbsp;<span id="/posts/cara_cepat_menghitung_vlsm/" class="leancloud_visitors comment-visitors" data-flag-title="Cara Cepat Menghitung VLSM">
+      <div class="post-meta-line"><span title=2023-02-28&#32;10:49:28><i class="fa-regular fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-02-28">2023-02-28</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw" aria-hidden="true"></i> 424 words</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw" aria-hidden="true"></i> 2 minutes</span>&nbsp;<span id="/posts/cara_cepat_menghitung_vlsm/" class="leancloud_visitors comment-visitors" data-flag-title="Cara Cepat Menghitung VLSM">
               <i class="fa-regular fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span class="leancloud-visitors-count">-</span>&nbsp;views
             </span>&nbsp;<span class="comment-count" data-flag-title="Cara Cepat Menghitung VLSM">
               <i class="fa-regular fa-comments fa-fw" aria-hidden="true"></i>&nbsp;<span data-xid="/posts/cara_cepat_menghitung_vlsm/" class="valine-comment-count">-</span>&nbsp;comments
             </span>&nbsp;</div>
-    </div><div class="content" id="content"></div><div class="post-footer" id="post-footer">
+    </div><div class="details toc" id="toc-static" data-kept="false">
+        <div class="details-summary toc-title">
+          <span>Contents</span>
+          <span><i class="details-icon fa-solid fa-angle-right" aria-hidden="true"></i></span>
+        </div>
+        <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#1-ruang-utama-1000-host">1.  Ruang Utama 1000 host   </a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+      </div><div class="content" id="content"><p>VLSM (Variabel Length Subnet Mask) adalah suatu teknik untuk mengurangi jumlah terbuang [ruang;spasi] alamat. kita dapat memberi suatu subnet ke seseorang, dan dia dapat lebih lanjut membagi lebih lanjut membagi subnet ke dalam beberapa subnets. Oleh karena lebar dari subnet akan diperkecil, maka disebut dengan Variable Subnet Length Mask (VLSM).</p>
+<p>Perhitungan IP Address menggunakan metode VLSM adalah metode yang berbeda dengan memberikan suatu Network Address lebih dari satu subnet mask, jika menggunakan CIDR dimana suatu Network ID hanya memiliki satu subnet mask saja, perbedaan yang mendasar disini juga adalah terletak pada pembagian blok, pembagian blok VLSM bebas dan hanya dilakukan oleh si pemilik Network Address yang telah diberikan kepadanya atau dengan kata lain sebagai IP address local dan IP Address ini tidak dikenal dalam jaringan internet, namun tetap dapat melakukan koneksi kedalam jaringan internet, hal ini terjadi dikarenakan jaringan internet hanya mengenal IP Address berkelas.</p>
+<p>Langsung saja ke contoh kasus yang pertama dalam perhitungan menggunakan metode vlsm. Dalam contoh kasus ini misalnya kita akan membangun sebuah jaringan internet dalam sebuah perusahaan besar. Dengan ketentuan Host yang dibutuhkan antaran lain:</p>
+<p>1.Ruang Utama 1000 host 
+2.Ruang Kedua 500 host
+3.Ruang Ketiga 100 host
+4.Ruang Server 2 host</p>
+<p>Dengan alamat jaringan 172.16.0.0/16. Sebelum kita mulai menghitung vlsm, disini kita akan memcantumkann 8 bit angka ajaib ini:</p>
+<p>28 . 64 . 32 . 16 . 8 . 4 . 2 . 1 . Dan membuat tabel-tabel untuk mempercepat proses perhitungan VLSM.  Seperti tabel-tabel berikut:</p>
+<table>
+<thead>
+<tr>
+<th>Host Ke 2^n</th>
+<th>Jumlah Host</th>
+<th>Subnetmask</th>
+<th>Premask/32-n</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2^0</td>
+<td>1</td>
+<td>255.255.255.255</td>
+<td>/32</td>
+</tr>
+<tr>
+<td>2^1</td>
+<td>2</td>
+<td>255.255.355.254</td>
+<td>/31</td>
+</tr>
+<tr>
+<td>2^2</td>
+<td>4</td>
+<td>255.255.255.252</td>
+<td>/30</td>
+</tr>
+<tr>
+<td>2^3</td>
+<td>8</td>
+<td>255.255.255.248</td>
+<td>/29</td>
+</tr>
+<tr>
+<td>2^4</td>
+<td>16</td>
+<td>255.255.255.240</td>
+<td>/28</td>
+</tr>
+<tr>
+<td>2^5</td>
+<td>32</td>
+<td>255.255.255.224</td>
+<td>/27</td>
+</tr>
+<tr>
+<td>2^6</td>
+<td>64</td>
+<td>255.255.255.192</td>
+<td>/26</td>
+</tr>
+<tr>
+<td>2^7</td>
+<td>128</td>
+<td>255.255.255.128</td>
+<td>/25</td>
+</tr>
+<tr>
+<td>2^8</td>
+<td>256</td>
+<td>255.255.255.0</td>
+<td>/24</td>
+</tr>
+<tr>
+<td>2^9</td>
+<td>512</td>
+<td>255.255.254.0</td>
+<td>/23</td>
+</tr>
+<tr>
+<td>2^10</td>
+<td>1024</td>
+<td>255.255.252.0</td>
+<td>/22</td>
+</tr>
+<tr>
+<td>2^11</td>
+<td>2048</td>
+<td>255.255.248.0</td>
+<td>/21</td>
+</tr>
+<tr>
+<td>2^12</td>
+<td>4096</td>
+<td>255.255.240.0</td>
+<td>/20</td>
+</tr>
+<tr>
+<td>2^13</td>
+<td>8192</td>
+<td>255.255.224.0</td>
+<td>/19</td>
+</tr>
+<tr>
+<td>2^14</td>
+<td>16386</td>
+<td>255.255.192.0</td>
+<td>/18</td>
+</tr>
+<tr>
+<td>2^15</td>
+<td>32768</td>
+<td>255.255.128.0</td>
+<td>/17</td>
+</tr>
+<tr>
+<td>2^16</td>
+<td>65536</td>
+<td>255.255.0.0</td>
+<td>/16</td>
+</tr>
+<tr>
+<td>2^17</td>
+<td>131072</td>
+<td>255.254.0.0</td>
+<td>/15</td>
+</tr>
+<tr>
+<td>2^18</td>
+<td>262144</td>
+<td>255.252.0.0</td>
+<td>/14</td>
+</tr>
+<tr>
+<td>2^19</td>
+<td>524288</td>
+<td>255.248.0.0</td>
+<td>/13</td>
+</tr>
+<tr>
+<td>2^20</td>
+<td>1048576</td>
+<td>255.240.0.0</td>
+<td>/12</td>
+</tr>
+<tr>
+<td>2^21</td>
+<td>2097152</td>
+<td>255.224.0.0</td>
+<td>/11</td>
+</tr>
+<tr>
+<td>2^22</td>
+<td>4194304</td>
+<td>255.192.0.0</td>
+<td>/10</td>
+</tr>
+<tr>
+<td>2^23</td>
+<td>8388608</td>
+<td>255.128.0.0</td>
+<td>/9</td>
+</tr>
+<tr>
+<td>2^24</td>
+<td>16777216</td>
+<td>255.0.0.0</td>
+<td>/8</td>
+</tr>
+</tbody>
+</table>
+<div class="details admonition tip open">
+    <div class="details-summary admonition-title">
+      <i class="icon fa-solid fa-lightbulb fa-fw" aria-hidden="true"></i>Contoh<i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true"></i>
+    </div>
+    <div class="details-content">
+      <div class="admonition-content">contohya seperti kasus berikut:
+Dengan IP 172.16.0.0/16</div>
+    </div>
+  </div>
+<h3 id="1-ruang-utama-1000-host">1.  Ruang Utama 1000 host   </h3>
+<p>       Disini dibutuhkan 1000 host yang akan terhubung dengan internet ,untuk mendapat 1000 host atau lebih perhatikan tabel diatas. Karena yang  dibutuhkan1000 maka cari hasil pemangkatan 1000 or  &gt;= 1000 host.  dari tabel diatas yang sesuai dengan kebutuhan host yang dibutuhkan  gunakan 2^10 = 1024  dan subnet mask 255.255.252.0.Untuk mencari nilai ip range seperti dibawah ini :</p>
+<p>255.255.255.255 
+255.255.252.  0
+&mdash;&mdash;&mdash;&mdash;&mdash; (-)
+  0.  0.  3.255</p></div><div class="post-footer" id="post-footer">
   <div class="post-info">
     <div class="post-info-line">
       <div class="post-info-mod">
