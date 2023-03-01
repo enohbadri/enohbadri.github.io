@@ -1,15 +1,15 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
     <title>draft - Category - enohbadrie</title>
-    <link>http://rumah-it.com/categories/draft/</link>
+    <link>http://www.rumah-it.com/categories/draft/</link>
     <description>draft - Category - enohbadrie</description>
-    <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 27 Feb 2023 11:51:31 &#43;0700</lastBuildDate><atom:link href="http://rumah-it.com/categories/draft/" rel="self" type="application/rss+xml" /><item>
-  <title>Belum ada judul</title>
-  <link>http://rumah-it.com/posts/post_baru/</link>
-  <pubDate>Mon, 27 Feb 2023 11:51:31 &#43;0700</pubDate>
+    <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 01 Mar 2023 15:07:40 &#43;0700</lastBuildDate><atom:link href="http://www.rumah-it.com/categories/draft/" rel="self" type="application/rss+xml" /><item>
+  <title>SMS Gammu</title>
+  <link>http://www.rumah-it.com/posts/sms_gammu/</link>
+  <pubDate>Wed, 01 Mar 2023 15:07:40 &#43;0700</pubDate>
   <author>Author</author>
-  <guid>http://rumah-it.com/posts/post_baru/</guid>
-  <description><![CDATA[]]></description>
+  <guid>http://www.rumah-it.com/posts/sms_gammu/</guid>
+  <description><![CDATA[<p>SMS GAMMU</p>]]></description>
 </item>
 </channel>
 </rss>

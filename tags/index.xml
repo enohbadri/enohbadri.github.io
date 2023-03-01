@@ -3,7 +3,15 @@
     <title>Tags - Tag - enohbadrie</title>
     <link>http://www.rumah-it.com/tags/</link>
     <description>Tags - Tag - enohbadrie</description>
-    <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 28 Feb 2023 10:49:28 &#43;0700</lastBuildDate><atom:link href="http://www.rumah-it.com/tags/" rel="self" type="application/rss+xml" /><item>
+    <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 01 Mar 2023 15:07:40 &#43;0700</lastBuildDate><atom:link href="http://www.rumah-it.com/tags/" rel="self" type="application/rss+xml" /><item>
+  <title>draft</title>
+  <link>http://www.rumah-it.com/tags/draft/</link>
+  <pubDate>Wed, 01 Mar 2023 15:07:40 &#43;0700</pubDate>
+  <author>Author</author>
+  <guid>http://www.rumah-it.com/tags/draft/</guid>
+  <description><![CDATA[]]></description>
+</item>
+<item>
   <title>Briker</title>
   <link>http://www.rumah-it.com/tags/briker/</link>
   <pubDate>Tue, 28 Feb 2023 10:49:28 &#43;0700</pubDate>
@@ -73,14 +81,6 @@
   <pubDate>Tue, 28 Feb 2023 10:49:28 &#43;0700</pubDate>
   <author>Author</author>
   <guid>http://www.rumah-it.com/tags/kejahatan-cyber/</guid>
-  <description><![CDATA[]]></description>
-</item>
-<item>
-  <title>Mikrotik</title>
-  <link>http://www.rumah-it.com/tags/mikrotik/</link>
-  <pubDate>Tue, 28 Feb 2023 10:49:28 &#43;0700</pubDate>
-  <author>Author</author>
-  <guid>http://www.rumah-it.com/tags/mikrotik/</guid>
   <description><![CDATA[]]></description>
 </item>
 </channel>
