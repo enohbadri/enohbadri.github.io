@@ -10,7 +10,7 @@
 <meta name="description" content="Cara Mengatasi Git Push Rejected" /><meta name="keywords" content='Git, Error' /><meta itemprop="name" content="Cara Mengatasi Git Push Rejected">
 <meta itemprop="description" content="Cara Mengatasi Git Push Rejected"><meta itemprop="datePublished" content="2023-02-28T10:49:28+07:00" />
 <meta itemprop="dateModified" content="2023-02-28T10:49:28+07:00" />
-<meta itemprop="wordCount" content="244">
+<meta itemprop="wordCount" content="220">
 <meta itemprop="keywords" content="Git,Error," /><meta property="og:title" content="Cara Mengatasi Git Push Rejected" />
 <meta property="og:description" content="Cara Mengatasi Git Push Rejected" />
 <meta property="og:type" content="article" />
@@ -31,7 +31,7 @@
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "http:\/\/rumah-it.com\/posts\/git_rejected\/"
-    },"genre": "posts","keywords": "Git, Error","wordcount":  244 ,
+    },"genre": "posts","keywords": "Git, Error","wordcount":  220 ,
     "url": "http:\/\/rumah-it.com\/posts\/git_rejected\/","datePublished": "2023-02-28T10:49:28+07:00","dateModified": "2023-02-28T10:49:28+07:00","publisher": {
       "@type": "Organization",
       "name": ""},"author": {
@@ -150,7 +150,7 @@
       <div class="post-meta-line"><span class="post-author"><a href="https://" title="Author" rel=" author" class="author"><i class="fa-solid fa-user-circle" aria-hidden="true"></i>
     Enoh Badrie</a></span>
           <span class="post-category">included in <a href="/categories/github/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> Github</a></span></div>
-      <div class="post-meta-line"><span title=2023-02-28&#32;10:49:28><i class="fa-regular fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-02-28">2023-02-28</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw" aria-hidden="true"></i> 244 words</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw" aria-hidden="true"></i> 2 minutes</span>&nbsp;<span id="busuanzi_container_page_pv" class="busuanzi_visitors comment-visitors" data-flag-title="Cara Mengatasi Git Push Rejected">
+      <div class="post-meta-line"><span title=2023-02-28&#32;10:49:28><i class="fa-regular fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-02-28">2023-02-28</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw" aria-hidden="true"></i> 220 words</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw" aria-hidden="true"></i> 2 minutes</span>&nbsp;<span id="busuanzi_container_page_pv" class="busuanzi_visitors comment-visitors" data-flag-title="Cara Mengatasi Git Push Rejected">
             <i class="fa-regular fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_page_pv">-</span>&nbsp;views
           </span>&nbsp;</div>
     </div><div class="details toc" id="toc-static" data-kept="false">
@@ -169,7 +169,7 @@
 </nav></div>
       </div><div class="content" id="content"><p><figure><a class="lightgallery" href="/posts/git_rejected/git2.png" data-thumbnail="/posts/git_rejected/git2.png" data-sub-html="<h2>Git</h2><p>Git Error</p>"><img loading="lazy" src="git2.png" srcset="/posts/git_rejected/git2.png, git2.png 1.5x, /posts/git_rejected/git2.png 2x" sizes="auto" data-title="Git Error" data-alt="Git" width="786" height="533" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></a><figcaption class="image-caption">Git</figcaption>
   </figure></p>
-<p>Cara Mengatasi Git Push Rejected - Kali ini saya akan membagikan tips bagai mana cara mengatasi error git push rejected, saya sudah mencari referensi kemana mana namun membuahkan solusi, error rejected yang di maksud anda bisa lihat seperti gambar di bawah ini</p>
+<p>Cara Mengatasi Git Push Rejected - Kali ini saya akan membagikan tips bagaimana cara mengatasi error git push rejected, error rejected yang di maksud adalah seperti syntax di bawah ini</p>
 <pre tabindex="0"><code class="language-Terminal" data-lang="Terminal">$ git push origin master
 To https://github.com/<sup>account</sup>/<sub>repo</sub>.git
  ! [rejected]        master -&gt; master (non-fast-forward)
@@ -186,12 +186,16 @@ hint: See the &#39;Note about fast-forwards&#39; in &#39;git push --help&#39; fo
       <div class="admonition-content">Error tersebut terjadi ketika akan melakukan perintah git push origin master dan seketika itu muncul error notifikasi error rejected</div>
     </div>
   </div>
-<p>setelah pencarian yang panjang akhirnya saya menemukan solusi, ternyata kode git push yang saya gunakan ada yang kurang dibagian akhir saya menggunakan
-git push origin master berkali - kali pu hasilnya tetap sama rejected, ternyata untuk mengatasi masalah tersebut hanya butuh penambahan saat melakukan git push dengan &ndash;force atau -f  maka saya coba menggunakan</p>
+<p>setelah muter-muter di google dan tanya chat-GPT akhirnya saya menemukan solusi, ternyata kode git push yang saya gunakan ada yang kurang dibagian akhir saya menggunakan
+git push origin master berkali - kali pu hasilnya tetap sama rejected, ternyata untuk mengatasi masalah tersebut hanya butuh penambahan saat melakukan git push dengan <strong>&ndash;force</strong> atau <strong>-f</strong> maka saya coba menggunakan perintah tersebut.</p>
 <h3 id="cara-mengatasi-git-push-rejected">Cara Mengatasi Git Push Rejected</h3>
 <pre tabindex="0"><code class="language-Terminal" data-lang="Terminal">git push origin master --force
-</code></pre><p>dan berhasil upload ke github atau anda juga bisa menggunakan kode push yang ini git push origin master -f</p>
-<p>Jadi jangan khawatir dan bingung lagi jika anda menemukan error rejected saat git push ke repository anda di github, semoga informasi singkat ini berguna bagi anda yang membacanya, tetap semangat dan jangan pernah menyerah.</p></div><div class="post-footer" id="post-footer">
+</code></pre><p>Atau anda juga bisa menggunakan perintah ini :</p>
+<pre tabindex="0"><code class="language-Terminal" data-lang="Terminal">git push origin master -f
+</code></pre><p>Jadi jangan khawatir ketika menemukan error rejected saat git push ke repository anda di github, semoga informasi singkat ini bermanfaat, tetap semangat.</p>
+<ul>
+<li>Terimakasih</li>
+</ul></div><div class="post-footer" id="post-footer">
   <div class="post-info">
     <div class="post-info-line">
       <div class="post-info-mod">
