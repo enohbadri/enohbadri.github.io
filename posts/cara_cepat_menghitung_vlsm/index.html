@@ -10,7 +10,7 @@
 <meta name="description" content="Cara Cepat Menghitung VLSM" /><meta name="keywords" content='Subneting, VLSM' /><meta itemprop="name" content="Cara Cepat Menghitung VLSM">
 <meta itemprop="description" content="Cara Cepat Menghitung VLSM"><meta itemprop="datePublished" content="2023-02-28T10:49:28+07:00" />
 <meta itemprop="dateModified" content="2023-02-28T10:49:28+07:00" />
-<meta itemprop="wordCount" content="796">
+<meta itemprop="wordCount" content="795">
 <meta itemprop="keywords" content="Subneting,VLSM," /><meta property="og:title" content="Cara Cepat Menghitung VLSM" />
 <meta property="og:description" content="Cara Cepat Menghitung VLSM" />
 <meta property="og:type" content="article" />
@@ -31,7 +31,7 @@
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "http:\/\/rumah-it.com\/posts\/cara_cepat_menghitung_vlsm\/"
-    },"genre": "posts","keywords": "Subneting, VLSM","wordcount":  796 ,
+    },"genre": "posts","keywords": "Subneting, VLSM","wordcount":  795 ,
     "url": "http:\/\/rumah-it.com\/posts\/cara_cepat_menghitung_vlsm\/","datePublished": "2023-02-28T10:49:28+07:00","dateModified": "2023-02-28T10:49:28+07:00","publisher": {
       "@type": "Organization",
       "name": ""},"author": {
@@ -150,7 +150,7 @@
       <div class="post-meta-line"><span class="post-author"><a href="https://" title="Author" rel=" author" class="author"><i class="fa-solid fa-user-circle" aria-hidden="true"></i>
     Enoh Badrie</a></span>
           <span class="post-category">included in <a href="/categories/administrasi-infrastruktur-jaringan/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> Administrasi Infrastruktur Jaringan</a></span></div>
-      <div class="post-meta-line"><span title=2023-02-28&#32;10:49:28><i class="fa-regular fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-02-28">2023-02-28</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw" aria-hidden="true"></i> 796 words</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw" aria-hidden="true"></i> 4 minutes</span>&nbsp;<span id="busuanzi_container_page_pv" class="busuanzi_visitors comment-visitors" data-flag-title="Cara Cepat Menghitung VLSM">
+      <div class="post-meta-line"><span title=2023-02-28&#32;10:49:28><i class="fa-regular fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-02-28">2023-02-28</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw" aria-hidden="true"></i> 795 words</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw" aria-hidden="true"></i> 4 minutes</span>&nbsp;<span id="busuanzi_container_page_pv" class="busuanzi_visitors comment-visitors" data-flag-title="Cara Cepat Menghitung VLSM">
             <i class="fa-regular fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_page_pv">-</span>&nbsp;views
           </span>&nbsp;</div>
     </div><div class="details toc" id="toc-static" data-kept="false">
@@ -354,24 +354,13 @@ Dengan IP 172.16.0.0/16</div>
   </div>
 <h3 id="1-ruang-utama-1000-host">1.  Ruang Utama 1000 host   </h3>
 <p>       Disini dibutuhkan 1000 host yang akan terhubung dengan internet ,untuk mendapat 1000 host atau lebih perhatikan tabel diatas. Karena yang  dibutuhkan1000 maka cari hasil pemangkatan 1000 or  &gt;= 1000 host.  dari tabel diatas yang sesuai dengan kebutuhan host yang dibutuhkan  gunakan 2^10 = 1024  dan subnet mask 255.255.252.0.Untuk mencari nilai ip range seperti dibawah ini :</p>
-<table>
-<thead>
-<tr>
-<th>Kurangi</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>255.255.255.255</td>
-</tr>
-<tr>
-<td>255.255.252.  0</td>
-</tr>
-<tr>
-<td>  0.  0.  3.255</td>
-</tr>
-</tbody>
-</table>
+<p>255.255.255.255 </p>
+<ul>
+<li>255.255.252. 0</li>
+</ul>
+<hr>
+<pre><code>0.  0.  3.255
+</code></pre>
 <p>Dan untuk mengetahui IP broadcastnya yakni hasil dari pengurangan diatas ditambah dengan ip network</p>
 <table>
 <thead>
