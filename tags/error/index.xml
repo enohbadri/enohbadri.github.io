@@ -1,14 +1,14 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
     <title>Error - Tag - enohbadrie</title>
-    <link>http://rumah-it.com/tags/error/</link>
+    <link>http://www.rumah-it.com/tags/error/</link>
     <description>Error - Tag - enohbadrie</description>
-    <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 28 Feb 2023 10:49:28 &#43;0700</lastBuildDate><atom:link href="http://rumah-it.com/tags/error/" rel="self" type="application/rss+xml" /><item>
+    <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 28 Feb 2023 10:49:28 &#43;0700</lastBuildDate><atom:link href="http://www.rumah-it.com/tags/error/" rel="self" type="application/rss+xml" /><item>
   <title>Cara Mengatasi Git Push Rejected</title>
-  <link>http://rumah-it.com/posts/git_rejected/</link>
+  <link>http://www.rumah-it.com/posts/git_rejected/</link>
   <pubDate>Tue, 28 Feb 2023 10:49:28 &#43;0700</pubDate>
   <author>Enoh Badrie</author>
-  <guid>http://rumah-it.com/posts/git_rejected/</guid>
+  <guid>http://www.rumah-it.com/posts/git_rejected/</guid>
   <description><![CDATA[<p><figure><a class="lightgallery" href="/posts/git_rejected/git2.png" data-thumbnail="/posts/git_rejected/git2.png" data-sub-html="<h2>Git Push Rejected</h2><p>Git Error</p>"></a><figcaption class="image-caption">Git Push Rejected</figcaption>
   </figure></p>]]></description>
 </item>
