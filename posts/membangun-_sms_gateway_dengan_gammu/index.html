@@ -165,19 +165,6 @@
         <li><a href="#apa-itu-sms-gateway">Apa itu SMS-Gateway?</a></li>
       </ul>
     </li>
-    <li><a href="#install-gammu-dan-juga-gammu-smsd-menggunakan-terminal-pastikan-terhubung-dengan-internet-masukkan-perintah-di-terminal-">Install gammu dan juga gammu-smsd menggunakan terminal, pastikan terhubung dengan internet. Masukkan perintah di terminal :</a></li>
-    <li><a href="#kemudian-setting-gammu-nya-masukkan-perintah-">Kemudian setting gammu-nya. Masukkan perintah :</a></li>
-    <li><a href="#buka-tab-baru-di-terminal-lalu-masukkan-perintah-">Buka tab baru di terminal, lalu masukkan perintah :</a></li>
-    <li><a href="#jika-kita-sudah-mengetahui-port-yang-terhubung-dengan-modem-isikan-pada-konfigurasi-gammu-yaitu-pada-bagian-">Jika kita sudah mengetahui port yang terhubung dengan modem, isikan pada konfigurasi gammu. Yaitu pada bagian :</a></li>
-    <li><a href="#untuk-connection-saya-pilih-at115200-karena-saya-menggunakan-modem-wavecom-fastrack-m1306b-jika-anda-menggunakan-modem-yang-berbeda-sesuaikan-konfigurasi-connection-dengan-jenis-modem-anda">Untuk connection saya pilih at115200 karena saya menggunakan modem Wavecom Fastrack M1306B, jika anda menggunakan modem yang berbeda, sesuaikan konfigurasi connection dengan jenis modem anda.</a></li>
-    <li><a href="#logfile-kita-isi-dengan-path-di-mana-kita-ingin-menyimpan-log-informasi-dari-gammu-saya-taruh-di-varloggammulog">Logfile kita isi dengan path di mana kita ingin menyimpan log (informasi) dari gammu. Saya taruh di /var/log/gammulog</a></li>
-    <li><a href="#untuk-logformat-saya-pilih-textdate-nantinya-log-gammu-akan-menyimpan-informasi-teks-beserta-tanggal-dan-jam-kejadianya">Untuk logformat saya pilih textdate. Nantinya, log gammu akan menyimpan informasi teks beserta tanggal dan jam kejadianya.</a></li>
-    <li><a href="#setelah-itu-save-dan-konfigurasi-gammu-tersebut-akan-tersimpan-di-file-gammurc-pada-direktori-home-user-yang-kita-gunakan">Setelah itu save, dan konfigurasi gammu tersebut akan tersimpan di file .gammurc pada direktori home user yang kita gunakan.</a></li>
-    <li><a href="#kita-matikan-dulu-service-gammu-smsd-kenapa-karena-jika-service-tersebut-berjalan-kita-tidak-bisa-menggunakan-perintah-gammu-di-terminal-masukkan-perintah-">Kita matikan dulu service gammu-smsd. Kenapa? Karena jika service tersebut berjalan, kita tidak bisa menggunakan perintah gammu di terminal. Masukkan perintah :</a></li>
-    <li><a href="#kita-cek-apakah-settingan-gammu-dengan-modem-tersebut-sudah-benar-atau-belum-masukkan-perintah-">Kita cek apakah settingan gammu dengan modem tersebut sudah benar atau belum. Masukkan perintah :</a></li>
-    <li><a href="#kemudian-kita-setting-gammu-smsd-nya-agar-service-gammu-bisa-terhubung-dengan-database-edit-file-etcgammu-smsdrc-dengan-perintah-">Kemudian kita setting gammu-smsd-nya agar service gammu bisa terhubung dengan database. Edit file /etc/gammu-smsdrc dengan perintah :</a></li>
-    <li><a href="#sesuaikan-konfigurasi-seperti-ini-">Sesuaikan konfigurasi seperti ini :</a></li>
-    <li><a href="#simpan-dan-jangan-lupa-untuk-menjalankan-kembali-service-gammu-dengan-perintah-">Simpan dan jangan lupa untuk menjalankan kembali service gammu dengan perintah :</a></li>
   </ul>
 </nav></div>
       </div><div class="content" id="content"><p>SMS GAMMU</p>
@@ -185,19 +172,19 @@
 <p>Secara sederhana SMS-Gateway adalah suatu layanan SMS (Short Message Service) yang memungkinkan untuk melakukan pengiriman SMS, maupun penerimaan SMS melalui komputer. Kita bisa dengan mudah melakukan menejemen SMS dengan komputer kita.</p>
 <p>Pada kesempatan kali ini saya akan berbagi cara membangun SMS-Gateway dengan Gammu. Spesifikasi sistem operasi komputer saya menggunakan Ubuntu 18.04 LTS dan modem Wavecom Fastrack M1306B.</p>
 <p>Berikut langkah-langkah instalasinya :</p>
-<h2 id="install-gammu-dan-juga-gammu-smsd-menggunakan-terminal-pastikan-terhubung-dengan-internet-masukkan-perintah-di-terminal-">Install gammu dan juga gammu-smsd menggunakan terminal, pastikan terhubung dengan internet. Masukkan perintah di terminal :</h2>
+<p><strong>Install gammu dan juga gammu-smsd menggunakan terminal, pastikan terhubung dengan internet. Masukkan perintah di terminal :</strong></p>
 <pre tabindex="0"><code class="language-terminal" data-lang="terminal">sudo apt-get update
 sudo apt-get install gammu gammu-smsd
 </code></pre><p>Gambar</p>
-<h2 id="kemudian-setting-gammu-nya-masukkan-perintah-">Kemudian setting gammu-nya. Masukkan perintah :</h2>
+<p><strong>Kemudian setting gammu-nya. Masukkan perintah :</strong></p>
 <pre tabindex="0"><code class="language-terminal" data-lang="terminal">gammu-config
 </code></pre><p>Gambar</p>
 <p>Akan tampil menu untuk konfigurasi gammu. Kita akan mengubah ini dengan kongurasi yang benar sesuai modem yang digunakan.</p>
-<h2 id="buka-tab-baru-di-terminal-lalu-masukkan-perintah-">Buka tab baru di terminal, lalu masukkan perintah :</h2>
+<p><strong>Buka tab baru di terminal, lalu masukkan perintah :</strong></p>
 <pre tabindex="0"><code class="language-terminal" data-lang="terminal">dmesg | grep tty
 </code></pre><p>gambar</p>
 <p>Nanti akan muncul port yang terhubung dengan modem. Jika tidak muncul, mungkin modem belum ditancapkan atau anda perlu menginstall driver modem tersebut. Langkah ini bertujuan untuk melihat apakah modem sudah terdeteksi pada komputer atau belum.</p>
-<h2 id="jika-kita-sudah-mengetahui-port-yang-terhubung-dengan-modem-isikan-pada-konfigurasi-gammu-yaitu-pada-bagian-">Jika kita sudah mengetahui port yang terhubung dengan modem, isikan pada konfigurasi gammu. Yaitu pada bagian :</h2>
+<p><strong>Jika kita sudah mengetahui port yang terhubung dengan modem, isikan pada konfigurasi gammu. Yaitu pada bagian :</strong></p>
 <pre tabindex="0"><code class="language-terminal" data-lang="terminal">port = /dev/ttyUSB0
 </code></pre><p>Gambar</p>
 <div class="details admonition tip open">
@@ -208,30 +195,30 @@ sudo apt-get install gammu gammu-smsd
       <div class="admonition-content">ttyUSB0 disesuaikan dengan hasil dmesg | grep tty.</div>
     </div>
   </div>
-<h2 id="untuk-connection-saya-pilih-at115200-karena-saya-menggunakan-modem-wavecom-fastrack-m1306b-jika-anda-menggunakan-modem-yang-berbeda-sesuaikan-konfigurasi-connection-dengan-jenis-modem-anda">Untuk connection saya pilih at115200 karena saya menggunakan modem Wavecom Fastrack M1306B, jika anda menggunakan modem yang berbeda, sesuaikan konfigurasi connection dengan jenis modem anda.</h2>
+<p><strong>Untuk connection saya pilih at115200 karena saya menggunakan modem Wavecom Fastrack M1306B, jika anda menggunakan modem yang berbeda, sesuaikan konfigurasi connection dengan jenis modem anda.</strong></p>
 <pre tabindex="0"><code class="language-terminal" data-lang="terminal">connection = at115200
 </code></pre><p>Gambar</p>
-<h2 id="logfile-kita-isi-dengan-path-di-mana-kita-ingin-menyimpan-log-informasi-dari-gammu-saya-taruh-di-varloggammulog">Logfile kita isi dengan path di mana kita ingin menyimpan log (informasi) dari gammu. Saya taruh di /var/log/gammulog</h2>
+<p><strong>Logfile kita isi dengan path di mana kita ingin menyimpan log (informasi) dari gammu. Saya taruh di /var/log/gammulog</strong></p>
 <pre tabindex="0"><code class="language-terminal" data-lang="terminal">logfile = /var/log/gammulog
 </code></pre><p>Gambar</p>
-<h2 id="untuk-logformat-saya-pilih-textdate-nantinya-log-gammu-akan-menyimpan-informasi-teks-beserta-tanggal-dan-jam-kejadianya">Untuk logformat saya pilih textdate. Nantinya, log gammu akan menyimpan informasi teks beserta tanggal dan jam kejadianya.</h2>
+<p><strong>Untuk logformat saya pilih textdate. Nantinya, log gammu akan menyimpan informasi teks beserta tanggal dan jam kejadianya.</strong></p>
 <pre tabindex="0"><code class="language-terminal" data-lang="terminal">logformat = textdate
 </code></pre><p>Gambar</p>
-<h2 id="setelah-itu-save-dan-konfigurasi-gammu-tersebut-akan-tersimpan-di-file-gammurc-pada-direktori-home-user-yang-kita-gunakan">Setelah itu save, dan konfigurasi gammu tersebut akan tersimpan di file .gammurc pada direktori home user yang kita gunakan.</h2>
+<p><strong>Setelah itu save, dan konfigurasi gammu tersebut akan tersimpan di file .gammurc pada direktori home user yang kita gunakan.</strong></p>
 <p>Gambar</p>
 <p>Gambar</p>
-<h2 id="kita-matikan-dulu-service-gammu-smsd-kenapa-karena-jika-service-tersebut-berjalan-kita-tidak-bisa-menggunakan-perintah-gammu-di-terminal-masukkan-perintah-">Kita matikan dulu service gammu-smsd. Kenapa? Karena jika service tersebut berjalan, kita tidak bisa menggunakan perintah gammu di terminal. Masukkan perintah :</h2>
+<p><strong>Kita matikan dulu service gammu-smsd. Kenapa? Karena jika service tersebut berjalan, kita tidak bisa menggunakan perintah gammu di terminal. Masukkan perintah :</strong></p>
 <pre tabindex="0"><code class="language-terminal" data-lang="terminal">sudo /etc/init.d/gammu-smsd stop
-</code></pre><h2 id="kita-cek-apakah-settingan-gammu-dengan-modem-tersebut-sudah-benar-atau-belum-masukkan-perintah-">Kita cek apakah settingan gammu dengan modem tersebut sudah benar atau belum. Masukkan perintah :</h2>
+</code></pre><p><strong>Kita cek apakah settingan gammu dengan modem tersebut sudah benar atau belum. Masukkan perintah :</strong></p>
 <pre tabindex="0"><code class="language-terminal" data-lang="terminal">sudo gammu --identify
 </code></pre><p>Jika sudah muncul informasi dari modem yang menancap pada komputer kita, berarti settingan benar. Kita periksa dengan cara mencoba mengirim SMS menggunakan perintah sudo gammu sendsms TEXT no_tujuan -text &ldquo;isi sms&rdquo;. Contohnya:</p>
 <pre tabindex="0"><code class="language-terminal" data-lang="terminal">sudo gammu sendsms TEXT +62xxxxxxxxxxx -text &#34;ini pesan gammu&#34;
 </code></pre><p>gambar</p>
 <p>Jika berhasil mengirim SMS, berarti semua settingan berhasil. Tapi bila kita gagal mengirim SMS, coba periksa settingan port pada konfigurasi gammu. Atau ulangi cara di atas dari dmesg | grep tty dan jangan lupa ganti port-nya. Jika semua port yang ada sudah kita coba tetapi masih gagal, coba ganti connection-nya.</p>
-<h2 id="kemudian-kita-setting-gammu-smsd-nya-agar-service-gammu-bisa-terhubung-dengan-database-edit-file-etcgammu-smsdrc-dengan-perintah-">Kemudian kita setting gammu-smsd-nya agar service gammu bisa terhubung dengan database. Edit file /etc/gammu-smsdrc dengan perintah :</h2>
+<p><strong>Kemudian kita setting gammu-smsd-nya agar service gammu bisa terhubung dengan database. Edit file /etc/gammu-smsdrc dengan perintah :</strong></p>
 <pre tabindex="0"><code class="language-terminal" data-lang="terminal">sudo gedit /etc/gammu-smsdrc
 </code></pre><p>Gambar</p>
-<h2 id="sesuaikan-konfigurasi-seperti-ini-">Sesuaikan konfigurasi seperti ini :</h2>
+<p><strong>Sesuaikan konfigurasi seperti ini :</strong></p>
 <pre tabindex="0"><code class="language-terminal" data-lang="terminal"># Configuration file for Gammu SMS Daemon
 
 # Gammu library configuration, see gammurc(5)
@@ -257,7 +244,7 @@ user = root
 password = rahasia
 database = terserah
 </code></pre><p>Gambar</p>
-<h2 id="simpan-dan-jangan-lupa-untuk-menjalankan-kembali-service-gammu-dengan-perintah-">Simpan dan jangan lupa untuk menjalankan kembali service gammu dengan perintah :</h2>
+<p><strong>Simpan dan jangan lupa untuk menjalankan kembali service gammu dengan perintah :</strong></p>
 <pre tabindex="0"><code class="language-terminal" data-lang="terminal">sudo /etc/init.d/gammu-smsd start
 </code></pre></div><div class="post-footer" id="post-footer">
   <div class="post-info">
