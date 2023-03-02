@@ -10,7 +10,7 @@
 <meta name="description" content="membangun SMS Gateway dengan Gammu" /><meta name="keywords" content='draft' /><meta itemprop="name" content="membangun SMS Gateway dengan Gammu">
 <meta itemprop="description" content="membangun SMS Gateway dengan Gammu"><meta itemprop="datePublished" content="2023-03-01T15:07:40+07:00" />
 <meta itemprop="dateModified" content="2023-03-01T15:07:40+07:00" />
-<meta itemprop="wordCount" content="534">
+<meta itemprop="wordCount" content="531">
 <meta itemprop="keywords" content="draft," /><meta property="og:title" content="membangun SMS Gateway dengan Gammu" />
 <meta property="og:description" content="membangun SMS Gateway dengan Gammu" />
 <meta property="og:type" content="article" />
@@ -31,7 +31,7 @@
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "http:\/\/www.rumah-it.com\/posts\/membangun-_sms_gateway_dengan_gammu\/"
-    },"genre": "posts","keywords": "draft","wordcount":  534 ,
+    },"genre": "posts","keywords": "draft","wordcount":  531 ,
     "url": "http:\/\/www.rumah-it.com\/posts\/membangun-_sms_gateway_dengan_gammu\/","datePublished": "2023-03-01T15:07:40+07:00","dateModified": "2023-03-01T15:07:40+07:00","publisher": {
       "@type": "Organization",
       "name": ""},"author": {
@@ -150,7 +150,7 @@
       <div class="post-meta-line"><span class="post-author"><span class="author"><i class="fa-solid fa-user-circle" aria-hidden="true"></i>
       </span></span>
           <span class="post-category">included in <a href="/categories/draft/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> draft</a></span></div>
-      <div class="post-meta-line"><span title=2023-03-01&#32;15:07:40><i class="fa-regular fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-03-01">2023-03-01</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw" aria-hidden="true"></i> 534 words</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw" aria-hidden="true"></i> 3 minutes</span>&nbsp;<span id="busuanzi_container_page_pv" class="busuanzi_visitors comment-visitors" data-flag-title="membangun SMS Gateway dengan Gammu">
+      <div class="post-meta-line"><span title=2023-03-01&#32;15:07:40><i class="fa-regular fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-03-01">2023-03-01</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw" aria-hidden="true"></i> 531 words</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw" aria-hidden="true"></i> 3 minutes</span>&nbsp;<span id="busuanzi_container_page_pv" class="busuanzi_visitors comment-visitors" data-flag-title="membangun SMS Gateway dengan Gammu">
             <i class="fa-regular fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_page_pv">-</span>&nbsp;views
           </span>&nbsp;</div>
     </div><div class="details toc" id="toc-static" data-kept="false">
@@ -163,6 +163,8 @@
     <li>
       <ul>
         <li><a href="#apa-itu-sms-gateway">Apa itu SMS-Gateway?</a></li>
+        <li><a href="#install-gammu-dan-gammu-smsd">Install gammu dan gammu-smsd</a></li>
+        <li><a href="#setting-gammu-smsd">Setting gammu-smsd</a></li>
       </ul>
     </li>
   </ul>
@@ -172,7 +174,8 @@
 <p>Secara sederhana SMS-Gateway adalah suatu layanan SMS (Short Message Service) yang memungkinkan untuk melakukan pengiriman SMS, maupun penerimaan SMS melalui komputer. Kita bisa dengan mudah melakukan menejemen SMS dengan komputer kita.</p>
 <p>Pada kesempatan kali ini saya akan berbagi cara membangun SMS-Gateway dengan Gammu. Spesifikasi sistem operasi komputer saya menggunakan Ubuntu 18.04 LTS dan modem Wavecom Fastrack M1306B.</p>
 <p>Berikut langkah-langkah instalasinya :</p>
-<p><strong>Install gammu dan juga gammu-smsd menggunakan terminal, pastikan terhubung dengan internet. Masukkan perintah di terminal :</strong></p>
+<h3 id="install-gammu-dan-gammu-smsd">Install gammu dan gammu-smsd</h3>
+<p><strong>Buka terminal, pastikan terhubung dengan internet. Masukkan perintah di terminal :</strong></p>
 <pre tabindex="0"><code class="language-terminal" data-lang="terminal">sudo apt-get update
 sudo apt-get install gammu gammu-smsd
 </code></pre><p>Gambar</p>
@@ -215,7 +218,8 @@ sudo apt-get install gammu gammu-smsd
 <pre tabindex="0"><code class="language-terminal" data-lang="terminal">sudo gammu sendsms TEXT +62xxxxxxxxxxx -text &#34;ini pesan gammu&#34;
 </code></pre><p>gambar</p>
 <p>Jika berhasil mengirim SMS, berarti semua settingan berhasil. Tapi bila kita gagal mengirim SMS, coba periksa settingan port pada konfigurasi gammu. Atau ulangi cara di atas dari dmesg | grep tty dan jangan lupa ganti port-nya. Jika semua port yang ada sudah kita coba tetapi masih gagal, coba ganti connection-nya.</p>
-<p><strong>Kemudian kita setting gammu-smsd-nya agar service gammu bisa terhubung dengan database. Edit file /etc/gammu-smsdrc dengan perintah :</strong></p>
+<h3 id="setting-gammu-smsd">Setting gammu-smsd</h3>
+<p><strong>Agar service gammu bisa terhubung dengan database. Edit file /etc/gammu-smsdrc dengan perintah :</strong></p>
 <pre tabindex="0"><code class="language-terminal" data-lang="terminal">sudo gedit /etc/gammu-smsdrc
 </code></pre><p>Gambar</p>
 <p><strong>Sesuaikan konfigurasi seperti ini :</strong></p>
