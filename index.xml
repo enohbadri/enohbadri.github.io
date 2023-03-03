@@ -6,6 +6,15 @@
     <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 01 Mar 2023 15:07:40 &#43;0700</lastBuildDate>
       <atom:link href="http://www.rumah-it.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
+  <title>Membangun SMS Gateway dengan Gammu</title>
+  <link>http://www.rumah-it.com/posts/membangun-_sms_gateway_dengan_gammu/</link>
+  <pubDate>Wed, 01 Mar 2023 15:07:40 &#43;0700</pubDate>
+  <author>Enoh Badrie</author>
+  <guid>http://www.rumah-it.com/posts/membangun-_sms_gateway_dengan_gammu/</guid>
+  <description><![CDATA[<p><figure><a class="lightgallery" href="/posts/membangun-_sms_gateway_dengan_gammu/modem.jpeg" data-thumbnail="/posts/membangun-_sms_gateway_dengan_gammu/modem.jpeg" data-sub-html="<h2>WAVECOM Fastrack M130B - WM17253</h2><p>WAVECOM Fastrack M130B - WM17253</p>"></a><figcaption class="image-caption">WAVECOM Fastrack M130B - WM17253</figcaption>
+  </figure></p>]]></description>
+</item>
+<item>
   <title>Cara Cepat Menghitung VLSM</title>
   <link>http://www.rumah-it.com/posts/cara_cepat_menghitung_vlsm/</link>
   <pubDate>Tue, 28 Feb 2023 10:49:28 &#43;0700</pubDate>
@@ -84,15 +93,6 @@
   <author>Enoh Badrie</author>
   <guid>http://www.rumah-it.com/posts/static_routing_cisco/</guid>
   <description><![CDATA[<p><figure><a class="lightgallery" href="/posts/static_routing_cisco/cisco3.png" data-thumbnail="/posts/static_routing_cisco/cisco3.png" data-sub-html="<h2>Static Routing</h2><p>Cisco</p>"></a><figcaption class="image-caption">Static Routing</figcaption>
-  </figure></p>]]></description>
-</item>
-<item>
-  <title>Topologi Jaringan Komputer</title>
-  <link>http://www.rumah-it.com/posts/jenis_topologi_jaringan_komputer/</link>
-  <pubDate>Tue, 28 Feb 2023 10:49:28 &#43;0700</pubDate>
-  <author>Enoh Badrie</author>
-  <guid>http://www.rumah-it.com/posts/jenis_topologi_jaringan_komputer/</guid>
-  <description><![CDATA[<p><figure><a class="lightgallery" href="/posts/jenis_topologi_jaringan_komputer/topologi-hybrid.jpg" data-thumbnail="/posts/jenis_topologi_jaringan_komputer/topologi-hybrid.jpg" data-sub-html="<h2>Topologi Jaringan Komputer</h2><p>Topologi Hybrid</p>"></a><figcaption class="image-caption">Topologi Jaringan Komputer</figcaption>
   </figure></p>]]></description>
 </item>
 </channel>

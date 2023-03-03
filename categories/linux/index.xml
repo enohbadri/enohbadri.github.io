@@ -1,0 +1,16 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>Linux - Category - enohbadrie</title>
+    <link>http://www.rumah-it.com/categories/linux/</link>
+    <description>Linux - Category - enohbadrie</description>
+    <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 01 Mar 2023 15:07:40 &#43;0700</lastBuildDate><atom:link href="http://www.rumah-it.com/categories/linux/" rel="self" type="application/rss+xml" /><item>
+  <title>Membangun SMS Gateway dengan Gammu</title>
+  <link>http://www.rumah-it.com/posts/membangun-_sms_gateway_dengan_gammu/</link>
+  <pubDate>Wed, 01 Mar 2023 15:07:40 &#43;0700</pubDate>
+  <author>Enoh Badrie</author>
+  <guid>http://www.rumah-it.com/posts/membangun-_sms_gateway_dengan_gammu/</guid>
+  <description><![CDATA[<p><figure><a class="lightgallery" href="/posts/membangun-_sms_gateway_dengan_gammu/modem.jpeg" data-thumbnail="/posts/membangun-_sms_gateway_dengan_gammu/modem.jpeg" data-sub-html="<h2>WAVECOM Fastrack M130B - WM17253</h2><p>WAVECOM Fastrack M130B - WM17253</p>"></a><figcaption class="image-caption">WAVECOM Fastrack M130B - WM17253</figcaption>
+  </figure></p>]]></description>
+</item>
+</channel>
+</rss>
