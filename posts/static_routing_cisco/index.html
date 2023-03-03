@@ -10,7 +10,7 @@
 <meta name="description" content="Static Routing-Cisco PT" /><meta name="keywords" content='Routing, Cisco' /><meta itemprop="name" content="Static Routing-Cisco PT">
 <meta itemprop="description" content="Static Routing-Cisco PT"><meta itemprop="datePublished" content="2023-02-28T10:49:28+07:00" />
 <meta itemprop="dateModified" content="2023-02-28T10:49:28+07:00" />
-<meta itemprop="wordCount" content="1169">
+<meta itemprop="wordCount" content="1164">
 <meta itemprop="keywords" content="Routing,Cisco," /><meta property="og:title" content="Static Routing-Cisco PT" />
 <meta property="og:description" content="Static Routing-Cisco PT" />
 <meta property="og:type" content="article" />
@@ -31,7 +31,7 @@
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "http:\/\/www.rumah-it.com\/posts\/static_routing_cisco\/"
-    },"genre": "posts","keywords": "Routing, Cisco","wordcount":  1169 ,
+    },"genre": "posts","keywords": "Routing, Cisco","wordcount":  1164 ,
     "url": "http:\/\/www.rumah-it.com\/posts\/static_routing_cisco\/","datePublished": "2023-02-28T10:49:28+07:00","dateModified": "2023-02-28T10:49:28+07:00","publisher": {
       "@type": "Organization",
       "name": ""},"author": {
@@ -150,7 +150,7 @@
       <div class="post-meta-line"><span class="post-author"><a href="https://" title="Author" rel=" author" class="author"><i class="fa-solid fa-user-circle" aria-hidden="true"></i>
     Enoh Badrie</a></span>
           <span class="post-category">included in <a href="/categories/administrasi-infrastruktur-jaringan/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> Administrasi Infrastruktur Jaringan</a></span></div>
-      <div class="post-meta-line"><span title=2023-02-28&#32;10:49:28><i class="fa-regular fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-02-28">2023-02-28</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw" aria-hidden="true"></i> 1169 words</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw" aria-hidden="true"></i> 6 minutes</span>&nbsp;<span id="busuanzi_container_page_pv" class="busuanzi_visitors comment-visitors" data-flag-title="Static Routing-Cisco PT">
+      <div class="post-meta-line"><span title=2023-02-28&#32;10:49:28><i class="fa-regular fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-02-28">2023-02-28</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw" aria-hidden="true"></i> 1164 words</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw" aria-hidden="true"></i> 6 minutes</span>&nbsp;<span id="busuanzi_container_page_pv" class="busuanzi_visitors comment-visitors" data-flag-title="Static Routing-Cisco PT">
               <i class="fa-regular fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_page_pv">-</span>&nbsp;views
             </span>&nbsp;</div>
     </div><div class="details toc" id="toc-static" data-kept="false">
@@ -162,27 +162,29 @@
   <ul>
     <li>
       <ul>
-        <li><a href="#tampilan-awal-packet-tracer">TAMPILAN AWAL PACKET TRACER</a></li>
-        <li><a href="#komponen-yang-akan-anda-gunakan">Komponen yang akan anda gunakan</a></li>
+        <li><a href="#apa-itu-static-route">Apa itu Static Route?</a></li>
+        <li><a href="#tampilan-packet-tracer">TAMPILAN PACKET TRACER</a></li>
+        <li><a href="#komponen-yang-digunakan">Komponen yang digunakan</a></li>
         <li><a href="#topologi-jaringan">Topologi Jaringan</a></li>
         <li><a href="#konfigurasi-masing-masing-komponen">Konfigurasi masing masing komponen</a></li>
-        <li><a href="#konfigurasi-ip-address-pada-pc-0">Konfigurasi Ip address pada PC 0</a></li>
-        <li><a href="#konfigurasi-ip-address-pada-pc-1">Konfigurasi IP Address pada PC 1</a></li>
-        <li><a href="#konfigurasi-ip-address-fa-00-pada-router-0">Konfigurasi IP Address fa 0/0 pada router 0</a></li>
-        <li><a href="#konfigurasi-ip-address-fa-01-pada-router-0">Konfigurasi IP Address fa 0/1 pada router 0</a></li>
-        <li><a href="#konfigurasi-ip-address-fa-00-pada-router-1">Konfigurasi IP Address fa 0/0 pada router 1</a></li>
-        <li><a href="#konfigurasi-ip-address-fa-01-pada-router-1">Konfigurasi IP Address fa 0/1 pada router 1</a></li>
+        <li><a href="#konfiguras-ip-pada-pc-0">Konfiguras IP pada PC 0</a></li>
+        <li><a href="#konfigurasi-ip-pada-pc-1">Konfigurasi IP pada PC 1</a></li>
+        <li><a href="#konfigurasi-ip-fa-00-pada-router-0">Konfigurasi IP fa 0/0 pada router 0</a></li>
+        <li><a href="#konfigurasi-ip-fa-01-pada-router-0">Konfigurasi IP fa 0/1 pada router 0</a></li>
+        <li><a href="#konfigurasi-ip-fa-00-pada-router-1">Konfigurasi IP fa 0/0 pada router 1</a></li>
+        <li><a href="#konfigurasi-ip-fa-01-pada-router-1">Konfigurasi IP fa 0/1 pada router 1</a></li>
         <li><a href="#konfigurasi-masing-masing-komponen-1">Konfigurasi masing masing komponen</a></li>
-        <li><a href="#konfigurasi-static-routers-pada-router-0">Konfigurasi static routers pada router 0</a></li>
-        <li><a href="#konfigurasi-static-routers-pada-router-1">Konfigurasi static routers pada router 1</a></li>
-        <li><a href="#uji-koneksi-dari-dari-pc-1">Uji koneksi dari dari PC 1</a></li>
-        <li><a href="#uji-koneksi-dari-dari-pc-0">Uji koneksi dari dari PC 0</a></li>
+        <li><a href="#konfigurasi-static-route-pada-router-0">Konfigurasi static route pada router 0</a></li>
+        <li><a href="#konfigurasi-static-route-pada-router-1">Konfigurasi static route pada router 1</a></li>
+        <li><a href="#test-koneksi-dari-dari-pc-1">Test koneksi dari dari PC 1</a></li>
+        <li><a href="#test-koneksi-dari-dari-pc-0">Test koneksi dari dari PC 0</a></li>
       </ul>
     </li>
   </ul>
 </nav></div>
       </div><div class="content" id="content"><p><figure><a class="lightgallery" href="/posts/static_routing_cisco/cisco3.png" data-thumbnail="/posts/static_routing_cisco/cisco3.png" data-sub-html="<h2>Static Routing</h2><p>Cisco</p>"><img loading="lazy" src="cisco3.png" srcset="/posts/static_routing_cisco/cisco3.png, cisco3.png 1.5x, /posts/static_routing_cisco/cisco3.png 2x" sizes="auto" data-title="Cisco" data-alt="Static Routing" width="400" height="325" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></a><figcaption class="image-caption">Static Routing</figcaption>
   </figure></p>
+<h3 id="apa-itu-static-route">Apa itu Static Route?</h3>
 <p>Static route adalah rute-rute ke host atau jaringan tujuan yang dimasukkan secara manual oleh administrator jaringan ke route table suatu router. Static route mendefinisikan alamat IP hop router berikutnya dan interface lokal yang digunakan untuk mem-forward paket ke tujuan tertentu (hop router berikutnya).Static route memiliki keunggulan untuk menghemat bandwidth jaringan karena static route tidak membangkitkan trafik route update untuk memberikan informasi perubahan rute yang berlaku (sah) saat ini ke router-router lain. Tetapi penggunaan static route cenderung membutuhkan waktu ekstra ketika memanajemen jaringan. Hal ini disebabkan karena sistem administrator harus secara manual meng-update route table ketika terjadi perubahan konfigurasi jaringan.Setelah memahami definisi di atas maka sekarang kita akan belajar untuk melakukan konfigurasi static router menggunakan bantuan aplikasi packet tracer. Seperti tutorial saya teerdahulu kita akan mebahas komponen - komponen apa sajakah yang akan kita gunakan nantinya dalam melakukan konfigurasi ini.</p>
 <ul>
 <li>2 buah router 1841 (atau yang lain )</li>
@@ -242,9 +244,9 @@
 konfigurasi yang sama ataupun saling berhubungan. Dari pengelompokan di atas jelas terlihat ada 3 komponen warna maka itu bisa kita sebut sebagai jaringan yang akan anda design ini memiliki 3 segmen. Sekarang kita akan mulai untuk masuk kedalam konfigurasi jaringan tersebut. Untuk awalan silahkan anda siapkan terlebih dahulu aplikasi Packet Tracer anda hingga lembar kerja Paket Tracer telah siap untuk di gunakan.</p>
 <p><figure><a class="lightgallery" href="/posts/static_routing_cisco/cisco1.png" data-thumbnail="/posts/static_routing_cisco/cisco1.png" data-sub-html="<h2>Static Routing</h2><p>Cisco</p>"><img loading="lazy" src="cisco1.png" srcset="/posts/static_routing_cisco/cisco1.png, cisco1.png 1.5x, /posts/static_routing_cisco/cisco1.png 2x" sizes="auto" data-title="Cisco" data-alt="Static Routing" width="400" height="323" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></a><figcaption class="image-caption">Static Routing</figcaption>
   </figure></p>
-<h3 id="tampilan-awal-packet-tracer">TAMPILAN AWAL PACKET TRACER</h3>
+<h3 id="tampilan-packet-tracer">TAMPILAN PACKET TRACER</h3>
 <p>Setelah muncul tampilan seperti di atas maka silahkan anda menyiapkan komponen komponen yang telah saya sebutkan di atas.</p>
-<h3 id="komponen-yang-akan-anda-gunakan">Komponen yang akan anda gunakan</h3>
+<h3 id="komponen-yang-digunakan">Komponen yang digunakan</h3>
 <p>Setelah komponen komponen anda siap maka sekarang anda hubungkan menggunakan kabel
 yang telah di jelaskan dia atas. Untuk letak komponen komponennya anda bisa mendesign nya secara bebas tidak perlu meniru apa yang saya contohkan seperti di atas.</p>
 <p><figure><a class="lightgallery" href="/posts/static_routing_cisco/cisco2.png" data-thumbnail="/posts/static_routing_cisco/cisco2.png" data-sub-html="<h2>Static Routing</h2><p>Cisco</p>"><img loading="lazy" src="cisco2.png" srcset="/posts/static_routing_cisco/cisco2.png, cisco2.png 1.5x, /posts/static_routing_cisco/cisco2.png 2x" sizes="auto" data-title="Cisco" data-alt="Static Routing" width="400" height="323" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></a><figcaption class="image-caption">Static Routing</figcaption>
@@ -257,7 +259,7 @@ yang telah di jelaskan dia atas. Untuk letak komponen komponennya anda bisa mend
 <p>Setelah memahami langkah di bawah ini maka langkah selanjutnya adalah melakukan konfigurasi terhadap masing - masing dari komponen. Untuk yang pertama kita akan mengkonfigurasi PC 0. Klik pada PC 0 kemudian anda pilih sub menu Desktop dan pilih IP Configuration. Silahkan anda ketikkan Ip Addressnya sesuai dengan yang kita rencanakan tadi.</p>
 <p><figure><a class="lightgallery" href="/posts/static_routing_cisco/cisco3.png" data-thumbnail="/posts/static_routing_cisco/cisco3.png" data-sub-html="<h2>Static Routing</h2><p>Cisco</p>"><img loading="lazy" src="cisco3.png" srcset="/posts/static_routing_cisco/cisco3.png, cisco3.png 1.5x, /posts/static_routing_cisco/cisco3.png 2x" sizes="auto" data-title="Cisco" data-alt="Static Routing" width="400" height="325" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></a><figcaption class="image-caption">Static Routing</figcaption>
   </figure></p>
-<h3 id="konfigurasi-ip-address-pada-pc-0">Konfigurasi Ip address pada PC 0</h3>
+<h3 id="konfiguras-ip-pada-pc-0">Konfiguras IP pada PC 0</h3>
 <p><figure><a class="lightgallery" href="/posts/static_routing_cisco/pc0.png" data-thumbnail="/posts/static_routing_cisco/pc0.png" data-sub-html="<h2>Static Routing</h2><p>Cisco</p>"><img loading="lazy" src="pc0.png" srcset="/posts/static_routing_cisco/pc0.png, pc0.png 1.5x, /posts/static_routing_cisco/pc0.png 2x" sizes="auto" data-title="Cisco" data-alt="Static Routing" width="400" height="318" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></a><figcaption class="image-caption">Static Routing</figcaption>
   </figure></p>
 <div class="details admonition tip open">
@@ -268,11 +270,11 @@ yang telah di jelaskan dia atas. Untuk letak komponen komponennya anda bisa mend
       <div class="admonition-content">lakukan cara yang sama untuk melakukan konfigurasi terhadap PC 1.</div>
     </div>
   </div>
-<h3 id="konfigurasi-ip-address-pada-pc-1">Konfigurasi IP Address pada PC 1</h3>
+<h3 id="konfigurasi-ip-pada-pc-1">Konfigurasi IP pada PC 1</h3>
 <p>setelah kedua PC telah terkonfigurasi maka sekarang saatnya kita lakukan kofigurasi terhadap router kita.Pada router kita akan melakukan konfigurasi sebanyak 3 hal yaitu membeikan IP address untuk fa 0/0, fa 0/1, serta Routing static. Untuk yang pertama kali kita akan melakukan konfigurasi Ip address untuk fa 0/0 dan fa 0/1. Caranya adalah silahkan anda klik pada router 0 kemudian anda masuk ke dalam sub menu config dan pilih fa0/0 lalu fa 0/1 unntuk di konfigurasi.</p>
 <p><figure><a class="lightgallery" href="/posts/static_routing_cisco/pc1.png" data-thumbnail="/posts/static_routing_cisco/pc1.png" data-sub-html="<h2>Static Routing</h2><p>Cisco</p>"><img loading="lazy" src="pc1.png" srcset="/posts/static_routing_cisco/pc1.png, pc1.png 1.5x, /posts/static_routing_cisco/pc1.png 2x" sizes="auto" data-title="Cisco" data-alt="Static Routing" width="400" height="319" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></a><figcaption class="image-caption">Static Routing</figcaption>
   </figure></p>
-<h3 id="konfigurasi-ip-address-fa-00-pada-router-0">Konfigurasi IP Address fa 0/0 pada router 0</h3>
+<h3 id="konfigurasi-ip-fa-00-pada-router-0">Konfigurasi IP fa 0/0 pada router 0</h3>
 <p><figure><a class="lightgallery" href="/posts/static_routing_cisco/router0.png" data-thumbnail="/posts/static_routing_cisco/router0.png" data-sub-html="<h2>Static Routing</h2><p>Cisco</p>"><img loading="lazy" src="router0.png" srcset="/posts/static_routing_cisco/router0.png, router0.png 1.5x, /posts/static_routing_cisco/router0.png 2x" sizes="auto" data-title="Cisco" data-alt="Static Routing" width="400" height="319" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></a><figcaption class="image-caption">Static Routing</figcaption>
   </figure></p>
 <div class="details admonition tip open">
@@ -283,13 +285,13 @@ yang telah di jelaskan dia atas. Untuk letak komponen komponennya anda bisa mend
       <div class="admonition-content">lakukan konfigurasi dengan cara yang sama seperti di atas untuk router 1</div>
     </div>
   </div>
-<h3 id="konfigurasi-ip-address-fa-01-pada-router-0">Konfigurasi IP Address fa 0/1 pada router 0</h3>
+<h3 id="konfigurasi-ip-fa-01-pada-router-0">Konfigurasi IP fa 0/1 pada router 0</h3>
 <p><figure><a class="lightgallery" href="/posts/static_routing_cisco/router0_fa01.png" data-thumbnail="/posts/static_routing_cisco/router0_fa01.png" data-sub-html="<h2>Static Routing</h2><p>Cisco</p>"><img loading="lazy" src="router0_fa01.png" srcset="/posts/static_routing_cisco/router0_fa01.png, router0_fa01.png 1.5x, /posts/static_routing_cisco/router0_fa01.png 2x" sizes="auto" data-title="Cisco" data-alt="Static Routing" width="400" height="317" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></a><figcaption class="image-caption">Static Routing</figcaption>
   </figure></p>
-<h3 id="konfigurasi-ip-address-fa-00-pada-router-1">Konfigurasi IP Address fa 0/0 pada router 1</h3>
+<h3 id="konfigurasi-ip-fa-00-pada-router-1">Konfigurasi IP fa 0/0 pada router 1</h3>
 <p><figure><a class="lightgallery" href="/posts/static_routing_cisco/ip_router1.png" data-thumbnail="/posts/static_routing_cisco/ip_router1.png" data-sub-html="<h2>Static Routing</h2><p>Cisco</p>"><img loading="lazy" src="ip_router1.png" srcset="/posts/static_routing_cisco/ip_router1.png, ip_router1.png 1.5x, /posts/static_routing_cisco/ip_router1.png 2x" sizes="auto" data-title="Cisco" data-alt="Static Routing" width="400" height="316" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></a><figcaption class="image-caption">Static Routing</figcaption>
   </figure></p>
-<h3 id="konfigurasi-ip-address-fa-01-pada-router-1">Konfigurasi IP Address fa 0/1 pada router 1</h3>
+<h3 id="konfigurasi-ip-fa-01-pada-router-1">Konfigurasi IP fa 0/1 pada router 1</h3>
 <p><figure><a class="lightgallery" href="/posts/static_routing_cisco/ip_router1_fa01.png" data-thumbnail="/posts/static_routing_cisco/ip_router1_fa01.png" data-sub-html="<h2>Static Routing</h2><p>Cisco</p>"><img loading="lazy" src="ip_router1_fa01.png" srcset="/posts/static_routing_cisco/ip_router1_fa01.png, ip_router1_fa01.png 1.5x, /posts/static_routing_cisco/ip_router1_fa01.png 2x" sizes="auto" data-title="Cisco" data-alt="Static Routing" width="400" height="314" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></a><figcaption class="image-caption">Static Routing</figcaption>
   </figure></p>
 <p>Setelah anda melakukan konfigurasi terhadap semua IP Address pada setiap komponen maka sekarang saatnya untuk melakukan konfigurasi terhadap routing static. Untuk melakukan konfigurasi ini anda perlu ketelitian dan hati - hati karena apabila konfigurasi static routes ini salah maka anda tidak akan dapat terhubung antar komponen. Di dalam static routers ada 3 hal yang haru anda pahami dan isi.</p>
@@ -311,7 +313,7 @@ adalah kelas B maka Networknya adalah 172.31.0.0</li>
 network tadi adalah 192.168.27.2</li>
 </ol>
 <p>setelah selesai anda bisa klik add. Maka hasilnya akan tampak sebagai berikut ini.</p>
-<h3 id="konfigurasi-static-routers-pada-router-0">Konfigurasi static routers pada router 0</h3>
+<h3 id="konfigurasi-static-route-pada-router-0">Konfigurasi static route pada router 0</h3>
 <p><figure><a class="lightgallery" href="/posts/static_routing_cisco/config_r0.png" data-thumbnail="/posts/static_routing_cisco/config_r0.png" data-sub-html="<h2>Static Routing</h2><p>Cisco</p>"><img loading="lazy" src="config_r0.png" srcset="/posts/static_routing_cisco/config_r0.png, config_r0.png 1.5x, /posts/static_routing_cisco/config_r0.png 2x" sizes="auto" data-title="Cisco" data-alt="Static Routing" width="400" height="319" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></a><figcaption class="image-caption">Static Routing</figcaption>
   </figure></p>
 <p>dengan cara dan langkah yang sama seperti di atas konfigurasi juga Static Routes pada router 1</p>
@@ -324,14 +326,14 @@ adalah kelas A maka Networknya adalah 10.0.0.0</li>
 network tadi adalah 192.168.27.1</li>
 </ol>
 <p>setelah selesai anda bisa klik add. Maka hasilnya akan tampak sebagai berikut ini.</p>
-<h3 id="konfigurasi-static-routers-pada-router-1">Konfigurasi static routers pada router 1</h3>
+<h3 id="konfigurasi-static-route-pada-router-1">Konfigurasi static route pada router 1</h3>
 <p><figure><a class="lightgallery" href="/posts/static_routing_cisco/config_r0.png" data-thumbnail="/posts/static_routing_cisco/config_r0.png" data-sub-html="<h2>Static Routing</h2><p>Cisco</p>"><img loading="lazy" src="config_r0.png" srcset="/posts/static_routing_cisco/config_r0.png, config_r0.png 1.5x, /posts/static_routing_cisco/config_r0.png 2x" sizes="auto" data-title="Cisco" data-alt="Static Routing" width="400" height="319" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></a><figcaption class="image-caption">Static Routing</figcaption>
   </figure></p>
 <p>setelah anda melakukan konfigurasi tadi maka langkah selanjutnya adalah melakukan uji coba konektivitas jaringan menggunakan perintah ping. Silahkan anda lakukan ping dari PC 0 ke PC 1 begitu pula sebaliknya jika anda mendapati hasil seperti di bawah ini maka konfigurasi anda telah benar.</p>
-<h3 id="uji-koneksi-dari-dari-pc-1">Uji koneksi dari dari PC 1</h3>
+<h3 id="test-koneksi-dari-dari-pc-1">Test koneksi dari dari PC 1</h3>
 <p><figure><a class="lightgallery" href="/posts/static_routing_cisco/cmd1.png" data-thumbnail="/posts/static_routing_cisco/cmd1.png" data-sub-html="<h2>Static Routing</h2><p>Cisco</p>"><img loading="lazy" src="cmd1.png" srcset="/posts/static_routing_cisco/cmd1.png, cmd1.png 1.5x, /posts/static_routing_cisco/cmd1.png 2x" sizes="auto" data-title="Cisco" data-alt="Static Routing" width="400" height="314" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></a><figcaption class="image-caption">Static Routing</figcaption>
   </figure></p>
-<h3 id="uji-koneksi-dari-dari-pc-0">Uji koneksi dari dari PC 0</h3>
+<h3 id="test-koneksi-dari-dari-pc-0">Test koneksi dari dari PC 0</h3>
 <p><figure><a class="lightgallery" href="/posts/static_routing_cisco/cmd0.png" data-thumbnail="/posts/static_routing_cisco/cmd0.png" data-sub-html="<h2>Static Routing</h2><p>Cisco</p>"><img loading="lazy" src="cmd0.png" srcset="/posts/static_routing_cisco/cmd0.png, cmd0.png 1.5x, /posts/static_routing_cisco/cmd0.png 2x" sizes="auto" data-title="Cisco" data-alt="Static Routing" width="400" height="319" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></a><figcaption class="image-caption">Static Routing</figcaption>
   </figure></p>
 <p>Sampai sini anda sukses. Apabila anda tidak mendapatkan hasil seperti di atas maka anda salah dalam mengkonfigurasi Static routes tadi.</p>
