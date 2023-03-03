@@ -162,7 +162,6 @@
   <ul>
     <li>
       <ul>
-        <li></li>
         <li><a href="#1langkah-pertama-memberikan-identitas-pada-mikrotik-dengan-nama-peserta-ukk-port-2">1.Langkah pertama memberikan identitas pada mikrotik dengan nama peserta UKK (PORT 2)</a></li>
         <li><a href="#2ubah-nama-interface-double-klik-pada-ether1-ubah-menjadi-internet_nama">2.Ubah nama Interface <strong>“Double Klik pada ether1”</strong> ubah menjadi <strong>internet_nama</strong></a></li>
         <li><a href="#3double-klik-pada-ether2-ubah-menjadi-lab1_nama">3.<strong>“Double Klik pada ether2”</strong> ubah menjadi <strong>lab1_nama</strong></a></li>
@@ -174,9 +173,6 @@
         <li><a href="#7langkah-selanjutnya-adalah-masuk-ke-menu-firewall-lalu-nat-dan-tambahkan-rule">7.Langkah selanjutnya adalah masuk ke menu <strong>“Firewall”</strong> lalu <strong>“NAT”</strong> dan Tambahkan Rule</a></li>
         <li><a href="#pada-tab-action-pilih-masquerade">Pada tab action pilih <strong>“masquerade”</strong></a></li>
         <li><a href="#8-langkah-selanjutnya-adalah-menambahkan-alamat-ip-untuk-pc1-dan-pc2-coba-perhatikan-pada-soal-disana-disebutkan-bahwa-pc1-dan-pc2-menggunakan-ip-dengan-segment-yang-sama-maka-untuk-mempermudah-kita-bisa-mengunakan-menu-bridge-agar-kita-hanya-satu-kali-memasukan-ip-address-lakukan-langkah-seperti-gambar-berikut-">8. Langkah selanjutnya adalah menambahkan alamat IP untuk PC1 dan PC2, coba perhatikan pada soal, disana disebutkan bahwa PC1 dan PC2 menggunakan IP dengan segment yang sama, maka untuk mempermudah kita bisa mengunakan menu <strong>“Bridge”</strong> agar kita hanya satu kali memasukan IP Address. Lakukan langkah seperti gambar berikut :</a></li>
-        <li><a href="#lalu-pada-tab-port-pilih-interface-lab1_nama">Lalu pada tab <strong>“Port”</strong> pilih interface <strong>“lab1_nama”</strong></a></li>
-        <li><a href="#masih-pada-tab-port-pilh-interface-lab2_nama">Masih pada tab <strong>“Port”</strong> Pilh interface <strong>“lab2_nama”</strong></a></li>
-        <li><a href="#masih-pada-tab-port-pilh-interface-lab3_nama">Masih pada tab <strong>“Port”</strong> Pilh interface <strong>“lab3_nama”</strong></a></li>
         <li><a href="#9-langkah-selanjutnya-adalah-menambahkan-alamat-ip-pada-bridge-sesuai-soal-menggunakan-ip-address-1921503124-ip-address-gateway">9. Langkah selanjutnya adalah menambahkan alamat IP pada bridge sesuai Soal menggunakan IP Address 192.150.3.1/24 (IP Address Gateway)</a></li>
         <li><a href="#10membuat-dhcp-server-untuk-client-pc-non-hotspot">10.Membuat DHCP Server untuk client PC <strong>(Non Hotspot)</strong></a></li>
         <li><a href="#11-selanjutnya-menambahkan-ip-address-pada-interface-wlan-menggunakan-ip-1921513124">11. Selanjutnya menambahkan IP Address pada interface <strong>WLAN</strong> menggunakan IP 192.151.3.1/24</a></li>
@@ -194,17 +190,16 @@ Dalam kesempatan kali ini saya akan mencoba membahas soal Uji Kompetensi Keahlia
 Langkah Kerja	:
 Dalam kegiatan uji kompetensi ini anda bertindak sebagai Teknisi Jaringan. Tugas anda sebagai teknisi adalah membangun jaringan,sharing file,sharing printer dan membuat hak akses. Wifi Router berfungsi sebagai Gateway Jaringan Lokal, Hotspot, DHCP server, tersebut dishare ke client melalui jalur kabel (non hotspot) dan wireless (hotspot).
 Dengan konfigurasi sebagai berikut :
-:</p>
-<h4 id="1-identifikasi-dan-buatlah-daftar-kebutuhan-jaringan">1. Identifikasi dan buatlah daftar kebutuhan jaringan</h4>
-<h4 id="2-buatlah-spesifikasi-perangkat-yang-dibutuhkan">2. Buatlah spesifikasi perangkat yang dibutuhkan</h4>
-<h4 id="3-buatlah-spesifikasi-topologi-jaringan">3. Buatlah spesifikasi topologi jaringan</h4>
-<h4 id="4-konfigurasi--topologi-jaringan-dengan-ketentuan-sebagai-berikut">4. Konfigurasi  Topologi Jaringan dengan ketentuan sebagai berikut:</h4>
-<pre><code>    A. IP PC 1
-        a. IP PC 1		: 192.150.3.6/24
-        b. Gateway 	  : 192.150.3.1
-        c. Workgroup	: Nama_Peserta
-
-    B. IP PC 2
+:
+<strong>1. Identifikasi dan buatlah daftar kebutuhan jaringan</strong>
+<strong>2. Buatlah spesifikasi perangkat yang dibutuhkan</strong>
+<strong>3. Buatlah spesifikasi topologi jaringan</strong>
+<strong>4. Konfigurasi  Topologi Jaringan dengan ketentuan sebagai berikut:</strong>
+A. IP PC 1
+a. IP PC 1		: 192.150.3.6/24
+b. Gateway 	  : 192.150.3.1
+c. Workgroup	: Nama_Peserta</p>
+<pre><code>    B. IP PC 2
         a. IP PC 2		: 192.150.3.5/24
         b. Gateway 	  : 192.150.3.1
         c. Workgroup	: Nama_Peserta
@@ -218,13 +213,12 @@ Dengan konfigurasi sebagai berikut :
         PC 1			: share Drive C:/MyDocument/Biodata.doc
         Untuk PC 2 dan wireless client buat hak akses read only terhadap sharing document pada PC1
 </code></pre>
-<h4 id="5-lakukan-pengujian-pada-seluruh-client-pada-jaringan-dengan-ketentuan-sebagai-berikut">5. Lakukan pengujian pada seluruh client pada jaringan, dengan ketentuan sebagai berikut:</h4>
-<pre><code>  Client PC jaringan kabel:
-    a. Terhubung dengan port 2 pada wireless router
-    b. IP Address		: 192.150.3.1/24
-    c. Sistem operasi		: Windows
-
-  Client Laptop jaringan kabel:
+<p><strong>5. Lakukan pengujian pada seluruh client pada jaringan, dengan ketentuan sebagai berikut:</strong>
+Client PC jaringan kabel:
+a. Terhubung dengan port 2 pada wireless router
+b. IP Address		: 192.150.3.1/24
+c. Sistem operasi		: Windows</p>
+<pre><code>  Client Laptop jaringan kabel:
     d. Terhubung dengan port 4
     e. IP Address		: 192.150.3.5/24
     f. Sistem operasi		: Windows
@@ -232,8 +226,8 @@ Dengan konfigurasi sebagai berikut :
     g. IP Address		: DHCP
     h. Sistem operasi		: Android / IOS
 </code></pre>
-<h4 id="pertama-tama-yang-harus-diperhatikan-adalah-pastikan-kondisi-mikrotik-tanpa-konfigurasi-apapun-login-ke-mikrotik-router-board-via-winbox-menggunakan-mac-address">Pertama-tama yang harus diperhatikan adalah, Pastikan kondisi mikrotik tanpa konfigurasi apapun, Login ke mikrotik router board via winbox menggunakan MAC Address</h4>
-<p><figure><a class="lightgallery" href="/posts/pembahasan_ukk_tkj_paket2_2022/login.png" data-thumbnail="/posts/pembahasan_ukk_tkj_paket2_2022/login.png" data-sub-html="<h2>UKK-TKJ-Paket-2 2022</h2><p>Form Login Mikrotik</p>"><img loading="lazy" src="login.png" srcset="/posts/pembahasan_ukk_tkj_paket2_2022/login.png, login.png 1.5x, /posts/pembahasan_ukk_tkj_paket2_2022/login.png 2x" sizes="auto" data-title="Form Login Mikrotik" data-alt="UKK-TKJ-Paket-2 2022" width="667" height="354" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></a><figcaption class="image-caption">UKK-TKJ-Paket-2 2022</figcaption>
+<p><strong>Pertama-tama yang harus diperhatikan adalah, Pastikan kondisi mikrotik tanpa konfigurasi apapun, Login ke mikrotik router board via winbox menggunakan MAC Address</strong>
+<figure><a class="lightgallery" href="/posts/pembahasan_ukk_tkj_paket2_2022/login.png" data-thumbnail="/posts/pembahasan_ukk_tkj_paket2_2022/login.png" data-sub-html="<h2>UKK-TKJ-Paket-2 2022</h2><p>Form Login Mikrotik</p>"><img loading="lazy" src="login.png" srcset="/posts/pembahasan_ukk_tkj_paket2_2022/login.png, login.png 1.5x, /posts/pembahasan_ukk_tkj_paket2_2022/login.png 2x" sizes="auto" data-title="Form Login Mikrotik" data-alt="UKK-TKJ-Paket-2 2022" width="667" height="354" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></a><figcaption class="image-caption">UKK-TKJ-Paket-2 2022</figcaption>
   </figure></p>
 <h3 id="1langkah-pertama-memberikan-identitas-pada-mikrotik-dengan-nama-peserta-ukk-port-2">1.Langkah pertama memberikan identitas pada mikrotik dengan nama peserta UKK (PORT 2)</h3>
 <p><figure><a class="lightgallery" href="/posts/pembahasan_ukk_tkj_paket2_2022/identity.png" data-thumbnail="/posts/pembahasan_ukk_tkj_paket2_2022/identity.png" data-sub-html="<h2>UKK-TKJ-Paket-2 2022</h2><p>Set Identity</p>"><img loading="lazy" src="identity.png" srcset="/posts/pembahasan_ukk_tkj_paket2_2022/identity.png, identity.png 1.5x, /posts/pembahasan_ukk_tkj_paket2_2022/identity.png 2x" sizes="auto" data-title="Set Identity" data-alt="UKK-TKJ-Paket-2 2022" width="739" height="531" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></a><figcaption class="image-caption">UKK-TKJ-Paket-2 2022</figcaption>
@@ -268,13 +262,13 @@ Dengan konfigurasi sebagai berikut :
 <h3 id="8-langkah-selanjutnya-adalah-menambahkan-alamat-ip-untuk-pc1-dan-pc2-coba-perhatikan-pada-soal-disana-disebutkan-bahwa-pc1-dan-pc2-menggunakan-ip-dengan-segment-yang-sama-maka-untuk-mempermudah-kita-bisa-mengunakan-menu-bridge-agar-kita-hanya-satu-kali-memasukan-ip-address-lakukan-langkah-seperti-gambar-berikut-">8. Langkah selanjutnya adalah menambahkan alamat IP untuk PC1 dan PC2, coba perhatikan pada soal, disana disebutkan bahwa PC1 dan PC2 menggunakan IP dengan segment yang sama, maka untuk mempermudah kita bisa mengunakan menu <strong>“Bridge”</strong> agar kita hanya satu kali memasukan IP Address. Lakukan langkah seperti gambar berikut :</h3>
 <p><figure><a class="lightgallery" href="/posts/pembahasan_ukk_tkj_paket2_2022/bridge.png" data-thumbnail="/posts/pembahasan_ukk_tkj_paket2_2022/bridge.png" data-sub-html="<h2>UKK-TKJ-Paket-2 2022</h2><p>Bridge</p>"><img loading="lazy" src="bridge.png" srcset="/posts/pembahasan_ukk_tkj_paket2_2022/bridge.png, bridge.png 1.5x, /posts/pembahasan_ukk_tkj_paket2_2022/bridge.png 2x" sizes="auto" data-title="Bridge" data-alt="UKK-TKJ-Paket-2 2022" width="631" height="352" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></a><figcaption class="image-caption">UKK-TKJ-Paket-2 2022</figcaption>
   </figure></p>
-<h3 id="lalu-pada-tab-port-pilih-interface-lab1_nama">Lalu pada tab <strong>“Port”</strong> pilih interface <strong>“lab1_nama”</strong></h3>
+<h4 id="lalu-pada-tab-port-pilih-interface-lab1_nama">Lalu pada tab <strong>“Port”</strong> pilih interface <strong>“lab1_nama”</strong></h4>
 <p><figure><a class="lightgallery" href="/posts/pembahasan_ukk_tkj_paket2_2022/pilih_port.png" data-thumbnail="/posts/pembahasan_ukk_tkj_paket2_2022/pilih_port.png" data-sub-html="<h2>UKK-TKJ-Paket-2 2022</h2><p>Pilih port yang akan di bridge lab1_nama</p>"><img loading="lazy" src="pilih_port.png" srcset="/posts/pembahasan_ukk_tkj_paket2_2022/pilih_port.png, pilih_port.png 1.5x, /posts/pembahasan_ukk_tkj_paket2_2022/pilih_port.png 2x" sizes="auto" data-title="Pilih port yang akan di bridge lab1_nama" data-alt="UKK-TKJ-Paket-2 2022" width="630" height="371" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></a><figcaption class="image-caption">UKK-TKJ-Paket-2 2022</figcaption>
   </figure></p>
-<h3 id="masih-pada-tab-port-pilh-interface-lab2_nama">Masih pada tab <strong>“Port”</strong> Pilh interface <strong>“lab2_nama”</strong></h3>
+<h4 id="masih-pada-tab-port-pilh-interface-lab2_nama">Masih pada tab <strong>“Port”</strong> Pilh interface <strong>“lab2_nama”</strong></h4>
 <p><figure><a class="lightgallery" href="/posts/pembahasan_ukk_tkj_paket2_2022/pilih_port2.png" data-thumbnail="/posts/pembahasan_ukk_tkj_paket2_2022/pilih_port2.png" data-sub-html="<h2>UKK-TKJ-Paket-2 2022</h2><p>Pilih port yang akan di bridge lab2_nama</p>"><img loading="lazy" src="pilih_port2.png" srcset="/posts/pembahasan_ukk_tkj_paket2_2022/pilih_port2.png, pilih_port2.png 1.5x, /posts/pembahasan_ukk_tkj_paket2_2022/pilih_port2.png 2x" sizes="auto" data-title="Pilih port yang akan di bridge lab2_nama" data-alt="UKK-TKJ-Paket-2 2022" width="628" height="377" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></a><figcaption class="image-caption">UKK-TKJ-Paket-2 2022</figcaption>
   </figure></p>
-<h3 id="masih-pada-tab-port-pilh-interface-lab3_nama">Masih pada tab <strong>“Port”</strong> Pilh interface <strong>“lab3_nama”</strong></h3>
+<h4 id="masih-pada-tab-port-pilh-interface-lab3_nama">Masih pada tab <strong>“Port”</strong> Pilh interface <strong>“lab3_nama”</strong></h4>
 <p><figure><a class="lightgallery" href="/posts/pembahasan_ukk_tkj_paket2_2022/pilih_port3.png" data-thumbnail="/posts/pembahasan_ukk_tkj_paket2_2022/pilih_port3.png" data-sub-html="<h2>UKK-TKJ-Paket-2 2022</h2><p>Pilih port yang akan di bridge lab3_nama</p>"><img loading="lazy" src="pilih_port3.png" srcset="/posts/pembahasan_ukk_tkj_paket2_2022/pilih_port3.png, pilih_port3.png 1.5x, /posts/pembahasan_ukk_tkj_paket2_2022/pilih_port3.png 2x" sizes="auto" data-title="Pilih port yang akan di bridge lab3_nama" data-alt="UKK-TKJ-Paket-2 2022" width="632" height="387" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></a><figcaption class="image-caption">UKK-TKJ-Paket-2 2022</figcaption>
   </figure></p>
 <h3 id="9-langkah-selanjutnya-adalah-menambahkan-alamat-ip-pada-bridge-sesuai-soal-menggunakan-ip-address-1921503124-ip-address-gateway">9. Langkah selanjutnya adalah menambahkan alamat IP pada bridge sesuai Soal menggunakan IP Address 192.150.3.1/24 (IP Address Gateway)</h3>
