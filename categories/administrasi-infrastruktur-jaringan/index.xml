@@ -4,6 +4,15 @@
     <link>http://www.rumah-it.com/categories/administrasi-infrastruktur-jaringan/</link>
     <description>Administrasi Infrastruktur Jaringan - Category - enohbadrie</description>
     <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 06 Mar 2023 10:00:46 &#43;0700</lastBuildDate><atom:link href="http://www.rumah-it.com/categories/administrasi-infrastruktur-jaringan/" rel="self" type="application/rss+xml" /><item>
+  <title>Installasi Cisco Packet Tracer di Ubuntu 20.04.5-LTS</title>
+  <link>http://www.rumah-it.com/posts/installasi-cisco-packet-tracer-di-ubuntu20.04.5-lts/</link>
+  <pubDate>Mon, 06 Mar 2023 10:00:46 &#43;0700</pubDate>
+  <author>Enoh Badrie</author>
+  <guid>http://www.rumah-it.com/posts/installasi-cisco-packet-tracer-di-ubuntu20.04.5-lts/</guid>
+  <description><![CDATA[<p><figure><a class="lightgallery" href=".png" data-thumbnail=".png" data-sub-html="<h2>Installasi Cisco Packet Tracer di Ubuntu 20.04.5-LTS</h2><p>Cisco PT</p>"></a><figcaption class="image-caption">Installasi Cisco Packet Tracer di Ubuntu 20.04.5-LTS</figcaption>
+  </figure></p>]]></description>
+</item>
+<item>
   <title>Cara Cepat Menghitung VLSM</title>
   <link>http://www.rumah-it.com/posts/cara_cepat_menghitung_vlsm/</link>
   <pubDate>Tue, 28 Feb 2023 10:49:28 &#43;0700</pubDate>
@@ -38,14 +47,6 @@
   <guid>http://www.rumah-it.com/posts/jenis_topologi_jaringan_komputer/</guid>
   <description><![CDATA[<p><figure><a class="lightgallery" href="/posts/jenis_topologi_jaringan_komputer/topologi-hybrid.jpg" data-thumbnail="/posts/jenis_topologi_jaringan_komputer/topologi-hybrid.jpg" data-sub-html="<h2>Topologi Jaringan Komputer</h2><p>Topologi Hybrid</p>"></a><figcaption class="image-caption">Topologi Jaringan Komputer</figcaption>
   </figure></p>]]></description>
-</item>
-<item>
-  <title>Installasi Cisco Packet Tracer di Ubuntu 20.04.5-LTS</title>
-  <link>http://www.rumah-it.com/posts/installasi-cisco-packet-tracer-di-ubuntu20.04.5-lts/</link>
-  <pubDate>Mon, 06 Mar 2023 10:00:46 &#43;0700</pubDate>
-  <author>Enoh Badrie</author>
-  <guid>http://www.rumah-it.com/posts/installasi-cisco-packet-tracer-di-ubuntu20.04.5-lts/</guid>
-  <description><![CDATA[]]></description>
 </item>
 </channel>
 </rss>
