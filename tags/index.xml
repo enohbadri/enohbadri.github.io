@@ -3,7 +3,23 @@
     <title>Tags - Tag - enohbadrie</title>
     <link>http://www.rumah-it.com/tags/</link>
     <description>Tags - Tag - enohbadrie</description>
-    <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 01 Mar 2023 15:07:40 &#43;0700</lastBuildDate><atom:link href="http://www.rumah-it.com/tags/" rel="self" type="application/rss+xml" /><item>
+    <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 06 Mar 2023 10:00:46 &#43;0700</lastBuildDate><atom:link href="http://www.rumah-it.com/tags/" rel="self" type="application/rss+xml" /><item>
+  <title>Cisco</title>
+  <link>http://www.rumah-it.com/tags/cisco/</link>
+  <pubDate>Mon, 06 Mar 2023 10:00:46 &#43;0700</pubDate>
+  <author>Author</author>
+  <guid>http://www.rumah-it.com/tags/cisco/</guid>
+  <description><![CDATA[]]></description>
+</item>
+<item>
+  <title>Installasi</title>
+  <link>http://www.rumah-it.com/tags/installasi/</link>
+  <pubDate>Mon, 06 Mar 2023 10:00:46 &#43;0700</pubDate>
+  <author>Author</author>
+  <guid>http://www.rumah-it.com/tags/installasi/</guid>
+  <description><![CDATA[]]></description>
+</item>
+<item>
   <title>Gammu</title>
   <link>http://www.rumah-it.com/tags/gammu/</link>
   <pubDate>Wed, 01 Mar 2023 15:07:40 &#43;0700</pubDate>
@@ -36,14 +52,6 @@
   <description><![CDATA[]]></description>
 </item>
 <item>
-  <title>Cisco</title>
-  <link>http://www.rumah-it.com/tags/cisco/</link>
-  <pubDate>Tue, 28 Feb 2023 10:49:28 &#43;0700</pubDate>
-  <author>Author</author>
-  <guid>http://www.rumah-it.com/tags/cisco/</guid>
-  <description><![CDATA[]]></description>
-</item>
-<item>
   <title>Computer</title>
   <link>http://www.rumah-it.com/tags/computer/</link>
   <pubDate>Tue, 28 Feb 2023 10:49:28 &#43;0700</pubDate>
@@ -73,14 +81,6 @@
   <pubDate>Tue, 28 Feb 2023 10:49:28 &#43;0700</pubDate>
   <author>Author</author>
   <guid>http://www.rumah-it.com/tags/jaringan/</guid>
-  <description><![CDATA[]]></description>
-</item>
-<item>
-  <title>Jaringan Komputer</title>
-  <link>http://www.rumah-it.com/tags/jaringan-komputer/</link>
-  <pubDate>Tue, 28 Feb 2023 10:49:28 &#43;0700</pubDate>
-  <author>Author</author>
-  <guid>http://www.rumah-it.com/tags/jaringan-komputer/</guid>
   <description><![CDATA[]]></description>
 </item>
 </channel>
