@@ -1,3 +1,2 @@
 # enohbadri.github.io
-Website pribadi sederhana menggunakan Hugo.
-Situs ini milik Enoh Badri. Berisi catatan, informasi, dan dokumentasi hasil belajar khususnya dalam bidang Teknologi Informasi dan Komunikasi (TIK).
+Website pribadi sederhana menggunakan Hugo. berisi catatan, informasi, dan dokumentasi dari apa yang sudah saya pelajari khususnya dalam bidang Teknologi Informasi dan Komunikasi (TIK).
