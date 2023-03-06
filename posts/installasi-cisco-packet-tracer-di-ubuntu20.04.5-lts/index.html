@@ -12,7 +12,7 @@
 <meta itemprop="description" content="Installasi Cisco Packet Tracer di Ubuntu 20.04.5-LTS
   "><meta itemprop="datePublished" content="2023-03-06T10:00:46+07:00" />
 <meta itemprop="dateModified" content="2023-03-06T10:00:46+07:00" />
-<meta itemprop="wordCount" content="348">
+<meta itemprop="wordCount" content="419">
 <meta itemprop="keywords" content="Cisco,Installasi," /><meta property="og:title" content="Installasi Cisco Packet Tracer di Ubuntu 20.04.5-LTS" />
 <meta property="og:description" content="Installasi Cisco Packet Tracer di Ubuntu 20.04.5-LTS
   " />
@@ -35,7 +35,7 @@
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "http:\/\/www.rumah-it.com\/posts\/installasi-cisco-packet-tracer-di-ubuntu20.04.5-lts\/"
-    },"genre": "posts","keywords": "Cisco, Installasi","wordcount":  348 ,
+    },"genre": "posts","keywords": "Cisco, Installasi","wordcount":  419 ,
     "url": "http:\/\/www.rumah-it.com\/posts\/installasi-cisco-packet-tracer-di-ubuntu20.04.5-lts\/","datePublished": "2023-03-06T10:00:46+07:00","dateModified": "2023-03-06T10:00:46+07:00","publisher": {
       "@type": "Organization",
       "name": ""},"author": {
@@ -154,7 +154,7 @@
       <div class="post-meta-line"><span class="post-author"><a href="https://" title="Author" rel=" author" class="author"><i class="fa-solid fa-user-circle" aria-hidden="true"></i>
     Enoh Badrie</a></span>
           <span class="post-category">included in <a href="/categories/administrasi-infrastruktur-jaringan/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> Administrasi Infrastruktur Jaringan</a></span></div>
-      <div class="post-meta-line"><span title=2023-03-06&#32;10:00:46><i class="fa-regular fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-03-06">2023-03-06</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw" aria-hidden="true"></i> 348 words</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw" aria-hidden="true"></i> 2 minutes</span>&nbsp;<span id="busuanzi_container_page_pv" class="busuanzi_visitors comment-visitors" data-flag-title="Installasi Cisco Packet Tracer di Ubuntu 20.04.5-LTS">
+      <div class="post-meta-line"><span title=2023-03-06&#32;10:00:46><i class="fa-regular fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-03-06">2023-03-06</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw" aria-hidden="true"></i> 419 words</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw" aria-hidden="true"></i> 2 minutes</span>&nbsp;<span id="busuanzi_container_page_pv" class="busuanzi_visitors comment-visitors" data-flag-title="Installasi Cisco Packet Tracer di Ubuntu 20.04.5-LTS">
               <i class="fa-regular fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_page_pv">-</span>&nbsp;views
             </span>&nbsp;</div>
     </div><div class="details toc" id="toc-static" data-kept="false">
@@ -193,7 +193,6 @@ Ubuntu 20.04 LTS (64bit) or macOS 10.14 atau yang terbaru.</li>
 <p>Packet Tracer versi 8.0.0 memerlukan beberapa paket yang perlu kita install (paket depedensi) agar aplikasi Packet Tracer dapat berjalan lancar. Paket-paket tersebut, yaitu: dialog, dxdg-utils, gtk-update-icon-cache, libgl1-mesa-glx, libpulse0, libnss3, libxss1, libasound2, libxslt1.1, libxkbcommon-x11-0, dan libxcb-xinerama0-dev.</p>
 <p>Bila paket dependensi di atas belum ter-install, gunakan perintah di bawah ini untuk meng-install-nya:</p>
 <pre tabindex="0"><code class="language-Terminal" data-lang="Terminal">sudo apt update
-
 sudo apt install dialog xdg-utils gtk-update-icon-cache libgl1-mesa-glx libpulse0 libnss3 libxss1 libasound2 libxslt1.1 libxkbcommon-x11-0 libxcb-xinerama0-dev
 </code></pre><p>Jika muncul pesan error silahkan masukan perintah :
 <figure><a class="lightgallery" href="/posts/installasi-cisco-packet-tracer-di-ubuntu20.04.5-lts/fix-broken.png" data-thumbnail="/posts/installasi-cisco-packet-tracer-di-ubuntu20.04.5-lts/fix-broken.png" data-sub-html="<h2>Installasi Cisco Packet Tracer di Ubuntu 20.04.5-LTS</h2><p>Cisco PT</p>"><img loading="lazy" src="fix-broken.png" srcset="/posts/installasi-cisco-packet-tracer-di-ubuntu20.04.5-lts/fix-broken.png, fix-broken.png 1.5x, /posts/installasi-cisco-packet-tracer-di-ubuntu20.04.5-lts/fix-broken.png 2x" sizes="auto" data-title="Cisco PT" data-alt="Installasi Cisco Packet Tracer di Ubuntu 20.04.5-LTS" width="786" height="533" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></a><figcaption class="image-caption">Installasi Cisco Packet Tracer di Ubuntu 20.04.5-LTS</figcaption>
@@ -210,9 +209,18 @@ ls CiscoPacketTracer_820_Ubuntu_64bit.deb
   </figure></p>
 <p>lalu extrak dan install paket tersebut dengan perintah:</p>
 <pre tabindex="0"><code class="language-Terminal" data-lang="Terminal">sudo apt update
-
 sudo dpkg -i CiscoPacketTracer_820_Ubuntu_64bit.deb
-</code></pre></div><div class="post-footer" id="post-footer">
+</code></pre><p><figure><a class="lightgallery" href="/posts/installasi-cisco-packet-tracer-di-ubuntu20.04.5-lts/install2.png" data-thumbnail="/posts/installasi-cisco-packet-tracer-di-ubuntu20.04.5-lts/install2.png" data-sub-html="<h2>Installasi Cisco Packet Tracer di Ubuntu 20.04.5-LTS</h2><p>Cisco PT</p>"><img loading="lazy" src="install2.png" srcset="/posts/installasi-cisco-packet-tracer-di-ubuntu20.04.5-lts/install2.png, install2.png 1.5x, /posts/installasi-cisco-packet-tracer-di-ubuntu20.04.5-lts/install2.png 2x" sizes="auto" data-title="Cisco PT" data-alt="Installasi Cisco Packet Tracer di Ubuntu 20.04.5-LTS" width="786" height="533" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></a><figcaption class="image-caption">Installasi Cisco Packet Tracer di Ubuntu 20.04.5-LTS</figcaption>
+  </figure>
+<figure><a class="lightgallery" href="/posts/installasi-cisco-packet-tracer-di-ubuntu20.04.5-lts/install3.png" data-thumbnail="/posts/installasi-cisco-packet-tracer-di-ubuntu20.04.5-lts/install3.png" data-sub-html="<h2>Installasi Cisco Packet Tracer di Ubuntu 20.04.5-LTS</h2><p>Cisco PT</p>"><img loading="lazy" src="install3.png" srcset="/posts/installasi-cisco-packet-tracer-di-ubuntu20.04.5-lts/install3.png, install3.png 1.5x, /posts/installasi-cisco-packet-tracer-di-ubuntu20.04.5-lts/install3.png 2x" sizes="auto" data-title="Cisco PT" data-alt="Installasi Cisco Packet Tracer di Ubuntu 20.04.5-LTS" width="786" height="533" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></a><figcaption class="image-caption">Installasi Cisco Packet Tracer di Ubuntu 20.04.5-LTS</figcaption>
+  </figure></p>
+<p>Untuk menjalankannya ketikan perintah :</p>
+<pre tabindex="0"><code class="language-Terminal" data-lang="Terminal">packettracer
+</code></pre><p><figure><a class="lightgallery" href="/posts/installasi-cisco-packet-tracer-di-ubuntu20.04.5-lts/packettracer.png" data-thumbnail="/posts/installasi-cisco-packet-tracer-di-ubuntu20.04.5-lts/packettracer.png" data-sub-html="<h2>Installasi Cisco Packet Tracer di Ubuntu 20.04.5-LTS</h2><p>Cisco PT</p>"><img loading="lazy" src="packettracer.png" srcset="/posts/installasi-cisco-packet-tracer-di-ubuntu20.04.5-lts/packettracer.png, packettracer.png 1.5x, /posts/installasi-cisco-packet-tracer-di-ubuntu20.04.5-lts/packettracer.png 2x" sizes="auto" data-title="Cisco PT" data-alt="Installasi Cisco Packet Tracer di Ubuntu 20.04.5-LTS" width="786" height="533" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></a><figcaption class="image-caption">Installasi Cisco Packet Tracer di Ubuntu 20.04.5-LTS</figcaption>
+  </figure>
+<figure><a class="lightgallery" href="/posts/installasi-cisco-packet-tracer-di-ubuntu20.04.5-lts/cisco.png" data-thumbnail="/posts/installasi-cisco-packet-tracer-di-ubuntu20.04.5-lts/cisco.png" data-sub-html="<h2>Installasi Cisco Packet Tracer di Ubuntu 20.04.5-LTS</h2><p>Cisco PT</p>"><img loading="lazy" src="cisco.png" srcset="/posts/installasi-cisco-packet-tracer-di-ubuntu20.04.5-lts/cisco.png, cisco.png 1.5x, /posts/installasi-cisco-packet-tracer-di-ubuntu20.04.5-lts/cisco.png 2x" sizes="auto" data-title="Cisco PT" data-alt="Installasi Cisco Packet Tracer di Ubuntu 20.04.5-LTS" width="1368" height="707" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></a><figcaption class="image-caption">Installasi Cisco Packet Tracer di Ubuntu 20.04.5-LTS</figcaption>
+  </figure></p>
+<p>Terimakasih Semoga bermanfaat, Selamat belajar&hellip;</p></div><div class="post-footer" id="post-footer">
   <div class="post-info">
     <div class="post-info-line">
       <div class="post-info-mod">
