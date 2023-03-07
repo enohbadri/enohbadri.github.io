@@ -10,7 +10,7 @@
 <meta name="description" content="Cara Cepat Menghitung VLSM" /><meta name="keywords" content='Subneting, VLSM' /><meta itemprop="name" content="Cara Cepat Menghitung VLSM">
 <meta itemprop="description" content="Cara Cepat Menghitung VLSM"><meta itemprop="datePublished" content="2023-02-28T10:49:28+07:00" />
 <meta itemprop="dateModified" content="2023-02-28T10:49:28+07:00" />
-<meta itemprop="wordCount" content="745">
+<meta itemprop="wordCount" content="746">
 <meta itemprop="keywords" content="Subneting,VLSM," /><meta property="og:title" content="Cara Cepat Menghitung VLSM" />
 <meta property="og:description" content="Cara Cepat Menghitung VLSM" />
 <meta property="og:type" content="article" />
@@ -31,7 +31,7 @@
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "http:\/\/www.rumah-it.com\/posts\/cara_cepat_menghitung_vlsm\/"
-    },"genre": "posts","keywords": "Subneting, VLSM","wordcount":  745 ,
+    },"genre": "posts","keywords": "Subneting, VLSM","wordcount":  746 ,
     "url": "http:\/\/www.rumah-it.com\/posts\/cara_cepat_menghitung_vlsm\/","datePublished": "2023-02-28T10:49:28+07:00","dateModified": "2023-02-28T10:49:28+07:00","publisher": {
       "@type": "Organization",
       "name": ""},"author": {
@@ -150,7 +150,7 @@
       <div class="post-meta-line"><span class="post-author"><a href="https://" title="Author" rel=" author" class="author"><i class="fa-solid fa-user-circle" aria-hidden="true"></i>
     Enoh Badrie</a></span>
           <span class="post-category">included in <a href="/categories/administrasi-infrastruktur-jaringan/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> Administrasi Infrastruktur Jaringan</a></span></div>
-      <div class="post-meta-line"><span title=2023-02-28&#32;10:49:28><i class="fa-regular fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-02-28">2023-02-28</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw" aria-hidden="true"></i> 745 words</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw" aria-hidden="true"></i> 4 minutes</span>&nbsp;<span id="busuanzi_container_page_pv" class="busuanzi_visitors comment-visitors" data-flag-title="Cara Cepat Menghitung VLSM">
+      <div class="post-meta-line"><span title=2023-02-28&#32;10:49:28><i class="fa-regular fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-02-28">2023-02-28</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw" aria-hidden="true"></i> 746 words</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw" aria-hidden="true"></i> 4 minutes</span>&nbsp;<span id="busuanzi_container_page_pv" class="busuanzi_visitors comment-visitors" data-flag-title="Cara Cepat Menghitung VLSM">
               <i class="fa-regular fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_page_pv">-</span>&nbsp;views
             </span>&nbsp;</div>
     </div><div class="details toc" id="toc-static" data-kept="false">
@@ -175,11 +175,13 @@
 <p>VLSM (Variabel Length Subnet Mask) adalah suatu teknik untuk mengurangi jumlah terbuang [ruang;spasi] alamat. kita dapat memberi suatu subnet ke seseorang, dan dia dapat lebih lanjut membagi lebih lanjut membagi subnet ke dalam beberapa subnets. Oleh karena lebar dari subnet akan diperkecil, maka disebut dengan Variable Subnet Length Mask (VLSM).</p>
 <p>Perhitungan IP Address menggunakan metode VLSM adalah metode yang berbeda dengan memberikan suatu Network Address lebih dari satu subnet mask, jika menggunakan CIDR dimana suatu Network ID hanya memiliki satu subnet mask saja, perbedaan yang mendasar disini juga adalah terletak pada pembagian blok, pembagian blok VLSM bebas dan hanya dilakukan oleh si pemilik Network Address yang telah diberikan kepadanya atau dengan kata lain sebagai IP address local dan IP Address ini tidak dikenal dalam jaringan internet, namun tetap dapat melakukan koneksi kedalam jaringan internet, hal ini terjadi dikarenakan jaringan internet hanya mengenal IP Address berkelas.</p>
 <p>Langsung saja ke contoh kasus yang pertama dalam perhitungan menggunakan metode vlsm. Dalam contoh kasus ini misalnya kita akan membangun sebuah jaringan internet dalam sebuah perusahaan besar. Dengan ketentuan Host yang dibutuhkan antaran lain:</p>
-<p>1.Ruang Utama 1000 host 
-2.Ruang Kedua 500 host
-3.Ruang Ketiga 100 host
-4.Ruang Server 2 host</p>
-<p>Dengan alamat jaringan 172.16.0.0/16. Sebelum kita mulai menghitung vlsm, disini kita akan memcantumkann 8 bit angka ajaib ini:</p>
+<ul>
+<li>1.Ruang Utama 1000 host </li>
+<li>2.Ruang Kedua 500 host</li>
+<li>3.Ruang Ketiga 100 host</li>
+<li>4.Ruang Server 2 host</li>
+</ul>
+<p>Dengan alamat jaringan <strong>172.16.0.0/16</strong> Sebelum kita mulai menghitung vlsm, disini kita akan memcantumkann 8 bit angka ajaib ini:</p>
 <p>128 . 64 . 32 . 16 . 8 . 4 . 2 . 1  Dan membuat tabel-tabel untuk mempercepat proses perhitungan VLSM.  Seperti tabel-tabel berikut:</p>
 <table>
 <thead>
@@ -348,12 +350,11 @@
       <i class="icon fa-solid fa-lightbulb fa-fw" aria-hidden="true"></i>Contoh<i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true"></i>
     </div>
     <div class="details-content">
-      <div class="admonition-content">contohya seperti kasus berikut:
-Dengan IP 172.16.0.0/16</div>
+      <div class="admonition-content">contohya seperti kasus berikut: Dengan IP 172.16.0.0/16</div>
     </div>
   </div>
 <h3 id="1-ruang-utama-1000-host">1. Ruang Utama 1000 host   </h3>
-<p>       Disini dibutuhkan 1000 host yang akan terhubung dengan internet ,untuk mendapat 1000 host atau lebih perhatikan tabel diatas. Karena yang  dibutuhkan1000 maka cari hasil pemangkatan 1000 or  &gt;= 1000 host.  dari tabel diatas yang sesuai dengan kebutuhan host yang dibutuhkan  gunakan 2^10 = 1024  dan subnet mask 255.255.252.0.Untuk mencari nilai ip range seperti dibawah ini :</p>
+<p>       Disini dibutuhkan 1000 host yang akan terhubung dengan internet ,untuk mendapat 1000 host atau lebih perhatikan tabel diatas. Karena yang  dibutuhkan 1000 maka cari hasil pemangkatan 1000 or  &gt;= 1000 host. dari tabel diatas yang sesuai dengan kebutuhan host yang dibutuhkan  gunakan 2^10 = 1024  dan subnet mask 255.255.252.0.Untuk mencari nilai ip range seperti dibawah ini :</p>
 <p><img loading="lazy" src="r-utama.png" srcset="/posts/cara_cepat_menghitung_vlsm/r-utama.png, r-utama.png 1.5x, /posts/cara_cepat_menghitung_vlsm/r-utama.png 2x" sizes="auto" data-title="VLSM" data-alt="VLSM" width="158" height="65" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></p>
 <p>Dan untuk mengetahui IP broadcastnya yakni hasil dari pengurangan diatas ditambah dengan ip network</p>
 <p><img loading="lazy" src="r-utama2.png" srcset="/posts/cara_cepat_menghitung_vlsm/r-utama2.png, r-utama2.png 1.5x, /posts/cara_cepat_menghitung_vlsm/r-utama2.png 2x" sizes="auto" data-title="VLSM" data-alt="VLSM" width="158" height="65" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></p>
