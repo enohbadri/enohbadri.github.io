@@ -3,7 +3,15 @@
     <title>All Posts - enohbadrie</title>
     <link>http://www.rumah-it.com/posts/</link>
     <description>All Posts | enohbadrie</description>
-    <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 08 Mar 2023 09:29:17 &#43;0700</lastBuildDate><atom:link href="http://www.rumah-it.com/posts/" rel="self" type="application/rss+xml" /><item>
+    <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 08 Mar 2023 13:10:33 &#43;0700</lastBuildDate><atom:link href="http://www.rumah-it.com/posts/" rel="self" type="application/rss+xml" /><item>
+  <title>Voice Over Internet Protocol (VOIP) CISCO PT</title>
+  <link>http://www.rumah-it.com/posts/voice_over_internet_protocol/</link>
+  <pubDate>Wed, 08 Mar 2023 13:10:33 &#43;0700</pubDate>
+  <author>Enoh Badrie</author>
+  <guid>http://www.rumah-it.com/posts/voice_over_internet_protocol/</guid>
+  <description><![CDATA[Voice Over Internet Protocol (VOIP)]]></description>
+</item>
+<item>
   <title>VPN Sederhana Cisco Packet Tracer</title>
   <link>http://www.rumah-it.com/posts/vpn_cisco_packet_tracer/</link>
   <pubDate>Wed, 08 Mar 2023 09:29:17 &#43;0700</pubDate>
@@ -74,14 +82,6 @@
   <author>Enoh Badrie</author>
   <guid>http://www.rumah-it.com/posts/jenis_topologi_jaringan_komputer/</guid>
   <description><![CDATA[Topologi Jaringan Komputer]]></description>
-</item>
-<item>
-  <title>Jenis-Jenis Jaringan Berdasarkan Area</title>
-  <link>http://www.rumah-it.com/posts/jenis-jenis_jaringan_berdasarkan_area/</link>
-  <pubDate>Mon, 20 Feb 2023 10:49:28 &#43;0700</pubDate>
-  <author>Enoh Badrie</author>
-  <guid>http://www.rumah-it.com/posts/jenis-jenis_jaringan_berdasarkan_area/</guid>
-  <description><![CDATA[Jenis-Jenis Jaringan Berdasarkan Area]]></description>
 </item>
 </channel>
 </rss>
