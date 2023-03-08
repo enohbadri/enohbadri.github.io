@@ -166,29 +166,33 @@
         </div>
         <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
   <ul>
-    <li><a href="#apa-itu-voip">Apa itu VOIP?</a></li>
-    <li><a href="#apa-fungsi-voip">Apa Fungsi VOIP?</a></li>
-    <li><a href="#cara-kerja-voip">Cara Kerja VOIP</a></li>
-    <li><a href="#firewall-pada-voip">Firewall Pada VOIP</a></li>
-    <li><a href="#pentingnya-firewall">Pentingnya Firewall</a></li>
-    <li><a href="#voip-di-cisco-packet-tracer">VOIP di Cisco Packet Tracer</a></li>
-    <li><a href="#konfigurasi-ip-address-pada-r1-">Konfigurasi IP Address pada R1 :</a></li>
-    <li><a href="#konfigurasi-dhcp-pada-r1-">Konfigurasi DHCP pada R1 :</a></li>
-    <li><a href="#konfigurasi-telphony-service-pada-r1-">Konfigurasi Telphony Service pada R1 :</a></li>
-    <li><a href="#konfigurasi-pada-sw1">Konfigurasi pada SW1</a></li>
+    <li>
+      <ul>
+        <li><a href="#apa-itu-voip">Apa itu VOIP?</a></li>
+        <li><a href="#apa-fungsi-voip">Apa Fungsi VOIP?</a></li>
+        <li><a href="#cara-kerja-voip">Cara Kerja VOIP</a></li>
+        <li><a href="#firewall-pada-voip">Firewall Pada VOIP</a></li>
+        <li><a href="#pentingnya-firewall">Pentingnya Firewall</a></li>
+        <li><a href="#voip-di-cisco-packet-tracer">VOIP di Cisco Packet Tracer</a></li>
+        <li><a href="#konfigurasi-ip-address-pada-r1-">Konfigurasi IP Address pada R1 :</a></li>
+        <li><a href="#konfigurasi-dhcp-pada-r1-">Konfigurasi DHCP pada R1 :</a></li>
+        <li><a href="#konfigurasi-telphony-service-pada-r1-">Konfigurasi Telphony Service pada R1 :</a></li>
+        <li><a href="#konfigurasi-pada-sw1">Konfigurasi pada SW1</a></li>
+      </ul>
+    </li>
   </ul>
 </nav></div>
-      </div><div class="content" id="content"><h2 id="apa-itu-voip">Apa itu VOIP?</h2>
+      </div><div class="content" id="content"><h3 id="apa-itu-voip">Apa itu VOIP?</h3>
 <p><strong>Voice over Internet Protocol</strong> (juga disebut VoIP, IP Telephony, Internet telephony atau Digital Phone) adalah teknologi yang memungkinkan percakapan suara jarak jauh melalui media internet. Data suara diubah menjadi kode digital dan dialirkan melalui jaringan yang mengirimkan paket-paket data, dan bukan lewat sirkuit analog telepon biasa. </p>
 <p>Dalam komunikasi VoIP, pemakai melakukan hubungan telepon melalui terminal yang berupa PC atau telepon biasa. Dengan bertelepon menggunakan VoIP, banyak keuntungan yang dapat diambil diantaranya adalah dari segi biaya jelas lebih murah dari tarif telepon tradisional, karena jaringan IP bersifat global. Sehingga untuk hubungan Internasionaldapat ditekan hingga 70%. Selain itu, biaya maintenance dapat di tekan karena voicedan data networkterpisah, sehingga IP Phone dapat di tambah, dipindah dan di ubah. Hal ini karena VoIP dapat dipasang di sembarang ethernet dan IP address, tidak seperti telepon konvensional yang harus mempunyai port tersendiri di Sentral atau PBX (Private branch exchange).</p>
-<h2 id="apa-fungsi-voip">Apa Fungsi VOIP?</h2>
+<h3 id="apa-fungsi-voip">Apa Fungsi VOIP?</h3>
 <ol>
 <li>Signalling &ndash; Signalling berfungsi untuk menangkap jaringan yang dituju, sehingga dapat melakukan inisialisasi  (penyampaian) pesan/percakapan.</li>
 <li>Database Service &ndash; Layanan database adalah salah satu fungsi VoIP dalam mencari tujuan akhir/endpoint yang harus dituju, sekaligus sebagai penerjemah alamat yang biasanya digunakan dalam duajaringan yang berbeda.</li>
 <li>Call Connect/Disconnect (Bearer Control) &ndash; Bearer Control memungkinkan si penerima panggilan dapat memutuskan panggilan/menerima panggilan.</li>
 <li>Codecs Operations &ndash; Berguna sebagai coder ataupun decoderdalam pengubahan/transmitted suara menjadi sinyal digital/paket data ataupun sebaliknya.</li>
 </ol>
-<h2 id="cara-kerja-voip">Cara Kerja VOIP</h2>
+<h3 id="cara-kerja-voip">Cara Kerja VOIP</h3>
 <ul>
 <li>
 <p>Cara Kerja VoIP adalah mengubah suara analog yang didapatkan dari speaker pada Komputer     menjadi paket data digital, kemudian dari PC diteruskan melalui Hub/ Router/ ADSL Modem dikirimkan melalui jaringan internet dan akan diterima oleh tempat tujuan melalui media yang sama. Atau bisa juga melalui melalui media telepon diteruskan ke phone adapter yang disambungkan ke internet dan bisa diterima oleh telepon tujuan.</p>
@@ -197,7 +201,7 @@
 <p>Untuk Pengiriman sebuah sinyal ke remote destination dapat dilakukan secara digital yaitu sebelum dikirim data yang berupa sinyal analog diubah ke bentuk data digital dengan ADC (Analog to Digital Converter), kemudian ditransmisikan, dan di penerima dipulihkan kembali menjadi data analog dengan DAC (Digital to Analog Converter). Begitu juga dengan VoIP, digitalisasi voice dalam bentuk packets data, dikirimkan dan di pulihkan kembali dalam bentuk voice di penerima. Format digital lebih mudah dikendaika, dalam hal ini dapat dikompresi, dan dapat diubah ke format yang lebih baik dan data digital lebih tahan terhadap noise daripada analog</p>
 </li>
 </ul>
-<h2 id="firewall-pada-voip">Firewall Pada VOIP</h2>
+<h3 id="firewall-pada-voip">Firewall Pada VOIP</h3>
 <ul>
 <li>
 <p>Apa itu firewall? Dalam konstruksi bangunan, firewall adalah dinding yang tidak mudah terbakar yang mencegah kebakaran menyebar ke seluruh bangunan. Rumah, misalnya, mungkin memiliki firewall antara garasi dari rumah untuk mencegah kebakaran mengancam garasi dari kamar lain.</p>
@@ -206,7 +210,7 @@
 <p>firewall adalah istilah yang lebih umum digunakan dalam jaringan komputer. Seperti firewall yang digunakan di rumah-rumah dan bangunan, firewall komputer bertindak sebagai penghalang antara komputer dalam jaringan. Bagi perusahaan dengan jaringan komputer atau untuk individu dengan koneksi permanen ke internet (seperti melalui DSL atau kabel),</p>
 </li>
 </ul>
-<h2 id="pentingnya-firewall">Pentingnya Firewall</h2>
+<h3 id="pentingnya-firewall">Pentingnya Firewall</h3>
 <ul>
 <li>
 <p>Tanpa firewall, penyusup pada jaringan kemungkinan akan mampu menghancurkan, merusak atau mendapatkan akses ke file di komputer Anda. Firewall dapat ditemukan dalam bentuk perangkat keras atau perangkat lunak. Walaupun tanpa penjelasan kompleks tentang bagaimana firewall bekerja, fungsi firewall adalah sebagai seperangkat filter yang terus-menerus memantau lalu lintas pada jaringan.</p>
@@ -215,10 +219,10 @@
 <p>Banyak pengguna komputer yang mengakses internet melalui router broadband, mereka ini sangat diuntungkan dengan adanya firewall. Router itu sendiri dapat dikonfigurasi untuk melayani sebagai firewall, setiap serangan jahat dari jaringan, akan berhenti di router sehingga terhindar dari efek buruk komputer lain. Seperti hardware firewall dapat lebih diperkuat dengan pertahanan lini sekunder dalam bentuk firewall perangkat lunak.</p>
 </li>
 </ul>
-<h2 id="voip-di-cisco-packet-tracer">VOIP di Cisco Packet Tracer</h2>
+<h3 id="voip-di-cisco-packet-tracer">VOIP di Cisco Packet Tracer</h3>
 <p><figure><a class="lightgallery" href="/posts/voice_over_internet_protocol/cisco2.png" data-thumbnail="/posts/voice_over_internet_protocol/cisco2.png" data-sub-html="<h2>Cisco Packet Tracer 8.2</h2><p>VOIP</p>"><img loading="lazy" src="cisco2.png" srcset="/posts/voice_over_internet_protocol/cisco2.png, cisco2.png 1.5x, /posts/voice_over_internet_protocol/cisco2.png 2x" sizes="auto" data-title="VOIP" data-alt="Cisco Packet Tracer 8.2" width="1304" height="743" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></a><figcaption class="image-caption">Cisco Packet Tracer 8.2</figcaption>
   </figure></p>
-<h2 id="konfigurasi-ip-address-pada-r1-">Konfigurasi IP Address pada R1 :</h2>
+<h3 id="konfigurasi-ip-address-pada-r1-">Konfigurasi IP Address pada R1 :</h3>
 <pre tabindex="0"><code>R1&gt;enable
 R1#configure terminal
 R1(config)#int fa0/0
@@ -238,7 +242,7 @@ R1(config-subif)#ip address 192.168.88.1 255.255.255.0
 </div>
     </div>
   </div>
-<h2 id="konfigurasi-dhcp-pada-r1-">Konfigurasi DHCP pada R1 :</h2>
+<h3 id="konfigurasi-dhcp-pada-r1-">Konfigurasi DHCP pada R1 :</h3>
 <pre tabindex="0"><code>R1(config-subif)#ip dhcp pool untukvoip
 R1(dhcp-config)#network 192.168.88.0 255.255.255.0
 R1(dhcp-config)#default-router 192.168.88.1
@@ -251,7 +255,7 @@ R1(dhcp-config)#option 150 ip 192.168.88.1
       <div class="admonition-content">option 150 maksudnya adalah ip TFTP Server, TFTP Server  itu server yang menyimpan</div>
     </div>
   </div>
-<h2 id="konfigurasi-telphony-service-pada-r1-">Konfigurasi Telphony Service pada R1 :</h2>
+<h3 id="konfigurasi-telphony-service-pada-r1-">Konfigurasi Telphony Service pada R1 :</h3>
 <pre tabindex="0"><code>R1(dhcp-config)#telephony-service
 R1(config-telephony)#ip source-address 192.168.88.1 port 2000
 R1(config-telephony)#max-dn 3
@@ -277,7 +281,7 @@ R1(config-ephone-dn)#number 1003
 </div>
     </div>
   </div>
-<h2 id="konfigurasi-pada-sw1">Konfigurasi pada SW1</h2>
+<h3 id="konfigurasi-pada-sw1">Konfigurasi pada SW1</h3>
 <pre tabindex="0"><code>SW1&gt;enable
 SW1#conf t
 SW1(config)#vlan 10
