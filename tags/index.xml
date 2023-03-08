@@ -3,12 +3,20 @@
     <title>Tags - Tag - enohbadrie</title>
     <link>http://www.rumah-it.com/tags/</link>
     <description>Tags - Tag - enohbadrie</description>
-    <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 06 Mar 2023 10:00:46 &#43;0700</lastBuildDate><atom:link href="http://www.rumah-it.com/tags/" rel="self" type="application/rss+xml" /><item>
+    <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 08 Mar 2023 09:29:17 &#43;0700</lastBuildDate><atom:link href="http://www.rumah-it.com/tags/" rel="self" type="application/rss+xml" /><item>
   <title>Cisco</title>
   <link>http://www.rumah-it.com/tags/cisco/</link>
-  <pubDate>Mon, 06 Mar 2023 10:00:46 &#43;0700</pubDate>
+  <pubDate>Wed, 08 Mar 2023 09:29:17 &#43;0700</pubDate>
   <author>Author</author>
   <guid>http://www.rumah-it.com/tags/cisco/</guid>
+  <description><![CDATA[]]></description>
+</item>
+<item>
+  <title>VPN</title>
+  <link>http://www.rumah-it.com/tags/vpn/</link>
+  <pubDate>Wed, 08 Mar 2023 09:29:17 &#43;0700</pubDate>
+  <author>Author</author>
+  <guid>http://www.rumah-it.com/tags/vpn/</guid>
   <description><![CDATA[]]></description>
 </item>
 <item>
@@ -73,14 +81,6 @@
   <pubDate>Tue, 28 Feb 2023 10:49:28 &#43;0700</pubDate>
   <author>Author</author>
   <guid>http://www.rumah-it.com/tags/mikrotik/</guid>
-  <description><![CDATA[]]></description>
-</item>
-<item>
-  <title>Open System</title>
-  <link>http://www.rumah-it.com/tags/open-system/</link>
-  <pubDate>Tue, 28 Feb 2023 10:49:28 &#43;0700</pubDate>
-  <author>Author</author>
-  <guid>http://www.rumah-it.com/tags/open-system/</guid>
   <description><![CDATA[]]></description>
 </item>
 </channel>
