@@ -3,17 +3,9 @@
     <title>enohbadrie</title>
     <link>http://www.rumah-it.com/</link>
     <description>Rumah-IT</description>
-    <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 09 Mar 2023 11:48:28 &#43;0700</lastBuildDate>
+    <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 08 Mar 2023 13:10:33 &#43;0700</lastBuildDate>
       <atom:link href="http://www.rumah-it.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
-  <title>installasi_briker_1.4_komodo_di_virtual_box</title>
-  <link>http://www.rumah-it.com/posts/installasi_briker_1.4_komodo_di_virtual_box/</link>
-  <pubDate>Thu, 09 Mar 2023 11:48:28 &#43;0700</pubDate>
-  <author>Enoh Badrie</author>
-  <guid>http://www.rumah-it.com/posts/installasi_briker_1.4_komodo_di_virtual_box/</guid>
-  <description><![CDATA[installasi_briker_1.4_komodo_di_virtual_box]]></description>
-</item>
-<item>
   <title>Voice Over Internet Protocol (VOIP) CISCO PT</title>
   <link>http://www.rumah-it.com/posts/voice_over_internet_protocol/</link>
   <pubDate>Wed, 08 Mar 2023 13:10:33 &#43;0700</pubDate>
@@ -84,6 +76,14 @@
   <author>Enoh Badrie</author>
   <guid>http://www.rumah-it.com/posts/static_routing_cisco/</guid>
   <description><![CDATA[Static Routing-Cisco PT]]></description>
+</item>
+<item>
+  <title>Topologi Jaringan Komputer</title>
+  <link>http://www.rumah-it.com/posts/jenis_topologi_jaringan_komputer/</link>
+  <pubDate>Tue, 28 Feb 2023 10:49:28 &#43;0700</pubDate>
+  <author>Enoh Badrie</author>
+  <guid>http://www.rumah-it.com/posts/jenis_topologi_jaringan_komputer/</guid>
+  <description><![CDATA[Topologi Jaringan Komputer]]></description>
 </item>
 </channel>
 </rss>
