@@ -3,7 +3,23 @@
     <title>Tags - Tag - enohbadrie</title>
     <link>http://www.rumah-it.com/tags/</link>
     <description>Tags - Tag - enohbadrie</description>
-    <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 10 Mar 2023 08:54:03 &#43;0700</lastBuildDate><atom:link href="http://www.rumah-it.com/tags/" rel="self" type="application/rss+xml" /><item>
+    <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 10 Mar 2023 13:15:11 &#43;0700</lastBuildDate><atom:link href="http://www.rumah-it.com/tags/" rel="self" type="application/rss+xml" /><item>
+  <title>Ubuntu</title>
+  <link>http://www.rumah-it.com/tags/ubuntu/</link>
+  <pubDate>Fri, 10 Mar 2023 13:15:11 &#43;0700</pubDate>
+  <author>Author</author>
+  <guid>http://www.rumah-it.com/tags/ubuntu/</guid>
+  <description><![CDATA[]]></description>
+</item>
+<item>
+  <title>Virtual Box</title>
+  <link>http://www.rumah-it.com/tags/virtual-box/</link>
+  <pubDate>Fri, 10 Mar 2023 13:15:11 &#43;0700</pubDate>
+  <author>Author</author>
+  <guid>http://www.rumah-it.com/tags/virtual-box/</guid>
+  <description><![CDATA[]]></description>
+</item>
+<item>
   <title>Linux</title>
   <link>http://www.rumah-it.com/tags/linux/</link>
   <pubDate>Fri, 10 Mar 2023 08:54:03 &#43;0700</pubDate>
@@ -65,22 +81,6 @@
   <pubDate>Wed, 08 Mar 2023 09:29:17 &#43;0700</pubDate>
   <author>Author</author>
   <guid>http://www.rumah-it.com/tags/vpn/</guid>
-  <description><![CDATA[]]></description>
-</item>
-<item>
-  <title>Ubuntu 20.04.5 LTS</title>
-  <link>http://www.rumah-it.com/tags/ubuntu-20.04.5-lts/</link>
-  <pubDate>Mon, 06 Mar 2023 10:00:46 &#43;0700</pubDate>
-  <author>Author</author>
-  <guid>http://www.rumah-it.com/tags/ubuntu-20.04.5-lts/</guid>
-  <description><![CDATA[]]></description>
-</item>
-<item>
-  <title>Gammu</title>
-  <link>http://www.rumah-it.com/tags/gammu/</link>
-  <pubDate>Wed, 01 Mar 2023 15:07:40 &#43;0700</pubDate>
-  <author>Author</author>
-  <guid>http://www.rumah-it.com/tags/gammu/</guid>
   <description><![CDATA[]]></description>
 </item>
 </channel>

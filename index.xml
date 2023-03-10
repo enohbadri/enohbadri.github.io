@@ -3,9 +3,17 @@
     <title>enohbadrie</title>
     <link>http://www.rumah-it.com/</link>
     <description>Rumah-IT</description>
-    <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 10 Mar 2023 08:54:03 &#43;0700</lastBuildDate>
+    <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 10 Mar 2023 13:15:11 &#43;0700</lastBuildDate>
       <atom:link href="http://www.rumah-it.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
+  <title>Cara Install Virtual Box di Ubuntu 20.04-LTS</title>
+  <link>http://www.rumah-it.com/posts/cara_install_virtual_box_di_ubuntu_20.04-lts/</link>
+  <pubDate>Fri, 10 Mar 2023 13:15:11 &#43;0700</pubDate>
+  <author>Enoh Badrie</author>
+  <guid>http://www.rumah-it.com/posts/cara_install_virtual_box_di_ubuntu_20.04-lts/</guid>
+  <description><![CDATA[Cara Install Virtual Box di Ubuntu 20.04-LTS]]></description>
+</item>
+<item>
   <title>Installasi Ubuntu Server 13.04 di Virtual Box</title>
   <link>http://www.rumah-it.com/posts/installasi_ubuntu_server_13.04_di_virtual_box/</link>
   <pubDate>Fri, 10 Mar 2023 08:54:03 &#43;0700</pubDate>
@@ -76,14 +84,6 @@
   <author>Enoh Badrie</author>
   <guid>http://www.rumah-it.com/posts/pembahasan_ukk_tkj_paket2_2022/</guid>
   <description><![CDATA[Pembahasan Soal UKK TKJ Paket-2 2022]]></description>
-</item>
-<item>
-  <title>Pengertian OSI Layer</title>
-  <link>http://www.rumah-it.com/posts/pengertian_osi_layer/</link>
-  <pubDate>Tue, 28 Feb 2023 10:49:28 &#43;0700</pubDate>
-  <author>Enoh Badrie</author>
-  <guid>http://www.rumah-it.com/posts/pengertian_osi_layer/</guid>
-  <description><![CDATA[Pengertian OSI Layer]]></description>
 </item>
 </channel>
 </rss>
