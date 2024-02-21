@@ -10,7 +10,7 @@
 <meta name="description" content="Just share" /><meta name="keywords" content='draft' /><meta itemprop="name" content="Cara Hosting/Deploy Hugo di Github">
 <meta itemprop="description" content=""><meta itemprop="datePublished" content="2024-02-20T10:55:24+07:00" />
 <meta itemprop="dateModified" content="2024-02-20T10:55:24+07:00" />
-<meta itemprop="wordCount" content="735"><meta itemprop="image" content="http://enohbadri.github.io/posts/cara_hosting_deploy_hugo_di_github/deploy_hugo_di_github/terminal.png">
+<meta itemprop="wordCount" content="740"><meta itemprop="image" content="http://enohbadri.github.io/posts/cara_hosting_deploy_hugo_di_github/deploy_hugo_di_github/terminal.png">
 <meta itemprop="keywords" content="draft," /><meta property="og:title" content="Cara Hosting/Deploy Hugo di Github" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="article" />
@@ -36,7 +36,7 @@
               "url": "http:\/\/enohbadri.github.io\/posts\/cara_hosting_deploy_hugo_di_github\/deploy_hugo_di_github\/terminal.png",
               "width":  839 ,
               "height":  522 
-            }],"genre": "posts","keywords": "draft","wordcount":  735 ,
+            }],"genre": "posts","keywords": "draft","wordcount":  740 ,
     "url": "http:\/\/enohbadri.github.io\/posts\/cara_hosting_deploy_hugo_di_github\/deploy_hugo_di_github\/","datePublished": "2024-02-20T10:55:24+07:00","dateModified": "2024-02-20T10:55:24+07:00","publisher": {
       "@type": "Organization",
       "name": ""},"author": {
@@ -171,7 +171,7 @@
       <div class="post-meta-line"><span class="post-author"><span class="author"><i class="fa-solid fa-user-circle" aria-hidden="true"></i>
       </span></span>
           <span class="post-category">included in <a href="/categories/draft/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> draft</a></span></div>
-      <div class="post-meta-line"><span title=2024-02-20&#32;10:55:24><i class="fa-regular fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2024-02-20">2024-02-20</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw" aria-hidden="true"></i> 735 words</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw" aria-hidden="true"></i> 4 minutes</span>&nbsp;<span id="busuanzi_container_page_pv" class="busuanzi_visitors comment-visitors" data-flag-title="Cara Hosting/Deploy Hugo di Github">
+      <div class="post-meta-line"><span title=2024-02-20&#32;10:55:24><i class="fa-regular fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2024-02-20">2024-02-20</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw" aria-hidden="true"></i> 740 words</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw" aria-hidden="true"></i> 4 minutes</span>&nbsp;<span id="busuanzi_container_page_pv" class="busuanzi_visitors comment-visitors" data-flag-title="Cara Hosting/Deploy Hugo di Github">
               <i class="fa-regular fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_page_pv">-</span>&nbsp;views
             </span>&nbsp;</div>
     </div><div class="featured-image"><img loading="lazy" src="/posts/cara_hosting_deploy_hugo_di_github/deploy_hugo_di_github/terminal.png" srcset="/posts/cara_hosting_deploy_hugo_di_github/deploy_hugo_di_github/terminal.png, /posts/cara_hosting_deploy_hugo_di_github/deploy_hugo_di_github/terminal.png 1.5x, /posts/cara_hosting_deploy_hugo_di_github/deploy_hugo_di_github/terminal.png 2x" sizes="auto" data-title="/posts/cara_hosting_deploy_hugo_di_github/deploy_hugo_di_github/terminal.png" data-alt="/posts/cara_hosting_deploy_hugo_di_github/deploy_hugo_di_github/terminal.png" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></div><div class="details toc" id="toc-static" data-kept="false">
@@ -288,33 +288,31 @@ git add .
 git commit -m &#34;tes Deploy hugo&#34;
 git push -u origin master
 </code></pre><p>Nah biar tidak repot, kita bisa bungkus perintah-perintah tersebut ke dalam sebuah file skrip.</p>
-<div class="details admonition tip open">
-    <div class="details-summary admonition-title">
-      <i class="icon fa-solid fa-lightbulb fa-fw" aria-hidden="true"></i>./deploy.sh<i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true"></i>
-    </div>
-    <div class="details-content">
-      <div class="admonition-content"><p>#!/bin/bash</p>
-<p>echo -e &ldquo;\033[0;32mDeploying updates to GitHub&hellip;\033[0m&rdquo;</p>
-<p>-Genterate file statis
-hugo # if using a theme, replace by <code>hugo -t &lt;yourtheme&gt;</code></p>
-<p>-pindah ke direktoru publik
+<pre tabindex="0"><code>#!/bin/bash
+
+echo -e &#34;\033[0;32mDeploying updates to GitHub...\033[0m&#34;
+
+# Genterate file statis
+hugo # if using a theme, replace by `hugo -t &lt;yourtheme&gt;`
+
+# pindah ke direktoru publik
 cd public
--tambahkan perubahan ke Git
-git add -A</p>
-<p>-Buat sebuah commit baru
-msg=&ldquo;rebuilding site <code>date</code>&rdquo;
+# tambahkan perubahan ke Git
+git add -A
+
+# Buat sebuah commit baru
+msg=&#34;rebuilding site `date`&#34;
 if [ $# -eq 1 ]
-then msg=&quot;$1&quot;
+  then msg=&#34;$1&#34;
 fi
-git commit -m &ldquo;$msg&rdquo;</p>
-<p>-Push atau puload ke Github
-git push origin master</p>
-<p>-Balik ke direktori sebelumnya
-cd ..</p>
-</div>
-    </div>
-  </div>
-<p>File skrip tersebut dapat kita simpan di dalam root direktory proyek Hugo.</p>
+git commit -m &#34;$msg&#34;
+
+# Push atau puload ke Github
+git push origin master
+
+# Balik ke direktori sebelumnya
+cd ..
+</code></pre><p>File skrip tersebut dapat kita simpan di dalam root direktory proyek Hugo.</p>
 <p>Sebagai contoh, kita simpan dengan dengan deploy.sh.</p>
 <p>Setelah itu, berikan hak akses eksekusi untuk skrip ini.</p>
 <pre tabindex="0"><code>chmod +x deploy.sh
