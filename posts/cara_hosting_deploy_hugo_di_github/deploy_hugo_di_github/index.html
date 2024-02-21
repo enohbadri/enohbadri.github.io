@@ -295,22 +295,22 @@ git push -u origin master
     <div class="details-content">
       <div class="admonition-content"><p>#!/bin/bash</p>
 <p>echo -e &ldquo;\033[0;32mDeploying updates to GitHub&hellip;\033[0m&rdquo;</p>
-<h1 id="genterate-file-statis">Genterate file statis</h1>
-<p>hugo # if using a theme, replace by <code>hugo -t &lt;yourtheme&gt;</code></p>
-<h1 id="pindah-ke-direktoru-publik">pindah ke direktoru publik</h1>
-<p>cd public</p>
-<h1 id="tambahkan-perubahan-ke-git">tambahkan perubahan ke Git</h1>
-<p>git add -A</p>
-<h1 id="buat-sebuah-commit-baru">Buat sebuah commit baru</h1>
-<p>msg=&ldquo;rebuilding site <code>date</code>&rdquo;
+<p>-Genterate file statis
+hugo # if using a theme, replace by <code>hugo -t &lt;yourtheme&gt;</code></p>
+<p>-pindah ke direktoru publik
+cd public
+-tambahkan perubahan ke Git
+git add -A</p>
+<p>-Buat sebuah commit baru
+msg=&ldquo;rebuilding site <code>date</code>&rdquo;
 if [ $# -eq 1 ]
 then msg=&quot;$1&quot;
 fi
 git commit -m &ldquo;$msg&rdquo;</p>
-<h1 id="push-atau-puload-ke-github">Push atau puload ke Github</h1>
-<p>git push origin master</p>
-<h1 id="balik-ke-direktori-sebelumnya">Balik ke direktori sebelumnya</h1>
-<p>cd ..</p>
+<p>-Push atau puload ke Github
+git push origin master</p>
+<p>-Balik ke direktori sebelumnya
+cd ..</p>
 </div>
     </div>
   </div>
