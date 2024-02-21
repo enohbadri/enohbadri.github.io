@@ -1,0 +1,47 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>Administrasi Sistem Jaringan - Category - enoh-badrie</title>
+    <link>http://enohbadri.github.io/categories/administrasi-sistem-jaringan/</link>
+    <description>Administrasi Sistem Jaringan - Category - enoh-badrie</description>
+    <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 15 May 2023 13:25:31 &#43;0700</lastBuildDate><atom:link href="http://enohbadri.github.io/categories/administrasi-sistem-jaringan/" rel="self" type="application/rss+xml" /><item>
+  <title>Membuat Website CRUD Sederhana</title>
+  <link>http://enohbadri.github.io/posts/membuat_database_crud_sederhana/</link>
+  <pubDate>Mon, 15 May 2023 13:25:31 &#43;0700</pubDate>
+  <author>Enoh Badrie</author>
+  <guid>http://enohbadri.github.io/posts/membuat_database_crud_sederhana/</guid>
+  <description><![CDATA[Membuat Website CRUD Sederhana]]></description>
+</item>
+<item>
+  <title>Web Server Applications</title>
+  <link>http://enohbadri.github.io/posts/web_server_applications/</link>
+  <pubDate>Thu, 16 Mar 2023 08:54:49 &#43;0700</pubDate>
+  <author>Enoh Badrie</author>
+  <guid>http://enohbadri.github.io/posts/web_server_applications/</guid>
+  <description><![CDATA[Web Server Applications]]></description>
+</item>
+<item>
+  <title>Menghubungkan Komputer Host dengan V-Box (Ubuntu Server)</title>
+  <link>http://enohbadri.github.io/posts/menghubungkan_komputer_hostasli_dengan_komputer_virtualubuntu_server/</link>
+  <pubDate>Mon, 13 Mar 2023 08:11:41 &#43;0700</pubDate>
+  <author>Enoh Badrie</author>
+  <guid>http://enohbadri.github.io/posts/menghubungkan_komputer_hostasli_dengan_komputer_virtualubuntu_server/</guid>
+  <description><![CDATA[Menghubungkan Komputer Host dengan V-Box (Ubuntu Server)]]></description>
+</item>
+<item>
+  <title>Installasi Ubuntu Server 13.04 di Virtual Box</title>
+  <link>http://enohbadri.github.io/posts/installasi_ubuntu_server_13.04_di_virtual_box/</link>
+  <pubDate>Fri, 10 Mar 2023 08:54:03 &#43;0700</pubDate>
+  <author>Enoh Badrie</author>
+  <guid>http://enohbadri.github.io/posts/installasi_ubuntu_server_13.04_di_virtual_box/</guid>
+  <description><![CDATA[Installasi Ubuntu Server 13.04 di Virtual Box]]></description>
+</item>
+<item>
+  <title>Installasi Windows Server 2008 di Virtual Box</title>
+  <link>http://enohbadri.github.io/posts/installasi_win_server_v-box/</link>
+  <pubDate>Mon, 06 Feb 2023 10:49:28 &#43;0700</pubDate>
+  <author>Enoh Badrie</author>
+  <guid>http://enohbadri.github.io/posts/installasi_win_server_v-box/</guid>
+  <description><![CDATA[Installasi Windows Server 2008 di Virtual Box]]></description>
+</item>
+</channel>
+</rss>

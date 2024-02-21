@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="en">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+    <meta name="robots" content="noodp" />
+    <title>Cara Install Virtual Box 7.0 di Ubuntu 20.04-LTS - enoh-badrie</title><meta name="author" content="">
+<meta name="author-link" content="">
+<meta name="description" content="Cara Install Virtual Box 7.0 di Ubuntu 20.04-LTS" /><meta name="keywords" content='Virtual Box, Ubuntu' /><meta itemprop="name" content="Cara Install Virtual Box 7.0 di Ubuntu 20.04-LTS">
+<meta itemprop="description" content="Cara Install Virtual Box 7.0 di Ubuntu 20.04-LTS"><meta itemprop="datePublished" content="2023-03-10T13:15:11+07:00" />
+<meta itemprop="dateModified" content="2023-03-10T13:15:11+07:00" />
+<meta itemprop="wordCount" content="363"><meta itemprop="image" content="http://enohbadri.github.io/posts/cara_install_virtual_box_di_ubuntu_20.04-lts/about.png">
+<meta itemprop="keywords" content="Virtual Box,Ubuntu," /><meta property="og:title" content="Cara Install Virtual Box 7.0 di Ubuntu 20.04-LTS" />
+<meta property="og:description" content="Cara Install Virtual Box 7.0 di Ubuntu 20.04-LTS" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://enohbadri.github.io/posts/cara_install_virtual_box_di_ubuntu_20.04-lts/" /><meta property="og:image" content="http://enohbadri.github.io/posts/cara_install_virtual_box_di_ubuntu_20.04-lts/about.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-03-10T13:15:11+07:00" />
+<meta property="article:modified_time" content="2023-03-10T13:15:11+07:00" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="http://enohbadri.github.io/posts/cara_install_virtual_box_di_ubuntu_20.04-lts/about.png"/>
+<meta name="twitter:title" content="Cara Install Virtual Box 7.0 di Ubuntu 20.04-LTS"/>
+<meta name="twitter:description" content="Cara Install Virtual Box 7.0 di Ubuntu 20.04-LTS"/>
+<meta name="application-name" content="FixIt">
+<meta name="apple-mobile-web-app-title" content="FixIt"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="https://en.gravatar.com/userimage/231818137/90e0e2859b85bcde111b248cb659b414.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://enohbadri.github.io/posts/cara_install_virtual_box_di_ubuntu_20.04-lts/" /><link rel="prev" href="http://enohbadri.github.io/posts/installasi_ubuntu_server_13.04_di_virtual_box/" /><link rel="next" href="http://enohbadri.github.io/posts/menghubungkan_komputer_hostasli_dengan_komputer_virtualubuntu_server/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Cara Install Virtual Box 7.0 di Ubuntu 20.04-LTS",
+    "inLanguage": "en",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "http:\/\/enohbadri.github.io\/posts\/cara_install_virtual_box_di_ubuntu_20.04-lts\/"
+    },"image": [{
+              "@type": "ImageObject",
+              "url": "http:\/\/enohbadri.github.io\/posts\/cara_install_virtual_box_di_ubuntu_20.04-lts\/about.png",
+              "width":  642 ,
+              "height":  519 
+            }],"genre": "posts","keywords": "Virtual Box, Ubuntu","wordcount":  363 ,
+    "url": "http:\/\/enohbadri.github.io\/posts\/cara_install_virtual_box_di_ubuntu_20.04-lts\/","datePublished": "2023-03-10T13:15:11+07:00","dateModified": "2023-03-10T13:15:11+07:00","publisher": {
+      "@type": "Organization",
+      "name": ""},"author": {
+        "@type": "Person",
+        "name": "Enoh Badrie"
+      },"description": "Cara Install Virtual Box 7.0 di Ubuntu 20.04-LTS"
+  }
+  </script></head>
+  <body data-header-desktop="auto" data-header-mobile="auto"><script>(window.localStorage?.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('data-theme', 'dark');</script><div class="wrapper"><header class="desktop animate__faster" id="header-desktop">
+  <div class="header-wrapper" data-github-corner="right">
+    <div class="header-title">
+      <a href="/" title="enoh-badrie"><img loading="lazy" src="https://en.gravatar.com/userimage/231818137/90e0e2859b85bcde111b248cb659b414.png" srcset="https://en.gravatar.com/userimage/231818137/90e0e2859b85bcde111b248cb659b414.png, https://en.gravatar.com/userimage/231818137/90e0e2859b85bcde111b248cb659b414.png 1.5x, https://en.gravatar.com/userimage/231818137/90e0e2859b85bcde111b248cb659b414.png 2x" sizes="auto" data-title="enoh-badrie" data-alt="enoh-badrie" class="logo" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/><span class="header-title-text">Enoh Badrie</span></a><span class="header-subtitle"></span></div>
+    <nav>
+      <ul class="menu"><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/posts/"
+                
+                
+              ><i class="fa-solid fa-archive fa-fw fa-sm" aria-hidden="true"></i> Posts</a></li><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/categories/"
+                
+                
+              ><i class="fa-solid fa-th fa-fw fa-sm" aria-hidden="true"></i> Categories</a></li><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/tags/"
+                
+                
+              ><i class="fa-solid fa-tags fa-fw fa-sm" aria-hidden="true"></i> Tags</a></li><li class="menu-item delimiter"></li><li class="menu-item search" id="search-desktop">
+            <input type="text" placeholder="Search titles or contents ..." id="search-input-desktop">
+            <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+              <i class="fa-solid fa-search fa-fw" aria-hidden="true"></i>
+            </a>
+            <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+              <i class="fa-solid fa-times-circle fa-fw" aria-hidden="true"></i>
+            </a>
+            <span class="search-button search-loading" id="search-loading-desktop">
+              <i class="fa-solid fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+            </span>
+          </li><li class="menu-item theme-switch" title="Switch Theme">
+          <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header><header class="mobile animate__faster" id="header-mobile">
+  <div class="header-container">
+    <div class="header-wrapper">
+      <div class="header-title">
+        <a href="/" title="enoh-badrie"><img loading="lazy" src="https://en.gravatar.com/userimage/231818137/90e0e2859b85bcde111b248cb659b414.png" srcset="https://en.gravatar.com/userimage/231818137/90e0e2859b85bcde111b248cb659b414.png, https://en.gravatar.com/userimage/231818137/90e0e2859b85bcde111b248cb659b414.png 1.5x, https://en.gravatar.com/userimage/231818137/90e0e2859b85bcde111b248cb659b414.png 2x" sizes="auto" data-title="https://en.gravatar.com/userimage/231818137/90e0e2859b85bcde111b248cb659b414.png" data-alt="https://en.gravatar.com/userimage/231818137/90e0e2859b85bcde111b248cb659b414.png" class="logo" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/><span class="header-title-text">Enoh Badrie</span></a><span class="header-subtitle"></span></div>
+      <div class="menu-toggle" id="menu-toggle-mobile">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+    <nav>
+      <ul class="menu" id="menu-mobile"><li class="search-wrapper">
+            <div class="search mobile" id="search-mobile">
+              <input type="text" placeholder="Search titles or contents ..." id="search-input-mobile">
+              <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                <i class="fa-solid fa-search fa-fw" aria-hidden="true"></i>
+              </a>
+              <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                <i class="fa-solid fa-times-circle fa-fw" aria-hidden="true"></i>
+              </a>
+              <span class="search-button search-loading" id="search-loading-mobile">
+                <i class="fa-solid fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+              </span>
+            </div>
+            <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+              Cancel
+            </a>
+          </li><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="/posts/"
+                  
+                  
+                ><i class="fa-solid fa-archive fa-fw fa-sm" aria-hidden="true"></i> Posts</a></li><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="/categories/"
+                  
+                  
+                ><i class="fa-solid fa-th fa-fw fa-sm" aria-hidden="true"></i> Categories</a></li><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="/tags/"
+                  
+                  
+                ><i class="fa-solid fa-tags fa-fw fa-sm" aria-hidden="true"></i> Tags</a></li><li class="menu-item theme-switch" title="Switch Theme">
+          <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+        </li></ul>
+    </nav>
+  </div>
+
+
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client="ca-pub-3658587961826512"
+       data-ad-slot="1234567890"
+       data-ad-format="auto"></ins>
+  <script>
+       (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+  
+
+
+
+</header><div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+  </div>
+  <div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+  </div><main class="container" data-page-style="wide"><aside class="toc" id="toc-auto"><h2 class="toc-title">Contents&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
+      <div class="toc-content" id="toc-content-auto"></div></aside>
+
+  <aside class="aside-custom">
+    </aside>
+
+  <article class="page single">
+    <div class="header"><h1 class="single-title animate__animated animate__flipInX">
+        <span title="Repost" class="icon-repost"><i class="fa-solid fa-share fa-fw" aria-hidden="true"></i></span><span>Cara Install Virtual Box 7.0 di Ubuntu 20.04-LTS</span>
+      </h1></div><div class="post-meta">
+      <div class="post-meta-line"><span class="post-author"><a href="https://" title="Author" rel=" author" class="author"><i class="fa-solid fa-user-circle" aria-hidden="true"></i>
+    Enoh Badrie</a></span>
+          <span class="post-category">included in <a href="/categories/linux/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> Linux</a></span></div>
+      <div class="post-meta-line"><span title=2023-03-10&#32;13:15:11><i class="fa-regular fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-03-10">2023-03-10</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw" aria-hidden="true"></i> 363 words</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw" aria-hidden="true"></i> 2 minutes</span>&nbsp;<span id="busuanzi_container_page_pv" class="busuanzi_visitors comment-visitors" data-flag-title="Cara Install Virtual Box 7.0 di Ubuntu 20.04-LTS">
+              <i class="fa-regular fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_page_pv">-</span>&nbsp;views
+            </span>&nbsp;</div>
+    </div><div class="featured-image"><img loading="lazy" src="/posts/cara_install_virtual_box_di_ubuntu_20.04-lts/about.png" srcset="/posts/cara_install_virtual_box_di_ubuntu_20.04-lts/about.png, /posts/cara_install_virtual_box_di_ubuntu_20.04-lts/about.png 1.5x, /posts/cara_install_virtual_box_di_ubuntu_20.04-lts/about.png 2x" sizes="auto" data-title="Cara Install Virtual Box 7.0 di Ubuntu 20.04-LTS" data-alt="/posts/cara_install_virtual_box_di_ubuntu_20.04-lts/about.png" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></div><div class="details toc" id="toc-static" data-kept="false">
+        <div class="details-summary toc-title">
+          <span>Contents</span>
+          <span><i class="details-icon fa-solid fa-angle-right" aria-hidden="true"></i></span>
+        </div>
+        <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#apa-itu-virtual-box">Apa itu Virtual Box?</a></li>
+        <li><a href="#cara-install">Cara Install</a></li>
+        <li><a href="#download">Download</a></li>
+        <li><a href="#install-via-terminal-ubuntu">Install Via Terminal Ubuntu</a></li>
+        <li><a href="#jalankan">Jalankan</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+      </div><div class="content" id="content"><h3 id="apa-itu-virtual-box">Apa itu Virtual Box?</h3>
+<p>VirtualBox adalah perangkat lunak virtualisasi yang memungkinkan pengguna untuk menjalankan sistem operasi dan aplikasi dalam lingkungan virtual pada sistem operasi yang sedang berjalan. Dengan menggunakan VirtualBox, pengguna dapat menginstal dan menjalankan sistem operasi seperti Windows, Linux, macOS, dan sistem operasi lainnya pada mesin virtual yang terisolasi dari sistem operasi utama.</p>
+<p>VirtualBox dikembangkan oleh Oracle dan tersedia secara gratis untuk digunakan di sistem operasi Windows, macOS, Linux, dan Solaris. VirtualBox mendukung berbagai fitur virtualisasi seperti penggunaan CPU dan RAM yang terbagi, akses jaringan yang terisolasi, pengaturan konfigurasi jaringan virtual, snapshot, dan banyak lagi.</p>
+<p>VirtualBox sering digunakan oleh para pengembang perangkat lunak dan administrator sistem untuk menguji perangkat lunak, konfigurasi, dan sistem operasi tanpa mengubah sistem operasi utama. Selain itu, VirtualBox juga dapat digunakan oleh pengguna yang ingin menjalankan aplikasi atau sistem operasi yang tidak tersedia pada sistem operasi utama, atau ingin mengisolasi lingkungan pengembangan atau penelitian dari sistem operasi utama.</p>
+<p>Pengguna dapat menginstal VirtualBox dengan mengunduh paket instalasi dari situs web resmi VirtualBox dan mengikuti instruksi instalasi. Setelah terpasang, pengguna dapat membuat mesin virtual dan menginstal sistem operasi atau aplikasi di dalamnya.</p>
+<h3 id="cara-install">Cara Install</h3>
+<p>Kali ini saya akan sharing pengalaman mengenai bagaimana caranya Install Virtualbox 7.0 di Ubuntu 20.04.5 LTS, Mari ikuti langkah-langkahnya.</p>
+<h3 id="download">Download</h3>
+<p>Step 1 : Download Virtualbox installer</p>
+<p>Download installer di website resminya <a href="https://www.virtualbox.org/wiki/Linux_Downloads"target="_blank" rel="external nofollow noopener noreferrer">https://www.virtualbox.org/wiki/Linux_Downloads<i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true"></i></a></p>
+<p><img loading="lazy" src="1.png" srcset="/posts/cara_install_virtual_box_di_ubuntu_20.04-lts/1.png, 1.png 1.5x, /posts/cara_install_virtual_box_di_ubuntu_20.04-lts/1.png 2x" sizes="auto" data-title="Cara Install Virtual Box di Ubuntu 20.04-LTS" data-alt="Cara Install Virtual Box di Ubuntu 20.04-LTS" width="1302" height="741" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></p>
+<p>Download installer di sesuaikan dengan versi OS, untuk saya sendiri memakai OS Ubuntu 20.04.5 LTS Setelah proses download selesai simpan di directory Download.</p>
+<h3 id="install-via-terminal-ubuntu">Install Via Terminal Ubuntu</h3>
+<p>Step 2 : Instal Virtualbox melalui Terminal</p>
+<p>Buka Terminal, kemudian pindah ke directory tempat menyimpan file hasil download tadi</p>
+<pre tabindex="0"><code class="language-Terminal" data-lang="Terminal">cd Downloads
+</code></pre><p>Kita akan menginstall nya secara manual menggunakan  perintah dpkg-i</p>
+<p>dpkg -i adalah perintah pada sistem operasi Debian dan turunannya, termasuk Ubuntu, yang digunakan untuk menginstal paket DEB secara manual. Paket DEB (Debian Binary Package) adalah format paket standar yang digunakan oleh sistem operasi Linux berbasis Debian untuk menginstal aplikasi dan pustaka.</p>
+<pre tabindex="0"><code class="language-Terminal" data-lang="Terminal">sudo dpkg -i virtualbox-7.0_7.0.6-155176_Ubuntu_focal_amd64.deb
+</code></pre><div class="details admonition tip open">
+    <div class="details-summary admonition-title">
+      <i class="icon fa-solid fa-lightbulb fa-fw" aria-hidden="true"></i>Info<i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true"></i>
+    </div>
+    <div class="details-content">
+      <div class="admonition-content">Sesuaikan dengan nama file installer yang telah didownload</div>
+    </div>
+  </div>
+<p><img loading="lazy" src="install.png" srcset="/posts/cara_install_virtual_box_di_ubuntu_20.04-lts/install.png, install.png 1.5x, /posts/cara_install_virtual_box_di_ubuntu_20.04-lts/install.png 2x" sizes="auto" data-title="Cara Install Virtual Box di Ubuntu 20.04-LTS" data-alt="Cara Install Virtual Box di Ubuntu 20.04-LTS" width="736" height="482" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></p>
+<p>Kemudian tekan y untuk melanjutkan instalasi.</p>
+<h3 id="jalankan">Jalankan</h3>
+<p>Setelah proses instalasi selesai, buka virtualbox dengan menjalankan perintah:</p>
+<pre tabindex="0"><code class="language-Terminal" data-lang="Terminal">virtualbox
+</code></pre><p><img loading="lazy" src="v-box.png" srcset="/posts/cara_install_virtual_box_di_ubuntu_20.04-lts/v-box.png, v-box.png 1.5x, /posts/cara_install_virtual_box_di_ubuntu_20.04-lts/v-box.png 2x" sizes="auto" data-title="Cara Install Virtual Box di Ubuntu 20.04-LTS" data-alt="Cara Install Virtual Box di Ubuntu 20.04-LTS" width="736" height="482" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></p>
+<p>Akan muncul window “Oracle VM Virtualbox Manager”</p>
+<p><img loading="lazy" src="v-box2.png" srcset="/posts/cara_install_virtual_box_di_ubuntu_20.04-lts/v-box2.png, v-box2.png 1.5x, /posts/cara_install_virtual_box_di_ubuntu_20.04-lts/v-box2.png 2x" sizes="auto" data-title="Cara Install Virtual Box di Ubuntu 20.04-LTS" data-alt="Cara Install Virtual Box di Ubuntu 20.04-LTS" width="703" height="439" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></p>
+<p>Instalasi virtualbox di Ubuntu 20.04.5 LTS selesai, Terimakasih.</p></div><div class="post-footer" id="post-footer">
+  <div class="post-info">
+    <div class="post-info-line">
+      <div class="post-info-mod">
+        <span title=2023-03-10&#32;13:15:11>Updated on 2023-03-10&nbsp;</span>
+      </div></div>
+    <div class="post-info-line">
+      <div class="post-info-md"></div>
+      <div class="post-info-share">
+        <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="http://enohbadri.github.io/posts/cara_install_virtual_box_di_ubuntu_20.04-lts/" data-title="Cara Install Virtual Box 7.0 di Ubuntu 20.04-LTS" data-via="@eb_badrie" data-hashtags="Virtual Box,Ubuntu"><i class="fa-brands fa-twitter fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="http://enohbadri.github.io/posts/cara_install_virtual_box_di_ubuntu_20.04-lts/" data-hashtag="Virtual Box"><i class="fa-brands fa-facebook-square fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="http://enohbadri.github.io/posts/cara_install_virtual_box_di_ubuntu_20.04-lts/" data-title="Cara Install Virtual Box 7.0 di Ubuntu 20.04-LTS"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
+  </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="post-info-more">
+    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href='/tags/virtual-box/' class="post-tag">Virtual Box</a><a href='/tags/ubuntu/' class="post-tag">Ubuntu</a></section>
+    <section>
+      <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+    </section>
+  </div>
+
+  <div class="post-nav"><a href="/posts/installasi_ubuntu_server_13.04_di_virtual_box/" class="post-nav-item" rel="prev" title="Installasi Ubuntu Server 13.04 di Virtual Box"><i class="fa-solid fa-angle-left fa-fw" aria-hidden="true"></i>Installasi Ubuntu Server 13.04 di Virtual Box</a>
+      <a href="/posts/menghubungkan_komputer_hostasli_dengan_komputer_virtualubuntu_server/" class="post-nav-item" rel="next" title="Menghubungkan Komputer Host dengan V-Box (Ubuntu Server)">Menghubungkan Komputer Host dengan V-Box (Ubuntu Server)<i class="fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+<div id="comments"><div id="giscus">
+          <script
+            src="https://giscus.app/client.js"
+            data-repo="enohbadri/webpage_comments"
+            data-repo-id="R_kgDOKWTG6A"
+            data-category="Announcements"
+            data-category-id="DIC_kwDOKWTG6M4CZgQK"
+            data-mapping="url"
+            
+            data-theme="preferred_color_scheme"
+            data-reactions-enabled="1"
+            data-emit-metadata="0"
+            data-input-position="bottom"
+            data-lang="en"
+            data-loading="lazy"
+            crossorigin="anonymous"
+            async
+            defer
+          ></script>
+        </div>
+        <noscript>
+          Please enable JavaScript to view the comments powered by <a href="https://giscus.app/" rel="external nofollow noopener noreferrer">giscus</a>.
+        </noscript></div></article></main><footer class="footer">
+    <div class="footer-container"><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw" aria-hidden="true"></i>
+            <span itemprop="copyrightYear">2021 - 2024</span><span class="author" itemprop="copyrightHolder">
+              <a href="/"></a></span><span class="license footer-divider"><a rel="license external nofollow noopener noreferrer" href="https://" target="_blank">@eb_badrie 4.0</a></span></div><div class="footer-line statistics"><span class="site-time" title='Website running ...'><i class="fa-solid fa-heartbeat fa-fw animate-icon" aria-hidden="true"></i><span class="run-times ms-1">Website running ...</span></span></div><div class="footer-line visitor">
+          <span id="busuanzi_container_site_uv" title='Total visitors'><i class="fa-regular fa-user fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span><span id="busuanzi_container_site_pv" class="footer-divider" title='Total visits'><i class="fa-regular fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span>
+        </div></div>
+  </footer></div><div class="widgets"><div class="fixed-buttons animate__faster d-none"><div class="fixed-button back-to-top" role="button" aria-label="Back to Top"><i class="fa-solid fa-arrow-up fa-fw" aria-hidden="true"></i><span class="variant-numeric">0%</span>
+        </div><div class="fixed-button view-comments d-none" role="button" aria-label="View Comments"><i class="fa-solid fa-comment fa-fw" aria-hidden="true"></i></div></div><a href="https://github.com/enohbadri" title="Kunjungi GitHub Saya"target="_blank" rel="external nofollow" class="github-corner right d-none-mobile"><svg viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><div id="mask"></div><div class="reading-progress-bar" style="left: 0;top: 0;"></div><noscript>
+    <div class="noscript-warning">Theme FixIt works best with JavaScript enabled.</div>
+  </noscript>
+</div><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><link rel="stylesheet" href="/lib/pace/themes/blue/pace-theme-center-atom.css"><script src="/lib/autocomplete/autocomplete.min.js" defer></script><script src="/lib/fuse/fuse.min.js" defer></script><script src="/lib/twemoji/twemoji.min.js" defer></script><script src="/lib/sharer/sharer.min.js" async defer></script><script src="/lib/cookieconsent/cookieconsent.min.js" defer></script><script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async defer></script><script src="/lib/pace/pace.min.js" async defer></script><script>window.config={"code":{"copyTitle":"Copy to clipboard","editLockTitle":"Lock editable code block","editUnLockTitle":"Unlock editable code block","editable":true,"maxShownLines":10},"comment":{"enable":true,"expired":false,"giscus":{"darkTheme":"dark","lightTheme":"light"}},"cookieconsent":{"content":{"dismiss":"Got it!","link":"Learn more","message":"This website uses Cookies to improve your experience."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"enablePWA":true,"search":{"distance":100,"findAllMatches":true,"fuseIndexURL":"/index.json","highlightTag":"em","ignoreFieldNorm":false,"ignoreLocation":false,"isCaseSensitive":false,"location":0,"maxResultLength":10,"minMatchCharLength":2,"noResultsFound":"No results found","snippetLength":30,"threshold":0.3,"type":"fuse","useExtendedSearch":false},"siteTime":"2020-07-01T13:00:00+00:00","twemoji":true};</script><script src="/js/theme.min.js" defer></script></body>
+</html>

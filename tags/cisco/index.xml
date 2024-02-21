@@ -1,0 +1,39 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>Cisco - Tag - enoh-badrie</title>
+    <link>http://enohbadri.github.io/tags/cisco/</link>
+    <description>Cisco - Tag - enoh-badrie</description>
+    <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 21 Mar 2023 08:53:27 &#43;0700</lastBuildDate><atom:link href="http://enohbadri.github.io/tags/cisco/" rel="self" type="application/rss+xml" /><item>
+  <title>VLAN Cisco Packet Tracer</title>
+  <link>http://enohbadri.github.io/posts/vlan_cisco_packet_tracer/</link>
+  <pubDate>Tue, 21 Mar 2023 08:53:27 &#43;0700</pubDate>
+  <author>Enoh Badrie</author>
+  <guid>http://enohbadri.github.io/posts/vlan_cisco_packet_tracer/</guid>
+  <description><![CDATA[VLAN Cisco Packet Tracer]]></description>
+</item>
+<item>
+  <title>VPN Sederhana Cisco Packet Tracer</title>
+  <link>http://enohbadri.github.io/posts/vpn_cisco_packet_tracer/</link>
+  <pubDate>Wed, 08 Mar 2023 09:29:17 &#43;0700</pubDate>
+  <author>Enoh Badrie</author>
+  <guid>http://enohbadri.github.io/posts/vpn_cisco_packet_tracer/</guid>
+  <description><![CDATA[VPN Sederhana Cisco Packet Tracer]]></description>
+</item>
+<item>
+  <title>Installasi Cisco Packet Tracer 8.2 di Ubuntu 20.04.5-LTS</title>
+  <link>http://enohbadri.github.io/posts/installasi-cisco-packet-tracer-di-ubuntu20.04.5-lts/</link>
+  <pubDate>Mon, 06 Mar 2023 10:00:46 &#43;0700</pubDate>
+  <author>Enoh Badrie</author>
+  <guid>http://enohbadri.github.io/posts/installasi-cisco-packet-tracer-di-ubuntu20.04.5-lts/</guid>
+  <description><![CDATA[Installasi Cisco Packet Tracer 8.2 di Ubuntu 20.04.5-LTS]]></description>
+</item>
+<item>
+  <title>Static Routing-Cisco PT</title>
+  <link>http://enohbadri.github.io/posts/static_routing_cisco/</link>
+  <pubDate>Tue, 28 Feb 2023 10:49:28 &#43;0700</pubDate>
+  <author>Enoh Badrie</author>
+  <guid>http://enohbadri.github.io/posts/static_routing_cisco/</guid>
+  <description><![CDATA[Static Routing-Cisco PT]]></description>
+</item>
+</channel>
+</rss>

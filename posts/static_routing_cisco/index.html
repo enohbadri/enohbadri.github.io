@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="en">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+    <meta name="robots" content="noodp" />
+    <title>Static Routing-Cisco PT - enoh-badrie</title><meta name="author" content="">
+<meta name="author-link" content="">
+<meta name="description" content="Static Routing-Cisco PT" /><meta name="keywords" content='Routing, Cisco' /><meta itemprop="name" content="Static Routing-Cisco PT">
+<meta itemprop="description" content="Static Routing-Cisco PT"><meta itemprop="datePublished" content="2023-02-28T10:49:28+07:00" />
+<meta itemprop="dateModified" content="2023-02-28T10:49:28+07:00" />
+<meta itemprop="wordCount" content="1130"><meta itemprop="image" content="http://enohbadri.github.io/posts/static_routing_cisco/cisco3.png">
+<meta itemprop="keywords" content="Routing,Cisco," /><meta property="og:title" content="Static Routing-Cisco PT" />
+<meta property="og:description" content="Static Routing-Cisco PT" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://enohbadri.github.io/posts/static_routing_cisco/" /><meta property="og:image" content="http://enohbadri.github.io/posts/static_routing_cisco/cisco3.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-02-28T10:49:28+07:00" />
+<meta property="article:modified_time" content="2023-02-28T10:49:28+07:00" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="http://enohbadri.github.io/posts/static_routing_cisco/cisco3.png"/>
+<meta name="twitter:title" content="Static Routing-Cisco PT"/>
+<meta name="twitter:description" content="Static Routing-Cisco PT"/>
+<meta name="application-name" content="FixIt">
+<meta name="apple-mobile-web-app-title" content="FixIt"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="https://en.gravatar.com/userimage/231818137/90e0e2859b85bcde111b248cb659b414.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://enohbadri.github.io/posts/static_routing_cisco/" /><link rel="prev" href="http://enohbadri.github.io/posts/jenis_topologi_jaringan_komputer/" /><link rel="next" href="http://enohbadri.github.io/posts/pembahasan_soal_ukk_tkj_paket-2_2022/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Static Routing-Cisco PT",
+    "inLanguage": "en",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "http:\/\/enohbadri.github.io\/posts\/static_routing_cisco\/"
+    },"image": [{
+              "@type": "ImageObject",
+              "url": "http:\/\/enohbadri.github.io\/posts\/static_routing_cisco\/cisco3.png",
+              "width":  400 ,
+              "height":  325 
+            }],"genre": "posts","keywords": "Routing, Cisco","wordcount":  1130 ,
+    "url": "http:\/\/enohbadri.github.io\/posts\/static_routing_cisco\/","datePublished": "2023-02-28T10:49:28+07:00","dateModified": "2023-02-28T10:49:28+07:00","publisher": {
+      "@type": "Organization",
+      "name": ""},"author": {
+        "@type": "Person",
+        "name": "Enoh Badrie"
+      },"description": "Static Routing-Cisco PT"
+  }
+  </script></head>
+  <body data-header-desktop="auto" data-header-mobile="auto"><script>(window.localStorage?.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('data-theme', 'dark');</script><div class="wrapper"><header class="desktop animate__faster" id="header-desktop">
+  <div class="header-wrapper" data-github-corner="right">
+    <div class="header-title">
+      <a href="/" title="enoh-badrie"><img loading="lazy" src="https://en.gravatar.com/userimage/231818137/90e0e2859b85bcde111b248cb659b414.png" srcset="https://en.gravatar.com/userimage/231818137/90e0e2859b85bcde111b248cb659b414.png, https://en.gravatar.com/userimage/231818137/90e0e2859b85bcde111b248cb659b414.png 1.5x, https://en.gravatar.com/userimage/231818137/90e0e2859b85bcde111b248cb659b414.png 2x" sizes="auto" data-title="enoh-badrie" data-alt="enoh-badrie" class="logo" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/><span class="header-title-text">Enoh Badrie</span></a><span class="header-subtitle"></span></div>
+    <nav>
+      <ul class="menu"><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/posts/"
+                
+                
+              ><i class="fa-solid fa-archive fa-fw fa-sm" aria-hidden="true"></i> Posts</a></li><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/categories/"
+                
+                
+              ><i class="fa-solid fa-th fa-fw fa-sm" aria-hidden="true"></i> Categories</a></li><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/tags/"
+                
+                
+              ><i class="fa-solid fa-tags fa-fw fa-sm" aria-hidden="true"></i> Tags</a></li><li class="menu-item delimiter"></li><li class="menu-item search" id="search-desktop">
+            <input type="text" placeholder="Search titles or contents ..." id="search-input-desktop">
+            <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+              <i class="fa-solid fa-search fa-fw" aria-hidden="true"></i>
+            </a>
+            <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+              <i class="fa-solid fa-times-circle fa-fw" aria-hidden="true"></i>
+            </a>
+            <span class="search-button search-loading" id="search-loading-desktop">
+              <i class="fa-solid fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+            </span>
+          </li><li class="menu-item theme-switch" title="Switch Theme">
+          <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header><header class="mobile animate__faster" id="header-mobile">
+  <div class="header-container">
+    <div class="header-wrapper">
+      <div class="header-title">
+        <a href="/" title="enoh-badrie"><img loading="lazy" src="https://en.gravatar.com/userimage/231818137/90e0e2859b85bcde111b248cb659b414.png" srcset="https://en.gravatar.com/userimage/231818137/90e0e2859b85bcde111b248cb659b414.png, https://en.gravatar.com/userimage/231818137/90e0e2859b85bcde111b248cb659b414.png 1.5x, https://en.gravatar.com/userimage/231818137/90e0e2859b85bcde111b248cb659b414.png 2x" sizes="auto" data-title="https://en.gravatar.com/userimage/231818137/90e0e2859b85bcde111b248cb659b414.png" data-alt="https://en.gravatar.com/userimage/231818137/90e0e2859b85bcde111b248cb659b414.png" class="logo" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/><span class="header-title-text">Enoh Badrie</span></a><span class="header-subtitle"></span></div>
+      <div class="menu-toggle" id="menu-toggle-mobile">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+    <nav>
+      <ul class="menu" id="menu-mobile"><li class="search-wrapper">
+            <div class="search mobile" id="search-mobile">
+              <input type="text" placeholder="Search titles or contents ..." id="search-input-mobile">
+              <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                <i class="fa-solid fa-search fa-fw" aria-hidden="true"></i>
+              </a>
+              <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                <i class="fa-solid fa-times-circle fa-fw" aria-hidden="true"></i>
+              </a>
+              <span class="search-button search-loading" id="search-loading-mobile">
+                <i class="fa-solid fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+              </span>
+            </div>
+            <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+              Cancel
+            </a>
+          </li><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="/posts/"
+                  
+                  
+                ><i class="fa-solid fa-archive fa-fw fa-sm" aria-hidden="true"></i> Posts</a></li><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="/categories/"
+                  
+                  
+                ><i class="fa-solid fa-th fa-fw fa-sm" aria-hidden="true"></i> Categories</a></li><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="/tags/"
+                  
+                  
+                ><i class="fa-solid fa-tags fa-fw fa-sm" aria-hidden="true"></i> Tags</a></li><li class="menu-item theme-switch" title="Switch Theme">
+          <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+        </li></ul>
+    </nav>
+  </div>
+
+
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client="ca-pub-3658587961826512"
+       data-ad-slot="1234567890"
+       data-ad-format="auto"></ins>
+  <script>
+       (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+  
+
+
+
+</header><div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+  </div>
+  <div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+  </div><main class="container" data-page-style="wide"><aside class="toc" id="toc-auto"><h2 class="toc-title">Contents&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
+      <div class="toc-content always-active" id="toc-content-auto"></div></aside>
+
+  <aside class="aside-custom">
+    </aside>
+
+  <article class="page single">
+    <div class="header"><h1 class="single-title animate__animated animate__flipInX">
+        <span>Static Routing-Cisco PT</span>
+      </h1></div><div class="post-meta">
+      <div class="post-meta-line"><span class="post-author"><a href="https://" title="Author" rel=" author" class="author"><i class="fa-solid fa-user-circle" aria-hidden="true"></i>
+    Enoh Badrie</a></span>
+          <span class="post-category">included in <a href="/categories/administrasi-infrastruktur-jaringan/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> Administrasi Infrastruktur Jaringan</a></span></div>
+      <div class="post-meta-line"><span title=2023-02-28&#32;10:49:28><i class="fa-regular fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-02-28">2023-02-28</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw" aria-hidden="true"></i> 1130 words</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw" aria-hidden="true"></i> 6 minutes</span>&nbsp;<span id="busuanzi_container_page_pv" class="busuanzi_visitors comment-visitors" data-flag-title="Static Routing-Cisco PT">
+              <i class="fa-regular fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_page_pv">-</span>&nbsp;views
+            </span>&nbsp;</div>
+    </div><div class="featured-image"><img loading="lazy" src="/posts/static_routing_cisco/cisco3.png" srcset="/posts/static_routing_cisco/cisco3.png, /posts/static_routing_cisco/cisco3.png 1.5x, /posts/static_routing_cisco/cisco3.png 2x" sizes="auto" data-title="Static Routing-Cisco PT" data-alt="/posts/static_routing_cisco/cisco3.png" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></div><div class="details toc" id="toc-static" data-kept="false">
+        <div class="details-summary toc-title">
+          <span>Contents</span>
+          <span><i class="details-icon fa-solid fa-angle-right" aria-hidden="true"></i></span>
+        </div>
+        <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#apa-itu-static-route">Apa itu Static Route?</a></li>
+        <li><a href="#tampilan-packet-tracer">TAMPILAN PACKET TRACER</a></li>
+        <li><a href="#komponen-yang-digunakan">Komponen yang digunakan</a></li>
+        <li><a href="#topologi-jaringan">Topologi Jaringan</a></li>
+        <li><a href="#konfigurasi-masing-masing-komponen">Konfigurasi masing masing komponen</a></li>
+        <li><a href="#konfiguras-ip-pada-pc-0">Konfiguras IP pada PC 0</a></li>
+        <li><a href="#konfigurasi-ip-pada-pc-1">Konfigurasi IP pada PC 1</a></li>
+        <li><a href="#konfigurasi-ip-fa-00-pada-router-0">Konfigurasi IP fa 0/0 pada router 0</a></li>
+        <li><a href="#konfigurasi-ip-fa-01-pada-router-0">Konfigurasi IP fa 0/1 pada router 0</a></li>
+        <li><a href="#konfigurasi-ip-fa-00-pada-router-1">Konfigurasi IP fa 0/0 pada router 1</a></li>
+        <li><a href="#konfigurasi-ip-fa-01-pada-router-1">Konfigurasi IP fa 0/1 pada router 1</a></li>
+        <li><a href="#konfigurasi-masing-masing-komponen-1">Konfigurasi masing masing komponen</a></li>
+        <li><a href="#konfigurasi-static-route-pada-router-0">Konfigurasi static route pada router 0</a></li>
+        <li><a href="#konfigurasi-static-route-pada-router-1">Konfigurasi static route pada router 1</a></li>
+        <li><a href="#test-koneksi-dari-dari-pc-1">Test koneksi dari dari PC 1</a></li>
+        <li><a href="#test-koneksi-dari-dari-pc-0">Test koneksi dari dari PC 0</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+      </div><div class="content" id="content"><h3 id="apa-itu-static-route">Apa itu Static Route?</h3>
+<p>Static route adalah rute-rute ke host atau jaringan tujuan yang dimasukkan secara manual oleh administrator jaringan ke route table suatu router. Static route mendefinisikan alamat IP hop router berikutnya dan interface lokal yang digunakan untuk mem-forward paket ke tujuan tertentu (hop router berikutnya).Static route memiliki keunggulan untuk menghemat bandwidth jaringan karena static route tidak membangkitkan trafik route update untuk memberikan informasi perubahan rute yang berlaku (sah) saat ini ke router-router lain. Tetapi penggunaan static route cenderung membutuhkan waktu ekstra ketika memanajemen jaringan. Hal ini disebabkan karena sistem administrator harus secara manual meng-update route table ketika terjadi perubahan konfigurasi jaringan.Setelah memahami definisi di atas maka sekarang kita akan belajar untuk melakukan konfigurasi static router menggunakan bantuan aplikasi packet tracer. Seperti tutorial saya teerdahulu kita akan mebahas komponen - komponen apa sajakah yang akan kita gunakan nantinya dalam melakukan konfigurasi ini.</p>
+<ul>
+<li>2 buah router 1841 (atau yang lain )</li>
+<li>2 buah switch PT ( atau yang lain )</li>
+<li>2 bauh Personal Computer</li>
+</ul>
+<p>Di sini kita hanya akan menggunakan dua jenis kabel saja, yaitu kabel crossover dan kabel straigt. Perlu di jadikan catatan untuk menghubungkan router selain menggunakan kabel jenis crossover kita juga bisa melakukannya dengan menggunakan kabel serial. Sebenarnya sama saja kita mau menggunakan kabel jenis apa saja kita akan tetap bisa melakukan uji konektifitas jaringan kita. Apabila anda tidak percaya anda dapat membuktikannya sendiri. Kami juga akan mencoba untuk membuatkan tutorialnya di lain kesempatan.Setelah memahami kabel yang akan kita gunakan maka selanjutnya kita akan mencoba untuk merancang konfigurasi terhadap komponen komponen yang telah di susun di atas. Untuk lebih jelasnya silahkan anda lihat pada tabel di bawah ini.</p>
+<table>
+<thead>
+<tr>
+<th>Nama Komponen</th>
+<th>IP Address</th>
+<th>Subnet Mask</th>
+<th>Gateway</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PC 0</td>
+<td>10.0.27.254</td>
+<td>255.0.0.0</td>
+<td>10.0.27.1</td>
+</tr>
+<tr>
+<td>PC 1</td>
+<td>172.31.27.254</td>
+<td>255.255.0.0</td>
+<td>172.31.27.1</td>
+</tr>
+<tr>
+<td>ROUTER 0 fa 0/0</td>
+<td>192.168.27.1</td>
+<td>255.255.255.0</td>
+<td>-</td>
+</tr>
+<tr>
+<td>ROUTER 0 fa 0/1</td>
+<td>10.0.27.1</td>
+<td>255.0.0.0</td>
+<td>-</td>
+</tr>
+<tr>
+<td>ROUTER 1 fa 0/0</td>
+<td>192.168.27.2</td>
+<td>255.255.255.0</td>
+<td>-</td>
+</tr>
+<tr>
+<td>ROUTER 1 fa 0/1</td>
+<td>172.31.27.1</td>
+<td>255.255.0.0</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p>Untuk membuat anda mudah dalam memahami saya telah berikan warna yang sama untuk
+konfigurasi yang sama ataupun saling berhubungan. Dari pengelompokan di atas jelas terlihat ada 3 komponen warna maka itu bisa kita sebut sebagai jaringan yang akan anda design ini memiliki 3 segmen. Sekarang kita akan mulai untuk masuk kedalam konfigurasi jaringan tersebut. Untuk awalan silahkan anda siapkan terlebih dahulu aplikasi Packet Tracer anda hingga lembar kerja Paket Tracer telah siap untuk di gunakan.</p>
+<p><figure><a class="lightgallery" href="/posts/static_routing_cisco/cisco1.png" data-thumbnail="/posts/static_routing_cisco/cisco1.png" data-sub-html="<h2>Static Routing</h2><p>Cisco</p>"><img loading="lazy" src="cisco1.png" srcset="/posts/static_routing_cisco/cisco1.png, cisco1.png 1.5x, /posts/static_routing_cisco/cisco1.png 2x" sizes="auto" data-title="Cisco" data-alt="Static Routing" width="400" height="323" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></a><figcaption class="image-caption">Static Routing</figcaption>
+  </figure></p>
+<h3 id="tampilan-packet-tracer">TAMPILAN PACKET TRACER</h3>
+<p>Setelah muncul tampilan seperti di atas maka silahkan anda menyiapkan komponen komponen yang telah saya sebutkan di atas.</p>
+<h3 id="komponen-yang-digunakan">Komponen yang digunakan</h3>
+<p>Setelah komponen komponen anda siap maka sekarang anda hubungkan menggunakan kabel
+yang telah di jelaskan dia atas. Untuk letak komponen komponennya anda bisa mendesign nya secara bebas tidak perlu meniru apa yang saya contohkan seperti di atas.</p>
+<p><figure><a class="lightgallery" href="/posts/static_routing_cisco/cisco2.png" data-thumbnail="/posts/static_routing_cisco/cisco2.png" data-sub-html="<h2>Static Routing</h2><p>Cisco</p>"><img loading="lazy" src="cisco2.png" srcset="/posts/static_routing_cisco/cisco2.png, cisco2.png 1.5x, /posts/static_routing_cisco/cisco2.png 2x" sizes="auto" data-title="Cisco" data-alt="Static Routing" width="400" height="323" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></a><figcaption class="image-caption">Static Routing</figcaption>
+  </figure></p>
+<h3 id="topologi-jaringan">Topologi Jaringan</h3>
+<p>Setelah ini maka kita akan melakukan konfigurasi terhadap setiap komponen yang ada sehingga nantinya bisa berkomunikasi antara komponen yang satu dengan komponen yang lainnya. Untuk lebih memudahkan anda setiap konfigurasi yanga ada pada tabel di atas saya sajikan dalam bentuk gambar seperti di bawah ini.</p>
+<p><figure><a class="lightgallery" href="cisco3.png" data-thumbnail="cisco3.png" data-sub-html="<h2>Static Routing</h2><p>Cisco</p>"><img loading="lazy" src="cisco3.png" srcset="cisco3.png, cisco3.png 1.5x, cisco3.png 2x" sizes="auto" data-title="Cisco" data-alt="Static Routing" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></a><figcaption class="image-caption">Static Routing</figcaption>
+  </figure></p>
+<h3 id="konfigurasi-masing-masing-komponen">Konfigurasi masing masing komponen</h3>
+<p>Setelah memahami langkah di bawah ini maka langkah selanjutnya adalah melakukan konfigurasi terhadap masing - masing dari komponen. Untuk yang pertama kita akan mengkonfigurasi PC 0. Klik pada PC 0 kemudian anda pilih sub menu Desktop dan pilih IP Configuration. Silahkan anda ketikkan Ip Addressnya sesuai dengan yang kita rencanakan tadi.</p>
+<p><figure><a class="lightgallery" href="cisco3.png" data-thumbnail="cisco3.png" data-sub-html="<h2>Static Routing</h2><p>Cisco</p>"><img loading="lazy" src="cisco3.png" srcset="cisco3.png, cisco3.png 1.5x, cisco3.png 2x" sizes="auto" data-title="Cisco" data-alt="Static Routing" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></a><figcaption class="image-caption">Static Routing</figcaption>
+  </figure></p>
+<h3 id="konfiguras-ip-pada-pc-0">Konfiguras IP pada PC 0</h3>
+<p><figure><a class="lightgallery" href="/posts/static_routing_cisco/pc0.png" data-thumbnail="/posts/static_routing_cisco/pc0.png" data-sub-html="<h2>Static Routing</h2><p>Cisco</p>"><img loading="lazy" src="pc0.png" srcset="/posts/static_routing_cisco/pc0.png, pc0.png 1.5x, /posts/static_routing_cisco/pc0.png 2x" sizes="auto" data-title="Cisco" data-alt="Static Routing" width="400" height="318" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></a><figcaption class="image-caption">Static Routing</figcaption>
+  </figure></p>
+<div class="details admonition tip open">
+    <div class="details-summary admonition-title">
+      <i class="icon fa-solid fa-lightbulb fa-fw" aria-hidden="true"></i>Catatan<i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true"></i>
+    </div>
+    <div class="details-content">
+      <div class="admonition-content">lakukan cara yang sama untuk melakukan konfigurasi terhadap PC 1.</div>
+    </div>
+  </div>
+<h3 id="konfigurasi-ip-pada-pc-1">Konfigurasi IP pada PC 1</h3>
+<p>setelah kedua PC telah terkonfigurasi maka sekarang saatnya kita lakukan kofigurasi terhadap router kita.Pada router kita akan melakukan konfigurasi sebanyak 3 hal yaitu membeikan IP address untuk fa 0/0, fa 0/1, serta Routing static. Untuk yang pertama kali kita akan melakukan konfigurasi Ip address untuk fa 0/0 dan fa 0/1. Caranya adalah silahkan anda klik pada router 0 kemudian anda masuk ke dalam sub menu config dan pilih fa0/0 lalu fa 0/1 unntuk di konfigurasi.</p>
+<p><figure><a class="lightgallery" href="/posts/static_routing_cisco/pc1.png" data-thumbnail="/posts/static_routing_cisco/pc1.png" data-sub-html="<h2>Static Routing</h2><p>Cisco</p>"><img loading="lazy" src="pc1.png" srcset="/posts/static_routing_cisco/pc1.png, pc1.png 1.5x, /posts/static_routing_cisco/pc1.png 2x" sizes="auto" data-title="Cisco" data-alt="Static Routing" width="400" height="319" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></a><figcaption class="image-caption">Static Routing</figcaption>
+  </figure></p>
+<h3 id="konfigurasi-ip-fa-00-pada-router-0">Konfigurasi IP fa 0/0 pada router 0</h3>
+<p><figure><a class="lightgallery" href="/posts/static_routing_cisco/router0.png" data-thumbnail="/posts/static_routing_cisco/router0.png" data-sub-html="<h2>Static Routing</h2><p>Cisco</p>"><img loading="lazy" src="router0.png" srcset="/posts/static_routing_cisco/router0.png, router0.png 1.5x, /posts/static_routing_cisco/router0.png 2x" sizes="auto" data-title="Cisco" data-alt="Static Routing" width="400" height="319" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></a><figcaption class="image-caption">Static Routing</figcaption>
+  </figure></p>
+<div class="details admonition tip open">
+    <div class="details-summary admonition-title">
+      <i class="icon fa-solid fa-lightbulb fa-fw" aria-hidden="true"></i>Catatan<i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true"></i>
+    </div>
+    <div class="details-content">
+      <div class="admonition-content">lakukan konfigurasi dengan cara yang sama seperti di atas untuk router 1</div>
+    </div>
+  </div>
+<h3 id="konfigurasi-ip-fa-01-pada-router-0">Konfigurasi IP fa 0/1 pada router 0</h3>
+<p><figure><a class="lightgallery" href="/posts/static_routing_cisco/router0_fa01.png" data-thumbnail="/posts/static_routing_cisco/router0_fa01.png" data-sub-html="<h2>Static Routing</h2><p>Cisco</p>"><img loading="lazy" src="router0_fa01.png" srcset="/posts/static_routing_cisco/router0_fa01.png, router0_fa01.png 1.5x, /posts/static_routing_cisco/router0_fa01.png 2x" sizes="auto" data-title="Cisco" data-alt="Static Routing" width="400" height="317" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></a><figcaption class="image-caption">Static Routing</figcaption>
+  </figure></p>
+<h3 id="konfigurasi-ip-fa-00-pada-router-1">Konfigurasi IP fa 0/0 pada router 1</h3>
+<p><figure><a class="lightgallery" href="/posts/static_routing_cisco/ip_router1.png" data-thumbnail="/posts/static_routing_cisco/ip_router1.png" data-sub-html="<h2>Static Routing</h2><p>Cisco</p>"><img loading="lazy" src="ip_router1.png" srcset="/posts/static_routing_cisco/ip_router1.png, ip_router1.png 1.5x, /posts/static_routing_cisco/ip_router1.png 2x" sizes="auto" data-title="Cisco" data-alt="Static Routing" width="400" height="316" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></a><figcaption class="image-caption">Static Routing</figcaption>
+  </figure></p>
+<h3 id="konfigurasi-ip-fa-01-pada-router-1">Konfigurasi IP fa 0/1 pada router 1</h3>
+<p><figure><a class="lightgallery" href="/posts/static_routing_cisco/ip_router1_fa01.png" data-thumbnail="/posts/static_routing_cisco/ip_router1_fa01.png" data-sub-html="<h2>Static Routing</h2><p>Cisco</p>"><img loading="lazy" src="ip_router1_fa01.png" srcset="/posts/static_routing_cisco/ip_router1_fa01.png, ip_router1_fa01.png 1.5x, /posts/static_routing_cisco/ip_router1_fa01.png 2x" sizes="auto" data-title="Cisco" data-alt="Static Routing" width="400" height="314" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></a><figcaption class="image-caption">Static Routing</figcaption>
+  </figure></p>
+<p>Setelah anda melakukan konfigurasi terhadap semua IP Address pada setiap komponen maka sekarang saatnya untuk melakukan konfigurasi terhadap routing static. Untuk melakukan konfigurasi ini anda perlu ketelitian dan hati - hati karena apabila konfigurasi static routes ini salah maka anda tidak akan dapat terhubung antar komponen. Di dalam static routers ada 3 hal yang haru anda pahami dan isi.</p>
+<ol>
+<li>Network &mdash;&gt; isikan dengan netwok tujuan.</li>
+<li>Mask &mdash;&mdash;-&gt; isikan dengan Netmask network tujuan.</li>
+<li>Next Hope -&gt; isikan dengan IP Address yang akan di lewati dan terdekat dari Network tujuan.</li>
+</ol>
+<p>apabila anda merasakan kebingunggan saya akan mencoba menjabarkannya satu persatu di sini.Untuk lebih memahami perhatikan gambar di bawah ini. Silahkan anda perhatikan pada gambar routernya saja. Perhatikan IP fa 0/1 IP Address tersebut sama dengan gateway PC 1 maka kita analogikan menjadi 1 jaringan. Sehingga agar router 0 dapat mengenali router 1 maka kita bisa isikan</p>
+<h3 id="konfigurasi-masing-masing-komponen-1">Konfigurasi masing masing komponen</h3>
+<p><figure><a class="lightgallery" href="/posts/static_routing_cisco/cisco6.png" data-thumbnail="/posts/static_routing_cisco/cisco6.png" data-sub-html="<h2>Static Routing</h2><p>Cisco</p>"><img loading="lazy" src="cisco6.png" srcset="/posts/static_routing_cisco/cisco6.png, cisco6.png 1.5x, /posts/static_routing_cisco/cisco6.png 2x" sizes="auto" data-title="Cisco" data-alt="Static Routing" width="400" height="322" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></a><figcaption class="image-caption">Static Routing</figcaption>
+  </figure></p>
+<ol>
+<li>Network &mdash;&gt; 172.31.0.0 (network tujuan) atau network yang paling dekat dengan
+workstation. karena IP Address yang menjadi gateway workstation adalah 172.31.27.1
+adalah kelas B maka Networknya adalah 172.31.0.0</li>
+<li>Mask &mdash;&mdash;-&gt; 255.255.0.0 (SubnetMask network tujuan) karena IP Network adalah kelas B maka subnetnya adalah 255.255.0.0</li>
+<li>Next Hope &ndash;&gt; 192.168.27.2 karena IP address yang di lewati untuk menuju ke IP
+network tadi adalah 192.168.27.2</li>
+</ol>
+<p>setelah selesai anda bisa klik add. Maka hasilnya akan tampak sebagai berikut ini.</p>
+<h3 id="konfigurasi-static-route-pada-router-0">Konfigurasi static route pada router 0</h3>
+<p><figure><a class="lightgallery" href="/posts/static_routing_cisco/config_r0.png" data-thumbnail="/posts/static_routing_cisco/config_r0.png" data-sub-html="<h2>Static Routing</h2><p>Cisco</p>"><img loading="lazy" src="config_r0.png" srcset="/posts/static_routing_cisco/config_r0.png, config_r0.png 1.5x, /posts/static_routing_cisco/config_r0.png 2x" sizes="auto" data-title="Cisco" data-alt="Static Routing" width="400" height="319" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></a><figcaption class="image-caption">Static Routing</figcaption>
+  </figure></p>
+<p>dengan cara dan langkah yang sama seperti di atas konfigurasi juga Static Routes pada router 1</p>
+<ol>
+<li>Network &mdash;&gt; 10.0.0.0 (network tujuan) atau network yang paling dekat dengan
+workstation. karena IP Address yang menjadi gateway workstation adalah 10.0.27.0
+adalah kelas A maka Networknya adalah 10.0.0.0</li>
+<li>Mask &mdash;&mdash;-&gt; 255.0.0.0 (SubnetMask network tujuan) karena IP Network adalah kelas A maka subnetnya adalah 255.0.0.0</li>
+<li>Next Hope -&gt; 192.168.27.1 karena IP address yang di lewati untuk menuju ke IP
+network tadi adalah 192.168.27.1</li>
+</ol>
+<p>setelah selesai anda bisa klik add. Maka hasilnya akan tampak sebagai berikut ini.</p>
+<h3 id="konfigurasi-static-route-pada-router-1">Konfigurasi static route pada router 1</h3>
+<p><figure><a class="lightgallery" href="/posts/static_routing_cisco/config_r0.png" data-thumbnail="/posts/static_routing_cisco/config_r0.png" data-sub-html="<h2>Static Routing</h2><p>Cisco</p>"><img loading="lazy" src="config_r0.png" srcset="/posts/static_routing_cisco/config_r0.png, config_r0.png 1.5x, /posts/static_routing_cisco/config_r0.png 2x" sizes="auto" data-title="Cisco" data-alt="Static Routing" width="400" height="319" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></a><figcaption class="image-caption">Static Routing</figcaption>
+  </figure></p>
+<p>setelah anda melakukan konfigurasi tadi maka langkah selanjutnya adalah melakukan uji coba konektivitas jaringan menggunakan perintah ping. Silahkan anda lakukan ping dari PC 0 ke PC 1 begitu pula sebaliknya jika anda mendapati hasil seperti di bawah ini maka konfigurasi anda telah benar.</p>
+<h3 id="test-koneksi-dari-dari-pc-1">Test koneksi dari dari PC 1</h3>
+<p><figure><a class="lightgallery" href="/posts/static_routing_cisco/cmd1.png" data-thumbnail="/posts/static_routing_cisco/cmd1.png" data-sub-html="<h2>Static Routing</h2><p>Cisco</p>"><img loading="lazy" src="cmd1.png" srcset="/posts/static_routing_cisco/cmd1.png, cmd1.png 1.5x, /posts/static_routing_cisco/cmd1.png 2x" sizes="auto" data-title="Cisco" data-alt="Static Routing" width="400" height="314" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></a><figcaption class="image-caption">Static Routing</figcaption>
+  </figure></p>
+<h3 id="test-koneksi-dari-dari-pc-0">Test koneksi dari dari PC 0</h3>
+<p><figure><a class="lightgallery" href="/posts/static_routing_cisco/cmd0.png" data-thumbnail="/posts/static_routing_cisco/cmd0.png" data-sub-html="<h2>Static Routing</h2><p>Cisco</p>"><img loading="lazy" src="cmd0.png" srcset="/posts/static_routing_cisco/cmd0.png, cmd0.png 1.5x, /posts/static_routing_cisco/cmd0.png 2x" sizes="auto" data-title="Cisco" data-alt="Static Routing" width="400" height="319" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></a><figcaption class="image-caption">Static Routing</figcaption>
+  </figure></p>
+<p>Sampai sini anda sukses. Apabila anda tidak mendapatkan hasil seperti di atas maka anda salah dalam mengkonfigurasi Static routes tadi.</p>
+<div class="details admonition tip open">
+    <div class="details-summary admonition-title">
+      <i class="icon fa-solid fa-lightbulb fa-fw" aria-hidden="true"></i>File.pkt<i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true"></i>
+    </div>
+    <div class="details-content">
+      <div class="admonition-content">Untuk File static-routing.pkt silahkan <strong>Download</strong> <a href="https://drive.google.com/file/d/18h5Lj5esdvcyD_d8b6x67MVqZquGOBCw/view?usp=sharing"target="_blank" rel="external nofollow noopener noreferrer"><em>Disini</em><i class="fa-solid fa-external-link-alt fa-fw fa-xs ms-1 text-secondary" aria-hidden="true"></i></a></div>
+    </div>
+  </div>
+<p><strong>Terimakasih</strong></p></div><div class="post-footer" id="post-footer">
+  <div class="post-info">
+    <div class="post-info-line">
+      <div class="post-info-mod">
+        <span title=2023-02-28&#32;10:49:28>Updated on 2023-02-28&nbsp;</span>
+      </div><div class="post-info-license">
+          <span><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">EB BY-NC 4.0</a></span>
+        </div></div>
+    <div class="post-info-line">
+      <div class="post-info-md"></div>
+      <div class="post-info-share">
+        <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="http://enohbadri.github.io/posts/static_routing_cisco/" data-title="Static Routing-Cisco PT" data-via="@eb_badrie" data-hashtags="Routing,Cisco"><i class="fa-brands fa-twitter fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="http://enohbadri.github.io/posts/static_routing_cisco/" data-hashtag="Routing"><i class="fa-brands fa-facebook-square fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="http://enohbadri.github.io/posts/static_routing_cisco/" data-title="Static Routing-Cisco PT"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
+  </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="post-info-more">
+    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href='/tags/routing/' class="post-tag">Routing</a><a href='/tags/cisco/' class="post-tag">Cisco</a></section>
+    <section>
+      <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+    </section>
+  </div>
+
+  <div class="post-nav"><a href="/posts/jenis_topologi_jaringan_komputer/" class="post-nav-item" rel="prev" title="Topologi Jaringan Komputer"><i class="fa-solid fa-angle-left fa-fw" aria-hidden="true"></i>Topologi Jaringan Komputer</a>
+      <a href="/posts/pembahasan_soal_ukk_tkj_paket-2_2022/" class="post-nav-item" rel="next" title="Pembahasan UKK-TKJ P2 2022">Pembahasan UKK-TKJ P2 2022<i class="fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+<div class="post-reward">
+    <div class="comment"></div>
+    <input type="checkbox" class="reward-input" name="reward" id="fi-reward" hidden />
+    <label class="reward-button" for="fi-reward">Donate</label>
+    <div class="reward-ways"></div>
+  </div><div id="comments"><div id="giscus">
+          <script
+            src="https://giscus.app/client.js"
+            data-repo="enohbadri/webpage_comments"
+            data-repo-id="R_kgDOKWTG6A"
+            data-category="Announcements"
+            data-category-id="DIC_kwDOKWTG6M4CZgQK"
+            data-mapping="url"
+            
+            data-theme="preferred_color_scheme"
+            data-reactions-enabled="1"
+            data-emit-metadata="0"
+            data-input-position="bottom"
+            data-lang="en"
+            data-loading="lazy"
+            crossorigin="anonymous"
+            async
+            defer
+          ></script>
+        </div>
+        <noscript>
+          Please enable JavaScript to view the comments powered by <a href="https://giscus.app/" rel="external nofollow noopener noreferrer">giscus</a>.
+        </noscript></div></article></main><footer class="footer">
+    <div class="footer-container"><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw" aria-hidden="true"></i>
+            <span itemprop="copyrightYear">2021 - 2024</span><span class="author" itemprop="copyrightHolder">
+              <a href="/"></a></span><span class="license footer-divider"><a rel="license external nofollow noopener noreferrer" href="https://" target="_blank">@eb_badrie 4.0</a></span></div><div class="footer-line statistics"><span class="site-time" title='Website running ...'><i class="fa-solid fa-heartbeat fa-fw animate-icon" aria-hidden="true"></i><span class="run-times ms-1">Website running ...</span></span></div><div class="footer-line visitor">
+          <span id="busuanzi_container_site_uv" title='Total visitors'><i class="fa-regular fa-user fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span><span id="busuanzi_container_site_pv" class="footer-divider" title='Total visits'><i class="fa-regular fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span>
+        </div></div>
+  </footer></div><div class="widgets"><div class="fixed-buttons animate__faster d-none"><div class="fixed-button back-to-top" role="button" aria-label="Back to Top"><i class="fa-solid fa-arrow-up fa-fw" aria-hidden="true"></i><span class="variant-numeric">0%</span>
+        </div><div class="fixed-button view-comments d-none" role="button" aria-label="View Comments"><i class="fa-solid fa-comment fa-fw" aria-hidden="true"></i></div></div><a href="https://github.com/enohbadri" title="Kunjungi GitHub Saya"target="_blank" rel="external nofollow" class="github-corner right d-none-mobile"><svg viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><div id="mask"></div><div class="reading-progress-bar" style="left: 0;top: 0;"></div><noscript>
+    <div class="noscript-warning">Theme FixIt works best with JavaScript enabled.</div>
+  </noscript>
+</div><link rel="stylesheet" href="/lib/lightgallery/css/lightgallery-bundle.min.css"><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><link rel="stylesheet" href="/lib/pace/themes/blue/pace-theme-center-atom.css"><script src="/lib/autocomplete/autocomplete.min.js" defer></script><script src="/lib/fuse/fuse.min.js" defer></script><script src="/lib/twemoji/twemoji.min.js" defer></script><script src="/lib/lightgallery/lightgallery.min.js" defer></script><script src="/lib/lightgallery/plugins/thumbnail/lg-thumbnail.min.js" defer></script><script src="/lib/lightgallery/plugins/zoom/lg-zoom.min.js" defer></script><script src="/lib/sharer/sharer.min.js" async defer></script><script src="/lib/katex/katex.min.js" defer></script><script src="/lib/katex/auto-render.min.js" defer></script><script src="/lib/katex/copy-tex.min.js" defer></script><script src="/lib/katex/mhchem.min.js" defer></script><script src="/lib/cookieconsent/cookieconsent.min.js" defer></script><script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async defer></script><script src="/lib/pace/pace.min.js" async defer></script><script>window.config={"code":{"copyTitle":"Copy to clipboard","editLockTitle":"Lock editable code block","editUnLockTitle":"Unlock editable code block","editable":true,"maxShownLines":10},"comment":{"enable":true,"expired":false,"giscus":{"darkTheme":"dark","lightTheme":"light"}},"cookieconsent":{"content":{"dismiss":"Got it!","link":"Learn more","message":"This website uses Cookies to improve your experience."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"enablePWA":true,"lightgallery":true,"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"distance":100,"findAllMatches":true,"fuseIndexURL":"/index.json","highlightTag":"em","ignoreFieldNorm":false,"ignoreLocation":false,"isCaseSensitive":false,"location":0,"maxResultLength":10,"minMatchCharLength":2,"noResultsFound":"No results found","snippetLength":30,"threshold":0.3,"type":"fuse","useExtendedSearch":false},"siteTime":"2020-07-01T13:00:00+00:00","twemoji":true};</script><script src="/js/theme.min.js" defer></script></body>
+</html>

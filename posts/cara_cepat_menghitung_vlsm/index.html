@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="en">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+    <meta name="robots" content="noodp" />
+    <title>Cara Cepat Menghitung VLSM - enoh-badrie</title><meta name="author" content="">
+<meta name="author-link" content="">
+<meta name="description" content="Cara Cepat Menghitung VLSM" /><meta name="keywords" content='Subneting, VLSM' /><meta itemprop="name" content="Cara Cepat Menghitung VLSM">
+<meta itemprop="description" content="Cara Cepat Menghitung VLSM"><meta itemprop="datePublished" content="2023-02-28T10:49:28+07:00" />
+<meta itemprop="dateModified" content="2023-02-28T10:49:28+07:00" />
+<meta itemprop="wordCount" content="739"><meta itemprop="image" content="http://enohbadri.github.io/posts/cara_cepat_menghitung_vlsm/vlsm.png">
+<meta itemprop="keywords" content="Subneting,VLSM," /><meta property="og:title" content="Cara Cepat Menghitung VLSM" />
+<meta property="og:description" content="Cara Cepat Menghitung VLSM" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://enohbadri.github.io/posts/cara_cepat_menghitung_vlsm/" /><meta property="og:image" content="http://enohbadri.github.io/posts/cara_cepat_menghitung_vlsm/vlsm.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-02-28T10:49:28+07:00" />
+<meta property="article:modified_time" content="2023-02-28T10:49:28+07:00" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="http://enohbadri.github.io/posts/cara_cepat_menghitung_vlsm/vlsm.png"/>
+<meta name="twitter:title" content="Cara Cepat Menghitung VLSM"/>
+<meta name="twitter:description" content="Cara Cepat Menghitung VLSM"/>
+<meta name="application-name" content="FixIt">
+<meta name="apple-mobile-web-app-title" content="FixIt"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="https://en.gravatar.com/userimage/231818137/90e0e2859b85bcde111b248cb659b414.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://enohbadri.github.io/posts/cara_cepat_menghitung_vlsm/" /><link rel="prev" href="http://enohbadri.github.io/posts/git_rejected/" /><link rel="next" href="http://enohbadri.github.io/posts/membangun-_sms_gateway_dengan_gammu/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Cara Cepat Menghitung VLSM",
+    "inLanguage": "en",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "http:\/\/enohbadri.github.io\/posts\/cara_cepat_menghitung_vlsm\/"
+    },"image": [{
+              "@type": "ImageObject",
+              "url": "http:\/\/enohbadri.github.io\/posts\/cara_cepat_menghitung_vlsm\/vlsm.png",
+              "width":  1018 ,
+              "height":  768 
+            }],"genre": "posts","keywords": "Subneting, VLSM","wordcount":  739 ,
+    "url": "http:\/\/enohbadri.github.io\/posts\/cara_cepat_menghitung_vlsm\/","datePublished": "2023-02-28T10:49:28+07:00","dateModified": "2023-02-28T10:49:28+07:00","publisher": {
+      "@type": "Organization",
+      "name": ""},"author": {
+        "@type": "Person",
+        "name": "Enoh Badrie"
+      },"description": "Cara Cepat Menghitung VLSM"
+  }
+  </script></head>
+  <body data-header-desktop="auto" data-header-mobile="auto"><script>(window.localStorage?.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('data-theme', 'dark');</script><div class="wrapper"><header class="desktop animate__faster" id="header-desktop">
+  <div class="header-wrapper" data-github-corner="right">
+    <div class="header-title">
+      <a href="/" title="enoh-badrie"><img loading="lazy" src="https://en.gravatar.com/userimage/231818137/90e0e2859b85bcde111b248cb659b414.png" srcset="https://en.gravatar.com/userimage/231818137/90e0e2859b85bcde111b248cb659b414.png, https://en.gravatar.com/userimage/231818137/90e0e2859b85bcde111b248cb659b414.png 1.5x, https://en.gravatar.com/userimage/231818137/90e0e2859b85bcde111b248cb659b414.png 2x" sizes="auto" data-title="enoh-badrie" data-alt="enoh-badrie" class="logo" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/><span class="header-title-text">Enoh Badrie</span></a><span class="header-subtitle"></span></div>
+    <nav>
+      <ul class="menu"><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/posts/"
+                
+                
+              ><i class="fa-solid fa-archive fa-fw fa-sm" aria-hidden="true"></i> Posts</a></li><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/categories/"
+                
+                
+              ><i class="fa-solid fa-th fa-fw fa-sm" aria-hidden="true"></i> Categories</a></li><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/tags/"
+                
+                
+              ><i class="fa-solid fa-tags fa-fw fa-sm" aria-hidden="true"></i> Tags</a></li><li class="menu-item delimiter"></li><li class="menu-item search" id="search-desktop">
+            <input type="text" placeholder="Search titles or contents ..." id="search-input-desktop">
+            <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+              <i class="fa-solid fa-search fa-fw" aria-hidden="true"></i>
+            </a>
+            <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+              <i class="fa-solid fa-times-circle fa-fw" aria-hidden="true"></i>
+            </a>
+            <span class="search-button search-loading" id="search-loading-desktop">
+              <i class="fa-solid fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+            </span>
+          </li><li class="menu-item theme-switch" title="Switch Theme">
+          <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header><header class="mobile animate__faster" id="header-mobile">
+  <div class="header-container">
+    <div class="header-wrapper">
+      <div class="header-title">
+        <a href="/" title="enoh-badrie"><img loading="lazy" src="https://en.gravatar.com/userimage/231818137/90e0e2859b85bcde111b248cb659b414.png" srcset="https://en.gravatar.com/userimage/231818137/90e0e2859b85bcde111b248cb659b414.png, https://en.gravatar.com/userimage/231818137/90e0e2859b85bcde111b248cb659b414.png 1.5x, https://en.gravatar.com/userimage/231818137/90e0e2859b85bcde111b248cb659b414.png 2x" sizes="auto" data-title="https://en.gravatar.com/userimage/231818137/90e0e2859b85bcde111b248cb659b414.png" data-alt="https://en.gravatar.com/userimage/231818137/90e0e2859b85bcde111b248cb659b414.png" class="logo" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/><span class="header-title-text">Enoh Badrie</span></a><span class="header-subtitle"></span></div>
+      <div class="menu-toggle" id="menu-toggle-mobile">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+    <nav>
+      <ul class="menu" id="menu-mobile"><li class="search-wrapper">
+            <div class="search mobile" id="search-mobile">
+              <input type="text" placeholder="Search titles or contents ..." id="search-input-mobile">
+              <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                <i class="fa-solid fa-search fa-fw" aria-hidden="true"></i>
+              </a>
+              <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                <i class="fa-solid fa-times-circle fa-fw" aria-hidden="true"></i>
+              </a>
+              <span class="search-button search-loading" id="search-loading-mobile">
+                <i class="fa-solid fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+              </span>
+            </div>
+            <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+              Cancel
+            </a>
+          </li><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="/posts/"
+                  
+                  
+                ><i class="fa-solid fa-archive fa-fw fa-sm" aria-hidden="true"></i> Posts</a></li><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="/categories/"
+                  
+                  
+                ><i class="fa-solid fa-th fa-fw fa-sm" aria-hidden="true"></i> Categories</a></li><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="/tags/"
+                  
+                  
+                ><i class="fa-solid fa-tags fa-fw fa-sm" aria-hidden="true"></i> Tags</a></li><li class="menu-item theme-switch" title="Switch Theme">
+          <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+        </li></ul>
+    </nav>
+  </div>
+
+
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client="ca-pub-3658587961826512"
+       data-ad-slot="1234567890"
+       data-ad-format="auto"></ins>
+  <script>
+       (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+  
+
+
+
+</header><div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+  </div>
+  <div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+  </div><main class="container" data-page-style="wide"><aside class="toc" id="toc-auto"><h2 class="toc-title">Contents&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
+      <div class="toc-content always-active" id="toc-content-auto"></div></aside>
+
+  <aside class="aside-custom">
+    </aside>
+
+  <article class="page single">
+    <div class="header"><h1 class="single-title animate__animated animate__flipInX">
+        <span>Cara Cepat Menghitung VLSM</span>
+      </h1></div><div class="post-meta">
+      <div class="post-meta-line"><span class="post-author"><a href="https://" title="Author" rel=" author" class="author"><i class="fa-solid fa-user-circle" aria-hidden="true"></i>
+    Enoh Badrie</a></span>
+          <span class="post-category">included in <a href="/categories/administrasi-infrastruktur-jaringan/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> Administrasi Infrastruktur Jaringan</a></span></div>
+      <div class="post-meta-line"><span title=2023-02-28&#32;10:49:28><i class="fa-regular fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-02-28">2023-02-28</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw" aria-hidden="true"></i> 739 words</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw" aria-hidden="true"></i> 4 minutes</span>&nbsp;<span id="busuanzi_container_page_pv" class="busuanzi_visitors comment-visitors" data-flag-title="Cara Cepat Menghitung VLSM">
+              <i class="fa-regular fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_page_pv">-</span>&nbsp;views
+            </span>&nbsp;</div>
+    </div><div class="featured-image"><img loading="lazy" src="/posts/cara_cepat_menghitung_vlsm/vlsm.png" srcset="/posts/cara_cepat_menghitung_vlsm/vlsm.png, /posts/cara_cepat_menghitung_vlsm/vlsm.png 1.5x, /posts/cara_cepat_menghitung_vlsm/vlsm.png 2x" sizes="auto" data-title="Cara Cepat Menghitung VLSM" data-alt="/posts/cara_cepat_menghitung_vlsm/vlsm.png" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></div><div class="details toc" id="toc-static" data-kept="false">
+        <div class="details-summary toc-title">
+          <span>Contents</span>
+          <span><i class="details-icon fa-solid fa-angle-right" aria-hidden="true"></i></span>
+        </div>
+        <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#1-ruang-utama-1000-host">1. Ruang Utama 1000 host   </a></li>
+        <li><a href="#2-ruang-kedua-500-host">2. Ruang Kedua 500 host</a></li>
+        <li><a href="#3-ruang-server-100-host">3. Ruang Server 100 Host</a></li>
+        <li><a href="#4-ruang-server-2-host">4. Ruang Server 2 Host</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+      </div><div class="content" id="content"><p>VLSM (Variabel Length Subnet Mask) adalah suatu teknik untuk mengurangi jumlah terbuang [ruang;spasi] alamat. kita dapat memberi suatu subnet ke seseorang, dan dia dapat lebih lanjut membagi lebih lanjut membagi subnet ke dalam beberapa subnets. Oleh karena lebar dari subnet akan diperkecil, maka disebut dengan Variable Subnet Length Mask (VLSM).</p>
+<p>Perhitungan IP Address menggunakan metode VLSM adalah metode yang berbeda dengan memberikan suatu Network Address lebih dari satu subnet mask, jika menggunakan CIDR dimana suatu Network ID hanya memiliki satu subnet mask saja, perbedaan yang mendasar disini juga adalah terletak pada pembagian blok, pembagian blok VLSM bebas dan hanya dilakukan oleh si pemilik Network Address yang telah diberikan kepadanya atau dengan kata lain sebagai IP address local dan IP Address ini tidak dikenal dalam jaringan internet, namun tetap dapat melakukan koneksi kedalam jaringan internet, hal ini terjadi dikarenakan jaringan internet hanya mengenal IP Address berkelas.</p>
+<p>Langsung saja ke contoh kasus yang pertama dalam perhitungan menggunakan metode vlsm. Dalam contoh kasus ini misalnya kita akan membangun sebuah jaringan internet dalam sebuah perusahaan besar. Dengan ketentuan Host yang dibutuhkan antaran lain:</p>
+<ul>
+<li>1.Ruang Utama 1000 host </li>
+<li>2.Ruang Kedua 500 host</li>
+<li>3.Ruang Ketiga 100 host</li>
+<li>4.Ruang Server 2 host</li>
+</ul>
+<p>Dengan alamat jaringan <strong>172.16.0.0/16</strong> Sebelum kita mulai menghitung vlsm, disini kita akan memcantumkann 8 bit angka ajaib ini:</p>
+<p><div class="details admonition tip open">
+    <div class="details-summary admonition-title">
+      <i class="icon fa-solid fa-lightbulb fa-fw" aria-hidden="true"></i>Ingat deret angka ini<i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true"></i>
+    </div>
+    <div class="details-content">
+      <div class="admonition-content"><strong>128 . 64 . 32 . 16 . 8 . 4 . 2 . 1</strong></div>
+    </div>
+  </div>
+ 
+Dan membuat tabel-tabel untuk mempercepat proses perhitungan VLSM.  Seperti tabel-tabel berikut:</p>
+<table>
+<thead>
+<tr>
+<th>Host Ke 2^n</th>
+<th>Jumlah Host</th>
+<th>Subnetmask</th>
+<th>Premask/32-n</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2^0</td>
+<td>1</td>
+<td>255.255.255.255</td>
+<td>/32</td>
+</tr>
+<tr>
+<td>2^1</td>
+<td>2</td>
+<td>255.255.355.254</td>
+<td>/31</td>
+</tr>
+<tr>
+<td>2^2</td>
+<td>4</td>
+<td>255.255.255.252</td>
+<td>/30</td>
+</tr>
+<tr>
+<td>2^3</td>
+<td>8</td>
+<td>255.255.255.248</td>
+<td>/29</td>
+</tr>
+<tr>
+<td>2^4</td>
+<td>16</td>
+<td>255.255.255.240</td>
+<td>/28</td>
+</tr>
+<tr>
+<td>2^5</td>
+<td>32</td>
+<td>255.255.255.224</td>
+<td>/27</td>
+</tr>
+<tr>
+<td>2^6</td>
+<td>64</td>
+<td>255.255.255.192</td>
+<td>/26</td>
+</tr>
+<tr>
+<td>2^7</td>
+<td>128</td>
+<td>255.255.255.128</td>
+<td>/25</td>
+</tr>
+<tr>
+<td>2^8</td>
+<td>256</td>
+<td>255.255.255.0</td>
+<td>/24</td>
+</tr>
+<tr>
+<td>2^9</td>
+<td>512</td>
+<td>255.255.254.0</td>
+<td>/23</td>
+</tr>
+<tr>
+<td>2^10</td>
+<td>1024</td>
+<td>255.255.252.0</td>
+<td>/22</td>
+</tr>
+<tr>
+<td>2^11</td>
+<td>2048</td>
+<td>255.255.248.0</td>
+<td>/21</td>
+</tr>
+<tr>
+<td>2^12</td>
+<td>4096</td>
+<td>255.255.240.0</td>
+<td>/20</td>
+</tr>
+<tr>
+<td>2^13</td>
+<td>8192</td>
+<td>255.255.224.0</td>
+<td>/19</td>
+</tr>
+<tr>
+<td>2^14</td>
+<td>16386</td>
+<td>255.255.192.0</td>
+<td>/18</td>
+</tr>
+<tr>
+<td>2^15</td>
+<td>32768</td>
+<td>255.255.128.0</td>
+<td>/17</td>
+</tr>
+<tr>
+<td>2^16</td>
+<td>65536</td>
+<td>255.255.0.0</td>
+<td>/16</td>
+</tr>
+<tr>
+<td>2^17</td>
+<td>131072</td>
+<td>255.254.0.0</td>
+<td>/15</td>
+</tr>
+<tr>
+<td>2^18</td>
+<td>262144</td>
+<td>255.252.0.0</td>
+<td>/14</td>
+</tr>
+<tr>
+<td>2^19</td>
+<td>524288</td>
+<td>255.248.0.0</td>
+<td>/13</td>
+</tr>
+<tr>
+<td>2^20</td>
+<td>1048576</td>
+<td>255.240.0.0</td>
+<td>/12</td>
+</tr>
+<tr>
+<td>2^21</td>
+<td>2097152</td>
+<td>255.224.0.0</td>
+<td>/11</td>
+</tr>
+<tr>
+<td>2^22</td>
+<td>4194304</td>
+<td>255.192.0.0</td>
+<td>/10</td>
+</tr>
+<tr>
+<td>2^23</td>
+<td>8388608</td>
+<td>255.128.0.0</td>
+<td>/9</td>
+</tr>
+<tr>
+<td>2^24</td>
+<td>16777216</td>
+<td>255.0.0.0</td>
+<td>/8</td>
+</tr>
+</tbody>
+</table>
+<div class="details admonition tip open">
+    <div class="details-summary admonition-title">
+      <i class="icon fa-solid fa-lightbulb fa-fw" aria-hidden="true"></i>Contoh<i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true"></i>
+    </div>
+    <div class="details-content">
+      <div class="admonition-content">contohya seperti kasus berikut: Dengan IP 172.16.0.0/16</div>
+    </div>
+  </div>
+<h3 id="1-ruang-utama-1000-host">1. Ruang Utama 1000 host   </h3>
+<p>       Disini dibutuhkan 1000 host yang akan terhubung dengan internet ,untuk mendapat 1000 host atau lebih perhatikan tabel diatas. Karena yang  dibutuhkan 1000 maka cari hasil pemangkatan 1000 or  &gt;= 1000 host. dari tabel diatas yang sesuai dengan kebutuhan host yang dibutuhkan  gunakan 2^10 = 1024  dan subnet mask 255.255.252.0.Untuk mencari nilai ip range seperti dibawah ini :</p>
+<p><img loading="lazy" src="r-utama.png" srcset="/posts/cara_cepat_menghitung_vlsm/r-utama.png, r-utama.png 1.5x, /posts/cara_cepat_menghitung_vlsm/r-utama.png 2x" sizes="auto" data-title="VLSM" data-alt="VLSM" width="158" height="65" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></p>
+<p>Dan untuk mengetahui IP broadcastnya yakni hasil dari pengurangan diatas ditambah dengan ip network</p>
+<p><img loading="lazy" src="r-utama2.png" srcset="/posts/cara_cepat_menghitung_vlsm/r-utama2.png, r-utama2.png 1.5x, /posts/cara_cepat_menghitung_vlsm/r-utama2.png 2x" sizes="auto" data-title="VLSM" data-alt="VLSM" width="158" height="65" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></p>
+<table>
+<thead>
+<tr>
+<th>Keterangan</th>
+<th>IP Address</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Network    </td>
+<td>: 172. 16.  0.  0/22</td>
+</tr>
+<tr>
+<td>IP Pertama  </td>
+<td>: 172. 16.  0.  1</td>
+</tr>
+<tr>
+<td>IP Terakhir</td>
+<td>: 172. 16.  3.254</td>
+</tr>
+<tr>
+<td>IP Broadcast</td>
+<td>: 172. 16.  3.255</td>
+</tr>
+<tr>
+<td>Subnet Mask</td>
+<td>: 255.255.252.  0</td>
+</tr>
+</tbody>
+</table>
+<h3 id="2-ruang-kedua-500-host">2. Ruang Kedua 500 host</h3>
+<p>       Untuk Ruangan Kedua host  yang dibutuhkan or komputer yang bisa  terhubung dengan internet sebayak 500 komputer. Untuk mendapatkan 500  host atau lebih maka kita cari pemangkatan yang menghasilkan Host 500  atau lebih. dari tabel diatas yang menghasilkan 500 host &gt;=500 host yang sesuai dengan kebutuhan host yang digunakan 2^9= 512 dan subnet mask 255.255.254.0.
+Untuk mencari nilai ip range seperti dibawah ini :</p>
+<p><img loading="lazy" src="r-kedua.png" srcset="/posts/cara_cepat_menghitung_vlsm/r-kedua.png, r-kedua.png 1.5x, /posts/cara_cepat_menghitung_vlsm/r-kedua.png 2x" sizes="auto" data-title="VLSM" data-alt="VLSM" width="158" height="65" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></p>
+<p>    Dan untuk mengetahui IP broadcastnya yakni hasil dari pengurangan diatas ditambah dengan ip network</p>
+<p><img loading="lazy" src="r-kedua2.png" srcset="/posts/cara_cepat_menghitung_vlsm/r-kedua2.png, r-kedua2.png 1.5x, /posts/cara_cepat_menghitung_vlsm/r-kedua2.png 2x" sizes="auto" data-title="VLSM" data-alt="VLSM" width="158" height="65" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></p>
+<table>
+<thead>
+<tr>
+<th>Keterangan</th>
+<th>IP Address</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Network    </td>
+<td>: 172. 16.  4.  0/23</td>
+</tr>
+<tr>
+<td>IP Pertama  </td>
+<td>: 172. 16.  4.  1</td>
+</tr>
+<tr>
+<td>IP Terakhir</td>
+<td>: 172. 16.  5.254</td>
+</tr>
+<tr>
+<td>IP Broadcast</td>
+<td>: 172. 16.  5.255   </td>
+</tr>
+<tr>
+<td>Subnet Mask</td>
+<td>: 255.255.254.  0 </td>
+</tr>
+</tbody>
+</table>
+<h3 id="3-ruang-server-100-host">3. Ruang Server 100 Host</h3>
+<p>       Nah sekarang untuk Ruang ke 3 yang membutuhkan 100 host,  maka konsep
+perhitungan kita gunakan konsep kelas C atau bermain pada Oktet ke 4. Untuk mendapatkan 100  host atau lebih maka kita cari pemangkatan yang menghasilkan Host 100  atau lebih. dari tabel diatas yang menghasilkan 100 host &gt;=100 host  yang sesuai dengan kebutuhan host yang digunakan 2^7= 128 dan subnet mask 255.255.255.127</p>
+<p>Untuk mencari nilai ip range seperti dibawah ini :</p>
+<p><img loading="lazy" src="r-server.png" srcset="/posts/cara_cepat_menghitung_vlsm/r-server.png, r-server.png 1.5x, /posts/cara_cepat_menghitung_vlsm/r-server.png 2x" sizes="auto" data-title="VLSM" data-alt="VLSM" width="152" height="63" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></p>
+<p>Dan untuk mengetahui IP broadcastnya yakni hasil dari pengurangan diatas ditambah dengan ip network</p>
+<p><img loading="lazy" src="r-server2.png" srcset="/posts/cara_cepat_menghitung_vlsm/r-server2.png, r-server2.png 1.5x, /posts/cara_cepat_menghitung_vlsm/r-server2.png 2x" sizes="auto" data-title="VLSM" data-alt="VLSM" width="158" height="65" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></p>
+<table>
+<thead>
+<tr>
+<th>Keterangan</th>
+<th>IP Address</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Network    </td>
+<td>: 172. 16.  6.  0/25</td>
+</tr>
+<tr>
+<td>IP Pertama  </td>
+<td>: 172. 16.  6.  1  </td>
+</tr>
+<tr>
+<td>IP Terakhir</td>
+<td>: 172. 16.  6.126  </td>
+</tr>
+<tr>
+<td>IP Broadcast</td>
+<td>: 172. 16.  6.127  </td>
+</tr>
+<tr>
+<td>Subnet Mask</td>
+<td>: 255.255.255.128</td>
+</tr>
+</tbody>
+</table>
+<h3 id="4-ruang-server-2-host">4. Ruang Server 2 Host</h3>
+<table>
+<thead>
+<tr>
+<th>Keterangan</th>
+<th>IP Address</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Network    </td>
+<td>: 172. 16.  6.128/30</td>
+</tr>
+<tr>
+<td>IP Pertama  </td>
+<td>: 172. 16.  6.129  </td>
+</tr>
+<tr>
+<td>IP Terakhir</td>
+<td>: 172. 16.  6.130  </td>
+</tr>
+<tr>
+<td>IP Broadcast</td>
+<td>: 172. 16.  6.131  </td>
+</tr>
+<tr>
+<td>Subnet Mask</td>
+<td>: 255.255.255.252</td>
+</tr>
+</tbody>
+</table></div><div class="post-footer" id="post-footer">
+  <div class="post-info">
+    <div class="post-info-line">
+      <div class="post-info-mod">
+        <span title=2023-02-28&#32;10:49:28>Updated on 2023-02-28&nbsp;</span>
+      </div><div class="post-info-license">
+          <span><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">EB BY-NC 4.0</a></span>
+        </div></div>
+    <div class="post-info-line">
+      <div class="post-info-md"></div>
+      <div class="post-info-share">
+        <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="http://enohbadri.github.io/posts/cara_cepat_menghitung_vlsm/" data-title="Cara Cepat Menghitung VLSM" data-via="@eb_badrie" data-hashtags="Subneting,VLSM"><i class="fa-brands fa-twitter fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="http://enohbadri.github.io/posts/cara_cepat_menghitung_vlsm/" data-hashtag="Subneting"><i class="fa-brands fa-facebook-square fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="http://enohbadri.github.io/posts/cara_cepat_menghitung_vlsm/" data-title="Cara Cepat Menghitung VLSM"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
+  </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="post-info-more">
+    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href='/tags/subneting/' class="post-tag">Subneting</a><a href='/tags/vlsm/' class="post-tag">VLSM</a></section>
+    <section>
+      <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+    </section>
+  </div>
+
+  <div class="post-nav"><a href="/posts/git_rejected/" class="post-nav-item" rel="prev" title="Cara Mengatasi Git Push Rejected"><i class="fa-solid fa-angle-left fa-fw" aria-hidden="true"></i>Cara Mengatasi Git Push Rejected</a>
+      <a href="/posts/membangun-_sms_gateway_dengan_gammu/" class="post-nav-item" rel="next" title="Membangun SMS Gateway dengan Gammu">Membangun SMS Gateway dengan Gammu<i class="fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+<div class="post-reward">
+    <div class="comment"></div>
+    <input type="checkbox" class="reward-input" name="reward" id="fi-reward" hidden />
+    <label class="reward-button" for="fi-reward">Donate</label>
+    <div class="reward-ways"></div>
+  </div><div id="comments"><div id="giscus">
+          <script
+            src="https://giscus.app/client.js"
+            data-repo="enohbadri/webpage_comments"
+            data-repo-id="R_kgDOKWTG6A"
+            data-category="Announcements"
+            data-category-id="DIC_kwDOKWTG6M4CZgQK"
+            data-mapping="url"
+            
+            data-theme="preferred_color_scheme"
+            data-reactions-enabled="1"
+            data-emit-metadata="0"
+            data-input-position="bottom"
+            data-lang="en"
+            data-loading="lazy"
+            crossorigin="anonymous"
+            async
+            defer
+          ></script>
+        </div>
+        <noscript>
+          Please enable JavaScript to view the comments powered by <a href="https://giscus.app/" rel="external nofollow noopener noreferrer">giscus</a>.
+        </noscript></div></article></main><footer class="footer">
+    <div class="footer-container"><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw" aria-hidden="true"></i>
+            <span itemprop="copyrightYear">2021 - 2024</span><span class="author" itemprop="copyrightHolder">
+              <a href="/"></a></span><span class="license footer-divider"><a rel="license external nofollow noopener noreferrer" href="https://" target="_blank">@eb_badrie 4.0</a></span></div><div class="footer-line statistics"><span class="site-time" title='Website running ...'><i class="fa-solid fa-heartbeat fa-fw animate-icon" aria-hidden="true"></i><span class="run-times ms-1">Website running ...</span></span></div><div class="footer-line visitor">
+          <span id="busuanzi_container_site_uv" title='Total visitors'><i class="fa-regular fa-user fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span><span id="busuanzi_container_site_pv" class="footer-divider" title='Total visits'><i class="fa-regular fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span>
+        </div></div>
+  </footer></div><div class="widgets"><div class="fixed-buttons animate__faster d-none"><div class="fixed-button back-to-top" role="button" aria-label="Back to Top"><i class="fa-solid fa-arrow-up fa-fw" aria-hidden="true"></i><span class="variant-numeric">0%</span>
+        </div><div class="fixed-button view-comments d-none" role="button" aria-label="View Comments"><i class="fa-solid fa-comment fa-fw" aria-hidden="true"></i></div></div><a href="https://github.com/enohbadri" title="Kunjungi GitHub Saya"target="_blank" rel="external nofollow" class="github-corner right d-none-mobile"><svg viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><div id="mask"></div><div class="reading-progress-bar" style="left: 0;top: 0;"></div><noscript>
+    <div class="noscript-warning">Theme FixIt works best with JavaScript enabled.</div>
+  </noscript>
+</div><link rel="stylesheet" href="/lib/lightgallery/css/lightgallery-bundle.min.css"><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><link rel="stylesheet" href="/lib/pace/themes/blue/pace-theme-center-atom.css"><script src="/lib/autocomplete/autocomplete.min.js" defer></script><script src="/lib/fuse/fuse.min.js" defer></script><script src="/lib/twemoji/twemoji.min.js" defer></script><script src="/lib/lightgallery/lightgallery.min.js" defer></script><script src="/lib/lightgallery/plugins/thumbnail/lg-thumbnail.min.js" defer></script><script src="/lib/lightgallery/plugins/zoom/lg-zoom.min.js" defer></script><script src="/lib/sharer/sharer.min.js" async defer></script><script src="/lib/katex/katex.min.js" defer></script><script src="/lib/katex/auto-render.min.js" defer></script><script src="/lib/katex/copy-tex.min.js" defer></script><script src="/lib/katex/mhchem.min.js" defer></script><script src="/lib/cookieconsent/cookieconsent.min.js" defer></script><script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async defer></script><script src="/lib/pace/pace.min.js" async defer></script><script>window.config={"code":{"copyTitle":"Copy to clipboard","editLockTitle":"Lock editable code block","editUnLockTitle":"Unlock editable code block","editable":true,"maxShownLines":10},"comment":{"enable":true,"expired":false,"giscus":{"darkTheme":"dark","lightTheme":"light"}},"cookieconsent":{"content":{"dismiss":"Got it!","link":"Learn more","message":"This website uses Cookies to improve your experience."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"enablePWA":true,"lightgallery":true,"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"distance":100,"findAllMatches":true,"fuseIndexURL":"/index.json","highlightTag":"em","ignoreFieldNorm":false,"ignoreLocation":false,"isCaseSensitive":false,"location":0,"maxResultLength":10,"minMatchCharLength":2,"noResultsFound":"No results found","snippetLength":30,"threshold":0.3,"type":"fuse","useExtendedSearch":false},"siteTime":"2020-07-01T13:00:00+00:00","twemoji":true};</script><script src="/js/theme.min.js" defer></script></body>
+</html>

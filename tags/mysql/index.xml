@@ -1,0 +1,23 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>MySql - Tag - enoh-badrie</title>
+    <link>http://enohbadri.github.io/tags/mysql/</link>
+    <description>MySql - Tag - enoh-badrie</description>
+    <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 15 May 2023 13:25:31 &#43;0700</lastBuildDate><atom:link href="http://enohbadri.github.io/tags/mysql/" rel="self" type="application/rss+xml" /><item>
+  <title>Membuat Website CRUD Sederhana</title>
+  <link>http://enohbadri.github.io/posts/membuat_database_crud_sederhana/</link>
+  <pubDate>Mon, 15 May 2023 13:25:31 &#43;0700</pubDate>
+  <author>Enoh Badrie</author>
+  <guid>http://enohbadri.github.io/posts/membuat_database_crud_sederhana/</guid>
+  <description><![CDATA[Membuat Website CRUD Sederhana]]></description>
+</item>
+<item>
+  <title>Web Server Applications</title>
+  <link>http://enohbadri.github.io/posts/web_server_applications/</link>
+  <pubDate>Thu, 16 Mar 2023 08:54:49 &#43;0700</pubDate>
+  <author>Enoh Badrie</author>
+  <guid>http://enohbadri.github.io/posts/web_server_applications/</guid>
+  <description><![CDATA[Web Server Applications]]></description>
+</item>
+</channel>
+</rss>

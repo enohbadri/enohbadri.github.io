@@ -1,0 +1,87 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>All Posts - enoh-badrie</title>
+    <link>http://enohbadri.github.io/posts/</link>
+    <description>All Posts | enoh-badrie</description>
+    <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 20 Feb 2024 10:55:24 &#43;0700</lastBuildDate><atom:link href="http://enohbadri.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+  <title>Cara Install Neofetch</title>
+  <link>http://enohbadri.github.io/posts/install_neofetch/</link>
+  <pubDate>Mon, 04 Sep 2023 14:38:16 &#43;0700</pubDate>
+  <author>Enoh Badri</author>
+  <guid>http://enohbadri.github.io/posts/install_neofetch/</guid>
+  <description><![CDATA[]]></description>
+</item>
+<item>
+  <title>Modul - Multimedia</title>
+  <link>http://enohbadri.github.io/posts/rangkuman_multimedia/</link>
+  <pubDate>Fri, 01 Sep 2023 08:34:13 &#43;0700</pubDate>
+  <author>Enoh Badri</author>
+  <guid>http://enohbadri.github.io/posts/rangkuman_multimedia/</guid>
+  <description><![CDATA[]]></description>
+</item>
+<item>
+  <title>Modul - TJKT</title>
+  <link>http://enohbadri.github.io/posts/rangkuman_tjkt/</link>
+  <pubDate>Fri, 01 Sep 2023 08:33:46 &#43;0700</pubDate>
+  <author>Enoh Badri</author>
+  <guid>http://enohbadri.github.io/posts/rangkuman_tjkt/</guid>
+  <description><![CDATA[]]></description>
+</item>
+<item>
+  <title>Modul - RPL</title>
+  <link>http://enohbadri.github.io/posts/rangkuman_rpl/</link>
+  <pubDate>Fri, 01 Sep 2023 08:33:04 &#43;0700</pubDate>
+  <author>Enoh Badri</author>
+  <guid>http://enohbadri.github.io/posts/rangkuman_rpl/</guid>
+  <description><![CDATA[]]></description>
+</item>
+<item>
+  <title>Modul - TIK</title>
+  <link>http://enohbadri.github.io/posts/rangkuman_tik/</link>
+  <pubDate>Thu, 24 Aug 2023 07:31:08 &#43;0700</pubDate>
+  <author>Enoh Badri</author>
+  <guid>http://enohbadri.github.io/posts/rangkuman_tik/</guid>
+  <description><![CDATA[]]></description>
+</item>
+<item>
+  <title>Tipe Data Pada SQL</title>
+  <link>http://enohbadri.github.io/posts/tipe_data_pada_sql_server/</link>
+  <pubDate>Wed, 02 Aug 2023 14:07:46 &#43;0700</pubDate>
+  <author>Enoh Badrie</author>
+  <guid>http://enohbadri.github.io/posts/tipe_data_pada_sql_server/</guid>
+  <description><![CDATA[]]></description>
+</item>
+<item>
+  <title>Structure Query Language</title>
+  <link>http://enohbadri.github.io/posts/structure_query_laguage/</link>
+  <pubDate>Mon, 10 Jul 2023 10:07:11 &#43;0700</pubDate>
+  <author>Enoh Badrie</author>
+  <guid>http://enohbadri.github.io/posts/structure_query_laguage/</guid>
+  <description><![CDATA[Structure Query Language]]></description>
+</item>
+<item>
+  <title>Membuat Website CRUD Sederhana</title>
+  <link>http://enohbadri.github.io/posts/membuat_database_crud_sederhana/</link>
+  <pubDate>Mon, 15 May 2023 13:25:31 &#43;0700</pubDate>
+  <author>Enoh Badrie</author>
+  <guid>http://enohbadri.github.io/posts/membuat_database_crud_sederhana/</guid>
+  <description><![CDATA[Membuat Website CRUD Sederhana]]></description>
+</item>
+<item>
+  <title>Digital Subscriber Line [DSL]</title>
+  <link>http://enohbadri.github.io/posts/digital_subscriber_line/</link>
+  <pubDate>Wed, 29 Mar 2023 08:38:13 &#43;0700</pubDate>
+  <author>Enoh Badrie</author>
+  <guid>http://enohbadri.github.io/posts/digital_subscriber_line/</guid>
+  <description><![CDATA[Digital Subscriber Line]]></description>
+</item>
+<item>
+  <title>Subnetting Metode CIDR</title>
+  <link>http://enohbadri.github.io/posts/konsep_dasar_subnetting_dan_cara_menghitung_subnetting_metode_cidr/</link>
+  <pubDate>Mon, 27 Mar 2023 11:28:46 &#43;0700</pubDate>
+  <author>Enoh Badrie</author>
+  <guid>http://enohbadri.github.io/posts/konsep_dasar_subnetting_dan_cara_menghitung_subnetting_metode_cidr/</guid>
+  <description><![CDATA[Konsep Dasar Subnetting dan Cara Menghitung Subnetting Metode CIDR]]></description>
+</item>
+</channel>
+</rss>

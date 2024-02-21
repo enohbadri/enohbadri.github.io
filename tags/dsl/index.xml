@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>DSL - Tag - enoh-badrie</title>
+    <link>http://enohbadri.github.io/tags/dsl/</link>
+    <description>DSL - Tag - enoh-badrie</description>
+    <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 29 Mar 2023 08:38:13 &#43;0700</lastBuildDate><atom:link href="http://enohbadri.github.io/tags/dsl/" rel="self" type="application/rss+xml" /><item>
+  <title>Digital Subscriber Line [DSL]</title>
+  <link>http://enohbadri.github.io/posts/digital_subscriber_line/</link>
+  <pubDate>Wed, 29 Mar 2023 08:38:13 &#43;0700</pubDate>
+  <author>Enoh Badrie</author>
+  <guid>http://enohbadri.github.io/posts/digital_subscriber_line/</guid>
+  <description><![CDATA[Digital Subscriber Line]]></description>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="en">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+    <meta name="robots" content="noodp" />
+    <title>Subnetting Metode CIDR - enoh-badrie</title><meta name="author" content="">
+<meta name="author-link" content="">
+<meta name="description" content="Konsep Dasar Subnetting dan Cara Menghitung Subnetting Metode CIDR" /><meta name="keywords" content='Subneting, CIDR' /><meta itemprop="name" content="Subnetting Metode CIDR">
+<meta itemprop="description" content="Konsep Dasar Subnetting dan Cara Menghitung Subnetting Metode CIDR"><meta itemprop="datePublished" content="2023-03-27T11:28:46+07:00" />
+<meta itemprop="dateModified" content="2023-03-27T11:28:46+07:00" />
+<meta itemprop="wordCount" content="982"><meta itemprop="image" content="http://enohbadri.github.io/posts/konsep_dasar_subnetting_dan_cara_menghitung_subnetting_metode_cidr/cidr.png">
+<meta itemprop="keywords" content="Subneting,CIDR," /><meta property="og:title" content="Subnetting Metode CIDR" />
+<meta property="og:description" content="Konsep Dasar Subnetting dan Cara Menghitung Subnetting Metode CIDR" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://enohbadri.github.io/posts/konsep_dasar_subnetting_dan_cara_menghitung_subnetting_metode_cidr/" /><meta property="og:image" content="http://enohbadri.github.io/posts/konsep_dasar_subnetting_dan_cara_menghitung_subnetting_metode_cidr/cidr.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-03-27T11:28:46+07:00" />
+<meta property="article:modified_time" content="2023-03-27T11:28:46+07:00" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="http://enohbadri.github.io/posts/konsep_dasar_subnetting_dan_cara_menghitung_subnetting_metode_cidr/cidr.png"/>
+<meta name="twitter:title" content="Subnetting Metode CIDR"/>
+<meta name="twitter:description" content="Konsep Dasar Subnetting dan Cara Menghitung Subnetting Metode CIDR"/>
+<meta name="application-name" content="FixIt">
+<meta name="apple-mobile-web-app-title" content="FixIt"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="https://en.gravatar.com/userimage/231818137/90e0e2859b85bcde111b248cb659b414.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://enohbadri.github.io/posts/konsep_dasar_subnetting_dan_cara_menghitung_subnetting_metode_cidr/" /><link rel="prev" href="http://enohbadri.github.io/posts/vlan_cisco_packet_tracer/" /><link rel="next" href="http://enohbadri.github.io/posts/digital_subscriber_line/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Subnetting Metode CIDR",
+    "inLanguage": "en",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "http:\/\/enohbadri.github.io\/posts\/konsep_dasar_subnetting_dan_cara_menghitung_subnetting_metode_cidr\/"
+    },"image": [{
+              "@type": "ImageObject",
+              "url": "http:\/\/enohbadri.github.io\/posts\/konsep_dasar_subnetting_dan_cara_menghitung_subnetting_metode_cidr\/cidr.png",
+              "width":  667 ,
+              "height":  503 
+            }],"genre": "posts","keywords": "Subneting, CIDR","wordcount":  982 ,
+    "url": "http:\/\/enohbadri.github.io\/posts\/konsep_dasar_subnetting_dan_cara_menghitung_subnetting_metode_cidr\/","datePublished": "2023-03-27T11:28:46+07:00","dateModified": "2023-03-27T11:28:46+07:00","publisher": {
+      "@type": "Organization",
+      "name": ""},"author": {
+        "@type": "Person",
+        "name": "Enoh Badrie"
+      },"description": "Konsep Dasar Subnetting dan Cara Menghitung Subnetting Metode CIDR"
+  }
+  </script></head>
+  <body data-header-desktop="auto" data-header-mobile="auto"><script>(window.localStorage?.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('data-theme', 'dark');</script><div class="wrapper"><header class="desktop animate__faster" id="header-desktop">
+  <div class="header-wrapper" data-github-corner="right">
+    <div class="header-title">
+      <a href="/" title="enoh-badrie"><img loading="lazy" src="https://en.gravatar.com/userimage/231818137/90e0e2859b85bcde111b248cb659b414.png" srcset="https://en.gravatar.com/userimage/231818137/90e0e2859b85bcde111b248cb659b414.png, https://en.gravatar.com/userimage/231818137/90e0e2859b85bcde111b248cb659b414.png 1.5x, https://en.gravatar.com/userimage/231818137/90e0e2859b85bcde111b248cb659b414.png 2x" sizes="auto" data-title="enoh-badrie" data-alt="enoh-badrie" class="logo" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/><span class="header-title-text">Enoh Badrie</span></a><span class="header-subtitle"></span></div>
+    <nav>
+      <ul class="menu"><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/posts/"
+                
+                
+              ><i class="fa-solid fa-archive fa-fw fa-sm" aria-hidden="true"></i> Posts</a></li><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/categories/"
+                
+                
+              ><i class="fa-solid fa-th fa-fw fa-sm" aria-hidden="true"></i> Categories</a></li><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/tags/"
+                
+                
+              ><i class="fa-solid fa-tags fa-fw fa-sm" aria-hidden="true"></i> Tags</a></li><li class="menu-item delimiter"></li><li class="menu-item search" id="search-desktop">
+            <input type="text" placeholder="Search titles or contents ..." id="search-input-desktop">
+            <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+              <i class="fa-solid fa-search fa-fw" aria-hidden="true"></i>
+            </a>
+            <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+              <i class="fa-solid fa-times-circle fa-fw" aria-hidden="true"></i>
+            </a>
+            <span class="search-button search-loading" id="search-loading-desktop">
+              <i class="fa-solid fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+            </span>
+          </li><li class="menu-item theme-switch" title="Switch Theme">
+          <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header><header class="mobile animate__faster" id="header-mobile">
+  <div class="header-container">
+    <div class="header-wrapper">
+      <div class="header-title">
+        <a href="/" title="enoh-badrie"><img loading="lazy" src="https://en.gravatar.com/userimage/231818137/90e0e2859b85bcde111b248cb659b414.png" srcset="https://en.gravatar.com/userimage/231818137/90e0e2859b85bcde111b248cb659b414.png, https://en.gravatar.com/userimage/231818137/90e0e2859b85bcde111b248cb659b414.png 1.5x, https://en.gravatar.com/userimage/231818137/90e0e2859b85bcde111b248cb659b414.png 2x" sizes="auto" data-title="https://en.gravatar.com/userimage/231818137/90e0e2859b85bcde111b248cb659b414.png" data-alt="https://en.gravatar.com/userimage/231818137/90e0e2859b85bcde111b248cb659b414.png" class="logo" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/><span class="header-title-text">Enoh Badrie</span></a><span class="header-subtitle"></span></div>
+      <div class="menu-toggle" id="menu-toggle-mobile">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+    <nav>
+      <ul class="menu" id="menu-mobile"><li class="search-wrapper">
+            <div class="search mobile" id="search-mobile">
+              <input type="text" placeholder="Search titles or contents ..." id="search-input-mobile">
+              <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                <i class="fa-solid fa-search fa-fw" aria-hidden="true"></i>
+              </a>
+              <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                <i class="fa-solid fa-times-circle fa-fw" aria-hidden="true"></i>
+              </a>
+              <span class="search-button search-loading" id="search-loading-mobile">
+                <i class="fa-solid fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+              </span>
+            </div>
+            <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+              Cancel
+            </a>
+          </li><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="/posts/"
+                  
+                  
+                ><i class="fa-solid fa-archive fa-fw fa-sm" aria-hidden="true"></i> Posts</a></li><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="/categories/"
+                  
+                  
+                ><i class="fa-solid fa-th fa-fw fa-sm" aria-hidden="true"></i> Categories</a></li><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="/tags/"
+                  
+                  
+                ><i class="fa-solid fa-tags fa-fw fa-sm" aria-hidden="true"></i> Tags</a></li><li class="menu-item theme-switch" title="Switch Theme">
+          <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+        </li></ul>
+    </nav>
+  </div>
+
+
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client="ca-pub-3658587961826512"
+       data-ad-slot="1234567890"
+       data-ad-format="auto"></ins>
+  <script>
+       (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+  
+
+
+
+</header><div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+  </div>
+  <div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+  </div><main class="container" data-page-style="wide"><aside class="toc" id="toc-auto"><h2 class="toc-title">Contents&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
+      <div class="toc-content" id="toc-content-auto"></div></aside>
+
+  <aside class="aside-custom">
+    </aside>
+
+  <article class="page single">
+    <div class="header"><h1 class="single-title animate__animated animate__flipInX">
+        <span title="Repost" class="icon-repost"><i class="fa-solid fa-share fa-fw" aria-hidden="true"></i></span><span>Subnetting Metode CIDR</span>
+      </h1></div><div class="post-meta">
+      <div class="post-meta-line"><span class="post-author"><a href="https://" title="Author" rel=" author" class="author"><i class="fa-solid fa-user-circle" aria-hidden="true"></i>
+    Enoh Badrie</a></span>
+          <span class="post-category">included in <a href="/categories/administrasi-infrastruktur-jaringan/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> Administrasi Infrastruktur Jaringan</a></span></div>
+      <div class="post-meta-line"><span title=2023-03-27&#32;11:28:46><i class="fa-regular fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-03-27">2023-03-27</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw" aria-hidden="true"></i> 982 words</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw" aria-hidden="true"></i> 5 minutes</span>&nbsp;<span id="busuanzi_container_page_pv" class="busuanzi_visitors comment-visitors" data-flag-title="Subnetting Metode CIDR">
+              <i class="fa-regular fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_page_pv">-</span>&nbsp;views
+            </span>&nbsp;</div>
+    </div><div class="featured-image"><img loading="lazy" src="/posts/konsep_dasar_subnetting_dan_cara_menghitung_subnetting_metode_cidr/cidr.png" srcset="/posts/konsep_dasar_subnetting_dan_cara_menghitung_subnetting_metode_cidr/cidr.png, /posts/konsep_dasar_subnetting_dan_cara_menghitung_subnetting_metode_cidr/cidr.png 1.5x, /posts/konsep_dasar_subnetting_dan_cara_menghitung_subnetting_metode_cidr/cidr.png 2x" sizes="auto" data-title="Konsep Dasar Subnetting dan Cara Menghitung Subnetting Metode CIDR" data-alt="/posts/konsep_dasar_subnetting_dan_cara_menghitung_subnetting_metode_cidr/cidr.png" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></div><div class="details toc" id="toc-static" data-kept="false">
+        <div class="details-summary toc-title">
+          <span>Contents</span>
+          <span><i class="details-icon fa-solid fa-angle-right" aria-hidden="true"></i></span>
+        </div>
+        <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#apa-itu-subnetting">Apa itu Subnetting?</a></li>
+        <li><a href="#menghitung-subnetting-metode-cidr">Menghitung Subnetting metode CIDR</a></li>
+        <li><a href="#1ada-berapa-subnet">1.Ada berapa subnet?</a></li>
+        <li><a href="#2berapa-ip-atau-host-per-subnet">2.Berapa ip atau host per subnet?</a></li>
+        <li><a href="#3blok-size-per-subnet">3.Blok size per subnet?</a></li>
+        <li><a href="#4network-address-network-id-per-subnet">4.Network Address (Network ID) per subnet.</a></li>
+        <li><a href="#5broadcast-addres-broadcast-id-per-subnet">5.Broadcast Addres (Broadcast ID) per subnet.</a></li>
+        <li><a href="#6range-host-yang-valid">6.Range host yang valid.</a></li>
+        <li><a href="#contoh-soal-">Contoh Soal :</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+      </div><div class="content" id="content"><h3 id="apa-itu-subnetting">Apa itu Subnetting?</h3>
+<p>Subnetting adalah membagi jaringan (network) menjadi jaringan yang lebih kecil (subnetwork, disingkat subnet). Salah satu nilai dasar yang perlu diperhatikan dalam mebuat jaringan yang baik adalah optimal. Penggunaan IP adalah salah satu aspek yang perlu dioptimalkan, salah satu caranya adalah memakai ip sesuai kebutuhan dan membagi jaringan dalam kelompok-kelompok jaringan yang lebih kecil.</p>
+<p>Sebelum mempelajari subneting teman-teman perlu memahami hal-hal dasar jaringan seperti,Networking Model dan IP Address (ipv4). Karena selain banyak istilah-istilah dasar yang harus diketahui, banyak pula materi atau konsep jaringan yang perlu dipahami. Sehingga teman-teman tidak bingung saat memahami penjelasan di materi subnetting ini.</p>
+<p>Penerapan subnetting kurang-lebih seperti ini. Misalnya kita punya jaringan sekolah yang butuh ratusan komputer. Jika ratusan komputer tersebut terhubung dengan jaringan yang sama. Selain memberatkan traffic, manajemennya pun akan tercampur aduk.</p>
+<p>Oleh karena itu kita perlu membaginya ke jaringan-jaringan yang berbeda berdasarkan ruangan atau sesuai tugasnya. Contohnya kita bagi jaringan sekolah tersebut menjadi beberapa jaringan misalnya : Guru, Tata Usaha, Perpusatakaan, Ruang Kelas.</p>
+<p>Jika diilustrasikan dalam kehidupan nyata, subnetting seperti membuat gang-gang kecil sehingga memudahkan dalam pengiriman data ke tujuan.</p>
+<p>Ada beberapa keuntungan membagi jaringan ke dalam subnet. Yang pertama, memudahkan manajemen. Dengan membagi jaringan kita bisa menerapkan aturan yang berbeda setiap subnetnya (sub-jaringan). Misalnya di Subnet Ruang Kelas tidak diberikan akses internet, hanya akses ke jaringan lokal saja. Sementara di perpustakaan diperbolehkan akses internet hanya saja dibatasi beberapa situs aja, dst.</p>
+<p>Yang kedua meringankan traffic. Contoh kasusnya saat ada broadcast, jika jaringan tidak dibagi-bagi maka broadcast akan dikirim ke ratusan komputer. Sedangkan jika sudah dibagi-bagi ke dalam subnet, broadcastnya hanya dikirimkan ke beberapa atau puluhan komputer saja.</p>
+<h3 id="menghitung-subnetting-metode-cidr">Menghitung Subnetting metode CIDR</h3>
+<p>Untuk penjelesan awal mengenai istilah-istilah berikut silakan baca Mengenal IP Address (ipv4). Disini kita akan belajar mencari Netmask, Network ID, Broadcast ID, dari sebuah IP mengunakan metode CIDR.
+CIDR (Classless Inter-Domain Routing) adalah metode alokasi IP Address tanpa diperngaruhi class ip. Jadi dengan CIDR, kita bisa menggunakan netmask di luar class IP tersebut. Misal IP Class A bisa menggunakan netmask IP class A, B, dan C. IP Class B bisa menggunakan netmask iIP Class B dan C. Sedangkan IP Class C hanya bisa mengunakan netmask IP Class C. Di artikel IP Address (ipv4) sudah dijelaskan pembagian class dan netmask defaultnya. Atau bisa perhatikan gambar berikut.</p>
+<p>Sekarang kita coba mencari data ip 192.168.16.0/26, berikut pertanyaan yang sering muncul dan rumusnya. Tapi kita harus tau netmasknya, karena ini nilai yang menentukan hasil perhitungan kita.</p>
+<p>Subnetmask / Netmask : Bisa teman-teman lihat di gambar sebelumnya. Prefix /26 memiliki netmask 255.255.255.192</p>
+<div class="details admonition tip open">
+    <div class="details-summary admonition-title">
+      <i class="icon fa-solid fa-lightbulb fa-fw" aria-hidden="true"></i>Catatan!!<i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true"></i>
+    </div>
+    <div class="details-content">
+      <div class="admonition-content">XXX = bilangan tersebut bukan 255. (msial 128, 192, 224, dst)
+Jika menggunakan netmask 255.255.255.XXX, kita perlu mengubah oktet ke 4 menjadi biner.
+Jika menggunakan netmask 255.255.XXX.XXX, kita perlu mengubah oktet ke 3 dan 4 menjadi biner.
+Jika menggunakan netmask 255.XXX.XXX.XXX, kita perlu mengubah oktet ke 2, 3 dan 4 menjadi biner.
+Jika menggunakan netmask XXX.XXX.XXX.XXX, kita perlu mengubah oktet ke 1, 2, 3 dan 4 menjadi biner.</div>
+    </div>
+  </div>
+<p>Dalam kasus di ini, kita menggunakan netmask 255.255.255.192 maka cukup mengubah oktet terakhir. Yaitu 192 = 11000000.</p>
+<ul>
+<li>x = jumlah angka 1 pada oktet yg kita ubah menjadi biner</li>
+<li>y = jumlah angka 0 pada oktet yg kita ubah menjadi biner</li>
+</ul>
+<h3 id="1ada-berapa-subnet">1.Ada berapa subnet?</h3>
+<p><div class="details admonition tip open">
+    <div class="details-summary admonition-title">
+      <i class="icon fa-solid fa-lightbulb fa-fw" aria-hidden="true"></i>Catatan!!<i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true"></i>
+    </div>
+    <div class="details-content">
+      <div class="admonition-content">Rumus : 2^x</div>
+    </div>
+  </div>
+Contoh :</p>
+<ul>
+<li>2^2 = 4
+Jadi, jumlah subnet yang bisa kita bentuk dari IP 192.168.16.0/26 adalah 4 subnet.</li>
+</ul>
+<h3 id="2berapa-ip-atau-host-per-subnet">2.Berapa ip atau host per subnet?</h3>
+<p><div class="details admonition tip open">
+    <div class="details-summary admonition-title">
+      <i class="icon fa-solid fa-lightbulb fa-fw" aria-hidden="true"></i>Catatan!!<i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true"></i>
+    </div>
+    <div class="details-content">
+      <div class="admonition-content">Rumus : 2^y - 2</div>
+    </div>
+  </div>
+Contoh :</p>
+<ul>
+<li>2^6 - 2 = 62
+Jadi, jumlah host per subnetnya adalah 62 host.
+Jika netmask yang digunakan 255.255.XXX.XXX, kamu cukup menghitung oktet ke 3 kemudian dikali dengan 256. Seperti ini contoh 172.16.0.0/22, subnetmasknya 255.255.252.0 atau 11111111.11111111.11111100.00000000. Abaikan oktet 4, hitung saja bilangan binner di oktet 3.</li>
+<li>(2^2 x 256) - 2 = 1022
+Demikian pula jika netmasknya 255.XXX.XXX.XXX, berarti dikali 256^2. Atau seperti ini contohnya : 10.0.0.0/14, subnetmasknya 255.252.0.0 atau 11111111.11111100.00000000.00000000. Abaikan oktet 3 dan 4, hitung saja bilangan binner di oktet 2.</li>
+<li>(2^2 x 256 x 256) - 2 = 262142</li>
+</ul>
+<h3 id="3blok-size-per-subnet">3.Blok size per subnet?</h3>
+<p><div class="details admonition tip open">
+    <div class="details-summary admonition-title">
+      <i class="icon fa-solid fa-lightbulb fa-fw" aria-hidden="true"></i>Catatan!!<i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true"></i>
+    </div>
+    <div class="details-content">
+      <div class="admonition-content">Rumus : 256 - XXX</div>
+    </div>
+  </div>
+Contoh :</p>
+<ul>
+<li>256 - 192 = 64
+Jadi, ukuran block setiap subnetnya adalah 64. Ukuran subnet biasa sebut juga increment size, atau besar interval.</li>
+</ul>
+<h3 id="4network-address-network-id-per-subnet">4.Network Address (Network ID) per subnet.</h3>
+<p><div class="details admonition tip open">
+    <div class="details-summary admonition-title">
+      <i class="icon fa-solid fa-lightbulb fa-fw" aria-hidden="true"></i>Catatan!!<i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true"></i>
+    </div>
+    <div class="details-content">
+      <div class="admonition-content">Rumus : kelipatan interval/block size adalah network address.</div>
+    </div>
+  </div>
+Contoh :
+Tadi ukuran block sizenya adalah 64. Berarti network idnya dimulai dari 0, 64, 128, dan 192. Jika ditulis lengkap:</p>
+<ul>
+<li>Subnet 1 : 192.168.16.0/26</li>
+<li>Subnet 2 : 192.168.16.64/26</li>
+<li>Subnet 3 : 192.168.16.128/26</li>
+<li>Subnet 4 : 192.168.16.192/26</li>
+</ul>
+<h3 id="5broadcast-addres-broadcast-id-per-subnet">5.Broadcast Addres (Broadcast ID) per subnet.</h3>
+<p><div class="details admonition tip open">
+    <div class="details-summary admonition-title">
+      <i class="icon fa-solid fa-lightbulb fa-fw" aria-hidden="true"></i>Catatan!!<i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true"></i>
+    </div>
+    <div class="details-content">
+      <div class="admonition-content">Rumus : Network ID subnet berikutnya dikurangi 1</div>
+    </div>
+  </div>
+Contoh :</p>
+<ul>
+<li>Subnet 1 : 64-1 = 63</li>
+<li>Subnet 2 : 128-1 = 127</li>
+<li>Subnet 3 : 192-1 = 191</li>
+<li>Subnet 4 : 256-1 = 255</li>
+</ul>
+<p>Jika ditulis lengkap:</p>
+<ul>
+<li>Subnet 1 : 192.168.16.63/26</li>
+<li>Subnet 2 : 192.168.16.127/26</li>
+<li>Subnet 3 : 192.168.16.191/26</li>
+<li>Subnet 4 : 192.168.16.255/26</li>
+</ul>
+<h3 id="6range-host-yang-valid">6.Range host yang valid.</h3>
+<p><div class="details admonition tip open">
+    <div class="details-summary admonition-title">
+      <i class="icon fa-solid fa-lightbulb fa-fw" aria-hidden="true"></i>Catatan!!<i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true"></i>
+    </div>
+    <div class="details-content">
+      <div class="admonition-content">Rumus : range di antara Network ID dan Broadcast ID.</div>
+    </div>
+  </div>
+Contoh :
+Subnet 1 misalnya networknya 192.168.16.0, sedangkan broadcastnya 192.168.16.63. Maka range host validnya adalah 192.168.16.1 - 192.168.16.62.</p>
+<ul>
+<li>Subnet 1 : 192.168.16.1 - 192.168.16.62</li>
+<li>Subnet 2 : 192.168.16.65 - 192.168.16.126</li>
+<li>Subnet 3 : 192.168.16.129 - 192.168.16.190</li>
+<li>Subnet 4 : 192.168.16.1 - 192.168.16.254</li>
+</ul>
+<h3 id="contoh-soal-">Contoh Soal :</h3>
+<p>Tentukan Berapa Network, Broadcast, dan Range Valid Host dari IP Address : 200.100.100.50/27?
+Cara menghitungnya begini. Perhatikan konsep ini. Karena prefix /27 netmasknya
+11111111. 11111111. 11111111. 11100000
+255.255.255.224 maka kita hanya perlu otak-atik oktet ke-4.
+Cari block sizenya (interval) terlebih dahulu.
+256-224 = 32
+Kemudian kita buat daftar Network ID-nya yaitu mulai dari 0 dan cari dimana letak angka oktet ke-4 yaitu 50.
+0,32,64.128,dst. Jika kamu sudah menemukan dimana letak angka yang dicari yaitu 50, gak usah dilanjut sampai 256. :v
+Nah, angka 50 berada di antar 32 dan 64. Maka sudah bisa simpulkan dengan rumus mencari network dan broadcast yang dijelaskan sebelumnya.</p>
+<ul>
+<li>Network    = 200.100.100.32/27</li>
+<li>Broadcast = 200.100.100.63/27</li>
+<li>Range IP  = 200.100.100.33 - 200.100.100.62</li>
+</ul>
+<p>Selamat belajar&hellip;</p></div><div class="post-footer" id="post-footer">
+  <div class="post-info">
+    <div class="post-info-line">
+      <div class="post-info-mod">
+        <span title=2023-03-27&#32;11:28:46>Updated on 2023-03-27&nbsp;</span>
+      </div></div>
+    <div class="post-info-line">
+      <div class="post-info-md"></div>
+      <div class="post-info-share">
+        <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="http://enohbadri.github.io/posts/konsep_dasar_subnetting_dan_cara_menghitung_subnetting_metode_cidr/" data-title="Subnetting Metode CIDR" data-via="@eb_badrie" data-hashtags="Subneting,CIDR"><i class="fa-brands fa-twitter fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="http://enohbadri.github.io/posts/konsep_dasar_subnetting_dan_cara_menghitung_subnetting_metode_cidr/" data-hashtag="Subneting"><i class="fa-brands fa-facebook-square fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="http://enohbadri.github.io/posts/konsep_dasar_subnetting_dan_cara_menghitung_subnetting_metode_cidr/" data-title="Subnetting Metode CIDR"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
+  </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="post-info-more">
+    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href='/tags/subneting/' class="post-tag">Subneting</a><a href='/tags/cidr/' class="post-tag">CIDR</a></section>
+    <section>
+      <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+    </section>
+  </div>
+
+  <div class="post-nav"><a href="/posts/vlan_cisco_packet_tracer/" class="post-nav-item" rel="prev" title="VLAN Cisco Packet Tracer"><i class="fa-solid fa-angle-left fa-fw" aria-hidden="true"></i>VLAN Cisco Packet Tracer</a>
+      <a href="/posts/digital_subscriber_line/" class="post-nav-item" rel="next" title="Digital Subscriber Line [DSL]">Digital Subscriber Line [DSL]<i class="fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+<div id="comments"><div id="giscus">
+          <script
+            src="https://giscus.app/client.js"
+            data-repo="enohbadri/webpage_comments"
+            data-repo-id="R_kgDOKWTG6A"
+            data-category="Announcements"
+            data-category-id="DIC_kwDOKWTG6M4CZgQK"
+            data-mapping="url"
+            
+            data-theme="preferred_color_scheme"
+            data-reactions-enabled="1"
+            data-emit-metadata="0"
+            data-input-position="bottom"
+            data-lang="en"
+            data-loading="lazy"
+            crossorigin="anonymous"
+            async
+            defer
+          ></script>
+        </div>
+        <noscript>
+          Please enable JavaScript to view the comments powered by <a href="https://giscus.app/" rel="external nofollow noopener noreferrer">giscus</a>.
+        </noscript></div></article></main><footer class="footer">
+    <div class="footer-container"><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw" aria-hidden="true"></i>
+            <span itemprop="copyrightYear">2021 - 2024</span><span class="author" itemprop="copyrightHolder">
+              <a href="/"></a></span><span class="license footer-divider"><a rel="license external nofollow noopener noreferrer" href="https://" target="_blank">@eb_badrie 4.0</a></span></div><div class="footer-line statistics"><span class="site-time" title='Website running ...'><i class="fa-solid fa-heartbeat fa-fw animate-icon" aria-hidden="true"></i><span class="run-times ms-1">Website running ...</span></span></div><div class="footer-line visitor">
+          <span id="busuanzi_container_site_uv" title='Total visitors'><i class="fa-regular fa-user fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span><span id="busuanzi_container_site_pv" class="footer-divider" title='Total visits'><i class="fa-regular fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span>
+        </div></div>
+  </footer></div><div class="widgets"><div class="fixed-buttons animate__faster d-none"><div class="fixed-button back-to-top" role="button" aria-label="Back to Top"><i class="fa-solid fa-arrow-up fa-fw" aria-hidden="true"></i><span class="variant-numeric">0%</span>
+        </div><div class="fixed-button view-comments d-none" role="button" aria-label="View Comments"><i class="fa-solid fa-comment fa-fw" aria-hidden="true"></i></div></div><a href="https://github.com/enohbadri" title="Kunjungi GitHub Saya"target="_blank" rel="external nofollow" class="github-corner right d-none-mobile"><svg viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><div id="mask"></div><div class="reading-progress-bar" style="left: 0;top: 0;"></div><noscript>
+    <div class="noscript-warning">Theme FixIt works best with JavaScript enabled.</div>
+  </noscript>
+</div><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><link rel="stylesheet" href="/lib/pace/themes/blue/pace-theme-center-atom.css"><script src="/lib/autocomplete/autocomplete.min.js" defer></script><script src="/lib/fuse/fuse.min.js" defer></script><script src="/lib/twemoji/twemoji.min.js" defer></script><script src="/lib/sharer/sharer.min.js" async defer></script><script src="/lib/cookieconsent/cookieconsent.min.js" defer></script><script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async defer></script><script src="/lib/pace/pace.min.js" async defer></script><script>window.config={"code":{"copyTitle":"Copy to clipboard","editLockTitle":"Lock editable code block","editUnLockTitle":"Unlock editable code block","editable":true,"maxShownLines":10},"comment":{"enable":true,"expired":false,"giscus":{"darkTheme":"dark","lightTheme":"light"}},"cookieconsent":{"content":{"dismiss":"Got it!","link":"Learn more","message":"This website uses Cookies to improve your experience."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"enablePWA":true,"search":{"distance":100,"findAllMatches":true,"fuseIndexURL":"/index.json","highlightTag":"em","ignoreFieldNorm":false,"ignoreLocation":false,"isCaseSensitive":false,"location":0,"maxResultLength":10,"minMatchCharLength":2,"noResultsFound":"No results found","snippetLength":30,"threshold":0.3,"type":"fuse","useExtendedSearch":false},"siteTime":"2020-07-01T13:00:00+00:00","twemoji":true};</script><script src="/js/theme.min.js" defer></script></body>
+</html>

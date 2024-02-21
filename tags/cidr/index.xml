@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>CIDR - Tag - enoh-badrie</title>
+    <link>http://enohbadri.github.io/tags/cidr/</link>
+    <description>CIDR - Tag - enoh-badrie</description>
+    <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 27 Mar 2023 11:28:46 &#43;0700</lastBuildDate><atom:link href="http://enohbadri.github.io/tags/cidr/" rel="self" type="application/rss+xml" /><item>
+  <title>Subnetting Metode CIDR</title>
+  <link>http://enohbadri.github.io/posts/konsep_dasar_subnetting_dan_cara_menghitung_subnetting_metode_cidr/</link>
+  <pubDate>Mon, 27 Mar 2023 11:28:46 &#43;0700</pubDate>
+  <author>Enoh Badrie</author>
+  <guid>http://enohbadri.github.io/posts/konsep_dasar_subnetting_dan_cara_menghitung_subnetting_metode_cidr/</guid>
+  <description><![CDATA[Konsep Dasar Subnetting dan Cara Menghitung Subnetting Metode CIDR]]></description>
+</item>
+</channel>
+</rss>

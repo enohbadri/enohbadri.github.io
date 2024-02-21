@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="en">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+    <meta name="robots" content="noodp" />
+    <title>Membuat Website CRUD Sederhana - enoh-badrie</title><meta name="author" content="">
+<meta name="author-link" content="">
+<meta name="description" content="Membuat Website CRUD Sederhana" /><meta name="keywords" content='PHP, CRUD, MySql' /><meta itemprop="name" content="Membuat Website CRUD Sederhana">
+<meta itemprop="description" content="Membuat Website CRUD Sederhana"><meta itemprop="datePublished" content="2023-05-15T13:25:31+07:00" />
+<meta itemprop="dateModified" content="2023-05-15T13:25:31+07:00" />
+<meta itemprop="wordCount" content="1346"><meta itemprop="image" content="http://enohbadri.github.io/posts/membuat_database_crud_sederhana/crud.png">
+<meta itemprop="keywords" content="PHP,CRUD,MySql," /><meta property="og:title" content="Membuat Website CRUD Sederhana" />
+<meta property="og:description" content="Membuat Website CRUD Sederhana" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://enohbadri.github.io/posts/membuat_database_crud_sederhana/" /><meta property="og:image" content="http://enohbadri.github.io/posts/membuat_database_crud_sederhana/crud.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-05-15T13:25:31+07:00" />
+<meta property="article:modified_time" content="2023-05-15T13:25:31+07:00" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="http://enohbadri.github.io/posts/membuat_database_crud_sederhana/crud.png"/>
+<meta name="twitter:title" content="Membuat Website CRUD Sederhana"/>
+<meta name="twitter:description" content="Membuat Website CRUD Sederhana"/>
+<meta name="application-name" content="FixIt">
+<meta name="apple-mobile-web-app-title" content="FixIt"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="https://en.gravatar.com/userimage/231818137/90e0e2859b85bcde111b248cb659b414.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://enohbadri.github.io/posts/membuat_database_crud_sederhana/" /><link rel="prev" href="http://enohbadri.github.io/posts/digital_subscriber_line/" /><link rel="next" href="http://enohbadri.github.io/posts/structure_query_laguage/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Membuat Website CRUD Sederhana",
+    "inLanguage": "en",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "http:\/\/enohbadri.github.io\/posts\/membuat_database_crud_sederhana\/"
+    },"image": [{
+              "@type": "ImageObject",
+              "url": "http:\/\/enohbadri.github.io\/posts\/membuat_database_crud_sederhana\/crud.png",
+              "width":  311 ,
+              "height":  162 
+            }],"genre": "posts","keywords": "PHP, CRUD, MySql","wordcount":  1346 ,
+    "url": "http:\/\/enohbadri.github.io\/posts\/membuat_database_crud_sederhana\/","datePublished": "2023-05-15T13:25:31+07:00","dateModified": "2023-05-15T13:25:31+07:00","publisher": {
+      "@type": "Organization",
+      "name": ""},"author": {
+        "@type": "Person",
+        "name": "Enoh Badrie"
+      },"description": "Membuat Website CRUD Sederhana"
+  }
+  </script></head>
+  <body data-header-desktop="auto" data-header-mobile="auto"><script>(window.localStorage?.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('data-theme', 'dark');</script><div class="wrapper"><header class="desktop animate__faster" id="header-desktop">
+  <div class="header-wrapper" data-github-corner="right">
+    <div class="header-title">
+      <a href="/" title="enoh-badrie"><img loading="lazy" src="https://en.gravatar.com/userimage/231818137/90e0e2859b85bcde111b248cb659b414.png" srcset="https://en.gravatar.com/userimage/231818137/90e0e2859b85bcde111b248cb659b414.png, https://en.gravatar.com/userimage/231818137/90e0e2859b85bcde111b248cb659b414.png 1.5x, https://en.gravatar.com/userimage/231818137/90e0e2859b85bcde111b248cb659b414.png 2x" sizes="auto" data-title="enoh-badrie" data-alt="enoh-badrie" class="logo" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/><span class="header-title-text">Enoh Badrie</span></a><span class="header-subtitle"></span></div>
+    <nav>
+      <ul class="menu"><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/posts/"
+                
+                
+              ><i class="fa-solid fa-archive fa-fw fa-sm" aria-hidden="true"></i> Posts</a></li><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/categories/"
+                
+                
+              ><i class="fa-solid fa-th fa-fw fa-sm" aria-hidden="true"></i> Categories</a></li><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/tags/"
+                
+                
+              ><i class="fa-solid fa-tags fa-fw fa-sm" aria-hidden="true"></i> Tags</a></li><li class="menu-item delimiter"></li><li class="menu-item search" id="search-desktop">
+            <input type="text" placeholder="Search titles or contents ..." id="search-input-desktop">
+            <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+              <i class="fa-solid fa-search fa-fw" aria-hidden="true"></i>
+            </a>
+            <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+              <i class="fa-solid fa-times-circle fa-fw" aria-hidden="true"></i>
+            </a>
+            <span class="search-button search-loading" id="search-loading-desktop">
+              <i class="fa-solid fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+            </span>
+          </li><li class="menu-item theme-switch" title="Switch Theme">
+          <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header><header class="mobile animate__faster" id="header-mobile">
+  <div class="header-container">
+    <div class="header-wrapper">
+      <div class="header-title">
+        <a href="/" title="enoh-badrie"><img loading="lazy" src="https://en.gravatar.com/userimage/231818137/90e0e2859b85bcde111b248cb659b414.png" srcset="https://en.gravatar.com/userimage/231818137/90e0e2859b85bcde111b248cb659b414.png, https://en.gravatar.com/userimage/231818137/90e0e2859b85bcde111b248cb659b414.png 1.5x, https://en.gravatar.com/userimage/231818137/90e0e2859b85bcde111b248cb659b414.png 2x" sizes="auto" data-title="https://en.gravatar.com/userimage/231818137/90e0e2859b85bcde111b248cb659b414.png" data-alt="https://en.gravatar.com/userimage/231818137/90e0e2859b85bcde111b248cb659b414.png" class="logo" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/><span class="header-title-text">Enoh Badrie</span></a><span class="header-subtitle"></span></div>
+      <div class="menu-toggle" id="menu-toggle-mobile">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+    <nav>
+      <ul class="menu" id="menu-mobile"><li class="search-wrapper">
+            <div class="search mobile" id="search-mobile">
+              <input type="text" placeholder="Search titles or contents ..." id="search-input-mobile">
+              <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                <i class="fa-solid fa-search fa-fw" aria-hidden="true"></i>
+              </a>
+              <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                <i class="fa-solid fa-times-circle fa-fw" aria-hidden="true"></i>
+              </a>
+              <span class="search-button search-loading" id="search-loading-mobile">
+                <i class="fa-solid fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+              </span>
+            </div>
+            <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+              Cancel
+            </a>
+          </li><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="/posts/"
+                  
+                  
+                ><i class="fa-solid fa-archive fa-fw fa-sm" aria-hidden="true"></i> Posts</a></li><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="/categories/"
+                  
+                  
+                ><i class="fa-solid fa-th fa-fw fa-sm" aria-hidden="true"></i> Categories</a></li><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="/tags/"
+                  
+                  
+                ><i class="fa-solid fa-tags fa-fw fa-sm" aria-hidden="true"></i> Tags</a></li><li class="menu-item theme-switch" title="Switch Theme">
+          <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+        </li></ul>
+    </nav>
+  </div>
+
+
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client="ca-pub-3658587961826512"
+       data-ad-slot="1234567890"
+       data-ad-format="auto"></ins>
+  <script>
+       (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+  
+
+
+
+</header><div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+  </div>
+  <div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+  </div><main class="container" data-page-style="wide"><aside class="toc" id="toc-auto"><h2 class="toc-title">Contents&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
+      <div class="toc-content" id="toc-content-auto"></div></aside>
+
+  <aside class="aside-custom">
+    </aside>
+
+  <article class="page single">
+    <div class="header"><h1 class="single-title animate__animated animate__flipInX">
+        <span title="Repost" class="icon-repost"><i class="fa-solid fa-share fa-fw" aria-hidden="true"></i></span><span>Membuat Website CRUD Sederhana</span>
+      </h1></div><div class="post-meta">
+      <div class="post-meta-line"><span class="post-author"><span class="author"><i class="fa-solid fa-user-circle" aria-hidden="true"></i>
+      Enoh Badrie</span></span>
+          <span class="post-category">included in <a href="/categories/administrasi-sistem-jaringan/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> Administrasi Sistem Jaringan</a></span></div>
+      <div class="post-meta-line"><span title=2023-05-15&#32;13:25:31><i class="fa-regular fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-05-15">2023-05-15</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw" aria-hidden="true"></i> 1346 words</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw" aria-hidden="true"></i> 7 minutes</span>&nbsp;<span id="busuanzi_container_page_pv" class="busuanzi_visitors comment-visitors" data-flag-title="Membuat Website CRUD Sederhana">
+              <i class="fa-regular fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_page_pv">-</span>&nbsp;views
+            </span>&nbsp;</div>
+    </div><div class="featured-image"><img loading="lazy" src="/posts/membuat_database_crud_sederhana/crud.png" srcset="/posts/membuat_database_crud_sederhana/crud.png, /posts/membuat_database_crud_sederhana/crud.png 1.5x, /posts/membuat_database_crud_sederhana/crud.png 2x" sizes="auto" data-title="Membuat Website CRUD Sederhana" data-alt="/posts/membuat_database_crud_sederhana/crud.png" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></div><div class="details toc" id="toc-static" data-kept="false">
+        <div class="details-summary toc-title">
+          <span>Contents</span>
+          <span><i class="details-icon fa-solid fa-angle-right" aria-hidden="true"></i></span>
+        </div>
+        <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#saya-asumsikan-bahwa-anda-sudah-meninstall-xampp-di-komputer-anda">Saya asumsikan bahwa anda sudah meninstall XAMPP di komputer anda.</a></li>
+      </ul>
+    </li>
+    <li><a href="#1-jalankan-aplikasi-xampp-yang-ada-pada-dekstop-anda-atau-klik-start--all-program-">1. Jalankan aplikasi XAMPP yang ada pada dekstop Anda atau klik Start &raquo; All program &raquo;</a></li>
+    <li><a href="#2-pada-saat-aplikasi-xampp-terbuka-disana-ada-5-buah-modul-yang-bisa-anda-gunakan">2. Pada saat aplikasi XAMPP terbuka, disana ada 5 buah modul yang bisa Anda gunakan,</a></li>
+    <li><a href="#3-pastikan-bahwa-modul-yang-anda-klik-sudah-mulai-berjalan-anda-bisa-mengetahui-dengan">3. Pastikan bahwa modul yang Anda klik sudah mulai berjalan. Anda bisa mengetahui dengan</a></li>
+    <li><a href="#4-setelah-modul-apache-dan-mysql-berjalan-anda-bisa-minimize---tampilannya-dan">4. Setelah modul Apache dan MySQL berjalan, Anda bisa minimize (-) tampilannya dan</a></li>
+    <li><a href="#5-buka-browser-mozilla-firefox-atau-google-chrome-dan-pada-alamat-url-ketikkan-alamat">5. Buka browser Mozilla Firefox atau Google Chrome dan pada alamat URL ketikkan alamat</a></li>
+    <li><a href="#6-setelah-itu-akan-muncul-tampilan-localhost-untuk-penyimpanan-database-pilih">6. Setelah itu, akan muncul tampilan localhost untuk penyimpanan database. Pilih</a></li>
+    <li><a href="#7-setelah-anda-membuat-nama-database-dengan-nama-mahasiswa-langkah-selanjutnya-adalah">7. Setelah Anda membuat nama database dengan nama mahasiswa, langkah selanjutnya adalah</a></li>
+    <li><a href="#8-langkah-selanjutnya-ketikkan-nama-dan-jenis-atribut-yang-akan-ditampilkan-pada-saat-siswa-mendaftar">8. Langkah selanjutnya, ketikkan nama dan jenis atribut yang akan ditampilkan pada saat siswa mendaftar.</a></li>
+    <li><a href="#9-cari-folder-aplikasi-xammp-yang-terletak-di-disk-c-atau-lokasi-file-tempat-aplikasi-xampp">9. Cari folder aplikasi XAMMP yang terletak di disk C atau lokasi file tempat aplikasi XAMPP</a></li>
+    <li><a href="#10-buat-sebuah-folder-di-dalam-htdocs-dengan-nama-siswa-folder-inilah-yang-nantinya-akan">10. Buat sebuah folder di dalam htdocs dengan nama siswa. Folder inilah yang nantinya akan</a>
+      <ul>
+        <li><a href="#membuat-tampilan-database-dengan-php-dan-mysql">Membuat tampilan database dengan PHP dan MySQL</a></li>
+      </ul>
+    </li>
+    <li><a href="#1-buka-aplikasi-sublime-yang-telah-ada-di-computer-kita-start--program--sublime-atau">1. Buka aplikasi Sublime yang telah ada di computer kita Start &raquo; Program &raquo; Sublime atau</a></li>
+    <li><a href="#2-pada-jendela-tampilan-sublime-buka-file-baru-dengan-cara-pilih-menu-file--new">2. Pada jendela tampilan Sublime buka file baru dengan cara pilih menu FILE &raquo; NEW.</a></li>
+    <li><a href="#3-ketikan-kode-berikut-berinama-configphp">3. Ketikan Kode Berikut, berinama config.php</a></li>
+    <li><a href="#4-membuat-tampilan-awal-seperti-gambar-10-dengan-mengetik-kode-berikut-dan-simpan">4. Membuat tampilan awal seperti gambar 10 dengan mengetik kode berikut dan simpan</a></li>
+    <li><a href="#5-membuat-tampilan-kedua-seperti-gambar-11-dengan-mengetik-kode-berikut-dan-simpan">5. Membuat tampilan kedua seperti gambar 11 dengan mengetik kode berikut dan simpan</a></li>
+    <li><a href="#6-membuat-program-untuk-memproses-data-yang-akan-kita-simpan-ke-dalam-database-dengan">6. Membuat program untuk memproses data yang akan kita simpan ke dalam database dengan</a></li>
+    <li><a href="#7-membuat-program-untuk-menampilkan-database-yang-berhasil-diinputkan-dan-disimpan">7. Membuat program untuk menampilkan database yang berhasil diinputkan dan disimpan</a></li>
+    <li><a href="#8-membuat-tampilan-edit-yang-digunakan-pada-saat-anda-melakukan-pengeditan-jika-terdapat">8. Membuat tampilan edit yang digunakan pada saat Anda melakukan pengeditan jika terdapat</a></li>
+    <li><a href="#9-membuat-sebuah-program-untuk-melakukan-proses-edit-dan-menyimpannya-dengan">9. Membuat sebuah program untuk melakukan proses edit dan menyimpannya dengan</a></li>
+    <li><a href="#10-langkah-terakhir-adalah-membuah-program-untuk-menghapus-baris-atau-data-di-dalam">10. Langkah terakhir adalah membuah program untuk menghapus baris atau data di dalam</a></li>
+  </ul>
+</nav></div>
+      </div><div class="content" id="content"><p>Materi kali ini melanjutkan materi sebelumnya tentang Membuat database dengan MySQL
+Pembangunan database sangat diperlukan dalam sebuah website agar website yang Anda miliki
+lebih dinamis. Banyak sekali contoh database yang bisa Anda buat pada website Anda. Beberapa
+contoh seperti: login, pendaftaran, konten materi, dan lain-lain. Kali ini kami akan memaparkan
+pada Anda pembuatan database sederhana dengan PHP dan MySQL untuk pendaftaran Siswa
+Sekolah baru. Disini kami akan menggunakan contoh nama sebuah sekolah, yaitu SMK
+PGRI Lemahabang dan databasenya dinamakan siswa. Anda bisa menggantikan database
+tersebut dengan database karyawan, Pegawai, stok barang dan lain-lain. Ketika Anda mengganti
+nama tersebut dengan nama sesuai keinginan Anda, Anda harus menyesuaikan tabel dan kolom
+database yang sesuai.</p>
+<h3 id="saya-asumsikan-bahwa-anda-sudah-meninstall-xampp-di-komputer-anda">Saya asumsikan bahwa anda sudah meninstall XAMPP di komputer anda.</h3>
+<h2 id="1-jalankan-aplikasi-xampp-yang-ada-pada-dekstop-anda-atau-klik-start--all-program-">1. Jalankan aplikasi XAMPP yang ada pada dekstop Anda atau klik Start &raquo; All program &raquo;</h2>
+<p>XAMPP &raquo; XAMPP Control Panel.</p>
+<h2 id="2-pada-saat-aplikasi-xampp-terbuka-disana-ada-5-buah-modul-yang-bisa-anda-gunakan">2. Pada saat aplikasi XAMPP terbuka, disana ada 5 buah modul yang bisa Anda gunakan,</h2>
+<p>namun untuk menghemat pemakaian memori, Anda boleh mengaktifkan dua buah modul
+saja, yaitu: Apache dan MySQL. Kemudian klik button START pada kedua modul
+tersebut.</p>
+<p><img loading="lazy" src="1.png" srcset="/posts/membuat_database_crud_sederhana/1.png, 1.png 1.5x, /posts/membuat_database_crud_sederhana/1.png 2x" sizes="auto" data-title="Membuat Database dan_Web_Sederhana" data-alt="Membuat Database dan_Web_Sederhana" width="744" height="477" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></p>
+<h2 id="3-pastikan-bahwa-modul-yang-anda-klik-sudah-mulai-berjalan-anda-bisa-mengetahui-dengan">3. Pastikan bahwa modul yang Anda klik sudah mulai berjalan. Anda bisa mengetahui dengan</h2>
+<p>cara melihat status modul tersebut seperti gambar di bawah.</p>
+<p><img loading="lazy" src="2.png" srcset="/posts/membuat_database_crud_sederhana/2.png, 2.png 1.5x, /posts/membuat_database_crud_sederhana/2.png 2x" sizes="auto" data-title="Membuat Database dan_Web_Sederhana" data-alt="Membuat Database dan_Web_Sederhana" width="681" height="431" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></p>
+<h2 id="4-setelah-modul-apache-dan-mysql-berjalan-anda-bisa-minimize---tampilannya-dan">4. Setelah modul Apache dan MySQL berjalan, Anda bisa minimize (-) tampilannya dan</h2>
+<p>masuk ke browser yang Anda miliki.</p>
+<h2 id="5-buka-browser-mozilla-firefox-atau-google-chrome-dan-pada-alamat-url-ketikkan-alamat">5. Buka browser Mozilla Firefox atau Google Chrome dan pada alamat URL ketikkan alamat</h2>
+<p>: http://localhost/phpmyadmin/, kemudian tekan ENTER pada keyboard Anda.</p>
+<p><img loading="lazy" src="3.png" srcset="/posts/membuat_database_crud_sederhana/3.png, 3.png 1.5x, /posts/membuat_database_crud_sederhana/3.png 2x" sizes="auto" data-title="Membuat Database dan_Web_Sederhana" data-alt="Membuat Database dan_Web_Sederhana" width="623" height="206" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></p>
+<h2 id="6-setelah-itu-akan-muncul-tampilan-localhost-untuk-penyimpanan-database-pilih">6. Setelah itu, akan muncul tampilan localhost untuk penyimpanan database. Pilih</h2>
+<p>option NEW yang terletak di sebelah kiri dan buat sebuah nama database dengan
+nama siswa. Kemudian klik button BUAT untuk membuat database dengan
+nama siswa.</p>
+<p><img loading="lazy" src="4.png" srcset="/posts/membuat_database_crud_sederhana/4.png, 4.png 1.5x, /posts/membuat_database_crud_sederhana/4.png 2x" sizes="auto" data-title="Membuat Database dan_Web_Sederhana" data-alt="Membuat Database dan_Web_Sederhana" width="623" height="316" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></p>
+<h2 id="7-setelah-anda-membuat-nama-database-dengan-nama-mahasiswa-langkah-selanjutnya-adalah">7. Setelah Anda membuat nama database dengan nama mahasiswa, langkah selanjutnya adalah</h2>
+<p>membuat nama tabel dan jumlah atribut/parameter yang Anda butuhkan untuk pendaftaran
+siswa. Nama tabel pertama yang kita perlukan adalah calon_siswa. Buatlah
+sebuah tabel dengan nama tersebut dan isikan jumlah kolom sebanyak 5 buah, kemudian
+klik button KIRIM/GO.</p>
+<p><img loading="lazy" src="5.png" srcset="/posts/membuat_database_crud_sederhana/5.png, 5.png 1.5x, /posts/membuat_database_crud_sederhana/5.png 2x" sizes="auto" data-title="Membuat Database dan_Web_Sederhana" data-alt="Membuat Database dan_Web_Sederhana" width="623" height="231" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></p>
+<h2 id="8-langkah-selanjutnya-ketikkan-nama-dan-jenis-atribut-yang-akan-ditampilkan-pada-saat-siswa-mendaftar">8. Langkah selanjutnya, ketikkan nama dan jenis atribut yang akan ditampilkan pada saat siswa mendaftar.</h2>
+<p>Sebagai contoh dapat dilihat pada tabel berikut :</p>
+<table>
+<thead>
+<tr>
+<th>Nama</th>
+<th>Jenis</th>
+<th>Panjang/Nilai</th>
+<th>Index</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>INT</td>
+<td>-</td>
+<td>PRIMARY (A_I)</td>
+</tr>
+<tr>
+<td>nama</td>
+<td>VARCHAR</td>
+<td>255</td>
+<td>-</td>
+</tr>
+<tr>
+<td>ttl</td>
+<td>VARCHAR</td>
+<td>255</td>
+<td>-</td>
+</tr>
+<tr>
+<td>alamat</td>
+<td>VARCHAR</td>
+<td>255</td>
+<td>-</td>
+</tr>
+<tr>
+<td>no_hp</td>
+<td>VARCHAR</td>
+<td>50</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<div class="details admonition tip open">
+    <div class="details-summary admonition-title">
+      <i class="icon fa-solid fa-lightbulb fa-fw" aria-hidden="true"></i>Catatan<i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true"></i>
+    </div>
+    <div class="details-content">
+      <div class="admonition-content">Untuk id, khusus pada A_I (Auto Increment) silahkan Anda centang.</div>
+    </div>
+  </div>
+<p><img loading="lazy" src="7.png" srcset="/posts/membuat_database_crud_sederhana/7.png, 7.png 1.5x, /posts/membuat_database_crud_sederhana/7.png 2x" sizes="auto" data-title="Membuat Database dan_Web_Sederhana" data-alt="Membuat Database dan_Web_Sederhana" width="736" height="368" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></p>
+<p>Setelah mengisi tabel di atas, untuk storage Engine tetap pilih InnoDB dan kemudian klik
+button SIMPAN. Proses pembuatan database di aplikasi XAMPP telah selesai dan Anda
+bisa close atau minimaze tampilan localhost Anda.</p>
+<h2 id="9-cari-folder-aplikasi-xammp-yang-terletak-di-disk-c-atau-lokasi-file-tempat-aplikasi-xampp">9. Cari folder aplikasi XAMMP yang terletak di disk C atau lokasi file tempat aplikasi XAMPP</h2>
+<p>pada saat Anda menginstall. Kemudian buka folder htdocs.</p>
+<p><img loading="lazy" src="8.png" srcset="/posts/membuat_database_crud_sederhana/8.png, 8.png 1.5x, /posts/membuat_database_crud_sederhana/8.png 2x" sizes="auto" data-title="Membuat Database dan_Web_Sederhana" data-alt="Membuat Database dan_Web_Sederhana" width="328" height="441" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></p>
+<h2 id="10-buat-sebuah-folder-di-dalam-htdocs-dengan-nama-siswa-folder-inilah-yang-nantinya-akan">10. Buat sebuah folder di dalam htdocs dengan nama siswa. Folder inilah yang nantinya akan</h2>
+<p>diisi dengan file-file penting untuk menampilkan dan memanggil database yang Anda buat.</p>
+<p><img loading="lazy" src="9.png" srcset="/posts/membuat_database_crud_sederhana/9.png, 9.png 1.5x, /posts/membuat_database_crud_sederhana/9.png 2x" sizes="auto" data-title="Membuat Database dan_Web_Sederhana" data-alt="Membuat Database dan_Web_Sederhana" width="606" height="347" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></p>
+<h3 id="membuat-tampilan-database-dengan-php-dan-mysql">Membuat tampilan database dengan PHP dan MySQL</h3>
+<p>Langkah pertama dalam pembuatan interface dengan PHP, Anda harus punya aplikasi text
+editor. Disini saya memakai aplikasi SUBLIME TEXT karena susunan file dan tampilannya
+sudah bagus serta mudah untuk digunakan.
+Adapun langkah-langkah pembuatannya sebagai berikut.</p>
+<h2 id="1-buka-aplikasi-sublime-yang-telah-ada-di-computer-kita-start--program--sublime-atau">1. Buka aplikasi Sublime yang telah ada di computer kita Start &raquo; Program &raquo; Sublime atau</h2>
+<p>klik kiri 2x pada shortcut Sublime.</p>
+<h2 id="2-pada-jendela-tampilan-sublime-buka-file-baru-dengan-cara-pilih-menu-file--new">2. Pada jendela tampilan Sublime buka file baru dengan cara pilih menu FILE &raquo; NEW.</h2>
+<h2 id="3-ketikan-kode-berikut-berinama-configphp">3. Ketikan Kode Berikut, berinama config.php</h2>
+<pre tabindex="0"><code class="language-config" data-lang="config">&lt;?php
+$server = &#34;localhost&#34;;
+$user = &#34;root&#34;;
+$password = &#34;&#34;;
+$nama_database = &#34;siswa&#34;;
+$db = mysqli_connect($server, $user, $password, $nama_database);
+if( !$db ){
+    die(&#34;Gagal terhubung dengan database: &#34; . mysqli_connect_error());
+}
+?&gt;
+</code></pre><p>Setelah kode di atas Anda ketikkan, pilih menu File &raquo; Save As. Langkah selanjutnya, cari
+folder siswa yang telah Anda buat di XAMPP &raquo; htdocs untuk menampung
+program interface dan penghubung database. Setelah Anda menemukan folder tersebut
+simpan dengan nama config.php lalu klik button SAVE.</p>
+<h2 id="4-membuat-tampilan-awal-seperti-gambar-10-dengan-mengetik-kode-berikut-dan-simpan">4. Membuat tampilan awal seperti gambar 10 dengan mengetik kode berikut dan simpan</h2>
+<p>dengan nama index.php</p>
+<pre tabindex="0"><code class="language-index" data-lang="index">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Nama Sekolah Anda&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;center&gt;&lt;h1&gt;Nama Sekolah Anda&lt;/h1&gt;&lt;/center&gt;
+    &lt;br&gt;
+    &lt;ul&gt;
+    &lt;li&gt;&lt;a href = &#34;tampilan-daftar.php&#34;&gt;Daftar Siswa Baru&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href = &#34;data-siswa.php&#34;&gt;Data Siswa&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre><p>Program di atas akan menampilkan interface dengan alamat browser : http://localhost/siswa/index.php, sebagai berikut :</p>
+<p><img loading="lazy" src="10.png" srcset="/posts/membuat_database_crud_sederhana/10.png, 10.png 1.5x, /posts/membuat_database_crud_sederhana/10.png 2x" sizes="auto" data-title="Membuat Database dan_Web_Sederhana" data-alt="Membuat Database dan_Web_Sederhana" width="621" height="248" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></p>
+<h2 id="5-membuat-tampilan-kedua-seperti-gambar-11-dengan-mengetik-kode-berikut-dan-simpan">5. Membuat tampilan kedua seperti gambar 11 dengan mengetik kode berikut dan simpan</h2>
+<p>dengan nama tampilan-daftar.php.</p>
+<pre tabindex="0"><code class="language-tampilan-daftar" data-lang="tampilan-daftar">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Nama Sekolah&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;center&gt;&lt;h1&gt;Nama Sekolah Anda&lt;/h1&gt;&lt;/center&gt;
+    &lt;h2&gt;Formulir Pendaftaran Siswa Baru&lt;/h2&gt;
+    &lt;form action=&#34;proses-daftar.php&#34; method=&#34;POST&#34;&gt;
+        &lt;table&gt;
+        &lt;tr&gt;
+            &lt;td&gt;&lt;label for=&#34;nama&#34;&gt;Nama Lengkap &lt;/label&gt;&lt;/td&gt;
+            &lt;td&gt;:&lt;/td&gt;
+            &lt;td&gt;&lt;input type=&#34;text&#34; name=&#34;nama&#34;/&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;&lt;label for=&#34;ttl&#34;&gt;Tempat/Tanggal Lahir &lt;/label&gt;&lt;/td&gt;
+            &lt;td&gt;:&lt;/td&gt;
+            &lt;td&gt;&lt;input type=&#34;text&#34; name=&#34;ttl&#34;/&gt;&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;&lt;label for=&#34;alamat&#34;&gt;Alamat &lt;/label&gt;&lt;/td&gt;
+            &lt;td&gt;:&lt;/td&gt;
+            &lt;td&gt;&lt;input type=&#34;text&#34; name=&#34;alamat&#34;/&gt;&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;&lt;label for=&#34;no_hp&#34;&gt;No. Telp/HP &lt;/label&gt;&lt;/td&gt;
+            &lt;td&gt;:&lt;/td&gt;
+            &lt;td&gt;&lt;input type=&#34;text&#34; name=&#34;no_hp&#34;/&gt;&lt;/td&gt;
+         &lt;/tr&gt;
+        &lt;/table&gt;
+         &lt;tr&gt;
+             &lt;input type=&#34;submit&#34; value=&#34;Daftar&#34; name=&#34;daftar&#34;&gt;
+          &lt;/tr&gt;
+      &lt;/form&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</code></pre><dl>
+<dt>Untuk melihat hasilnya, Anda tinggal ketikkan pada browser Anda dengan alamat</dt>
+<dd>http://localhost/siswa/tampilan-daftar.php dan akan tampil halaman sebagai berikut.</dd>
+</dl>
+<p><img loading="lazy" src="11.png" srcset="/posts/membuat_database_crud_sederhana/11.png, 11.png 1.5x, /posts/membuat_database_crud_sederhana/11.png 2x" sizes="auto" data-title="Membuat Database dan_Web_Sederhana" data-alt="Membuat Database dan_Web_Sederhana" width="623" height="316" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></p>
+<h2 id="6-membuat-program-untuk-memproses-data-yang-akan-kita-simpan-ke-dalam-database-dengan">6. Membuat program untuk memproses data yang akan kita simpan ke dalam database dengan</h2>
+<p>nama proses-daftar.php sebagai berikut.</p>
+<pre tabindex="0"><code class="language-proses-daftar" data-lang="proses-daftar">&lt;?php
+include(&#34;config.php&#34;);
+if(isset($_POST[&#39;daftar&#39;])){
+ $id = $_POST[&#39;id&#39;];
+ $nama = $_POST[&#39;nama&#39;];
+ $ttl = $_POST[&#39;ttl&#39;];
+ $alamat = $_POST[&#39;alamat&#39;];
+ $no_hp = $_POST[&#39;no_hp&#39;];
+ $sql = &#34;INSERT INTO calon_siswa (id,nama, ttl, alamat, no_hp) VALUE (&#39;$id&#39;,&#39;$nama&#39;, &#39;$ttl&#39;,&#39;$alamat&#39;, &#39;$no_hp&#39;)&#34;;
+ $query = mysqli_query($db, $sql);
+if( $query ) {
+      header(&#39;Location: index.php?status=sukses&#39;);
+ } else {
+      header(&#39;Location: index.php?status=gagal&#39;);
+ }
+} else {
+ die(&#34;Akses dilarang...&#34;);
+}
+?&gt;
+</code></pre><h2 id="7-membuat-program-untuk-menampilkan-database-yang-berhasil-diinputkan-dan-disimpan">7. Membuat program untuk menampilkan database yang berhasil diinputkan dan disimpan</h2>
+<p>dengan nama data-siswa.php sebagai berikut.</p>
+<pre tabindex="0"><code class="language-data-siswa" data-lang="data-siswa">&lt;?php include(&#34;config.php&#34;); ?&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Nama Sekolah&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;center&gt;&lt;h1&gt;Nama Sekolah Anda&lt;/h1&gt;&lt;/center&gt;
+    &lt;br&gt;
+    &lt;h2&gt;DATA SISWA YANG TELAH TERDAFTAR&lt;/h2&gt;
+    &lt;nav&gt;
+        &lt;a href=&#34;tampilan-daftar.php&#34;&gt; [+] Tambah Baru&lt;/a&gt;
+    &lt;/nav&gt;
+    &lt;br&gt;
+    &lt;table border=&#34;1&#34;&gt;
+        &lt;thead&gt;
+            &lt;tr&gt;
+                &lt;th&gt;No&lt;/th&gt;
+                &lt;th&gt;Nama&lt;/th&gt;
+                &lt;th&gt;Tempat/Tanggal Lahir&lt;/th&gt;
+                &lt;th&gt;Alamat&lt;/th&gt;
+                &lt;th&gt;No.Telp/HP&lt;/th&gt;
+                &lt;th&gt;Action&lt;/th&gt;
+            &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;      
+&lt;?php           
+        $sql = &#34;SELECT * FROM calon_siswa&#34;;
+        $query = mysqli_query($db, $sql);
+        while($siswa = mysqli_fetch_array($query)){
+            echo &#34;&lt;tr&gt;&#34;;
+            echo &#34;&lt;td&gt;&#34;.$siswa[&#39;id&#39;].&#34;&lt;/td&gt;&#34;;
+            echo &#34;&lt;td&gt;&#34;.$siswa[&#39;nama&#39;].&#34;&lt;/td&gt;&#34;;
+            echo &#34;&lt;td&gt;&#34;.$siswa[&#39;ttl&#39;].&#34;&lt;/td&gt;&#34;;
+            echo &#34;&lt;td&gt;&#34;.$siswa[&#39;alamat&#39;].&#34;&lt;/td&gt;&#34;;
+            echo &#34;&lt;td&gt;&#34;.$siswa[&#39;no_hp&#39;].&#34;&lt;/td&gt;&#34;;    
+            echo &#34;&lt;td&gt;&#34;;
+            echo &#34;&lt;a href=&#39;tampilan-edit.php?id=&#34;.$siswa[&#39;id&#39;].&#34;&#39;&gt; Edit&lt;/a&gt; |&#34;;
+            echo &#34;&lt;a href=&#39;delete.php?id=&#34;.$siswa[&#39;id&#39;].&#34;&#39;&gt;Hapus&lt;/a&gt;&#34;;
+            echo &#34;&lt;/td&gt;&#34;;
+            echo &#34;&lt;/tr&gt;&#34;;
+        }
+?&gt;
+        &lt;/tbody&gt;
+    &lt;/table&gt;
+    &lt;p&gt;Total: &lt;?php echo mysqli_num_rows($query) ?&gt;&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre><p>Tampilan Programnya Sebagai Berikut :</p>
+<p><img loading="lazy" src="12.png" srcset="/posts/membuat_database_crud_sederhana/12.png, 12.png 1.5x, /posts/membuat_database_crud_sederhana/12.png 2x" sizes="auto" data-title="Membuat Database dan_Web_Sederhana" data-alt="Membuat Database dan_Web_Sederhana" width="571" height="322" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></p>
+<h2 id="8-membuat-tampilan-edit-yang-digunakan-pada-saat-anda-melakukan-pengeditan-jika-terdapat">8. Membuat tampilan edit yang digunakan pada saat Anda melakukan pengeditan jika terdapat</h2>
+<p>kesalahan pada data mahasiswa yang telah masuk ke dalam penyimpanan database yang
+Anda buat. Buat sebuah file baru dan simpan dengan nama tampilan-edit.php dan listing
+programnya sebagai berikut.</p>
+<pre tabindex="0"><code class="language-tampilan-edit" data-lang="tampilan-edit">&lt;?php
+include(&#34;config.php&#34;);
+if( !isset($_GET[&#39;id&#39;]) ){
+    header(&#39;Location: data-siswa.php&#39;);
+}
+$id = $_GET[&#39;id&#39;];
+$sql = &#34;SELECT * FROM calon_siswa WHERE id=$id&#34;;
+$query = mysqli_query($db, $sql);
+$siswa = mysqli_fetch_assoc($query);
+if( mysqli_num_rows($query) &lt; 1 ){
+    die(&#34;data tidak ditemukan!&#34;);
+}
+?&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Sekolah Anda&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;center&gt;&lt;h1&gt;Nama Sekolah Anda&lt;/h1&gt;&lt;/center&gt;
+    &lt;h2&gt;Formulir Pendaftaran Siswa Baru&lt;/h2&gt;
+    &lt;form action=&#34;proses-edit.php&#34; method=&#34;POST&#34;&gt;
+        &lt;input type=&#34;hidden&#34; name=&#34;id&#34; value=&#34;&lt;?php echo $siswa[&#39;id&#39;] ?&gt;&#34; /&gt;      
+        &lt;table&gt;
+        &lt;tr&gt;
+            &lt;td&gt;&lt;label for=&#34;nama&#34;&gt;Nama Lengkap &lt;/label&gt;&lt;/td&gt;
+            &lt;td&gt;:&lt;/td&gt;
+            &lt;td&gt;&lt;input type=&#34;text&#34; name=&#34;nama&#34; value=&#34;&lt;?php echo $siswa[&#39;nama&#39;] ?&gt;&#34; /&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;&lt;label for=&#34;ttl&#34;&gt;Tempat/Tanggal Lahir &lt;/label&gt;&lt;/td&gt;
+            &lt;td&gt;:&lt;/td&gt;
+            &lt;td&gt;&lt;input type=&#34;text&#34; name=&#34;ttl&#34; value=&#34;&lt;?php echo $siswa[&#39;ttl&#39;] ?&gt;&#34; /&gt;&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;&lt;label for=&#34;alamat&#34;&gt;Alamat &lt;/label&gt;&lt;/td&gt;
+            &lt;td&gt;:&lt;/td&gt;
+            &lt;td&gt;&lt;input type=&#34;text&#34; name=&#34;alamat&#34; value=&#34;&lt;?php echo $siswa[&#39;alamat&#39;] ?&gt;&#34; /&gt;&lt;/td&gt;
+         &lt;/tr&gt;
+         &lt;tr&gt;
+            &lt;td&gt;&lt;label for=&#34;no_hp&#34;&gt;No. Telp/HP &lt;/label&gt;&lt;/td&gt;
+            &lt;td&gt;:&lt;/td&gt;
+            &lt;td&gt;&lt;input type=&#34;text&#34; name=&#34;no_hp&#34; value=&#34;&lt;?php echo $siswa[&#39;no_hp&#39;] ?&gt;&#34; /&gt;&lt;/td&gt;
+         &lt;/tr&gt;
+        &lt;/table&gt;      
+             &lt;input type=&#34;submit&#34; value=&#34;Simpan&#34; name=&#34;simpan&#34;&gt;       
+      &lt;/form&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</code></pre><p>Program di atas mirip dengan program tampilan-daftar.php, namun perbedaannya program ini
+dibuat untuk melakukan pengeditan data sebelumnya sehingga masih menampilkan data
+sebelumnya. Hal yang perlu Anda ketahui adalah program tersebut mengambil data yang ada
+pada database yang telah tersimpan dan menyimpannya dengan penambahan atau pengurangan
+data.
+Tampilan programnya sebagai berikut :</p>
+<p><img loading="lazy" src="13.png" srcset="/posts/membuat_database_crud_sederhana/13.png, 13.png 1.5x, /posts/membuat_database_crud_sederhana/13.png 2x" sizes="auto" data-title="Membuat Database dan_Web_Sederhana" data-alt="Membuat Database dan_Web_Sederhana" width="623" height="297" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></p>
+<h2 id="9-membuat-sebuah-program-untuk-melakukan-proses-edit-dan-menyimpannya-dengan">9. Membuat sebuah program untuk melakukan proses edit dan menyimpannya dengan</h2>
+<p>nama proses-edit.php. Berikut merupakan listing program yang Anda ketikkan:</p>
+<pre tabindex="0"><code class="language-proses-edit" data-lang="proses-edit">&lt;?php
+include(&#34;config.php&#34;);
+
+if(isset($_POST[&#39;simpan&#39;])){
+    $id = $_POST[&#39;id&#39;];
+    $nama = $_POST[&#39;nama&#39;];
+    $ttl = $_POST[&#39;ttl&#39;];
+    $alamat = $_POST[&#39;alamat&#39;];
+    $no_hp = $_POST[&#39;no_hp&#39;];
+    $sql = &#34;UPDATE calon_siswa SET nama=&#39;$nama&#39;, ttl=&#39;$ttl&#39;, alamat=&#39;$alamat&#39;, no_hp=&#39;$no_hp&#39; WHERE id=$id&#34;;
+    $query = mysqli_query($db, $sql);
+    if( $query ) {
+        header(&#39;Location: data-siswa.php&#39;);
+    } else {
+        die(&#34;Gagal mengendit&#34;);
+    }
+} else {
+    die(&#34;Akses dilarang !&#34;);
+}
+?&gt;
+</code></pre><h2 id="10-langkah-terakhir-adalah-membuah-program-untuk-menghapus-baris-atau-data-di-dalam">10. Langkah terakhir adalah membuah program untuk menghapus baris atau data di dalam</h2>
+<p>database. Ketikkan listing di bawah dan simpan dengan nama delete.php.</p>
+<pre tabindex="0"><code class="language-delete" data-lang="delete">&lt;?php
+include(&#34;config.php&#34;);
+if( isset($_GET[&#39;id&#39;]) ){
+    $id = $_GET[&#39;id&#39;];
+    $sql = &#34;DELETE FROM calon_siswa WHERE id=$id&#34;;
+    $query = mysqli_query($db, $sql);
+    if( $query ){
+        header(&#39;Location: data-siswa.php&#39;);
+    } else {
+        die(&#34;data gagal dihapus&#34;);
+    }
+} else {
+    die(&#34;akses dilarang!&#34;);
+}
+?&gt;
+</code></pre><p>silahkan lakukan Uji Coba Program dengan melakukan CRUD :</p>
+<p><img loading="lazy" src="13.png" srcset="/posts/membuat_database_crud_sederhana/13.png, 13.png 1.5x, /posts/membuat_database_crud_sederhana/13.png 2x" sizes="auto" data-title="Membuat Database dan_Web_Sederhana" data-alt="Membuat Database dan_Web_Sederhana" width="623" height="297" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></p></div><div class="post-footer" id="post-footer">
+  <div class="post-info">
+    <div class="post-info-line">
+      <div class="post-info-mod">
+        <span title=2023-05-15&#32;13:25:31>Updated on 2023-05-15&nbsp;</span>
+      </div></div>
+    <div class="post-info-line">
+      <div class="post-info-md"></div>
+      <div class="post-info-share">
+        <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="http://enohbadri.github.io/posts/membuat_database_crud_sederhana/" data-title="Membuat Website CRUD Sederhana" data-via="@eb_badrie" data-hashtags="PHP,CRUD,MySql"><i class="fa-brands fa-twitter fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="http://enohbadri.github.io/posts/membuat_database_crud_sederhana/" data-hashtag="PHP"><i class="fa-brands fa-facebook-square fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="http://enohbadri.github.io/posts/membuat_database_crud_sederhana/" data-title="Membuat Website CRUD Sederhana"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
+  </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="post-info-more">
+    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href='/tags/php/' class="post-tag">PHP</a><a href='/tags/crud/' class="post-tag">CRUD</a><a href='/tags/mysql/' class="post-tag">MySql</a></section>
+    <section>
+      <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+    </section>
+  </div>
+
+  <div class="post-nav"><a href="/posts/digital_subscriber_line/" class="post-nav-item" rel="prev" title="Digital Subscriber Line [DSL]"><i class="fa-solid fa-angle-left fa-fw" aria-hidden="true"></i>Digital Subscriber Line [DSL]</a>
+      <a href="/posts/structure_query_laguage/" class="post-nav-item" rel="next" title="Structure Query Language">Structure Query Language<i class="fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+<div id="comments"><div id="giscus">
+          <script
+            src="https://giscus.app/client.js"
+            data-repo="enohbadri/webpage_comments"
+            data-repo-id="R_kgDOKWTG6A"
+            data-category="Announcements"
+            data-category-id="DIC_kwDOKWTG6M4CZgQK"
+            data-mapping="url"
+            
+            data-theme="preferred_color_scheme"
+            data-reactions-enabled="1"
+            data-emit-metadata="0"
+            data-input-position="bottom"
+            data-lang="en"
+            data-loading="lazy"
+            crossorigin="anonymous"
+            async
+            defer
+          ></script>
+        </div>
+        <noscript>
+          Please enable JavaScript to view the comments powered by <a href="https://giscus.app/" rel="external nofollow noopener noreferrer">giscus</a>.
+        </noscript></div></article></main><footer class="footer">
+    <div class="footer-container"><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw" aria-hidden="true"></i>
+            <span itemprop="copyrightYear">2021 - 2024</span><span class="author" itemprop="copyrightHolder">
+              <a href="/"></a></span><span class="license footer-divider"><a rel="license external nofollow noopener noreferrer" href="https://" target="_blank">@eb_badrie 4.0</a></span></div><div class="footer-line statistics"><span class="site-time" title='Website running ...'><i class="fa-solid fa-heartbeat fa-fw animate-icon" aria-hidden="true"></i><span class="run-times ms-1">Website running ...</span></span></div><div class="footer-line visitor">
+          <span id="busuanzi_container_site_uv" title='Total visitors'><i class="fa-regular fa-user fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span><span id="busuanzi_container_site_pv" class="footer-divider" title='Total visits'><i class="fa-regular fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span>
+        </div></div>
+  </footer></div><div class="widgets"><div class="fixed-buttons animate__faster d-none"><div class="fixed-button back-to-top" role="button" aria-label="Back to Top"><i class="fa-solid fa-arrow-up fa-fw" aria-hidden="true"></i><span class="variant-numeric">0%</span>
+        </div><div class="fixed-button view-comments d-none" role="button" aria-label="View Comments"><i class="fa-solid fa-comment fa-fw" aria-hidden="true"></i></div></div><a href="https://github.com/enohbadri" title="Kunjungi GitHub Saya"target="_blank" rel="external nofollow" class="github-corner right d-none-mobile"><svg viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><div id="mask"></div><div class="reading-progress-bar" style="left: 0;top: 0;"></div><noscript>
+    <div class="noscript-warning">Theme FixIt works best with JavaScript enabled.</div>
+  </noscript>
+</div><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><link rel="stylesheet" href="/lib/pace/themes/blue/pace-theme-center-atom.css"><script src="/lib/autocomplete/autocomplete.min.js" defer></script><script src="/lib/fuse/fuse.min.js" defer></script><script src="/lib/twemoji/twemoji.min.js" defer></script><script src="/lib/sharer/sharer.min.js" async defer></script><script src="/lib/cookieconsent/cookieconsent.min.js" defer></script><script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async defer></script><script src="/lib/pace/pace.min.js" async defer></script><script>window.config={"code":{"copyTitle":"Copy to clipboard","editLockTitle":"Lock editable code block","editUnLockTitle":"Unlock editable code block","editable":true,"maxShownLines":10},"comment":{"enable":true,"expired":false,"giscus":{"darkTheme":"dark","lightTheme":"light"}},"cookieconsent":{"content":{"dismiss":"Got it!","link":"Learn more","message":"This website uses Cookies to improve your experience."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"enablePWA":true,"search":{"distance":100,"findAllMatches":true,"fuseIndexURL":"/index.json","highlightTag":"em","ignoreFieldNorm":false,"ignoreLocation":false,"isCaseSensitive":false,"location":0,"maxResultLength":10,"minMatchCharLength":2,"noResultsFound":"No results found","snippetLength":30,"threshold":0.3,"type":"fuse","useExtendedSearch":false},"siteTime":"2020-07-01T13:00:00+00:00","twemoji":true};</script><script src="/js/theme.min.js" defer></script></body>
+</html>

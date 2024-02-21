@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>SMS Gateway - Tag - enoh-badrie</title>
+    <link>http://enohbadri.github.io/tags/sms-gateway/</link>
+    <description>SMS Gateway - Tag - enoh-badrie</description>
+    <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 01 Mar 2023 15:07:40 &#43;0700</lastBuildDate><atom:link href="http://enohbadri.github.io/tags/sms-gateway/" rel="self" type="application/rss+xml" /><item>
+  <title>Membangun SMS Gateway dengan Gammu</title>
+  <link>http://enohbadri.github.io/posts/membangun-_sms_gateway_dengan_gammu/</link>
+  <pubDate>Wed, 01 Mar 2023 15:07:40 &#43;0700</pubDate>
+  <author>Enoh Badrie</author>
+  <guid>http://enohbadri.github.io/posts/membangun-_sms_gateway_dengan_gammu/</guid>
+  <description><![CDATA[membangun SMS Gateway dengan Gammu]]></description>
+</item>
+</channel>
+</rss>

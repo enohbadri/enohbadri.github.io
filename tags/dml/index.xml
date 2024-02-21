@@ -1,0 +1,23 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>DML - Tag - enoh-badrie</title>
+    <link>http://enohbadri.github.io/tags/dml/</link>
+    <description>DML - Tag - enoh-badrie</description>
+    <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 02 Aug 2023 14:07:46 &#43;0700</lastBuildDate><atom:link href="http://enohbadri.github.io/tags/dml/" rel="self" type="application/rss+xml" /><item>
+  <title>Tipe Data Pada SQL</title>
+  <link>http://enohbadri.github.io/posts/tipe_data_pada_sql_server/</link>
+  <pubDate>Wed, 02 Aug 2023 14:07:46 &#43;0700</pubDate>
+  <author>Enoh Badrie</author>
+  <guid>http://enohbadri.github.io/posts/tipe_data_pada_sql_server/</guid>
+  <description><![CDATA[]]></description>
+</item>
+<item>
+  <title>Structure Query Language</title>
+  <link>http://enohbadri.github.io/posts/structure_query_laguage/</link>
+  <pubDate>Mon, 10 Jul 2023 10:07:11 &#43;0700</pubDate>
+  <author>Enoh Badrie</author>
+  <guid>http://enohbadri.github.io/posts/structure_query_laguage/</guid>
+  <description><![CDATA[Structure Query Language]]></description>
+</item>
+</channel>
+</rss>

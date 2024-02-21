@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="en">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+    <meta name="robots" content="noodp" />
+    <title>Installasi Windows Server 2008 di Virtual Box - enoh-badrie</title><meta name="author" content="">
+<meta name="author-link" content="">
+<meta name="description" content="Installasi Windows Server 2008 di Virtual Box" /><meta name="keywords" content='Windows Server, Virtual Box' /><meta itemprop="name" content="Installasi Windows Server 2008 di Virtual Box">
+<meta itemprop="description" content="Installasi Windows Server 2008 di Virtual Box"><meta itemprop="datePublished" content="2023-02-06T10:49:28+07:00" />
+<meta itemprop="dateModified" content="2023-02-06T10:49:28+07:00" />
+<meta itemprop="wordCount" content="226"><meta itemprop="image" content="http://enohbadri.github.io/posts/installasi_win_server_v-box/step25.png">
+<meta itemprop="keywords" content="Windows Server,Virtual Box," /><meta property="og:title" content="Installasi Windows Server 2008 di Virtual Box" />
+<meta property="og:description" content="Installasi Windows Server 2008 di Virtual Box" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://enohbadri.github.io/posts/installasi_win_server_v-box/" /><meta property="og:image" content="http://enohbadri.github.io/posts/installasi_win_server_v-box/step25.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-02-06T10:49:28+07:00" />
+<meta property="article:modified_time" content="2023-02-06T10:49:28+07:00" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="http://enohbadri.github.io/posts/installasi_win_server_v-box/step25.png"/>
+<meta name="twitter:title" content="Installasi Windows Server 2008 di Virtual Box"/>
+<meta name="twitter:description" content="Installasi Windows Server 2008 di Virtual Box"/>
+<meta name="application-name" content="FixIt">
+<meta name="apple-mobile-web-app-title" content="FixIt"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="https://en.gravatar.com/userimage/231818137/90e0e2859b85bcde111b248cb659b414.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://enohbadri.github.io/posts/installasi_win_server_v-box/" /><link rel="prev" href="http://enohbadri.github.io/posts/cybercrime_pada_pengguna_kartu_kredit/" /><link rel="next" href="http://enohbadri.github.io/posts/konfigurasi_briker_1.4_komodo/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Installasi Windows Server 2008 di Virtual Box",
+    "inLanguage": "en",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "http:\/\/enohbadri.github.io\/posts\/installasi_win_server_v-box\/"
+    },"image": [{
+              "@type": "ImageObject",
+              "url": "http:\/\/enohbadri.github.io\/posts\/installasi_win_server_v-box\/step25.png",
+              "width":  815 ,
+              "height":  681 
+            }],"genre": "posts","keywords": "Windows Server, Virtual Box","wordcount":  226 ,
+    "url": "http:\/\/enohbadri.github.io\/posts\/installasi_win_server_v-box\/","datePublished": "2023-02-06T10:49:28+07:00","dateModified": "2023-02-06T10:49:28+07:00","publisher": {
+      "@type": "Organization",
+      "name": ""},"author": {
+        "@type": "Person",
+        "name": "Enoh Badrie"
+      },"description": "Installasi Windows Server 2008 di Virtual Box"
+  }
+  </script></head>
+  <body data-header-desktop="auto" data-header-mobile="auto"><script>(window.localStorage?.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('data-theme', 'dark');</script><div class="wrapper"><header class="desktop animate__faster" id="header-desktop">
+  <div class="header-wrapper" data-github-corner="right">
+    <div class="header-title">
+      <a href="/" title="enoh-badrie"><img loading="lazy" src="https://en.gravatar.com/userimage/231818137/90e0e2859b85bcde111b248cb659b414.png" srcset="https://en.gravatar.com/userimage/231818137/90e0e2859b85bcde111b248cb659b414.png, https://en.gravatar.com/userimage/231818137/90e0e2859b85bcde111b248cb659b414.png 1.5x, https://en.gravatar.com/userimage/231818137/90e0e2859b85bcde111b248cb659b414.png 2x" sizes="auto" data-title="enoh-badrie" data-alt="enoh-badrie" class="logo" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/><span class="header-title-text">Enoh Badrie</span></a><span class="header-subtitle"></span></div>
+    <nav>
+      <ul class="menu"><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/posts/"
+                
+                
+              ><i class="fa-solid fa-archive fa-fw fa-sm" aria-hidden="true"></i> Posts</a></li><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/categories/"
+                
+                
+              ><i class="fa-solid fa-th fa-fw fa-sm" aria-hidden="true"></i> Categories</a></li><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/tags/"
+                
+                
+              ><i class="fa-solid fa-tags fa-fw fa-sm" aria-hidden="true"></i> Tags</a></li><li class="menu-item delimiter"></li><li class="menu-item search" id="search-desktop">
+            <input type="text" placeholder="Search titles or contents ..." id="search-input-desktop">
+            <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+              <i class="fa-solid fa-search fa-fw" aria-hidden="true"></i>
+            </a>
+            <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+              <i class="fa-solid fa-times-circle fa-fw" aria-hidden="true"></i>
+            </a>
+            <span class="search-button search-loading" id="search-loading-desktop">
+              <i class="fa-solid fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+            </span>
+          </li><li class="menu-item theme-switch" title="Switch Theme">
+          <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header><header class="mobile animate__faster" id="header-mobile">
+  <div class="header-container">
+    <div class="header-wrapper">
+      <div class="header-title">
+        <a href="/" title="enoh-badrie"><img loading="lazy" src="https://en.gravatar.com/userimage/231818137/90e0e2859b85bcde111b248cb659b414.png" srcset="https://en.gravatar.com/userimage/231818137/90e0e2859b85bcde111b248cb659b414.png, https://en.gravatar.com/userimage/231818137/90e0e2859b85bcde111b248cb659b414.png 1.5x, https://en.gravatar.com/userimage/231818137/90e0e2859b85bcde111b248cb659b414.png 2x" sizes="auto" data-title="https://en.gravatar.com/userimage/231818137/90e0e2859b85bcde111b248cb659b414.png" data-alt="https://en.gravatar.com/userimage/231818137/90e0e2859b85bcde111b248cb659b414.png" class="logo" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/><span class="header-title-text">Enoh Badrie</span></a><span class="header-subtitle"></span></div>
+      <div class="menu-toggle" id="menu-toggle-mobile">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+    <nav>
+      <ul class="menu" id="menu-mobile"><li class="search-wrapper">
+            <div class="search mobile" id="search-mobile">
+              <input type="text" placeholder="Search titles or contents ..." id="search-input-mobile">
+              <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                <i class="fa-solid fa-search fa-fw" aria-hidden="true"></i>
+              </a>
+              <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                <i class="fa-solid fa-times-circle fa-fw" aria-hidden="true"></i>
+              </a>
+              <span class="search-button search-loading" id="search-loading-mobile">
+                <i class="fa-solid fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+              </span>
+            </div>
+            <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+              Cancel
+            </a>
+          </li><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="/posts/"
+                  
+                  
+                ><i class="fa-solid fa-archive fa-fw fa-sm" aria-hidden="true"></i> Posts</a></li><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="/categories/"
+                  
+                  
+                ><i class="fa-solid fa-th fa-fw fa-sm" aria-hidden="true"></i> Categories</a></li><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="/tags/"
+                  
+                  
+                ><i class="fa-solid fa-tags fa-fw fa-sm" aria-hidden="true"></i> Tags</a></li><li class="menu-item theme-switch" title="Switch Theme">
+          <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+        </li></ul>
+    </nav>
+  </div>
+
+
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client="ca-pub-3658587961826512"
+       data-ad-slot="1234567890"
+       data-ad-format="auto"></ins>
+  <script>
+       (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+  
+
+
+
+</header><div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+  </div>
+  <div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+  </div><main class="container" data-page-style="wide"><aside class="toc" id="toc-auto"><h2 class="toc-title">Contents&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
+      <div class="toc-content always-active" id="toc-content-auto"></div></aside>
+
+  <aside class="aside-custom">
+    </aside>
+
+  <article class="page single">
+    <div class="header"><h1 class="single-title animate__animated animate__flipInX">
+        <span>Installasi Windows Server 2008 di Virtual Box</span>
+      </h1></div><div class="post-meta">
+      <div class="post-meta-line"><span class="post-author"><a href="https://" title="Author" rel=" author" class="author"><i class="fa-solid fa-user-circle" aria-hidden="true"></i>
+    Enoh Badrie</a></span>
+          <span class="post-category">included in <a href="/categories/administrasi-sistem-jaringan/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> Administrasi Sistem Jaringan</a></span></div>
+      <div class="post-meta-line"><span title=2023-02-06&#32;10:49:28><i class="fa-regular fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-02-06">2023-02-06</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw" aria-hidden="true"></i> 226 words</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw" aria-hidden="true"></i> 2 minutes</span>&nbsp;<span id="busuanzi_container_page_pv" class="busuanzi_visitors comment-visitors" data-flag-title="Installasi Windows Server 2008 di Virtual Box">
+              <i class="fa-regular fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_page_pv">-</span>&nbsp;views
+            </span>&nbsp;</div>
+    </div><div class="featured-image"><img loading="lazy" src="/posts/installasi_win_server_v-box/step25.png" srcset="/posts/installasi_win_server_v-box/step25.png, /posts/installasi_win_server_v-box/step25.png 1.5x, /posts/installasi_win_server_v-box/step25.png 2x" sizes="auto" data-title="Installasi Windows Server 2008 di Virtual Box" data-alt="/posts/installasi_win_server_v-box/step25.png" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></div><div class="details toc" id="toc-static" data-kept="false">
+        <div class="details-summary toc-title">
+          <span>Contents</span>
+          <span><i class="details-icon fa-solid fa-angle-right" aria-hidden="true"></i></span>
+        </div>
+        <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#masukan-nama-windows-server-2008-dan-pilih-versi-windows-2008">Masukan nama windows server 2008 dan pilih versi windows 2008.</a></li>
+        <li><a href="#pastikan-memory-mencukupi-sebesar-20gb-lalu-klik-next">Pastikan memory mencukupi sebesar 20gb lalu klik next</a></li>
+        <li><a href="#pilih-create-a-virtual-hard-drive-now-lalu-klik-createbuat">Pilih Create a virtual hard drive now, lalu klik Create/Buat</a></li>
+        <li><a href="#pilih-vidi-virtual-disk-image-lalu-klik-nextlanjut">pilih VIDI (Virtual Disk Image) lalu klik Next/Lanjut</a></li>
+        <li><a href="#pilih-dynamically-alocateddialokasikan-secara-dinamik-lalu-klik-nextlanjut">Pilih Dynamically Alocated/Dialokasikan Secara Dinamik lalu klik Next/Lanjut</a></li>
+        <li><a href="#pastikan-memori-tercukupi-sebesar-25-gb-lalu-klik-createbuat">Pastikan memori tercukupi sebesar 25 GB lalu klik Create/Buat</a></li>
+        <li><a href="#klik-setting">Klik setting</a></li>
+        <li><a href="#klik-pilihan-bahasa-dan-negara">Klik Pilihan bahasa dan negara</a></li>
+        <li><a href="#klik-install-now">Klik Install Now</a></li>
+        <li><a href="#buat-partisi-baru">Buat partisi baru</a></li>
+        <li><a href="#memulai-proses-installasi">Memulai proses Installasi</a></li>
+        <li><a href="#tunggu-sampai-installasi-selesai-semua">Tunggu sampai installasi selesai semua</a></li>
+        <li><a href="#installasi-vmware-tools">Installasi VMware Tools</a></li>
+        <li><a href="#tampilan-login-administrator">Tampilan login administrator</a></li>
+        <li><a href="#tampilan-desktop-windows-server-2008">Tampilan Desktop Windows Server 2008</a></li>
+        <li><a href="#tampilan-file-exploler-windows-server-2008">Tampilan File Exploler Windows Server 2008</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+      </div><div class="content" id="content"><p>Assalamualaikum Wr Wb.
+Windows Server 2008 merupakan system operasi  yang dirilis oleh Microsoft setelah Windows Server 2003. Windows Server 2008  terdiri dari 4 edisi. Perbedaan antara satu edisi dengan edisi lainnya terletak pada lisensi, fitur dan harga.</p>
+<div class="details admonition note open">
+    <div class="details-summary admonition-title">
+      <i class="icon fa-solid fa-pencil-alt fa-fw" aria-hidden="true"></i>Catatan<i class="details-icon fa-solid fa-angle-right fa-fw" aria-hidden="true"></i>
+    </div>
+    <div class="details-content">
+      <div class="admonition-content"><ul>
+<li>Pastikan VirtualBox  terinstal ( Versi terbaru )</li>
+<li>Pastikan anda memiliki file iso Windows Server 2008</li>
+</ul>
+</div>
+    </div>
+  </div>
+<h3 id="masukan-nama-windows-server-2008-dan-pilih-versi-windows-2008">Masukan nama windows server 2008 dan pilih versi windows 2008.</h3>
+<p><figure><a class="lightgallery" href="/posts/installasi_win_server_v-box/step1.png" data-thumbnail="/posts/installasi_win_server_v-box/step1.png" data-sub-html="<h2>Installasi Windows Server 2008</h2><p>Pilih Windows Server 2008</p>"><img loading="lazy" src="step1.png" srcset="/posts/installasi_win_server_v-box/step1.png, step1.png 1.5x, /posts/installasi_win_server_v-box/step1.png 2x" sizes="auto" data-title="Pilih Windows Server 2008" data-alt="Installasi Windows Server 2008" width="799" height="593" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></a><figcaption class="image-caption">Installasi Windows Server 2008</figcaption>
+  </figure></p>
+<h3 id="pastikan-memory-mencukupi-sebesar-20gb-lalu-klik-next">Pastikan memory mencukupi sebesar 20gb lalu klik next</h3>
+<p><figure><a class="lightgallery" href="/posts/installasi_win_server_v-box/step2.png" data-thumbnail="/posts/installasi_win_server_v-box/step2.png" data-sub-html="<h2>Installasi Windows Server 2008</h2><p>Alokasikan Memori</p>"><img loading="lazy" src="step2.png" srcset="/posts/installasi_win_server_v-box/step2.png, step2.png 1.5x, /posts/installasi_win_server_v-box/step2.png 2x" sizes="auto" data-title="Alokasikan Memori" data-alt="Installasi Windows Server 2008" width="441" height="384" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></a><figcaption class="image-caption">Installasi Windows Server 2008</figcaption>
+  </figure></p>
+<h3 id="pilih-create-a-virtual-hard-drive-now-lalu-klik-createbuat">Pilih Create a virtual hard drive now, lalu klik Create/Buat</h3>
+<p><figure><a class="lightgallery" href="/posts/installasi_win_server_v-box/step3.png" data-thumbnail="/posts/installasi_win_server_v-box/step3.png" data-sub-html="<h2>Installasi Windows Server 2008</h2><p>Pilih VDI</p>"><img loading="lazy" src="step3.png" srcset="/posts/installasi_win_server_v-box/step3.png, step3.png 1.5x, /posts/installasi_win_server_v-box/step3.png 2x" sizes="auto" data-title="Pilih VDI" data-alt="Installasi Windows Server 2008" width="789" height="593" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></a><figcaption class="image-caption">Installasi Windows Server 2008</figcaption>
+  </figure></p>
+<h3 id="pilih-vidi-virtual-disk-image-lalu-klik-nextlanjut">pilih VIDI (Virtual Disk Image) lalu klik Next/Lanjut</h3>
+<p><figure><a class="lightgallery" href="/posts/installasi_win_server_v-box/step4.png" data-thumbnail="/posts/installasi_win_server_v-box/step4.png" data-sub-html="<h2>Installasi Windows Server 2008</h2><p>Pilih Dynamical Alocated</p>"><img loading="lazy" src="step4.png" srcset="/posts/installasi_win_server_v-box/step4.png, step4.png 1.5x, /posts/installasi_win_server_v-box/step4.png 2x" sizes="auto" data-title="Pilih Dynamical Alocated" data-alt="Installasi Windows Server 2008" width="785" height="591" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></a><figcaption class="image-caption">Installasi Windows Server 2008</figcaption>
+  </figure></p>
+<h3 id="pilih-dynamically-alocateddialokasikan-secara-dinamik-lalu-klik-nextlanjut">Pilih Dynamically Alocated/Dialokasikan Secara Dinamik lalu klik Next/Lanjut</h3>
+<p><figure><a class="lightgallery" href="/posts/installasi_win_server_v-box/step5.png" data-thumbnail="/posts/installasi_win_server_v-box/step5.png" data-sub-html="<h2>Installasi Windows Server 2008</h2><p>Alokasikan </p>"><img loading="lazy" src="step5.png" srcset="/posts/installasi_win_server_v-box/step5.png, step5.png 1.5x, /posts/installasi_win_server_v-box/step5.png 2x" sizes="auto" data-title="Alokasikan " data-alt="Installasi Windows Server 2008" width="791" height="591" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></a><figcaption class="image-caption">Installasi Windows Server 2008</figcaption>
+  </figure></p>
+<h3 id="pastikan-memori-tercukupi-sebesar-25-gb-lalu-klik-createbuat">Pastikan memori tercukupi sebesar 25 GB lalu klik Create/Buat</h3>
+<p><figure><a class="lightgallery" href="/posts/installasi_win_server_v-box/step6.png" data-thumbnail="/posts/installasi_win_server_v-box/step6.png" data-sub-html="<h2>Installasi Windows Server 2008</h2><p>Alokasikan Hard Disk Virtual</p>"><img loading="lazy" src="step6.png" srcset="/posts/installasi_win_server_v-box/step6.png, step6.png 1.5x, /posts/installasi_win_server_v-box/step6.png 2x" sizes="auto" data-title="Alokasikan Hard Disk Virtual" data-alt="Installasi Windows Server 2008" width="789" height="591" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></a><figcaption class="image-caption">Installasi Windows Server 2008</figcaption>
+  </figure></p>
+<h3 id="klik-setting">Klik setting</h3>
+<p><figure><a class="lightgallery" href="/posts/installasi_win_server_v-box/step7.png" data-thumbnail="/posts/installasi_win_server_v-box/step7.png" data-sub-html="<h2>Installasi Windows Server 2008</h2><p>Pilih Setting</p>"><img loading="lazy" src="step7.png" srcset="/posts/installasi_win_server_v-box/step7.png, step7.png 1.5x, /posts/installasi_win_server_v-box/step7.png 2x" sizes="auto" data-title="Pilih Setting" data-alt="Installasi Windows Server 2008" width="795" height="597" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></a><figcaption class="image-caption">Installasi Windows Server 2008</figcaption>
+  </figure></p>
+<h3 id="klik-pilihan-bahasa-dan-negara">Klik Pilihan bahasa dan negara</h3>
+<p><figure><a class="lightgallery" href="/posts/installasi_win_server_v-box/step8.png" data-thumbnail="/posts/installasi_win_server_v-box/step8.png" data-sub-html="<h2>Installasi Windows Server 2008</h2><p>Pilih Bahasa dan Negara</p>"><img loading="lazy" src="step8.png" srcset="/posts/installasi_win_server_v-box/step8.png, step8.png 1.5x, /posts/installasi_win_server_v-box/step8.png 2x" sizes="auto" data-title="Pilih Bahasa dan Negara" data-alt="Installasi Windows Server 2008" width="827" height="675" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></a><figcaption class="image-caption">Installasi Windows Server 2008</figcaption>
+  </figure></p>
+<h3 id="klik-install-now">Klik Install Now</h3>
+<p><figure><a class="lightgallery" href="/posts/installasi_win_server_v-box/step9.png" data-thumbnail="/posts/installasi_win_server_v-box/step9.png" data-sub-html="<h2>Installasi Windows Server 2008</h2><p>Klik Install</p>"><img loading="lazy" src="step9.png" srcset="/posts/installasi_win_server_v-box/step9.png, step9.png 1.5x, /posts/installasi_win_server_v-box/step9.png 2x" sizes="auto" data-title="Klik Install" data-alt="Installasi Windows Server 2008" width="816" height="681" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></a><figcaption class="image-caption">Installasi Windows Server 2008</figcaption>
+  </figure></p>
+<h3 id="buat-partisi-baru">Buat partisi baru</h3>
+<p><figure><a class="lightgallery" href="/posts/installasi_win_server_v-box/step23.png" data-thumbnail="/posts/installasi_win_server_v-box/step23.png" data-sub-html="<h2>Installasi Windows Server 2008</h2><p>Pilih Window</p>"><img loading="lazy" src="step23.png" srcset="/posts/installasi_win_server_v-box/step23.png, step23.png 1.5x, /posts/installasi_win_server_v-box/step23.png 2x" sizes="auto" data-title="Pilih Window" data-alt="Installasi Windows Server 2008" width="642" height="483" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></a><figcaption class="image-caption">Installasi Windows Server 2008</figcaption>
+  </figure></p>
+<h3 id="memulai-proses-installasi">Memulai proses Installasi</h3>
+<p><figure><a class="lightgallery" href="/posts/installasi_win_server_v-box/step10.png" data-thumbnail="/posts/installasi_win_server_v-box/step10.png" data-sub-html="<h2>Installasi Windows Server 2008</h2><p>Memulai Proses Installasi</p>"><img loading="lazy" src="step10.png" srcset="/posts/installasi_win_server_v-box/step10.png, step10.png 1.5x, /posts/installasi_win_server_v-box/step10.png 2x" sizes="auto" data-title="Memulai Proses Installasi" data-alt="Installasi Windows Server 2008" width="643" height="484" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></a><figcaption class="image-caption">Installasi Windows Server 2008</figcaption>
+  </figure></p>
+<h3 id="tunggu-sampai-installasi-selesai-semua">Tunggu sampai installasi selesai semua</h3>
+<p><figure><a class="lightgallery" href="/posts/installasi_win_server_v-box/step11.png" data-thumbnail="/posts/installasi_win_server_v-box/step11.png" data-sub-html="<h2>Installasi Windows Server 2008</h2><p>Proses Installasi</p>"><img loading="lazy" src="step11.png" srcset="/posts/installasi_win_server_v-box/step11.png, step11.png 1.5x, /posts/installasi_win_server_v-box/step11.png 2x" sizes="auto" data-title="Proses Installasi" data-alt="Installasi Windows Server 2008" width="645" height="485" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></a><figcaption class="image-caption">Installasi Windows Server 2008</figcaption>
+  </figure></p>
+<h3 id="installasi-vmware-tools">Installasi VMware Tools</h3>
+<p><figure><a class="lightgallery" href="/posts/installasi_win_server_v-box/step12.png" data-thumbnail="/posts/installasi_win_server_v-box/step12.png" data-sub-html="<h2>Installasi Windows Server 2008</h2><p>Proses Installasi VM-Ware</p>"><img loading="lazy" src="step12.png" srcset="/posts/installasi_win_server_v-box/step12.png, step12.png 1.5x, /posts/installasi_win_server_v-box/step12.png 2x" sizes="auto" data-title="Proses Installasi VM-Ware" data-alt="Installasi Windows Server 2008" width="505" height="381" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></a><figcaption class="image-caption">Installasi Windows Server 2008</figcaption>
+  </figure></p>
+<h3 id="tampilan-login-administrator">Tampilan login administrator</h3>
+<p><figure><a class="lightgallery" href="/posts/installasi_win_server_v-box/step21.png" data-thumbnail="/posts/installasi_win_server_v-box/step21.png" data-sub-html="<h2>Installasi Windows Server 2008</h2><p>Tampilan Login Administrator</p>"><img loading="lazy" src="step21.png" srcset="/posts/installasi_win_server_v-box/step21.png, step21.png 1.5x, /posts/installasi_win_server_v-box/step21.png 2x" sizes="auto" data-title="Tampilan Login Administrator" data-alt="Installasi Windows Server 2008" width="812" height="677" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></a><figcaption class="image-caption">Installasi Windows Server 2008</figcaption>
+  </figure></p>
+<h3 id="tampilan-desktop-windows-server-2008">Tampilan Desktop Windows Server 2008</h3>
+<p><figure><a class="lightgallery" href="/posts/installasi_win_server_v-box/step24.png" data-thumbnail="/posts/installasi_win_server_v-box/step24.png" data-sub-html="<h2>Installasi Windows Server 2008</h2><p>Tampilan Desktop</p>"><img loading="lazy" src="step24.png" srcset="/posts/installasi_win_server_v-box/step24.png, step24.png 1.5x, /posts/installasi_win_server_v-box/step24.png 2x" sizes="auto" data-title="Tampilan Desktop" data-alt="Installasi Windows Server 2008" width="815" height="680" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></a><figcaption class="image-caption">Installasi Windows Server 2008</figcaption>
+  </figure></p>
+<h3 id="tampilan-file-exploler-windows-server-2008">Tampilan File Exploler Windows Server 2008</h3>
+<p><figure><a class="lightgallery" href="/posts/installasi_win_server_v-box/step22.png" data-thumbnail="/posts/installasi_win_server_v-box/step22.png" data-sub-html="<h2>Installasi Windows Server 2008</h2><p>Tampilan File Exploler</p>"><img loading="lazy" src="step22.png" srcset="/posts/installasi_win_server_v-box/step22.png, step22.png 1.5x, /posts/installasi_win_server_v-box/step22.png 2x" sizes="auto" data-title="Tampilan File Exploler" data-alt="Installasi Windows Server 2008" width="813" height="678" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></a><figcaption class="image-caption">Installasi Windows Server 2008</figcaption>
+  </figure></p>
+<p>Demikian secara garis besar urutan instalasi Windows Server 2008 sudah selesai dan bisa di jalankan Semoga bermanfaat
+Terimakasih&hellip;</p></div><div class="post-footer" id="post-footer">
+  <div class="post-info">
+    <div class="post-info-line">
+      <div class="post-info-mod">
+        <span title=2023-02-06&#32;10:49:28>Updated on 2023-02-06&nbsp;</span>
+      </div><div class="post-info-license">
+          <span><a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">EB BY-NC 4.0</a></span>
+        </div></div>
+    <div class="post-info-line">
+      <div class="post-info-md"></div>
+      <div class="post-info-share">
+        <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="http://enohbadri.github.io/posts/installasi_win_server_v-box/" data-title="Installasi Windows Server 2008 di Virtual Box" data-via="@eb_badrie" data-hashtags="Windows Server,Virtual Box"><i class="fa-brands fa-twitter fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="http://enohbadri.github.io/posts/installasi_win_server_v-box/" data-hashtag="Windows Server"><i class="fa-brands fa-facebook-square fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="http://enohbadri.github.io/posts/installasi_win_server_v-box/" data-title="Installasi Windows Server 2008 di Virtual Box"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
+  </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="post-info-more">
+    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href='/tags/windows-server/' class="post-tag">Windows Server</a><a href='/tags/virtual-box/' class="post-tag">Virtual Box</a></section>
+    <section>
+      <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+    </section>
+  </div>
+
+  <div class="post-nav"><a href="/posts/cybercrime_pada_pengguna_kartu_kredit/" class="post-nav-item" rel="prev" title="Cyber Crime Pada Pengguna Kartu Kredit"><i class="fa-solid fa-angle-left fa-fw" aria-hidden="true"></i>Cyber Crime Pada Pengguna Kartu Kredit</a>
+      <a href="/posts/konfigurasi_briker_1.4_komodo/" class="post-nav-item" rel="next" title="Konfigurasi Briker 1.4 Komodo">Konfigurasi Briker 1.4 Komodo<i class="fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+<div class="post-reward">
+    <div class="comment"></div>
+    <input type="checkbox" class="reward-input" name="reward" id="fi-reward" hidden />
+    <label class="reward-button" for="fi-reward">Donate</label>
+    <div class="reward-ways"></div>
+  </div><div id="comments"><div id="giscus">
+          <script
+            src="https://giscus.app/client.js"
+            data-repo="enohbadri/webpage_comments"
+            data-repo-id="R_kgDOKWTG6A"
+            data-category="Announcements"
+            data-category-id="DIC_kwDOKWTG6M4CZgQK"
+            data-mapping="url"
+            
+            data-theme="preferred_color_scheme"
+            data-reactions-enabled="1"
+            data-emit-metadata="0"
+            data-input-position="bottom"
+            data-lang="en"
+            data-loading="lazy"
+            crossorigin="anonymous"
+            async
+            defer
+          ></script>
+        </div>
+        <noscript>
+          Please enable JavaScript to view the comments powered by <a href="https://giscus.app/" rel="external nofollow noopener noreferrer">giscus</a>.
+        </noscript></div></article></main><footer class="footer">
+    <div class="footer-container"><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw" aria-hidden="true"></i>
+            <span itemprop="copyrightYear">2021 - 2024</span><span class="author" itemprop="copyrightHolder">
+              <a href="/"></a></span><span class="license footer-divider"><a rel="license external nofollow noopener noreferrer" href="https://" target="_blank">@eb_badrie 4.0</a></span></div><div class="footer-line statistics"><span class="site-time" title='Website running ...'><i class="fa-solid fa-heartbeat fa-fw animate-icon" aria-hidden="true"></i><span class="run-times ms-1">Website running ...</span></span></div><div class="footer-line visitor">
+          <span id="busuanzi_container_site_uv" title='Total visitors'><i class="fa-regular fa-user fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span><span id="busuanzi_container_site_pv" class="footer-divider" title='Total visits'><i class="fa-regular fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span>
+        </div></div>
+  </footer></div><div class="widgets"><div class="fixed-buttons animate__faster d-none"><div class="fixed-button back-to-top" role="button" aria-label="Back to Top"><i class="fa-solid fa-arrow-up fa-fw" aria-hidden="true"></i><span class="variant-numeric">0%</span>
+        </div><div class="fixed-button view-comments d-none" role="button" aria-label="View Comments"><i class="fa-solid fa-comment fa-fw" aria-hidden="true"></i></div></div><a href="https://github.com/enohbadri" title="Kunjungi GitHub Saya"target="_blank" rel="external nofollow" class="github-corner right d-none-mobile"><svg viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><div id="mask"></div><div class="reading-progress-bar" style="left: 0;top: 0;"></div><noscript>
+    <div class="noscript-warning">Theme FixIt works best with JavaScript enabled.</div>
+  </noscript>
+</div><link rel="stylesheet" href="/lib/lightgallery/css/lightgallery-bundle.min.css"><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><link rel="stylesheet" href="/lib/pace/themes/blue/pace-theme-center-atom.css"><script src="/lib/autocomplete/autocomplete.min.js" defer></script><script src="/lib/fuse/fuse.min.js" defer></script><script src="/lib/twemoji/twemoji.min.js" defer></script><script src="/lib/lightgallery/lightgallery.min.js" defer></script><script src="/lib/lightgallery/plugins/thumbnail/lg-thumbnail.min.js" defer></script><script src="/lib/lightgallery/plugins/zoom/lg-zoom.min.js" defer></script><script src="/lib/sharer/sharer.min.js" async defer></script><script src="/lib/katex/katex.min.js" defer></script><script src="/lib/katex/auto-render.min.js" defer></script><script src="/lib/katex/copy-tex.min.js" defer></script><script src="/lib/katex/mhchem.min.js" defer></script><script src="/lib/cookieconsent/cookieconsent.min.js" defer></script><script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async defer></script><script src="/lib/pace/pace.min.js" async defer></script><script>window.config={"code":{"copyTitle":"Copy to clipboard","editLockTitle":"Lock editable code block","editUnLockTitle":"Unlock editable code block","editable":true,"maxShownLines":10},"comment":{"enable":true,"expired":false,"giscus":{"darkTheme":"dark","lightTheme":"light"}},"cookieconsent":{"content":{"dismiss":"Got it!","link":"Learn more","message":"This website uses Cookies to improve your experience."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"enablePWA":true,"lightgallery":true,"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"distance":100,"findAllMatches":true,"fuseIndexURL":"/index.json","highlightTag":"em","ignoreFieldNorm":false,"ignoreLocation":false,"isCaseSensitive":false,"location":0,"maxResultLength":10,"minMatchCharLength":2,"noResultsFound":"No results found","snippetLength":30,"threshold":0.3,"type":"fuse","useExtendedSearch":false},"siteTime":"2020-07-01T13:00:00+00:00","twemoji":true};</script><script src="/js/theme.min.js" defer></script></body>
+</html>

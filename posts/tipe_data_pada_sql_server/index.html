@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="en">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+    <meta name="robots" content="noodp" />
+    <title>Tipe Data Pada SQL - enoh-badrie</title><meta name="author" content="">
+<meta name="author-link" content="">
+<meta name="description" content="Just share" /><meta name="keywords" content='SQL, DDL, DML' /><meta itemprop="name" content="Tipe Data Pada SQL">
+<meta itemprop="description" content=""><meta itemprop="datePublished" content="2023-08-02T14:07:46+07:00" />
+<meta itemprop="dateModified" content="2023-08-02T14:07:46+07:00" />
+<meta itemprop="wordCount" content="1439"><meta itemprop="image" content="http://enohbadri.github.io/posts/tipe_data_pada_sql_server/images.jpeg">
+<meta itemprop="keywords" content="SQL,DDL,DML," /><meta property="og:title" content="Tipe Data Pada SQL" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://enohbadri.github.io/posts/tipe_data_pada_sql_server/" /><meta property="og:image" content="http://enohbadri.github.io/posts/tipe_data_pada_sql_server/images.jpeg"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-08-02T14:07:46+07:00" />
+<meta property="article:modified_time" content="2023-08-02T14:07:46+07:00" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="http://enohbadri.github.io/posts/tipe_data_pada_sql_server/images.jpeg"/>
+<meta name="twitter:title" content="Tipe Data Pada SQL"/>
+<meta name="twitter:description" content=""/>
+<meta name="application-name" content="FixIt">
+<meta name="apple-mobile-web-app-title" content="FixIt"><meta name="theme-color" data-light="#f8f8f8" data-dark="#252627" content="#f8f8f8"><meta name="msapplication-TileColor" content="#da532c"><link rel="icon" href="https://en.gravatar.com/userimage/231818137/90e0e2859b85bcde111b248cb659b414.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://enohbadri.github.io/posts/tipe_data_pada_sql_server/" /><link rel="prev" href="http://enohbadri.github.io/posts/structure_query_laguage/" /><link rel="next" href="http://enohbadri.github.io/posts/rangkuman_tik/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Tipe Data Pada SQL",
+    "inLanguage": "en",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "http:\/\/enohbadri.github.io\/posts\/tipe_data_pada_sql_server\/"
+    },"image": [{
+              "@type": "ImageObject",
+              "url": "http:\/\/enohbadri.github.io\/posts\/tipe_data_pada_sql_server\/images.jpeg",
+              "width":  275 ,
+              "height":  183 
+            }],"genre": "posts","keywords": "SQL, DDL, DML","wordcount":  1439 ,
+    "url": "http:\/\/enohbadri.github.io\/posts\/tipe_data_pada_sql_server\/","datePublished": "2023-08-02T14:07:46+07:00","dateModified": "2023-08-02T14:07:46+07:00","publisher": {
+      "@type": "Organization",
+      "name": ""},"author": {
+        "@type": "Person",
+        "name": "Enoh Badrie"
+      },"description": ""
+  }
+  </script></head>
+  <body data-header-desktop="auto" data-header-mobile="auto"><script>(window.localStorage?.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('data-theme', 'dark');</script><div class="wrapper"><header class="desktop animate__faster" id="header-desktop">
+  <div class="header-wrapper" data-github-corner="right">
+    <div class="header-title">
+      <a href="/" title="enoh-badrie"><img loading="lazy" src="https://en.gravatar.com/userimage/231818137/90e0e2859b85bcde111b248cb659b414.png" srcset="https://en.gravatar.com/userimage/231818137/90e0e2859b85bcde111b248cb659b414.png, https://en.gravatar.com/userimage/231818137/90e0e2859b85bcde111b248cb659b414.png 1.5x, https://en.gravatar.com/userimage/231818137/90e0e2859b85bcde111b248cb659b414.png 2x" sizes="auto" data-title="enoh-badrie" data-alt="enoh-badrie" class="logo" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/><span class="header-title-text">Enoh Badrie</span></a><span class="header-subtitle"></span></div>
+    <nav>
+      <ul class="menu"><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/posts/"
+                
+                
+              ><i class="fa-solid fa-archive fa-fw fa-sm" aria-hidden="true"></i> Posts</a></li><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/categories/"
+                
+                
+              ><i class="fa-solid fa-th fa-fw fa-sm" aria-hidden="true"></i> Categories</a></li><li class="menu-item">
+              <a
+                class="menu-link"
+                href="/tags/"
+                
+                
+              ><i class="fa-solid fa-tags fa-fw fa-sm" aria-hidden="true"></i> Tags</a></li><li class="menu-item delimiter"></li><li class="menu-item search" id="search-desktop">
+            <input type="text" placeholder="Search titles or contents ..." id="search-input-desktop">
+            <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+              <i class="fa-solid fa-search fa-fw" aria-hidden="true"></i>
+            </a>
+            <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+              <i class="fa-solid fa-times-circle fa-fw" aria-hidden="true"></i>
+            </a>
+            <span class="search-button search-loading" id="search-loading-desktop">
+              <i class="fa-solid fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+            </span>
+          </li><li class="menu-item theme-switch" title="Switch Theme">
+          <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header><header class="mobile animate__faster" id="header-mobile">
+  <div class="header-container">
+    <div class="header-wrapper">
+      <div class="header-title">
+        <a href="/" title="enoh-badrie"><img loading="lazy" src="https://en.gravatar.com/userimage/231818137/90e0e2859b85bcde111b248cb659b414.png" srcset="https://en.gravatar.com/userimage/231818137/90e0e2859b85bcde111b248cb659b414.png, https://en.gravatar.com/userimage/231818137/90e0e2859b85bcde111b248cb659b414.png 1.5x, https://en.gravatar.com/userimage/231818137/90e0e2859b85bcde111b248cb659b414.png 2x" sizes="auto" data-title="https://en.gravatar.com/userimage/231818137/90e0e2859b85bcde111b248cb659b414.png" data-alt="https://en.gravatar.com/userimage/231818137/90e0e2859b85bcde111b248cb659b414.png" class="logo" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/><span class="header-title-text">Enoh Badrie</span></a><span class="header-subtitle"></span></div>
+      <div class="menu-toggle" id="menu-toggle-mobile">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+    <nav>
+      <ul class="menu" id="menu-mobile"><li class="search-wrapper">
+            <div class="search mobile" id="search-mobile">
+              <input type="text" placeholder="Search titles or contents ..." id="search-input-mobile">
+              <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                <i class="fa-solid fa-search fa-fw" aria-hidden="true"></i>
+              </a>
+              <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                <i class="fa-solid fa-times-circle fa-fw" aria-hidden="true"></i>
+              </a>
+              <span class="search-button search-loading" id="search-loading-mobile">
+                <i class="fa-solid fa-spinner fa-fw fa-spin" aria-hidden="true"></i>
+              </span>
+            </div>
+            <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+              Cancel
+            </a>
+          </li><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="/posts/"
+                  
+                  
+                ><i class="fa-solid fa-archive fa-fw fa-sm" aria-hidden="true"></i> Posts</a></li><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="/categories/"
+                  
+                  
+                ><i class="fa-solid fa-th fa-fw fa-sm" aria-hidden="true"></i> Categories</a></li><li
+              class="menu-item"
+            ><a
+                  class="menu-link"
+                  href="/tags/"
+                  
+                  
+                ><i class="fa-solid fa-tags fa-fw fa-sm" aria-hidden="true"></i> Tags</a></li><li class="menu-item theme-switch" title="Switch Theme">
+          <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+        </li></ul>
+    </nav>
+  </div>
+
+
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client="ca-pub-3658587961826512"
+       data-ad-slot="1234567890"
+       data-ad-format="auto"></ins>
+  <script>
+       (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+  
+
+
+
+</header><div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+  </div>
+  <div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+  </div><main class="container" data-page-style="wide"><aside class="toc" id="toc-auto"><h2 class="toc-title">Contents&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
+      <div class="toc-content" id="toc-content-auto"></div></aside>
+
+  <aside class="aside-custom">
+    </aside>
+
+  <article class="page single">
+    <div class="header"><h1 class="single-title animate__animated animate__flipInX">
+        <span title="Repost" class="icon-repost"><i class="fa-solid fa-share fa-fw" aria-hidden="true"></i></span><span>Tipe Data Pada SQL</span>
+      </h1></div><div class="post-meta">
+      <div class="post-meta-line"><span class="post-author"><a href="https://" title="Author" rel=" author" class="author"><i class="fa-solid fa-user-circle" aria-hidden="true"></i>
+    Enoh Badrie</a></span>
+          <span class="post-category">included in <a href="/categories/database/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> Database</a></span></div>
+      <div class="post-meta-line"><span title=2023-08-02&#32;14:07:46><i class="fa-regular fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-08-02">2023-08-02</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw" aria-hidden="true"></i> 1439 words</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw" aria-hidden="true"></i> 7 minutes</span>&nbsp;<span id="busuanzi_container_page_pv" class="busuanzi_visitors comment-visitors" data-flag-title="Tipe Data Pada SQL">
+              <i class="fa-regular fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_page_pv">-</span>&nbsp;views
+            </span>&nbsp;</div>
+    </div><div class="featured-image"><img loading="lazy" src="/posts/tipe_data_pada_sql_server/images.jpeg" srcset="/posts/tipe_data_pada_sql_server/images.jpeg, /posts/tipe_data_pada_sql_server/images.jpeg 1.5x, /posts/tipe_data_pada_sql_server/images.jpeg 2x" sizes="auto" data-title="/posts/tipe_data_pada_sql_server/images.jpeg" data-alt="/posts/tipe_data_pada_sql_server/images.jpeg" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></div><div class="details toc" id="toc-static" data-kept="false">
+        <div class="details-summary toc-title">
+          <span>Contents</span>
+          <span><i class="details-icon fa-solid fa-angle-right" aria-hidden="true"></i></span>
+        </div>
+        <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li></li>
+        <li><a href="#integer">Integer:</a></li>
+        <li><a href="#float">Float:</a></li>
+        <li><a href="#string">String:</a></li>
+        <li><a href="#boolean">Boolean:</a></li>
+        <li><a href="#datetime">Date/Time:</a></li>
+        <li><a href="#array">Array:</a></li>
+        <li><a href="#object">Object:</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+      </div><div class="content" id="content"><h4 id="apa-itu-tipe-data">Apa Itu Tipe Data?</h4>
+<p>Tipe data (data type) adalah klasifikasi atau kategori yang digunakan untuk mengidentifikasi jenis nilai yang dapat disimpan, diolah, dan dikelola oleh komputer atau bahasa pemrograman. Saat kita menyimpan atau memproses data dalam komputer, setiap nilai harus memiliki tipe data tertentu, yang menentukan bagaimana nilai tersebut diinterpretasikan dan dioperasikan oleh sistem.</p>
+<p>Tipe data mendefinisikan sifat-sifat dari nilai, seperti apakah itu angka, teks, tanggal, atau tipe data lainnya. Tipe data membantu komputer memahami bagaimana menyimpan nilai dalam memori dan bagaimana melakukan operasi atau manipulasi data pada nilai tersebut.</p>
+<p>Contoh beberapa tipe data umum dalam pemrograman:</p>
+<h3 id="integer">Integer:</h3>
+<p>Tipe data ini digunakan untuk menyimpan bilangan bulat (positif, negatif, atau nol) tanpa angka desimal.</p>
+<h3 id="float">Float:</h3>
+<p>Tipe data ini digunakan untuk menyimpan angka dengan angka desimal, seperti bilangan pecahan.</p>
+<h3 id="string">String:</h3>
+<p>Tipe data ini digunakan untuk menyimpan teks atau karakter, seperti nama, kalimat, atau paragraf.</p>
+<h3 id="boolean">Boolean:</h3>
+<p>Tipe data ini hanya memiliki dua nilai, yaitu true atau false, dan biasanya digunakan untuk operasi logika.</p>
+<h3 id="datetime">Date/Time:</h3>
+<p>Tipe data ini digunakan untuk menyimpan tanggal dan waktu.</p>
+<h3 id="array">Array:</h3>
+<p>Tipe data ini memungkinkan kita untuk menyimpan kumpulan nilai dalam satu variabel.</p>
+<h3 id="object">Object:</h3>
+<p>Tipe data ini memungkinkan kita untuk menyimpan kumpulan nilai dan fungsi yang terkait dalam satu variabel.</p>
+<p>Tipe data sangat penting dalam pemrograman karena membantu dalam mengelola dan memproses data dengan cara yang benar, menghindari kesalahan, dan meningkatkan efisiensi dalam penggunaan memori dan sumber daya komputer.</p>
+<h4 id="tipe-data-pada-sql-server">Tipe data pada SQL SERVER</h4>
+<p>SQL Server menyediakan macam-macam tipe data yang dikelompokkan menjadi beberapa bagian, yaitu :</p>
+<p>a. Tipe data numeric</p>
+<ul>
+<li>Integer
+Mendefinisikan bilangan bulat positif dan negative mulai dari range -2^63 sampai -2 ^ 15 -1, dan 0 sampai 255</li>
+<li>bit
+mendefinisikan nilai bilangan bulat dengan nilai 0 atau 1.</li>
+<li>decimal
+mendefinisikan bilangan numeric yang disimpan dengan nilai tepat yang tanpa pembulatan.</li>
+<li>floating point
+mendefinisikan bilangan numeric dengan nilai pembulatan.</li>
+</ul>
+<p>b. Tipe data string</p>
+<ul>
+<li>char
+mendefinisikan nilai string sepanjang n karakter sampai dengan 8000 byte.</li>
+<li>varchar
+mendefinisikan nilai string sepanjang n karakter sampai dengan 8000 byte.</li>
+<li>text
+mendefinisikan semua jenis data yang berupa text, seperti memo, dokumen, listing program diman ukurannya dapat mencapai 2^31 -1. 21</li>
+</ul>
+<p>c. Tipe data Binary String</p>
+<ul>
+<li>binary
+mendefinisikan bilangan dengan ukuran tetap hingga 8000 byte.</li>
+<li>varbinary
+mendefinisikan bilangan dengan ukuran bervariasi hingga 8000 byte</li>
+<li>image
+mendefinisikan binary data untuk menyimpan image (.jpg,.tif,.gif) dengan ukuran yang bervariasi.</li>
+</ul>
+<p>Tipe data di dalam SQL Server terdiri dari beberapa macam, penjelasan dari masing – masing tipe data tersebut adalah sebagai berikut.</p>
+<ol>
+<li>
+<p>Bigint
+Tipe data ini mirip dengan int, hanya saja nilai yang diterima lebih besar daripada int. Tipe data ini dapat menerima nilai mulai dari -263 (-9,223,372,036,854,775,808) hingga 263-1 (-9,223,372,036,854,775,807). Tipe data ini menghabiskan 8 bytes untuk menyimpan data pada harddisk.</p>
+</li>
+<li>
+<p>Binary
+Tipe data ini dapat menerima data binary dengan maksimum 8000 bytes data. Tipe data ini diinterpretasikan sebagai string dari bit misalnya (110011001011).</p>
+</li>
+<li>
+<p>Bit
+Tipe data bit hanya bisa menerima input angka 1 dan 0 sebagai nilai (atau bisa juga null, yang berarti tidak ada nilai). Tipe data ini sangat membantu jika Anda ingin menghasilkan output yes/no, true/false, dsb.</p>
+</li>
+<li>
+<p>Char
+Tipe data ini dapat digunakan untuk memasukkan data karakter non-Unicode dengan jumlah karakter yang fix. Tipe data ini bisa menerima hingga 8000 karakter, dan jumlah bytes yang dibutuhkan tergantung jumlah karakter yang dimasukkan. 1 karakter membutuhkan 1 bytes, sehingga jika Anda mendefinisikan seperti ini : char(5) maka field tersebut hanya bisa menerima karakter sebanyak 5 buah karakter dengan space yang dibutuhkan untuk menyimpan data pada harddisk sebanyak 5 bytes.</p>
+</li>
+<li>
+<p>Datetime
+Tipe data ini dapat menerima nilai tanggal dan waktu mulai dari 1 Januari 1753 hingga 31 Desember 9999. Tipe data ini menghabiskan 8 bytes untuk menyimpan data pada harddisk.</p>
+</li>
+<li>
+<p>Decimal
+Tipe data ini menerima nilai yang lebih presisi dibanding tipe data integer yang telah dibahas sebelumnya. Tipe data ini menggunakan 2 parameter untuk menentukan tingkat presisi nilai yang diterima; precision dan scale. Precision adalah jumlah digit yang bisa diterima oleh field, sedangkan scale adalah jumlah angka di belakang koma yang bisa diterima oleh field. Jadi, jika kita membuat parameter precision sebanyak 5 dan scale sebanyak 2 maka field kita bisa menerima nilai seperti ini : 123,45. Tipe data ini bisa menerima nilai mulai dari -1038 hingga 1038-1. Tipe data ini menghabiskan 5-17 bytes untuk menyimpan data pada harddisk, tergantung pada tingkat kepresisian nilai yang dimasukkan.</p>
+</li>
+<li>
+<p>Float
+Tipe data ini mirip dengan tipe data decimal, hanya saja paramater scale pada tipe data ini bisa menerima nilai yang tak terhingga, seperti pada nilai pi. Tipe data ini bisa menerima nilai mulai dari -1.79E + 308 hingga 1.79E +308. Jika Anda mendeskripsikan field dengan tipe data seperti ini : float(2), maka nilai output dari pi (misalnya) adalah 3,14. Angka 2 di dalam kurung menjelaskan berapa banyak angka yang harus ditampilkan dibelakang koma. Tipe data ini menghabiskan 4-8 bytes untuk menyimpan data pada harddisk.</p>
+</li>
+<li>
+<p>Int
+Tipe data ini mungkin sudah banyak dikenal oleh Anda. Tipe data ini dapat menerima nilai mulai dari -231 (-2,147,483,648) hingga 231-1 (2,147,483,647). Tipe data ini menghabiskan 4 bytes untuk menyimpan data pada harddisk.</p>
+</li>
+<li>
+<p>Money
+Tipe data ini dapat menerima nilai mulai dari -263 (-9,223,372,036,854,775,808) hingga 263-1 (-9,223,372,036,854,775,807). Tipe data ini menghabiskan 8 bytes untuk menyimpan data pada harddisk.</p>
+</li>
+<li>
+<p>Nchar
+Tipe data ini mirip dengan tipe data char, namun tipe data ini bisa menerima nilai atau data Unicode (berbeda dengan tipe data char yang hanya bisa menerima nilai karakter non-Unicode). Tipe data ini bisa menerima nilai hingga 4000 karakter. Tipe data ini menghabiskan 2-8000 bytes untuk menyimpan data pada harddisk. Mengapa dibutuhkan 2-8000 bytes? Karena tipe data ini mengkali 2 bytes untuk setiap karakternya. Jadi jika user hanya memasukkan 1 karakter, maka dibutuhkan 2 bytes untuk menyimpan data pada harddisk.</p>
+</li>
+<li>
+<p>Real
+Tipe data ini mirip dengan tipe data float, hanya saja menerima nilai yang lebih kecil dibandingkan dengan float, yaitu mulai dari -3.40E +38 hingga 3.40E +38. Tipe data ini menghabiskan 4 bytes untuk menyimpan data pada harddisk.</p>
+</li>
+<li>
+<p>Smalldatetime
+Tipe data ini dapat menerima tanggal dan waktu mulai dari 1 Januari 1900 hingga 6 Juni 2079, dengan akurasi waktu yang digunakan adalah menit. Tipe data ini menghabiskan 4 bytes untuk menyimpan data pada harddisk.</p>
+</li>
+<li>
+<p>Smallint
+Tipe data ini juga mirip dengan int, hanya saja nilai yang diterima lebih kecil dari int. Tipe data ini dapat menerima nilai mulai dari -215 (-32,768) hingga 215-1 (32767). Tipe data ini hanya membutuhkan 2 bytes untuk menyimpan data pada harddisk</p>
+</li>
+<li>
+<p>Smallmoney
+Tipe data ini pada dasarnya sama dengan tipe data money, hanya saja nilai yang diterima lebih kecil, yaitu mulai dari -214,748.3648 hingga 214,748.3647. Tipe data ini menghabiskan 4 bytes untuk menyimpan data pada harddisk.</p>
+</li>
+<li>
+<p>Sql_variant
+Tipe data ini merupakan tipe data baru di SQL Server 2005, saya pribadi belum mengetahui dengan pasti kapan saat yang tepat untuk mengimplementasikan tipe data ini. Tipe data ini disebutkan dapat digunakan untuk mengubah tipe data sesuai dengan apa yang dimasukkan oleh user. Mungkin, ilustrasinya seperti ini : jika user memasukkan angka ke dalam field dengan tipe data ini, maka SQL_Variant akan menyesuaikan menjadi int atau tipe data lain yang lebih sesuai (seperti varchar), tapi jika kemudian user mengisi field tersebut dengan tipe data char, sql_variant akan mengubahnya tipe data field untuk row tersebut menjadi char. Tipe data ini sebenarnya kurang disarankan untuk digunakan karena tidak adanya batasan yang jelas dalam penggunaannya, dan dapat menyebabkan collision data.</p>
+</li>
+<li>
+<p>Timestamp
+Tipe data ini digunakan untuk mencatat record ketika data baru dimasukkan dan diupdate. Tipe data ini sangat berguna untuk mencari tahu perubahan yang terjadi pada database Anda.</p>
+</li>
+<li>
+<p>Tinyint
+Tipe data ini menerima nilai yang lebih kecil dari smallint. Nilai yang bisa diterima mulai dari 0 hingga 255, dan hanya membutuhkan 1 bytes untuk menyimpan data pada harddisk.</p>
+</li>
+<li>
+<p>Uniqueidentifier
+Tipe data ini berfungsi untuk membuat nilai yang unik yang mungkin bisa tampil seperti ini 6F9619FF-8B86-D011-B42D-00C04FC964FF. Tipe data ini berguna jika Anda ingin membuat serial number atau id yang unik.</p>
+</li>
+<li>
+<p>Varbinary
+Tipe data ini mirip dengan varchar, hanya saja nilai yang bisa diterima hanya data binary. Tipe data ini berguna untuk menyimpan data binary yang tidak diketahui dengan pasti jumlah bytes datanya.</p>
+</li>
+<li>
+<p>Varchar
+Tipe data ini mirip dengan tipe data char, namun tipe data ini berguna bagi Anda yang tidak mengetahui secara pasti jumlah karakter yang akan dimasukkan oleh user. Tipe data ini juga bisa menerima nilai hingga 8000 karakter. Jadi, jika pada tipe data char, Anda mendefinisikan char(5), maka Anda akan selalu membutuhkan 5 bytes untuk menyimpan data pada harddisk, walaupun jumlah karakter yang dimasukkan hanya 1 hingga 4 karakter; maka pada tipe data ini, jumlah bytes yang dibutuhkan akan lebih fleksibel. Misalnya jika Anda mendefinisikan varchar(30) untuk sebuah field, maka field tersebut dapat menerima data hingga 30 karakter (30 bytes), namun jika Anda hanya memasukkan 1 karakter, maka jumlah bytes yang dibutuhkan hanya sebanyak 1 bytes.</p>
+</li>
+</ol></div><div class="post-footer" id="post-footer">
+  <div class="post-info">
+    <div class="post-info-line">
+      <div class="post-info-mod">
+        <span title=2023-08-02&#32;14:07:46>Updated on 2023-08-02&nbsp;</span>
+      </div></div>
+    <div class="post-info-line">
+      <div class="post-info-md"></div>
+      <div class="post-info-share">
+        <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="http://enohbadri.github.io/posts/tipe_data_pada_sql_server/" data-title="Tipe Data Pada SQL" data-via="@eb_badrie" data-hashtags="SQL,DDL,DML"><i class="fa-brands fa-twitter fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="http://enohbadri.github.io/posts/tipe_data_pada_sql_server/" data-hashtag="SQL"><i class="fa-brands fa-facebook-square fa-fw" aria-hidden="true"></i></a>
+  <a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="http://enohbadri.github.io/posts/tipe_data_pada_sql_server/" data-title="Tipe Data Pada SQL"><i class="fa-brands fa-weibo fa-fw" aria-hidden="true"></i></a>
+  </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="post-info-more">
+    <section class="post-tags"><i class="fa-solid fa-tags fa-fw me-1" aria-hidden="true"></i><a href='/tags/sql/' class="post-tag">SQL</a><a href='/tags/ddl/' class="post-tag">DDL</a><a href='/tags/dml/' class="post-tag">DML</a></section>
+    <section>
+      <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+    </section>
+  </div>
+
+  <div class="post-nav"><a href="/posts/structure_query_laguage/" class="post-nav-item" rel="prev" title="Structure Query Language"><i class="fa-solid fa-angle-left fa-fw" aria-hidden="true"></i>Structure Query Language</a>
+      <a href="/posts/rangkuman_tik/" class="post-nav-item" rel="next" title="Modul - TIK">Modul - TIK<i class="fa-solid fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+<div id="comments"><div id="giscus">
+          <script
+            src="https://giscus.app/client.js"
+            data-repo="enohbadri/webpage_comments"
+            data-repo-id="R_kgDOKWTG6A"
+            data-category="Announcements"
+            data-category-id="DIC_kwDOKWTG6M4CZgQK"
+            data-mapping="url"
+            
+            data-theme="preferred_color_scheme"
+            data-reactions-enabled="1"
+            data-emit-metadata="0"
+            data-input-position="bottom"
+            data-lang="en"
+            data-loading="lazy"
+            crossorigin="anonymous"
+            async
+            defer
+          ></script>
+        </div>
+        <noscript>
+          Please enable JavaScript to view the comments powered by <a href="https://giscus.app/" rel="external nofollow noopener noreferrer">giscus</a>.
+        </noscript></div></article></main><footer class="footer">
+    <div class="footer-container"><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw" aria-hidden="true"></i>
+            <span itemprop="copyrightYear">2021 - 2024</span><span class="author" itemprop="copyrightHolder">
+              <a href="/"></a></span><span class="license footer-divider"><a rel="license external nofollow noopener noreferrer" href="https://" target="_blank">@eb_badrie 4.0</a></span></div><div class="footer-line statistics"><span class="site-time" title='Website running ...'><i class="fa-solid fa-heartbeat fa-fw animate-icon" aria-hidden="true"></i><span class="run-times ms-1">Website running ...</span></span></div><div class="footer-line visitor">
+          <span id="busuanzi_container_site_uv" title='Total visitors'><i class="fa-regular fa-user fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span><span id="busuanzi_container_site_pv" class="footer-divider" title='Total visits'><i class="fa-regular fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span></span>
+        </div></div>
+  </footer></div><div class="widgets"><div class="fixed-buttons animate__faster d-none"><div class="fixed-button back-to-top" role="button" aria-label="Back to Top"><i class="fa-solid fa-arrow-up fa-fw" aria-hidden="true"></i><span class="variant-numeric">0%</span>
+        </div><div class="fixed-button view-comments d-none" role="button" aria-label="View Comments"><i class="fa-solid fa-comment fa-fw" aria-hidden="true"></i></div></div><a href="https://github.com/enohbadri" title="Kunjungi GitHub Saya"target="_blank" rel="external nofollow" class="github-corner right d-none-mobile"><svg viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><div id="mask"></div><div class="reading-progress-bar" style="left: 0;top: 0;"></div><noscript>
+    <div class="noscript-warning">Theme FixIt works best with JavaScript enabled.</div>
+  </noscript>
+</div><link rel="stylesheet" href="/lib/lightgallery/css/lightgallery-bundle.min.css"><link rel="stylesheet" href="/lib/katex/katex.min.css"><link rel="stylesheet" href="/lib/cookieconsent/cookieconsent.min.css"><link rel="stylesheet" href="/lib/pace/themes/blue/pace-theme-center-atom.css"><script src="/lib/autocomplete/autocomplete.min.js" defer></script><script src="/lib/fuse/fuse.min.js" defer></script><script src="/lib/twemoji/twemoji.min.js" defer></script><script src="/lib/lightgallery/lightgallery.min.js" defer></script><script src="/lib/lightgallery/plugins/thumbnail/lg-thumbnail.min.js" defer></script><script src="/lib/lightgallery/plugins/zoom/lg-zoom.min.js" defer></script><script src="/lib/sharer/sharer.min.js" async defer></script><script src="/lib/katex/katex.min.js" defer></script><script src="/lib/katex/auto-render.min.js" defer></script><script src="/lib/katex/copy-tex.min.js" defer></script><script src="/lib/katex/mhchem.min.js" defer></script><script src="/lib/cookieconsent/cookieconsent.min.js" defer></script><script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async defer></script><script src="/lib/pace/pace.min.js" async defer></script><script>window.config={"code":{"copyTitle":"Copy to clipboard","editLockTitle":"Lock editable code block","editUnLockTitle":"Unlock editable code block","editable":true,"maxShownLines":10},"comment":{"enable":true,"expired":false,"giscus":{"darkTheme":"dark","lightTheme":"light"}},"cookieconsent":{"content":{"dismiss":"Got it!","link":"Learn more","message":"This website uses Cookies to improve your experience."},"enable":true,"palette":{"button":{"background":"#f0f0f0"},"popup":{"background":"#1aa3ff"}},"theme":"edgeless"},"enablePWA":true,"lightgallery":true,"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":true,"left":"\\begin{equation}","right":"\\end{equation}"},{"display":true,"left":"\\begin{equation*}","right":"\\end{equation*}"},{"display":true,"left":"\\begin{align}","right":"\\end{align}"},{"display":true,"left":"\\begin{align*}","right":"\\end{align*}"},{"display":true,"left":"\\begin{alignat}","right":"\\end{alignat}"},{"display":true,"left":"\\begin{alignat*}","right":"\\end{alignat*}"},{"display":true,"left":"\\begin{gather}","right":"\\end{gather}"},{"display":true,"left":"\\begin{CD}","right":"\\end{CD}"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"distance":100,"findAllMatches":true,"fuseIndexURL":"/index.json","highlightTag":"em","ignoreFieldNorm":false,"ignoreLocation":false,"isCaseSensitive":false,"location":0,"maxResultLength":10,"minMatchCharLength":2,"noResultsFound":"No results found","snippetLength":30,"threshold":0.3,"type":"fuse","useExtendedSearch":false},"siteTime":"2020-07-01T13:00:00+00:00","twemoji":true};</script><script src="/js/theme.min.js" defer></script></body>
+</html>

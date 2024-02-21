@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>Error - Tag - enoh-badrie</title>
+    <link>http://enohbadri.github.io/tags/error/</link>
+    <description>Error - Tag - enoh-badrie</description>
+    <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 28 Feb 2023 10:49:28 &#43;0700</lastBuildDate><atom:link href="http://enohbadri.github.io/tags/error/" rel="self" type="application/rss+xml" /><item>
+  <title>Cara Mengatasi Git Push Rejected</title>
+  <link>http://enohbadri.github.io/posts/git_rejected/</link>
+  <pubDate>Tue, 28 Feb 2023 10:49:28 &#43;0700</pubDate>
+  <author>Enoh Badrie</author>
+  <guid>http://enohbadri.github.io/posts/git_rejected/</guid>
+  <description><![CDATA[Cara Mengatasi Git Push Rejected]]></description>
+</item>
+</channel>
+</rss>

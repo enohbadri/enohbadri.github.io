@@ -1,0 +1,63 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>Linux - Category - enoh-badrie</title>
+    <link>http://enohbadri.github.io/categories/linux/</link>
+    <description>Linux - Category - enoh-badrie</description>
+    <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 19 Jan 2024 10:22:13 &#43;0700</lastBuildDate><atom:link href="http://enohbadri.github.io/categories/linux/" rel="self" type="application/rss+xml" /><item>
+  <title>Cara Install Neofetch</title>
+  <link>http://enohbadri.github.io/posts/install_neofetch/</link>
+  <pubDate>Mon, 04 Sep 2023 14:38:16 &#43;0700</pubDate>
+  <author>Enoh Badri</author>
+  <guid>http://enohbadri.github.io/posts/install_neofetch/</guid>
+  <description><![CDATA[]]></description>
+</item>
+<item>
+  <title>Web Server Applications</title>
+  <link>http://enohbadri.github.io/posts/web_server_applications/</link>
+  <pubDate>Thu, 16 Mar 2023 08:54:49 &#43;0700</pubDate>
+  <author>Enoh Badrie</author>
+  <guid>http://enohbadri.github.io/posts/web_server_applications/</guid>
+  <description><![CDATA[Web Server Applications]]></description>
+</item>
+<item>
+  <title>Menghubungkan Komputer Host dengan V-Box (Ubuntu Server)</title>
+  <link>http://enohbadri.github.io/posts/menghubungkan_komputer_hostasli_dengan_komputer_virtualubuntu_server/</link>
+  <pubDate>Mon, 13 Mar 2023 08:11:41 &#43;0700</pubDate>
+  <author>Enoh Badrie</author>
+  <guid>http://enohbadri.github.io/posts/menghubungkan_komputer_hostasli_dengan_komputer_virtualubuntu_server/</guid>
+  <description><![CDATA[Menghubungkan Komputer Host dengan V-Box (Ubuntu Server)]]></description>
+</item>
+<item>
+  <title>Cara Install Virtual Box 7.0 di Ubuntu 20.04-LTS</title>
+  <link>http://enohbadri.github.io/posts/cara_install_virtual_box_di_ubuntu_20.04-lts/</link>
+  <pubDate>Fri, 10 Mar 2023 13:15:11 &#43;0700</pubDate>
+  <author>Enoh Badrie</author>
+  <guid>http://enohbadri.github.io/posts/cara_install_virtual_box_di_ubuntu_20.04-lts/</guid>
+  <description><![CDATA[Cara Install Virtual Box 7.0 di Ubuntu 20.04-LTS]]></description>
+</item>
+<item>
+  <title>Installasi Cisco Packet Tracer 8.2 di Ubuntu 20.04.5-LTS</title>
+  <link>http://enohbadri.github.io/posts/installasi-cisco-packet-tracer-di-ubuntu20.04.5-lts/</link>
+  <pubDate>Mon, 06 Mar 2023 10:00:46 &#43;0700</pubDate>
+  <author>Enoh Badrie</author>
+  <guid>http://enohbadri.github.io/posts/installasi-cisco-packet-tracer-di-ubuntu20.04.5-lts/</guid>
+  <description><![CDATA[Installasi Cisco Packet Tracer 8.2 di Ubuntu 20.04.5-LTS]]></description>
+</item>
+<item>
+  <title>Membangun SMS Gateway dengan Gammu</title>
+  <link>http://enohbadri.github.io/posts/membangun-_sms_gateway_dengan_gammu/</link>
+  <pubDate>Wed, 01 Mar 2023 15:07:40 &#43;0700</pubDate>
+  <author>Enoh Badrie</author>
+  <guid>http://enohbadri.github.io/posts/membangun-_sms_gateway_dengan_gammu/</guid>
+  <description><![CDATA[membangun SMS Gateway dengan Gammu]]></description>
+</item>
+<item>
+  <title>Cara Mengembalikan Grub Ubnuntu</title>
+  <link>http://enohbadri.github.io/posts/cara_mengembalikan_grub_ubuuntu/</link>
+  <pubDate>Fri, 19 Jan 2024 10:22:13 &#43;0700</pubDate>
+  <author>Enoh Badri</author>
+  <guid>http://enohbadri.github.io/posts/cara_mengembalikan_grub_ubuuntu/</guid>
+  <description><![CDATA[]]></description>
+</item>
+</channel>
+</rss>

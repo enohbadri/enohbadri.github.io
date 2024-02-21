@@ -1,0 +1,23 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>Terminal - Tag - enoh-badrie</title>
+    <link>http://enohbadri.github.io/tags/terminal/</link>
+    <description>Terminal - Tag - enoh-badrie</description>
+    <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 19 Jan 2024 10:22:13 &#43;0700</lastBuildDate><atom:link href="http://enohbadri.github.io/tags/terminal/" rel="self" type="application/rss+xml" /><item>
+  <title>Cara Install Neofetch</title>
+  <link>http://enohbadri.github.io/posts/install_neofetch/</link>
+  <pubDate>Mon, 04 Sep 2023 14:38:16 &#43;0700</pubDate>
+  <author>Enoh Badri</author>
+  <guid>http://enohbadri.github.io/posts/install_neofetch/</guid>
+  <description><![CDATA[]]></description>
+</item>
+<item>
+  <title>Cara Mengembalikan Grub Ubnuntu</title>
+  <link>http://enohbadri.github.io/posts/cara_mengembalikan_grub_ubuuntu/</link>
+  <pubDate>Fri, 19 Jan 2024 10:22:13 &#43;0700</pubDate>
+  <author>Enoh Badri</author>
+  <guid>http://enohbadri.github.io/posts/cara_mengembalikan_grub_ubuuntu/</guid>
+  <description><![CDATA[]]></description>
+</item>
+</channel>
+</rss>

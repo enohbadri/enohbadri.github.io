@@ -1,0 +1,71 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>Administrasi Infrastruktur Jaringan - Category - enoh-badrie</title>
+    <link>http://enohbadri.github.io/categories/administrasi-infrastruktur-jaringan/</link>
+    <description>Administrasi Infrastruktur Jaringan - Category - enoh-badrie</description>
+    <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 27 Mar 2023 11:28:46 &#43;0700</lastBuildDate><atom:link href="http://enohbadri.github.io/categories/administrasi-infrastruktur-jaringan/" rel="self" type="application/rss+xml" /><item>
+  <title>Subnetting Metode CIDR</title>
+  <link>http://enohbadri.github.io/posts/konsep_dasar_subnetting_dan_cara_menghitung_subnetting_metode_cidr/</link>
+  <pubDate>Mon, 27 Mar 2023 11:28:46 &#43;0700</pubDate>
+  <author>Enoh Badrie</author>
+  <guid>http://enohbadri.github.io/posts/konsep_dasar_subnetting_dan_cara_menghitung_subnetting_metode_cidr/</guid>
+  <description><![CDATA[Konsep Dasar Subnetting dan Cara Menghitung Subnetting Metode CIDR]]></description>
+</item>
+<item>
+  <title>VLAN Cisco Packet Tracer</title>
+  <link>http://enohbadri.github.io/posts/vlan_cisco_packet_tracer/</link>
+  <pubDate>Tue, 21 Mar 2023 08:53:27 &#43;0700</pubDate>
+  <author>Enoh Badrie</author>
+  <guid>http://enohbadri.github.io/posts/vlan_cisco_packet_tracer/</guid>
+  <description><![CDATA[VLAN Cisco Packet Tracer]]></description>
+</item>
+<item>
+  <title>Routing EIGRP Cisco Packet Tracer</title>
+  <link>http://enohbadri.github.io/posts/routing_eigrp_cisco_packet_tracer/</link>
+  <pubDate>Fri, 17 Mar 2023 07:54:35 &#43;0700</pubDate>
+  <author>Author</author>
+  <guid>http://enohbadri.github.io/posts/routing_eigrp_cisco_packet_tracer/</guid>
+  <description><![CDATA[Routing EIGRP Cisco Packet Tracer]]></description>
+</item>
+<item>
+  <title>VPN Sederhana Cisco Packet Tracer</title>
+  <link>http://enohbadri.github.io/posts/vpn_cisco_packet_tracer/</link>
+  <pubDate>Wed, 08 Mar 2023 09:29:17 &#43;0700</pubDate>
+  <author>Enoh Badrie</author>
+  <guid>http://enohbadri.github.io/posts/vpn_cisco_packet_tracer/</guid>
+  <description><![CDATA[VPN Sederhana Cisco Packet Tracer]]></description>
+</item>
+<item>
+  <title>Cara Cepat Menghitung VLSM</title>
+  <link>http://enohbadri.github.io/posts/cara_cepat_menghitung_vlsm/</link>
+  <pubDate>Tue, 28 Feb 2023 10:49:28 &#43;0700</pubDate>
+  <author>Enoh Badrie</author>
+  <guid>http://enohbadri.github.io/posts/cara_cepat_menghitung_vlsm/</guid>
+  <description><![CDATA[Cara Cepat Menghitung VLSM]]></description>
+</item>
+<item>
+  <title>OSI Layer</title>
+  <link>http://enohbadri.github.io/posts/pengertian_osi_layer/</link>
+  <pubDate>Tue, 28 Feb 2023 10:49:28 &#43;0700</pubDate>
+  <author>Enoh Badrie</author>
+  <guid>http://enohbadri.github.io/posts/pengertian_osi_layer/</guid>
+  <description><![CDATA[Pengertian OSI Layer]]></description>
+</item>
+<item>
+  <title>Static Routing-Cisco PT</title>
+  <link>http://enohbadri.github.io/posts/static_routing_cisco/</link>
+  <pubDate>Tue, 28 Feb 2023 10:49:28 &#43;0700</pubDate>
+  <author>Enoh Badrie</author>
+  <guid>http://enohbadri.github.io/posts/static_routing_cisco/</guid>
+  <description><![CDATA[Static Routing-Cisco PT]]></description>
+</item>
+<item>
+  <title>Topologi Jaringan Komputer</title>
+  <link>http://enohbadri.github.io/posts/jenis_topologi_jaringan_komputer/</link>
+  <pubDate>Tue, 28 Feb 2023 10:49:28 &#43;0700</pubDate>
+  <author>Enoh Badrie</author>
+  <guid>http://enohbadri.github.io/posts/jenis_topologi_jaringan_komputer/</guid>
+  <description><![CDATA[Topologi Jaringan Komputer]]></description>
+</item>
+</channel>
+</rss>
