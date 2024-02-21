@@ -10,7 +10,7 @@
 <meta name="description" content="Just share" /><meta name="keywords" content='draft' /><meta itemprop="name" content="Cara Hosting/Deploy Hugo di Github">
 <meta itemprop="description" content=""><meta itemprop="datePublished" content="2024-02-20T10:55:24+07:00" />
 <meta itemprop="dateModified" content="2024-02-20T10:55:24+07:00" />
-<meta itemprop="wordCount" content="98">
+<meta itemprop="wordCount" content="150">
 <meta itemprop="keywords" content="draft," /><meta property="og:title" content="Cara Hosting/Deploy Hugo di Github" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="article" />
@@ -30,7 +30,7 @@
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "http:\/\/enohbadri.github.io\/posts\/test_commit\/"
-    },"genre": "posts","keywords": "draft","wordcount":  98 ,
+    },"genre": "posts","keywords": "draft","wordcount":  150 ,
     "url": "http:\/\/enohbadri.github.io\/posts\/test_commit\/","datePublished": "2024-02-20T10:55:24+07:00","dateModified": "2024-02-20T10:55:24+07:00","publisher": {
       "@type": "Organization",
       "name": ""},"author": {
@@ -164,7 +164,7 @@
       <div class="post-meta-line"><span class="post-author"><span class="author"><i class="fa-solid fa-user-circle" aria-hidden="true"></i>
       </span></span>
           <span class="post-category">included in <a href="/categories/draft/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> draft</a></span></div>
-      <div class="post-meta-line"><span title=2024-02-20&#32;10:55:24><i class="fa-regular fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2024-02-20">2024-02-20</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw" aria-hidden="true"></i> 98 words</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw" aria-hidden="true"></i> One minute</span>&nbsp;<span id="busuanzi_container_page_pv" class="busuanzi_visitors comment-visitors" data-flag-title="Cara Hosting/Deploy Hugo di Github">
+      <div class="post-meta-line"><span title=2024-02-20&#32;10:55:24><i class="fa-regular fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2024-02-20">2024-02-20</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw" aria-hidden="true"></i> 150 words</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw" aria-hidden="true"></i> One minute</span>&nbsp;<span id="busuanzi_container_page_pv" class="busuanzi_visitors comment-visitors" data-flag-title="Cara Hosting/Deploy Hugo di Github">
             <i class="fa-regular fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_page_pv">-</span>&nbsp;views
           </span>&nbsp;</div>
     </div><div class="content" id="content"><p>Github memiliki layanan hosting Static Page yang bisa kita manfaatkan untuk hosting Hugo.</p>
@@ -177,7 +177,20 @@ Hosting ke cabang gh-pages
 Hosting ke halaman personal/organisasi
 Hosting Github dengan Continuous Integration (CI)
 </code></pre>
-<p>Kita akan mencoba cara yang nomer 3, karena menurut saya cukup gampang.</p></div><div class="post-footer" id="post-footer">
+<p>Kita akan mencoba cara yang nomer 3, karena menurut saya cukup gampang.
+Kita membutuhkan dua repositori untuk melakukan cara ini.</p>
+<pre><code>Repositori untuk menyimpan konten (opsional).
+Repositori untuk menyimpan hasil render.
+</code></pre>
+<p>Mari kita mulai…</p>
+<ol>
+<li>Membuat Repositori di Github</li>
+</ol>
+<p>Buatlah dua repositori di Github dengan nama seperti berikut ini.</p>
+<pre><code>blog (opsional)
+username.github.io atau organisasi.github.io
+</code></pre>
+<p>Saat membut repository, jangan centang “Initalize this repository with README.md” agar kosong.</p></div><div class="post-footer" id="post-footer">
   <div class="post-info">
     <div class="post-info-line">
       <div class="post-info-mod">
