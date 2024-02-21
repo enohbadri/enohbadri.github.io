@@ -10,7 +10,7 @@
 <meta name="description" content="Just share" /><meta name="keywords" content='draft' /><meta itemprop="name" content="Cara Hosting/Deploy Hugo di Github">
 <meta itemprop="description" content=""><meta itemprop="datePublished" content="2024-02-20T10:55:24+07:00" />
 <meta itemprop="dateModified" content="2024-02-20T10:55:24+07:00" />
-<meta itemprop="wordCount" content="704">
+<meta itemprop="wordCount" content="739">
 <meta itemprop="keywords" content="draft," /><meta property="og:title" content="Cara Hosting/Deploy Hugo di Github" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="article" />
@@ -30,7 +30,7 @@
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "http:\/\/enohbadri.github.io\/posts\/cara_hosting_deploy_hugo_di_github\/deploy_hugo_di_github\/"
-    },"genre": "posts","keywords": "draft","wordcount":  704 ,
+    },"genre": "posts","keywords": "draft","wordcount":  739 ,
     "url": "http:\/\/enohbadri.github.io\/posts\/cara_hosting_deploy_hugo_di_github\/deploy_hugo_di_github\/","datePublished": "2024-02-20T10:55:24+07:00","dateModified": "2024-02-20T10:55:24+07:00","publisher": {
       "@type": "Organization",
       "name": ""},"author": {
@@ -164,7 +164,7 @@
       <div class="post-meta-line"><span class="post-author"><span class="author"><i class="fa-solid fa-user-circle" aria-hidden="true"></i>
       </span></span>
           <span class="post-category">included in <a href="/categories/draft/"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> draft</a></span></div>
-      <div class="post-meta-line"><span title=2024-02-20&#32;10:55:24><i class="fa-regular fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2024-02-20">2024-02-20</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw" aria-hidden="true"></i> 704 words</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw" aria-hidden="true"></i> 4 minutes</span>&nbsp;<span id="busuanzi_container_page_pv" class="busuanzi_visitors comment-visitors" data-flag-title="Cara Hosting/Deploy Hugo di Github">
+      <div class="post-meta-line"><span title=2024-02-20&#32;10:55:24><i class="fa-regular fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2024-02-20">2024-02-20</time></span>&nbsp;<span><i class="fa-solid fa-pencil-alt fa-fw" aria-hidden="true"></i> 739 words</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw" aria-hidden="true"></i> 4 minutes</span>&nbsp;<span id="busuanzi_container_page_pv" class="busuanzi_visitors comment-visitors" data-flag-title="Cara Hosting/Deploy Hugo di Github">
             <i class="fa-regular fa-eye fa-fw" aria-hidden="true"></i>&nbsp;<span id="busuanzi_value_page_pv">-</span>&nbsp;views
           </span>&nbsp;</div>
     </div><div class="content" id="content"><p>Github memiliki layanan hosting Static Page yang bisa kita manfaatkan untuk hosting Hugo.</p>
@@ -298,7 +298,11 @@ cd ..
 <p>Sebagai contoh, kita simpan dengan dengan deploy.sh.</p>
 <p>Setelah itu, berikan hak akses eksekusi untuk skrip ini.</p>
 <pre tabindex="0"><code>chmod +x deploy.sh
-</code></pre><p>Nah, kita bisa melakukan deploy dengan skrip tersebut. Setiap kali kita ingin meng-update blog, kita cukup menjalankan skrip itu saja.</p></div><div class="post-footer" id="post-footer">
+</code></pre><p>Nah, kita bisa melakukan deploy dengan skrip tersebut. Setiap kali kita ingin meng-update blog, kita cukup menjalankan skrip itu saja.</p>
+<p>Kita juga bisa menambahkan pesan commit-nya:</p>
+<pre tabindex="0"><code>./deploy.sh &#34;tes deploy web hugo ke github&#34;
+</code></pre><p>Tunggulah beberapa saat, website kita akan segera mengudara di username.github.io.</p>
+<p>Cara ini saya gunakan di Petani Kode dan juga di blog saya:</p></div><div class="post-footer" id="post-footer">
   <div class="post-info">
     <div class="post-info-line">
       <div class="post-info-mod">
