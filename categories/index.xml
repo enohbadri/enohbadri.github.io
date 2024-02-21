@@ -3,15 +3,7 @@
     <title>Categories - Category - enoh-badrie</title>
     <link>http://enohbadri.github.io/categories/</link>
     <description>Categories - Category - enoh-badrie</description>
-    <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 20 Feb 2024 10:55:24 &#43;0700</lastBuildDate><atom:link href="http://enohbadri.github.io/categories/" rel="self" type="application/rss+xml" /><item>
-  <title>draft</title>
-  <link>http://enohbadri.github.io/categories/draft/</link>
-  <pubDate>Tue, 20 Feb 2024 10:55:24 &#43;0700</pubDate>
-  <author>Author</author>
-  <guid>http://enohbadri.github.io/categories/draft/</guid>
-  <description><![CDATA[]]></description>
-</item>
-<item>
+    <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 19 Jan 2024 10:22:13 &#43;0700</lastBuildDate><atom:link href="http://enohbadri.github.io/categories/" rel="self" type="application/rss+xml" /><item>
   <title>Linux</title>
   <link>http://enohbadri.github.io/categories/linux/</link>
   <pubDate>Fri, 19 Jan 2024 10:22:13 &#43;0700</pubDate>
@@ -81,6 +73,14 @@
   <pubDate>Mon, 20 Feb 2023 10:49:28 &#43;0700</pubDate>
   <author>Author</author>
   <guid>http://enohbadri.github.io/categories/jaringan-berbasis-luas/</guid>
+  <description><![CDATA[]]></description>
+</item>
+<item>
+  <title>Cybercrime</title>
+  <link>http://enohbadri.github.io/categories/cybercrime/</link>
+  <pubDate>Wed, 01 Feb 2023 10:49:28 &#43;0700</pubDate>
+  <author>Author</author>
+  <guid>http://enohbadri.github.io/categories/cybercrime/</guid>
   <description><![CDATA[]]></description>
 </item>
 </channel>
