@@ -262,10 +262,10 @@ Buka menu IP &gt; DHCP Client, tambah baru dengan klik icon “+”. Pilih inter
 <p><img loading="lazy" src="dhcp-client.png" srcset="/posts/pembahasan_soal_ukk_tkj_paket-4_2021/dhcp-client.png, dhcp-client.png 1.5x, /posts/pembahasan_soal_ukk_tkj_paket-4_2021/dhcp-client.png 2x" sizes="auto" data-title="UKK-TKJ-Paket-4 2021" data-alt="UKK-TKJ-Paket-4 2021" width="603" height="247" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></p>
 <p>Sehingga ether1 mendapat IP secara otomatis.</p>
 <p><img loading="lazy" src="bound.png" srcset="/posts/pembahasan_soal_ukk_tkj_paket-4_2021/bound.png, bound.png 1.5x, /posts/pembahasan_soal_ukk_tkj_paket-4_2021/bound.png 2x" sizes="auto" data-title="UKK-TKJ-Paket-4 2021" data-alt="UKK-TKJ-Paket-4 2021" width="470" height="199" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></p>
-<p>Selanjutnya adalah konfigurasi IP address untuk ether2 (LAN) dan ether3 (WLAN), ketentuanya:
-a. ether2 = 192.168.100.1/25
-b. ether3 = 192.168.200.1/24
-Caranya buka menu IP &gt; Addresses, tambah baru dengan klik icon “+”. Masukan ip address dan
+<p>Selanjutnya adalah konfigurasi IP address untuk ether2 (LAN) dan ether3 (WLAN), ketentuanya:</p>
+<p>a. ether2 = 192.168.100.1/25
+b. ether3 = 192.168.200.1/24</p>
+<p>Caranya buka menu IP &gt; Addresses, tambah baru dengan klik icon “+”. Masukan ip address dan
 interface sesuai ketentuan di soal.</p>
 <p>Sekarang ether1-3 sudah dikonfigurasi alamat IP.</p>
 <p><img loading="lazy" src="eth1-2-3.png" srcset="/posts/pembahasan_soal_ukk_tkj_paket-4_2021/eth1-2-3.png, eth1-2-3.png 1.5x, /posts/pembahasan_soal_ukk_tkj_paket-4_2021/eth1-2-3.png 2x" sizes="auto" data-title="UKK-TKJ-Paket-4 2021" data-alt="UKK-TKJ-Paket-4 2021" width="389" height="131" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></p>
@@ -275,8 +275,8 @@ Terminal pada winbox mikrotik.</p>
 <p>Jika masih gagal, cek default gateway (buka IP &gt; Route) dan DNS server (buka IP &gt; DNS).</p>
 <p><img loading="lazy" src="ip-dns.png" srcset="/posts/pembahasan_soal_ukk_tkj_paket-4_2021/ip-dns.png, ip-dns.png 1.5x, /posts/pembahasan_soal_ukk_tkj_paket-4_2021/ip-dns.png 2x" sizes="auto" data-title="UKK-TKJ-Paket-4 2021" data-alt="UKK-TKJ-Paket-4 2021" width="653" height="180" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/></p>
 <p>Jika Router sudah terhubung ke internet, selanjutnya agar client bisa terhubung ke internet juga nantinya, kita perlu setting NAT Masquarede.
-Buka IP &gt; Firewall &gt; NAT, tambah rule baru dengan parameter yang diisi sebagai berikut.
-a. Chain: scrcnat
+Buka IP &gt; Firewall &gt; NAT, tambah rule baru dengan parameter yang diisi sebagai berikut.</p>
+<p>a. Chain: scrcnat
 b. Out. Inteface: ether1 (interface yang terhubung ke arah internet)
 c. Action: masquerade</p>
 <p><img loading="lazy" src="nat.png" srcset="/posts/pembahasan_soal_ukk_tkj_paket-4_2021/nat.png, nat.png 1.5x, /posts/pembahasan_soal_ukk_tkj_paket-4_2021/nat.png 2x" sizes="auto" data-title="UKK-TKJ-Paket-4 2021" data-alt="UKK-TKJ-Paket-4 2021" width="643" height="203" style="background: url(/svg/loading.min.svg) no-repeat center;" onload="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}this.dataset.lazyloaded='';" onerror="this.title=this.dataset.title;this.alt=this.dataset.alt;for(const a of ['style','data-title','data-alt','onerror','onload']){this.removeAttribute(a);}"/>
