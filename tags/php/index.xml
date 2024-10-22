@@ -1,8 +1,8 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
-    <title>PHP - Tag - Enoh-Badrie</title>
+    <title>PHP - Tag - </title>
     <link>http://enohbadri.github.io/tags/php/</link>
-    <description>PHP - Tag - Enoh-Badrie</description>
+    <description>PHP - Tag - </description>
     <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 15 May 2023 13:25:31 &#43;0700</lastBuildDate><atom:link href="http://enohbadri.github.io/tags/php/" rel="self" type="application/rss+xml" /><item>
   <title>Membuat Website CRUD Sederhana</title>
   <link>http://enohbadri.github.io/posts/membuat_database_crud_sederhana/</link>
