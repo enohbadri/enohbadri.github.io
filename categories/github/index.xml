@@ -1,8 +1,8 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
-    <title>Github - Category - enoh-badrie</title>
+    <title>Github - Category - Enoh Badrie</title>
     <link>http://enohbadri.github.io/categories/github/</link>
-    <description>Github - Category - enoh-badrie</description>
+    <description>Github - Category - Enoh Badrie</description>
     <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 25 Sep 2024 13:07:10 &#43;0700</lastBuildDate><atom:link href="http://enohbadri.github.io/categories/github/" rel="self" type="application/rss+xml" /><item>
   <title>Cara Mengatasi Git Push Rejected</title>
   <link>http://enohbadri.github.io/posts/git_rejected/</link>

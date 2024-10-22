@@ -1,8 +1,8 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
-    <title>Linux - Tag - enoh-badrie</title>
+    <title>Linux - Tag - Enoh Badrie</title>
     <link>http://enohbadri.github.io/tags/linux/</link>
-    <description>Linux - Tag - enoh-badrie</description>
+    <description>Linux - Tag - Enoh Badrie</description>
     <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 10 Mar 2023 08:54:03 &#43;0700</lastBuildDate><atom:link href="http://enohbadri.github.io/tags/linux/" rel="self" type="application/rss+xml" /><item>
   <title>Installasi Ubuntu Server 13.04 di Virtual Box</title>
   <link>http://enohbadri.github.io/posts/installasi_ubuntu_server_13.04_di_virtual_box/</link>
