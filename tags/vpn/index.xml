@@ -1,8 +1,8 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
-    <title>VPN - Tag - Enoh Badrie</title>
+    <title>VPN - Tag - Enoh-Badrie</title>
     <link>http://enohbadri.github.io/tags/vpn/</link>
-    <description>VPN - Tag - Enoh Badrie</description>
+    <description>VPN - Tag - Enoh-Badrie</description>
     <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 08 Mar 2023 09:29:17 &#43;0700</lastBuildDate><atom:link href="http://enohbadri.github.io/tags/vpn/" rel="self" type="application/rss+xml" /><item>
   <title>VPN Sederhana Cisco Packet Tracer</title>
   <link>http://enohbadri.github.io/posts/vpn_cisco_packet_tracer/</link>

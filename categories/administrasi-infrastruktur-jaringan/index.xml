@@ -1,8 +1,8 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
-    <title>Administrasi Infrastruktur Jaringan - Category - Enoh Badrie</title>
+    <title>Administrasi Infrastruktur Jaringan - Category - Enoh-Badrie</title>
     <link>http://enohbadri.github.io/categories/administrasi-infrastruktur-jaringan/</link>
-    <description>Administrasi Infrastruktur Jaringan - Category - Enoh Badrie</description>
+    <description>Administrasi Infrastruktur Jaringan - Category - Enoh-Badrie</description>
     <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 27 Mar 2023 11:28:46 &#43;0700</lastBuildDate><atom:link href="http://enohbadri.github.io/categories/administrasi-infrastruktur-jaringan/" rel="self" type="application/rss+xml" /><item>
   <title>Subnetting Metode CIDR</title>
   <link>http://enohbadri.github.io/posts/konsep_dasar_subnetting_dan_cara_menghitung_subnetting_metode_cidr/</link>

@@ -1,8 +1,8 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
-    <title>draft - Tag - Enoh Badrie</title>
+    <title>draft - Tag - Enoh-Badrie</title>
     <link>http://enohbadri.github.io/tags/draft/</link>
-    <description>draft - Tag - Enoh Badrie</description>
+    <description>draft - Tag - Enoh-Badrie</description>
     <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 20 Feb 2024 10:55:24 &#43;0700</lastBuildDate><atom:link href="http://enohbadri.github.io/tags/draft/" rel="self" type="application/rss+xml" /><item>
   <title>Cara Hosting/Deploy Hugo di Github</title>
   <link>http://enohbadri.github.io/posts/cara_hosting_deploy_hugo_di_github/deploy_hugo_di_github/</link>

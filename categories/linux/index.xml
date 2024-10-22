@@ -1,8 +1,8 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
-    <title>Linux - Category - Enoh Badrie</title>
+    <title>Linux - Category - Enoh-Badrie</title>
     <link>http://enohbadri.github.io/categories/linux/</link>
-    <description>Linux - Category - Enoh Badrie</description>
+    <description>Linux - Category - Enoh-Badrie</description>
     <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 19 Jan 2024 10:22:13 &#43;0700</lastBuildDate><atom:link href="http://enohbadri.github.io/categories/linux/" rel="self" type="application/rss+xml" /><item>
   <title>Cara Install Neofetch</title>
   <link>http://enohbadri.github.io/posts/install_neofetch/</link>

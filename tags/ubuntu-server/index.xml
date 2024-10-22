@@ -1,8 +1,8 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
-    <title>Ubuntu Server - Tag - Enoh Badrie</title>
+    <title>Ubuntu Server - Tag - Enoh-Badrie</title>
     <link>http://enohbadri.github.io/tags/ubuntu-server/</link>
-    <description>Ubuntu Server - Tag - Enoh Badrie</description>
+    <description>Ubuntu Server - Tag - Enoh-Badrie</description>
     <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 13 Mar 2023 08:11:41 &#43;0700</lastBuildDate><atom:link href="http://enohbadri.github.io/tags/ubuntu-server/" rel="self" type="application/rss+xml" /><item>
   <title>Menghubungkan Komputer Host dengan V-Box (Ubuntu Server)</title>
   <link>http://enohbadri.github.io/posts/menghubungkan_komputer_hostasli_dengan_komputer_virtualubuntu_server/</link>

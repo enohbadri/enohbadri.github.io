@@ -1,8 +1,8 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
-    <title>Routing - Tag - Enoh Badrie</title>
+    <title>Routing - Tag - Enoh-Badrie</title>
     <link>http://enohbadri.github.io/tags/routing/</link>
-    <description>Routing - Tag - Enoh Badrie</description>
+    <description>Routing - Tag - Enoh-Badrie</description>
     <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 17 Mar 2023 07:54:35 &#43;0700</lastBuildDate><atom:link href="http://enohbadri.github.io/tags/routing/" rel="self" type="application/rss+xml" /><item>
   <title>Routing EIGRP Cisco Packet Tracer</title>
   <link>http://enohbadri.github.io/posts/routing_eigrp_cisco_packet_tracer/</link>

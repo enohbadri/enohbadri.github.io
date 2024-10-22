@@ -1,8 +1,8 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
-    <title>Apache - Tag - Enoh Badrie</title>
+    <title>Apache - Tag - Enoh-Badrie</title>
     <link>http://enohbadri.github.io/tags/apache/</link>
-    <description>Apache - Tag - Enoh Badrie</description>
+    <description>Apache - Tag - Enoh-Badrie</description>
     <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 16 Mar 2023 08:54:49 &#43;0700</lastBuildDate><atom:link href="http://enohbadri.github.io/tags/apache/" rel="self" type="application/rss+xml" /><item>
   <title>Web Server Applications</title>
   <link>http://enohbadri.github.io/posts/web_server_applications/</link>

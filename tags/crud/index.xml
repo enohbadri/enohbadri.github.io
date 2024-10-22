@@ -1,8 +1,8 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
-    <title>CRUD - Tag - Enoh Badrie</title>
+    <title>CRUD - Tag - Enoh-Badrie</title>
     <link>http://enohbadri.github.io/tags/crud/</link>
-    <description>CRUD - Tag - Enoh Badrie</description>
+    <description>CRUD - Tag - Enoh-Badrie</description>
     <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 15 May 2023 13:25:31 &#43;0700</lastBuildDate><atom:link href="http://enohbadri.github.io/tags/crud/" rel="self" type="application/rss+xml" /><item>
   <title>Membuat Website CRUD Sederhana</title>
   <link>http://enohbadri.github.io/posts/membuat_database_crud_sederhana/</link>
