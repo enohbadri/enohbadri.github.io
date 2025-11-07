@@ -30,26 +30,26 @@
 
   .clock-container {
     width: 100%;
-    max-width: 500px;
+    max-width: 400px; /* lebih kecil dari versi sebelumnya */
     border: 1px solid var(--border-color);
     border-radius: 8px;
-    padding: 0.8em 1.2em;
+    padding: 0.6em 1em;
     text-align: center;
     box-sizing: border-box;
     background: var(--bg-led);
-    box-shadow: 0 0 15px rgba(0,255,102,0.2);
+    box-shadow: 0 0 12px rgba(0,255,102,0.2);
   }
 
   .city {
-    font-size: clamp(1rem, 2.5vw, 1.3rem);
+    font-size: clamp(0.9rem, 2vw, 1.1rem);
     font-weight: 600;
     margin-bottom: 0.3em;
     color: #00ff88;
-    letter-spacing: 1px;
+    letter-spacing: 0.8px;
   }
 
   .clock {
-    font-size: clamp(2rem, 7vw, 3.5rem);
+    font-size: clamp(1.5rem, 5vw, 2.5rem); /* lebih kecil */
     font-weight: 700;
     letter-spacing: 2px;
     color: var(--digit-color);
@@ -57,17 +57,17 @@
   }
 
   .date {
-    font-size: clamp(0.9rem, 2.2vw, 1rem);
+    font-size: clamp(0.8rem, 1.8vw, 0.95rem);
     margin-top: 0.3em;
     font-weight: 500;
     color: #aaffcc;
-    text-shadow: 0 0 5px rgba(0,255,102,0.2);
+    text-shadow: 0 0 4px rgba(0,255,102,0.2);
   }
 
   @media (max-width: 480px) {
     .clock-container {
       width: 90%;
-      padding: 1em;
+      padding: 0.8em;
     }
   }
 </style>
@@ -96,7 +96,7 @@
     setInterval(updateClock, 1000);
     updateClock();
 
-    // Kirim tinggi otomatis ke parent (Google Sites iframe)
+    // Kirim tinggi otomatis ke Google Sites iframe
     function sendHeight() {
       const h = document.body.scrollHeight;
       parent.postMessage({ type: "setIframeHeight", height: h }, "*");
