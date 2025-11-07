@@ -24,8 +24,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid #004aad; /* Border tipis */
+    border: 1px solid rgba(0,0,0,0.2); /* Border tipis netral */
     border-radius: 6px;
+    background: transparent; /* Hilangkan warna */
   }
   .marquee-track {
     display: inline-flex;
@@ -41,6 +42,7 @@
     0% { transform: translateX(0); }
     100% { transform: translateX(-50%); }
   }
+
   .marquee-track::after {
     content: attr(data-text);
     padding-left: 3rem;
