@@ -30,44 +30,44 @@
 
   .clock-container {
     width: 100%;
-    max-width: 400px; /* lebih kecil dari versi sebelumnya */
+    max-width: 280px; /* diperkecil dari 400px */
     border: 1px solid var(--border-color);
-    border-radius: 8px;
-    padding: 0.6em 1em;
+    border-radius: 6px;
+    padding: 0.4em 0.8em;
     text-align: center;
     box-sizing: border-box;
     background: var(--bg-led);
-    box-shadow: 0 0 12px rgba(0,255,102,0.2);
+    box-shadow: 0 0 10px rgba(0,255,102,0.2);
   }
 
   .city {
-    font-size: clamp(0.9rem, 2vw, 1.1rem);
+    font-size: clamp(0.75rem, 1.8vw, 1rem);
     font-weight: 600;
-    margin-bottom: 0.3em;
+    margin-bottom: 0.2em;
     color: #00ff88;
-    letter-spacing: 0.8px;
+    letter-spacing: 0.6px;
   }
 
   .clock {
-    font-size: clamp(1.5rem, 5vw, 2.5rem); /* lebih kecil */
+    font-size: clamp(1.2rem, 4vw, 2rem); /* lebih kecil lagi */
     font-weight: 700;
-    letter-spacing: 2px;
+    letter-spacing: 1.5px;
     color: var(--digit-color);
-    text-shadow: 0 0 8px var(--digit-color);
+    text-shadow: 0 0 6px var(--digit-color);
   }
 
   .date {
-    font-size: clamp(0.8rem, 1.8vw, 0.95rem);
-    margin-top: 0.3em;
+    font-size: clamp(0.7rem, 1.6vw, 0.85rem);
+    margin-top: 0.2em;
     font-weight: 500;
     color: #aaffcc;
-    text-shadow: 0 0 4px rgba(0,255,102,0.2);
+    text-shadow: 0 0 3px rgba(0,255,102,0.2);
   }
 
   @media (max-width: 480px) {
     .clock-container {
-      width: 90%;
-      padding: 0.8em;
+      width: 85%;
+      padding: 0.6em;
     }
   }
 </style>
