@@ -6,13 +6,13 @@
 <title>Marquee SMAN 1 Telagasari</title>
 <style>
   :root {
-    --speed: 22s; /* bisa kamu percepat atau perlambat */
+    --speed: 22s;
   }
   body {
     margin: 0;
     padding: 0;
-    overflow: hidden;
     font-family: 'Poppins', sans-serif;
+    background: transparent;
   }
   .marquee-container {
     width: 100%;
@@ -21,52 +21,60 @@
     font-weight: 600;
     padding: 0.6em 0;
     box-sizing: border-box;
+    overflow: hidden;
     display: flex;
     align-items: center;
-    overflow: hidden;
   }
   .marquee-track {
-    display: flex;
+    display: inline-flex;
     white-space: nowrap;
     animation: scrollText var(--speed) linear infinite;
   }
   .marquee-text {
-    font-size: clamp(0.8rem, 2.5vw, 1.1rem);
-    padding-right: 2rem;
+    font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+    padding-right: 3rem;
   }
 
   @keyframes scrollText {
     0% { transform: translateX(0); }
     100% { transform: translateX(-50%); }
   }
-
-  /* Buat teks jadi dua kali biar looping mulus */
   .marquee-track::after {
     content: attr(data-text);
-    padding-left: 2rem;
+    padding-left: 3rem;
   }
 
-  /* Responsif tambahan */
   @media (max-width: 480px) {
     .marquee-container {
-      padding: 0.5em 0;
+      padding: 0.7em 0;
     }
     .marquee-text {
-      font-size: 0.85rem;
+      font-size: 0.95rem;
     }
     :root {
-      --speed: 18s; /* lebih cepat sedikit di HP */
+      --speed: 20s;
     }
   }
 </style>
 </head>
 <body>
-  <div class="marquee-container">
-    <div class="marquee-track" data-text="🌟 Selamat datang di situs resmi SMAN 1 Telagasari — Sekolah Unggul, Berkarakter, dan Berprestasi — 📢 Informasi terbaru: Penerimaan Peserta Didik Baru Tahun 2025 segera dibuka!">
+  <div class="marquee-container" id="marquee">
+    <div class="marquee-track" 
+         data-text="🌟 Selamat datang di situs resmi SMAN 1 Telagasari — Sekolah Unggul, Berkarakter, dan Berprestasi — 📢 Informasi terbaru: Penerimaan Peserta Didik Baru Tahun 2025 segera dibuka!">
       <div class="marquee-text">
         🌟 Selamat datang di situs resmi SMAN 1 Telagasari — Sekolah Unggul, Berkarakter, dan Berprestasi — 📢 Informasi terbaru: Penerimaan Peserta Didik Baru Tahun 2025 segera dibuka!
       </div>
     </div>
   </div>
+
+  <script>
+    // Kirim tinggi konten ke parent (Google Sites iframe)
+    function sendHeight() {
+      const h = document.body.scrollHeight;
+      parent.postMessage({ type: "setIframeHeight", height: h }, "*");
+    }
+    window.onload = sendHeight;
+    window.onresize = sendHeight;
+  </script>
 </body>
 </html>
