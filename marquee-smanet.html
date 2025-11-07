@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Marquee SMAN 1 Telagasari</title>
+<style>
+  body {
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    font-family:'Poppins',sans-serif;
+  }
+  .marquee-container {
+    width:100%;
+    background:linear-gradient(90deg,#004aad 0%,#b0bec5 100%);
+    color:white;
+    font-weight:600;
+    padding:12px 0;
+    box-sizing:border-box;
+  }
+  .marquee-text {
+    display:inline-block;
+    white-space:nowrap;
+    padding-left:100%;
+    animation:scrollText 18s linear infinite;
+    font-size:clamp(0.8em,2.5vw,1.1em);
+  }
+  @keyframes scrollText {
+    0% { transform:translateX(0); }
+    100% { transform:translateX(-100%); }
+  }
+</style>
+</head>
+<body>
+  <div class="marquee-container">
+    <div class="marquee-text">
+      🌟 Selamat datang di situs resmi SMAN 1 Telagasari — Sekolah Unggul, Berkarakter, dan Berprestasi — 📢 Informasi terbaru: Penerimaan Peserta Didik Baru Tahun 2025 segera dibuka!
+    </div>
+  </div>
+</body>
+</html>
