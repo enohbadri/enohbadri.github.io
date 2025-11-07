@@ -9,51 +9,67 @@
 <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
 
 <style>
+  :root {
+    --digit-color: #00ff66;
+    --border-color: rgba(0,0,0,0.2);
+    --bg1: #f0f0f0;
+    --bg2: #cfcfcf;
+  }
+
   body {
     margin: 0;
     padding: 0;
     font-family: 'Share Tech Mono', monospace;
-    background: transparent;
+    background: linear-gradient(135deg, var(--bg1), var(--bg2));
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100%;
-    color: #00FF66; /* warna hijau LED */
+    color: var(--digit-color);
   }
 
   .clock-container {
-    border: 1px solid rgba(0,255,102,0.3);
+    width: 100%;
+    max-width: 500px;
+    border: 1px solid var(--border-color);
     border-radius: 8px;
     padding: 0.8em 1.2em;
     text-align: center;
     box-sizing: border-box;
-    background: rgba(0,0,0,0.85); /* warna latar seperti layar LED */
-    box-shadow: 0 0 15px rgba(0,255,102,0.3);
+    background: transparent;
+    box-shadow: 0 0 6px rgba(0,0,0,0.08);
   }
 
   .city {
     font-size: clamp(1rem, 2.5vw, 1.3rem);
     font-weight: 600;
     margin-bottom: 0.3em;
-    color: #00ff88;
+    color: #004aad;
     letter-spacing: 1px;
   }
 
   .clock {
-    font-size: clamp(2rem, 6vw, 3.2rem);
+    font-size: clamp(2rem, 7vw, 3.5rem);
     font-weight: 700;
     letter-spacing: 2px;
-    color: #00FF66;
-    text-shadow: 0 0 8px #00FF66;
+    color: var(--digit-color);
+    text-shadow: 0 0 8px rgba(0,255,102,0.6);
   }
 
   .date {
     font-size: clamp(0.9rem, 2.2vw, 1rem);
     margin-top: 0.3em;
     font-weight: 500;
-    color: #aaffcc;
-    text-shadow: 0 0 5px rgba(0,255,102,0.2);
+    color: #333;
+    text-shadow: 0 0 4px rgba(0,0,0,0.05);
+  }
+
+  @media (max-width: 480px) {
+    .clock-container {
+      width: 90%;
+      padding: 1em;
+    }
   }
 </style>
 </head>
@@ -67,9 +83,13 @@
   <script>
     function updateClock() {
       const now = new Date();
-      const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
       const time = now.toLocaleTimeString('id-ID', { hour12: false });
-      const date = now.toLocaleDateString('id-ID', options);
+      const date = now.toLocaleDateString('id-ID', {
+        weekday: 'long',
+        day: 'numeric',
+        month: 'long',
+        year: 'numeric'
+      });
       document.getElementById('clock').textContent = time;
       document.getElementById('date').textContent = date;
     }
@@ -77,7 +97,7 @@
     setInterval(updateClock, 1000);
     updateClock();
 
-    // Sesuaikan tinggi otomatis di Google Sites iframe
+    // Kirim tinggi otomatis ke Google Sites iframe
     function sendHeight() {
       const h = document.body.scrollHeight;
       parent.postMessage({ type: "setIframeHeight", height: h }, "*");
