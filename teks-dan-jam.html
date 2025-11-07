@@ -1,1 +1,159 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Header Info SMAN 1 Telagasari</title>
+
+<!-- Font digital -->
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --led-green: #00ff66;
+    --led-glow: 0 0 8px #00ff66;
+    --speed: 22s;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    font-family: 'Share Tech Mono', monospace;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+
+  .header-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 98%;
+    max-width: 900px;
+    border: 1px solid rgba(0,255,102,0.3);
+    border-radius: 8px;
+    background: #000;
+    box-shadow: 0 0 10px rgba(0,255,102,0.15);
+    padding: 0.3em 0.6em;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  /* === MARQUEE === */
+  .marquee-container {
+    flex: 1;
+    overflow: hidden;
+    white-space: nowrap;
+    color: var(--led-green);
+    display: flex;
+    align-items: center;
+  }
+
+  .marquee-track {
+    display: inline-flex;
+    animation: scrollText var(--speed) linear infinite;
+  }
+
+  .marquee-text {
+    font-size: clamp(0.75rem, 2.2vw, 0.95rem);
+    padding-right: 3rem;
+    text-shadow: var(--led-glow);
+  }
+
+  .marquee-track::after {
+    content: attr(data-text);
+    padding-left: 3rem;
+  }
+
+  @keyframes scrollText {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  /* === CLOCK === */
+  .clock-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-left: 0.8em;
+    border-left: 1px solid rgba(0,255,102,0.3);
+  }
+
+  .city {
+    font-size: clamp(0.8rem, 2vw, 1rem);
+    font-weight: 600;
+    color: #00ff88;
+    margin-bottom: 0.1em;
+  }
+
+  .clock {
+    font-size: clamp(1.2rem, 4vw, 1.7rem);
+    color: var(--led-green);
+    text-shadow: var(--led-glow);
+    font-weight: 700;
+  }
+
+  .date {
+    font-size: clamp(0.7rem, 1.8vw, 0.85rem);
+    color: #aaffcc;
+    text-shadow: 0 0 4px rgba(0,255,102,0.2);
+  }
+
+  /* Responsif */
+  @media (max-width: 480px) {
+    .header-bar {
+      flex-direction: column;
+      align-items: center;
+      padding: 0.5em;
+    }
+    .clock-container {
+      border-left: none;
+      border-top: 1px solid rgba(0,255,102,0.3);
+      align-items: center;
+      padding-left: 0;
+      margin-top: 0.4em;
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="header-bar">
+    <div class="marquee-container">
+      <div class="marquee-track" data-text="🌟 Selamat datang di situs resmi SMAN 1 Telagasari — Sekolah Unggul, Berkarakter, dan Berprestasi — 📢 Informasi terbaru: Penerimaan Peserta Didik Baru Tahun 2025 segera dibuka!">
+        <div class="marquee-text">
+          🌟 Selamat datang di situs resmi SMAN 1 Telagasari — Sekolah Unggul, Berkarakter, dan Berprestasi — 📢 Informasi terbaru: Penerimaan Peserta Didik Baru Tahun 2025 segera dibuka!
+        </div>
+      </div>
+    </div>
+
+    <div class="clock-container">
+      <div class="city">🕒 Karawang</div>
+      <div class="clock" id="clock">00:00:00</div>
+      <div class="date" id="date">Senin, 1 Januari 2025</div>
+    </div>
+  </div>
+
+  <script>
+    // Update waktu real-time
+    function updateClock() {
+      const now = new Date();
+      const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+      document.getElementById('clock').textContent = now.toLocaleTimeString('id-ID', { hour12: false });
+      document.getElementById('date').textContent = now.toLocaleDateString('id-ID', options);
+    }
+    setInterval(updateClock, 1000);
+    updateClock();
+
+    // Penyesuaian tinggi otomatis untuk iframe Google Sites
+    function sendHeight() {
+      const h = document.body.scrollHeight;
+      parent.postMessage({ type: "setIframeHeight", height: h }, "*");
+    }
+    window.onload = sendHeight;
+    window.onresize = sendHeight;
+  </script>
+</body>
+</html>
 
