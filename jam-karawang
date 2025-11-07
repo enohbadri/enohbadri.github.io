@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jam Digital Karawang</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: #004aad;
+  }
+  .clock-container {
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 8px;
+    padding: 0.8em 1.2em;
+    text-align: center;
+    box-sizing: border-box;
+    background: transparent;
+  }
+  .city {
+    font-size: clamp(1rem, 2.5vw, 1.3rem);
+    font-weight: 600;
+    margin-bottom: 0.2em;
+  }
+  .clock {
+    font-size: clamp(1.4rem, 5vw, 2.2rem);
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+  .date {
+    font-size: clamp(0.9rem, 2.2vw, 1rem);
+    margin-top: 0.3em;
+    font-weight: 500;
+  }
+</style>
+</head>
+<body>
+  <div class="clock-container">
+    <div class="city">🕒 Karawang</div>
+    <div class="clock" id="clock">00:00:00</div>
+    <div class="date" id="date">Senin, 1 Januari 2025</div>
+  </div>
+
+  <script>
+    function updateClock() {
+      const now = new Date();
+      const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+      const time = now.toLocaleTimeString('id-ID', { hour12: false });
+      const date = now.toLocaleDateString('id-ID', options);
+      document.getElementById('clock').textContent = time;
+      document.getElementById('date').textContent = date;
+    }
+
+    setInterval(updateClock, 1000);
+    updateClock();
+
+    // Kirim tinggi otomatis ke parent (Google Sites)
+    function sendHeight() {
+      const h = document.body.scrollHeight;
+      parent.postMessage({ type: "setIframeHeight", height: h }, "*");
+    }
+    window.onload = sendHeight;
+    window.onresize = sendHeight;
+  </script>
+</body>
+</html>
