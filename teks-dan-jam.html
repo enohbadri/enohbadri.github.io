@@ -5,73 +5,76 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Header Info SMAN 1 Telagasari</title>
 
-<!-- Font digital -->
 <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
 
 <style>
   :root {
     --led-green: #00ff66;
-    --led-glow: 0 0 8px #00ff66;
-    --speed: 20s;
+    --led-glow: 0 0 6px #00ff66;
   }
 
   html, body {
     margin: 0;
     padding: 0;
     background: transparent;
-    overflow: hidden; /* cegah scrollbar */
+    height: 100%;
     font-family: 'Share Tech Mono', monospace;
+    overflow: hidden;
   }
 
   body {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
   }
 
   .header-bar {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
+    background: #000;
+    border: 1px solid rgba(0,255,102,0.25);
+    border-radius: 8px;
+    padding: 0.5rem 0.8rem;
+    box-shadow: 0 0 6px rgba(0,255,102,0.15);
     width: 100%;
     max-width: 1200px;
-    border: 1px solid rgba(0,255,102,0.3);
-    border-radius: 8px;
-    background: #000;
-    box-shadow: 0 0 10px rgba(0,255,102,0.15);
-    padding: 0.4em 0.8em;
     box-sizing: border-box;
     overflow: hidden;
+    line-height: 1.2;
   }
 
   /* === MARQUEE === */
   .marquee-container {
     flex: 1;
     overflow: hidden;
-    white-space: nowrap;
     position: relative;
-    color: var(--led-green);
+    white-space: nowrap;
     display: flex;
     align-items: center;
-    min-height: 1.8em;
+    height: auto;
+    mask-image: linear-gradient(to right, transparent 0%, black 6%, black 94%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 6%, black 94%, transparent 100%);
   }
 
   .marquee-track {
     display: inline-flex;
-    animation: scrollText var(--speed) linear infinite;
+    will-change: transform;
+    animation: scroll linear infinite;
   }
 
   .marquee-text {
-    font-size: 24px;
+    font-size: clamp(1.1rem, 3.2vw, 1.6rem);
+    color: var(--led-green);
     text-shadow: var(--led-glow);
     font-weight: 700;
-    padding-right: 3rem;
+    padding: 0.3rem 2rem; /* kasih ruang vertikal agar tidak kepotong */
+    box-sizing: border-box;
   }
 
-  @keyframes scrollText {
-    0%   { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
+  @keyframes scroll {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
   }
 
   /* === CLOCK === */
@@ -79,55 +82,37 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    padding-left: 1em;
-    border-left: 1px solid rgba(0,255,102,0.3);
-    min-width: 180px;
+    min-width: 140px;
+    padding-left: 0.8rem;
+    border-left: 1px solid rgba(0,255,102,0.2);
   }
 
-  .city {
-    font-size: clamp(0.8rem, 2vw, 1rem);
-    font-weight: 600;
-    color: #00ff88;
-    margin-bottom: 0.1em;
-  }
-
-  .clock {
-    font-size: clamp(1.3rem, 4vw, 1.8rem);
-    color: var(--led-green);
-    text-shadow: var(--led-glow);
-    font-weight: 700;
-  }
-
-  .date {
-    font-size: clamp(0.7rem, 1.8vw, 0.9rem);
-    color: #aaffcc;
-    text-shadow: 0 0 4px rgba(0,255,102,0.2);
-  }
+  .city { font-size: clamp(0.8rem, 2vw, 1rem); color: #00ff99; font-weight: 600; line-height: 1.2; }
+  .clock { font-size: clamp(1.3rem, 3.5vw, 1.8rem); color: var(--led-green); text-shadow: var(--led-glow); font-weight: 700; line-height: 1.2; }
+  .date { font-size: clamp(0.7rem, 1.4vw, 0.9rem); color: #aaffcc; line-height: 1.2; }
 
   /* === Responsif HP === */
   @media (max-width: 768px) {
+    body { align-items: flex-start; padding-top: 0.3rem; }
+
     .header-bar {
       flex-direction: column;
       align-items: center;
-      padding: 0.6em;
+      padding: 0.6rem;
+      gap: 0.3rem;
     }
 
     .clock-container {
       border-left: none;
-      border-top: 1px solid rgba(0,255,102,0.3);
+      border-top: 1px solid rgba(0,255,102,0.2);
       align-items: center;
-      padding-left: 0;
-      margin-top: 0.4em;
+      padding-top: 0.4rem;
       width: 100%;
-    }
-
-    .marquee-container {
-      width: 100%;
-      justify-content: center;
     }
 
     .marquee-text {
-      font-size: clamp(1rem, 3.5vw, 1.3rem);
+      font-size: clamp(1rem, 4vw, 1.3rem);
+      padding: 0.4rem 1.5rem; /* tambah ruang vertikal di HP */
     }
   }
 </style>
@@ -135,8 +120,8 @@
 <body>
   <div class="header-bar">
     <div class="marquee-container">
-      <div class="marquee-track">
-        <div class="marquee-text" id="runningText">
+      <div class="marquee-track" id="track">
+        <div class="marquee-text" id="text">
           🌟 Selamat datang di situs resmi SMAN 1 Telagasari — Sekolah Unggul, Berkarakter, dan Berprestasi — 📢 Informasi terbaru: Penerimaan Peserta Didik Baru Tahun 2025 segera dibuka!
         </div>
       </div>
@@ -150,29 +135,41 @@
   </div>
 
   <script>
-    // Clone teks otomatis agar sambung tanpa jeda, tapi hanya 1 baris tampil
-    const track = document.querySelector('.marquee-track');
-    const text = document.getElementById('runningText');
-    const clone = text.cloneNode(true);
-    track.appendChild(clone);
+    // Buat teks marquee nyambung halus
+    const track = document.getElementById('track');
+    const text = document.getElementById('text');
 
-    // Update jam dan tanggal
+    function setupMarquee() {
+      track.querySelectorAll('.clone').forEach(c => c.remove());
+      const containerWidth = track.parentElement.clientWidth;
+      const textWidth = text.scrollWidth;
+
+      if (textWidth === 0) return;
+      const clonesNeeded = Math.ceil(containerWidth / textWidth) + 2;
+
+      for (let i = 0; i < clonesNeeded; i++) {
+        const clone = text.cloneNode(true);
+        clone.classList.add('clone');
+        track.appendChild(clone);
+      }
+
+      const duration = Math.max(15, (textWidth / 100) * 2.6);
+      track.style.animationDuration = duration + 's';
+    }
+
+    window.addEventListener('load', setupMarquee);
+    window.addEventListener('resize', () => setTimeout(setupMarquee, 300));
+
+    // Jam digital realtime
     function updateClock() {
       const now = new Date();
-      const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
       document.getElementById('clock').textContent = now.toLocaleTimeString('id-ID', { hour12: false });
-      document.getElementById('date').textContent = now.toLocaleDateString('id-ID', options);
+      document.getElementById('date').textContent = now.toLocaleDateString('id-ID', {
+        weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'
+      });
     }
     setInterval(updateClock, 1000);
     updateClock();
-
-    // Otomatis sesuaikan tinggi iframe (kalau di-embed)
-    function sendHeight() {
-      const h = document.querySelector('.header-bar').offsetHeight;
-      parent.postMessage({ type: "setIframeHeight", height: h }, "*");
-    }
-    window.onload = sendHeight;
-    window.onresize = sendHeight;
   </script>
 </body>
 </html>
