@@ -5,14 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Header Info SMAN 1 Telagasari</title>
 
-<!-- Font digital -->
 <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
 
 <style>
   :root {
     --led-green: #00ff66;
     --led-glow: 0 0 8px #00ff66;
-    --speed: 22s;
+    --speed: 20s;
   }
 
   body {
@@ -20,25 +19,23 @@
     padding: 0;
     background: transparent;
     font-family: 'Share Tech Mono', monospace;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
   }
 
   .header-bar {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
     width: 100%;
-    max-width: 1200px; /* lebih lebar */
+    max-width: 1200px;
     border: 1px solid rgba(0,255,102,0.3);
     border-radius: 8px;
     background: #000;
     box-shadow: 0 0 10px rgba(0,255,102,0.15);
-    padding: 0.4em 0.8em;
+    padding: 0.5em 0.8em;
     box-sizing: border-box;
     overflow: hidden;
+    margin: 0 auto;
   }
 
   /* === MARQUEE === */
@@ -46,10 +43,11 @@
     flex: 1;
     overflow: hidden;
     white-space: nowrap;
+    position: relative;
     color: var(--led-green);
     display: flex;
     align-items: center;
-    margin-right: 0.8em;
+    min-height: 1.8em;
   }
 
   .marquee-track {
@@ -58,18 +56,14 @@
   }
 
   .marquee-text {
-    font-size: clamp(0.8rem, 2.5vw, 1rem);
-    padding-right: 3rem;
+    font-size: 24px;
     text-shadow: var(--led-glow);
-  }
-
-  .marquee-track::after {
-    content: attr(data-text);
-    padding-left: 3rem;
+    font-weight: 700;
+    padding-right: 3rem;
   }
 
   @keyframes scrollText {
-    0% { transform: translateX(0); }
+    0%   { transform: translateX(0); }
     100% { transform: translateX(-50%); }
   }
 
@@ -80,6 +74,7 @@
     align-items: flex-end;
     padding-left: 1em;
     border-left: 1px solid rgba(0,255,102,0.3);
+    min-width: 180px;
   }
 
   .city {
@@ -102,22 +97,30 @@
     text-shadow: 0 0 4px rgba(0,255,102,0.2);
   }
 
-  /* Responsif untuk HP */
-  @media (max-width: 480px) {
+  /* === Responsif HP === */
+  @media (max-width: 768px) {
     .header-bar {
       flex-direction: column;
       align-items: center;
-      padding: 0.5em;
+      padding: 0.6em;
     }
+
     .clock-container {
       border-left: none;
       border-top: 1px solid rgba(0,255,102,0.3);
       align-items: center;
       padding-left: 0;
-      margin-top: 0.4em;
+      margin-top: 0.5em;
+      width: 100%;
     }
+
     .marquee-container {
-      margin-right: 0;
+      width: 100%;
+      justify-content: center;
+    }
+
+    .marquee-text {
+      font-size: clamp(1rem, 3.5vw, 1.3rem);
     }
   }
 </style>
@@ -125,8 +128,8 @@
 <body>
   <div class="header-bar">
     <div class="marquee-container">
-      <div class="marquee-track" data-text="🌟 Selamat datang di situs resmi SMAN 1 Telagasari — Sekolah Unggul, Berkarakter, dan Berprestasi — 📢 Informasi terbaru: Penerimaan Peserta Didik Baru Tahun 2025 segera dibuka!">
-        <div class="marquee-text">
+      <div class="marquee-track">
+        <div class="marquee-text" id="runningText">
           🌟 Selamat datang di situs resmi SMAN 1 Telagasari — Sekolah Unggul, Berkarakter, dan Berprestasi — 📢 Informasi terbaru: Penerimaan Peserta Didik Baru Tahun 2025 segera dibuka!
         </div>
       </div>
@@ -140,7 +143,13 @@
   </div>
 
   <script>
-    // Update waktu real-time
+    // Clone teks otomatis agar sambung tanpa jeda, tapi tidak tampil dobel
+    const track = document.querySelector('.marquee-track');
+    const text = document.getElementById('runningText');
+    const clone = text.cloneNode(true);
+    track.appendChild(clone);
+
+    // Jam & tanggal
     function updateClock() {
       const now = new Date();
       const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
@@ -149,14 +158,6 @@
     }
     setInterval(updateClock, 1000);
     updateClock();
-
-    // Penyesuaian tinggi otomatis untuk iframe Google Sites
-    function sendHeight() {
-      const h = document.body.scrollHeight;
-      parent.postMessage({ type: "setIframeHeight", height: h }, "*");
-    }
-    window.onload = sendHeight;
-    window.onresize = sendHeight;
   </script>
 </body>
 </html>
