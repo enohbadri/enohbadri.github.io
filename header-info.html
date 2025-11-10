@@ -1,0 +1,141 @@
+<!-- Header Info SMAN 1 Telagasari (versi embed ringan) -->
+<div class="header-bar">
+  <div class="marquee-container">
+    <div class="marquee-track">
+      <div class="marquee-text" id="runningText">
+        🌟 Selamat datang di situs resmi SMAN 1 Telagasari — Sekolah Unggul, Berkarakter, dan Berprestasi — 📢 Informasi terbaru: Penerimaan Peserta Didik Baru Tahun 2025 segera dibuka!
+      </div>
+    </div>
+  </div>
+
+  <div class="clock-container">
+    <div class="city">🕒 Karawang</div>
+    <div class="clock" id="clock">00:00:00</div>
+    <div class="date" id="date">Senin, 1 Januari 2025</div>
+  </div>
+</div>
+
+<style>
+  :root {
+    --led-green: #00ff66;
+    --led-glow: 0 0 8px #00ff66;
+    --speed: 20s;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .header-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    border: 1px solid rgba(0,255,102,0.3);
+    border-radius: 8px;
+    background: #000;
+    box-shadow: 0 0 10px rgba(0,255,102,0.15);
+    padding: 0.4em 0.8em;
+    overflow: hidden;
+    font-family: 'Share Tech Mono', monospace;
+  }
+
+  /* === MARQUEE === */
+  .marquee-container {
+    flex: 1;
+    overflow: hidden;
+    white-space: nowrap;
+    color: var(--led-green);
+    display: flex;
+    align-items: center;
+  }
+
+  .marquee-track {
+    display: inline-flex;
+    animation: scrollText var(--speed) linear infinite;
+  }
+
+  .marquee-text {
+    font-size: 24px;
+    text-shadow: var(--led-glow);
+    font-weight: 700;
+    padding-right: 3rem;
+  }
+
+  @keyframes scrollText {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  /* === CLOCK === */
+  .clock-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-left: 1em;
+    border-left: 1px solid rgba(0,255,102,0.3);
+    min-width: 180px;
+  }
+
+  .city {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #00ff88;
+    margin-bottom: 0.1em;
+  }
+
+  .clock {
+    font-size: 1.6rem;
+    color: var(--led-green);
+    text-shadow: var(--led-glow);
+    font-weight: 700;
+  }
+
+  .date {
+    font-size: 0.9rem;
+    color: #aaffcc;
+    text-shadow: 0 0 4px rgba(0,255,102,0.2);
+  }
+
+  /* Responsif HP */
+  @media (max-width: 768px) {
+    .header-bar {
+      flex-direction: column;
+      align-items: center;
+      padding: 0.6em;
+    }
+
+    .clock-container {
+      border-left: none;
+      border-top: 1px solid rgba(0,255,102,0.3);
+      align-items: center;
+      margin-top: 0.4em;
+      width: 100%;
+      padding-left: 0;
+    }
+
+    .marquee-text {
+      font-size: 18px;
+    }
+  }
+</style>
+
+<script>
+  // Clone teks agar sambung tanpa jeda
+  const track = document.querySelector('.marquee-track');
+  const text = document.getElementById('runningText');
+  track.appendChild(text.cloneNode(true));
+
+  // Update jam & tanggal
+  function updateClock() {
+    const now = new Date();
+    const opt = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    document.getElementById('clock').textContent = now.toLocaleTimeString('id-ID', { hour12: false });
+    document.getElementById('date').textContent = now.toLocaleDateString('id-ID', opt);
+  }
+  setInterval(updateClock, 1000);
+  updateClock();
+</script>
