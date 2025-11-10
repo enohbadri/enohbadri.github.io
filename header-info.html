@@ -18,8 +18,6 @@
     margin: 0;
     padding: 0;
     overflow: hidden !important;
-    width: 100%;
-    height: auto;
     background: transparent;
     font-family: 'Share Tech Mono', monospace;
   }
@@ -28,25 +26,28 @@
 
   .header-bar {
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
     width: 100%;
     border: 1px solid rgba(0,255,102,0.3);
     border-radius: 8px;
     background: #000;
     box-shadow: 0 0 10px rgba(0,255,102,0.15);
-    padding: 0.4em 0.8em;
+    padding: 0.5em 0.8em;
+    flex-wrap: wrap;
   }
 
   /* === MARQUEE === */
   .marquee-container {
-    flex: 1;
+    flex: 1 1 100%;
     overflow: hidden;
     white-space: nowrap;
     color: var(--led-green);
     display: flex;
     align-items: center;
+    justify-content: center;
+    margin-bottom: 0.4em;
   }
 
   .marquee-track {
@@ -55,7 +56,7 @@
   }
 
   .marquee-text {
-    font-size: 24px;
+    font-size: 1.4rem;
     text-shadow: var(--led-glow);
     font-weight: 700;
     padding-right: 3rem;
@@ -70,10 +71,11 @@
   .clock-container {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    padding-left: 1em;
-    border-left: 1px solid rgba(0,255,102,0.3);
-    min-width: 180px;
+    align-items: center;
+    text-align: center;
+    border-top: 1px solid rgba(0,255,102,0.3);
+    padding-top: 0.4em;
+    width: 100%;
   }
 
   .city {
@@ -96,25 +98,31 @@
     text-shadow: 0 0 4px rgba(0,255,102,0.2);
   }
 
-  /* === Responsif HP === */
-  @media (max-width: 768px) {
+  /* === Responsif Desktop === */
+  @media (min-width: 769px) {
     .header-bar {
-      flex-direction: column;
+      flex-direction: row;
       align-items: center;
-      padding: 0.6em;
+      padding: 0.4em 0.8em;
+    }
+
+    .marquee-container {
+      flex: 1;
+      margin-bottom: 0;
     }
 
     .clock-container {
-      border-left: none;
-      border-top: 1px solid rgba(0,255,102,0.3);
-      align-items: center;
-      margin-top: 0.4em;
-      width: 100%;
-      padding-left: 0;
+      border-top: none;
+      border-left: 1px solid rgba(0,255,102,0.3);
+      align-items: flex-end;
+      text-align: right;
+      padding-left: 1em;
+      padding-top: 0;
+      width: auto;
     }
 
     .marquee-text {
-      font-size: 18px;
+      font-size: 1.5rem;
     }
   }
 </style>
@@ -137,7 +145,7 @@
   </div>
 
   <script>
-    // Gandakan teks agar sambung tanpa jeda
+    // Gandakan teks biar scroll-nya nyambung halus
     const track = document.querySelector('.marquee-track');
     const text = document.getElementById('runningText');
     const clone = text.cloneNode(true);
@@ -153,7 +161,7 @@
     setInterval(updateClock, 1000);
     updateClock();
 
-    // === Auto adjust height untuk iframe ===
+    // Auto height untuk iframe
     function sendHeight() {
       const h = document.getElementById('headerBar').offsetHeight;
       parent.postMessage({ type: "setIframeHeight", height: h }, "*");
