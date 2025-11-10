@@ -26,7 +26,6 @@
 
   .header-bar {
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-between;
     width: 100%;
@@ -34,20 +33,23 @@
     border-radius: 8px;
     background: #000;
     box-shadow: 0 0 10px rgba(0,255,102,0.15);
-    padding: 0.5em 0.8em;
+    padding: 0.4em 0.8em;
+    box-sizing: border-box;
+    overflow: hidden;
     flex-wrap: wrap;
   }
 
   /* === MARQUEE === */
   .marquee-container {
-    flex: 1 1 100%;
+    flex: 1;
     overflow: hidden;
     white-space: nowrap;
     color: var(--led-green);
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 0.4em;
+    width: 100%;
+    margin-bottom: 0;
   }
 
   .marquee-track {
@@ -71,11 +73,11 @@
   .clock-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-    border-top: 1px solid rgba(0,255,102,0.3);
-    padding-top: 0.4em;
-    width: 100%;
+    align-items: flex-end;
+    text-align: right;
+    border-left: 1px solid rgba(0,255,102,0.3);
+    padding-left: 1em;
+    min-width: 180px;
   }
 
   .city {
@@ -98,31 +100,34 @@
     text-shadow: 0 0 4px rgba(0,255,102,0.2);
   }
 
-  /* === Responsif Desktop === */
-  @media (min-width: 769px) {
+  /* === RESPONSIF HP & TABLET === */
+  @media (max-width: 1024px) {
     .header-bar {
-      flex-direction: row;
+      flex-direction: column;
       align-items: center;
-      padding: 0.4em 0.8em;
-    }
-
-    .marquee-container {
-      flex: 1;
-      margin-bottom: 0;
+      justify-content: center;
+      padding: 0.6em;
     }
 
     .clock-container {
-      border-top: none;
-      border-left: 1px solid rgba(0,255,102,0.3);
-      align-items: flex-end;
-      text-align: right;
-      padding-left: 1em;
-      padding-top: 0;
-      width: auto;
+      border-left: none;
+      border-top: 1px solid rgba(0,255,102,0.3);
+      align-items: center;
+      text-align: center;
+      padding-left: 0;
+      padding-top: 0.5em;
+      margin-top: 0.4em;
+      width: 100%;
+    }
+
+    .marquee-container {
+      width: 100%;
+      justify-content: center;
+      margin-bottom: 0.3em;
     }
 
     .marquee-text {
-      font-size: 1.5rem;
+      font-size: clamp(1rem, 3.5vw, 1.3rem);
     }
   }
 </style>
@@ -145,7 +150,7 @@
   </div>
 
   <script>
-    // Gandakan teks biar scroll-nya nyambung halus
+    // Gandakan teks biar scroll nyambung halus
     const track = document.querySelector('.marquee-track');
     const text = document.getElementById('runningText');
     const clone = text.cloneNode(true);
