@@ -5,41 +5,35 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Header Info SMAN 1 Telagasari</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap&display=swap" rel="stylesheet">
 
 <style>
   :root {
     --led-green: #00ff66;
-    --led-glow: 0 0 8px #00ff66;
     --speed: 20s;
   }
 
   html, body {
     margin: 0;
     padding: 0;
-    overflow: hidden !important;
+    overflow: hidden;
     background: transparent;
     font-family: 'Share Tech Mono', monospace;
   }
-
-  * { box-sizing: border-box; }
 
   .header-bar {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
     width: 100%;
+    background: #000;
     border: 1px solid rgba(0,255,102,0.3);
     border-radius: 8px;
-    background: #000;
-    box-shadow: 0 0 10px rgba(0,255,102,0.15);
     padding: 0.4em 0.8em;
-    box-sizing: border-box;
-    overflow: hidden;
-    flex-wrap: wrap;
   }
 
-  /* === MARQUEE === */
+  /* === TEKS BERJALAN === */
   .marquee-container {
     flex: 1;
     overflow: hidden;
@@ -48,18 +42,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    margin-bottom: 0;
   }
 
   .marquee-track {
     display: inline-flex;
     animation: scrollText var(--speed) linear infinite;
+    will-change: transform;
   }
 
   .marquee-text {
     font-size: 1.4rem;
-    text-shadow: var(--led-glow);
     font-weight: 700;
     padding-right: 3rem;
   }
@@ -69,7 +61,7 @@
     100% { transform: translateX(-50%); }
   }
 
-  /* === CLOCK === */
+  /* === JAM === */
   .clock-container {
     display: flex;
     flex-direction: column;
@@ -78,26 +70,23 @@
     border-left: 1px solid rgba(0,255,102,0.3);
     padding-left: 1em;
     min-width: 180px;
+    color: var(--led-green);
   }
 
   .city {
-    font-size: 0.9rem;
-    font-weight: 600;
-    color: #00ff88;
+    font-size: 0.85rem;
     margin-bottom: 0.1em;
+    opacity: 0.9;
   }
 
   .clock {
-    font-size: 1.6rem;
-    color: var(--led-green);
-    text-shadow: var(--led-glow);
+    font-size: 1.5rem;
     font-weight: 700;
   }
 
   .date {
-    font-size: 0.9rem;
-    color: #aaffcc;
-    text-shadow: 0 0 4px rgba(0,255,102,0.2);
+    font-size: 0.85rem;
+    opacity: 0.8;
   }
 
   /* === RESPONSIF HP & TABLET === */
@@ -114,16 +103,9 @@
       border-top: 1px solid rgba(0,255,102,0.3);
       align-items: center;
       text-align: center;
-      padding-left: 0;
-      padding-top: 0.5em;
+      padding: 0.4em 0 0;
       margin-top: 0.4em;
       width: 100%;
-    }
-
-    .marquee-container {
-      width: 100%;
-      justify-content: center;
-      margin-bottom: 0.3em;
     }
 
     .marquee-text {
@@ -135,7 +117,7 @@
 <body>
   <div class="header-bar" id="headerBar">
     <div class="marquee-container">
-      <div class="marquee-track">
+      <div class="marquee-track" id="track">
         <div class="marquee-text" id="runningText">
           🌟 Selamat datang di situs resmi SMAN 1 Telagasari — Sekolah Unggul, Berkarakter, dan Berprestasi — 📢 Informasi terbaru: Penerimaan Peserta Didik Baru Tahun 2025 segera dibuka!
         </div>
@@ -149,30 +131,19 @@
     </div>
   </div>
 
-  <script>
-    // Gandakan teks biar scroll nyambung halus
-    const track = document.querySelector('.marquee-track');
-    const text = document.getElementById('runningText');
-    const clone = text.cloneNode(true);
-    track.appendChild(clone);
+<script>
+  // Gandakan teks untuk marquee
+  const track = document.getElementById('track');
+  track.appendChild(document.getElementById('runningText').cloneNode(true));
 
-    // Update jam dan tanggal
-    function updateClock() {
-      const now = new Date();
-      const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-      document.getElementById('clock').textContent = now.toLocaleTimeString('id-ID', { hour12: false });
-      document.getElementById('date').textContent = now.toLocaleDateString('id-ID', options);
-    }
-    setInterval(updateClock, 1000);
-    updateClock();
-
-    // Auto height untuk iframe
-    function sendHeight() {
-      const h = document.getElementById('headerBar').offsetHeight;
-      parent.postMessage({ type: "setIframeHeight", height: h }, "*");
-    }
-    window.onload = sendHeight;
-    window.onresize = sendHeight;
-  </script>
+  // Jam dan tanggal
+  function updateClock() {
+    const now = new Date();
+    document.getElementById('clock').textContent = now.toLocaleTimeString('id-ID', { hour12: false });
+    document.getElementById('date').textContent = now.toLocaleDateString('id-ID', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+  }
+  setInterval(updateClock, 1000);
+  updateClock();
+</script>
 </body>
 </html>
