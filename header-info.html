@@ -1,19 +1,11 @@
-<!-- Header Info SMAN 1 Telagasari (versi embed ringan) -->
-<div class="header-bar">
-  <div class="marquee-container">
-    <div class="marquee-track">
-      <div class="marquee-text" id="runningText">
-        🌟 Selamat datang di situs resmi SMAN 1 Telagasari — Sekolah Unggul, Berkarakter, dan Berprestasi — 📢 Informasi terbaru: Penerimaan Peserta Didik Baru Tahun 2025 segera dibuka!
-      </div>
-    </div>
-  </div>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Header Info SMAN 1 Telagasari</title>
 
-  <div class="clock-container">
-    <div class="city">🕒 Karawang</div>
-    <div class="clock" id="clock">00:00:00</div>
-    <div class="date" id="date">Senin, 1 Januari 2025</div>
-  </div>
-</div>
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
 
 <style>
   :root {
@@ -22,11 +14,17 @@
     --speed: 20s;
   }
 
-  * {
+  html, body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    overflow: hidden !important;
+    width: 100%;
+    height: auto;
+    background: transparent;
+    font-family: 'Share Tech Mono', monospace;
   }
+
+  * { box-sizing: border-box; }
 
   .header-bar {
     display: flex;
@@ -39,8 +37,6 @@
     background: #000;
     box-shadow: 0 0 10px rgba(0,255,102,0.15);
     padding: 0.4em 0.8em;
-    overflow: hidden;
-    font-family: 'Share Tech Mono', monospace;
   }
 
   /* === MARQUEE === */
@@ -100,7 +96,7 @@
     text-shadow: 0 0 4px rgba(0,255,102,0.2);
   }
 
-  /* Responsif HP */
+  /* === Responsif HP === */
   @media (max-width: 768px) {
     .header-bar {
       flex-direction: column;
@@ -122,20 +118,48 @@
     }
   }
 </style>
+</head>
+<body>
+  <div class="header-bar" id="headerBar">
+    <div class="marquee-container">
+      <div class="marquee-track">
+        <div class="marquee-text" id="runningText">
+          🌟 Selamat datang di situs resmi SMAN 1 Telagasari — Sekolah Unggul, Berkarakter, dan Berprestasi — 📢 Informasi terbaru: Penerimaan Peserta Didik Baru Tahun 2025 segera dibuka!
+        </div>
+      </div>
+    </div>
 
-<script>
-  // Clone teks agar sambung tanpa jeda
-  const track = document.querySelector('.marquee-track');
-  const text = document.getElementById('runningText');
-  track.appendChild(text.cloneNode(true));
+    <div class="clock-container">
+      <div class="city">🕒 Karawang</div>
+      <div class="clock" id="clock">00:00:00</div>
+      <div class="date" id="date">Senin, 1 Januari 2025</div>
+    </div>
+  </div>
 
-  // Update jam & tanggal
-  function updateClock() {
-    const now = new Date();
-    const opt = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-    document.getElementById('clock').textContent = now.toLocaleTimeString('id-ID', { hour12: false });
-    document.getElementById('date').textContent = now.toLocaleDateString('id-ID', opt);
-  }
-  setInterval(updateClock, 1000);
-  updateClock();
-</script>
+  <script>
+    // Gandakan teks agar sambung tanpa jeda
+    const track = document.querySelector('.marquee-track');
+    const text = document.getElementById('runningText');
+    const clone = text.cloneNode(true);
+    track.appendChild(clone);
+
+    // Update jam dan tanggal
+    function updateClock() {
+      const now = new Date();
+      const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+      document.getElementById('clock').textContent = now.toLocaleTimeString('id-ID', { hour12: false });
+      document.getElementById('date').textContent = now.toLocaleDateString('id-ID', options);
+    }
+    setInterval(updateClock, 1000);
+    updateClock();
+
+    // === Auto adjust height untuk iframe ===
+    function sendHeight() {
+      const h = document.getElementById('headerBar').offsetHeight;
+      parent.postMessage({ type: "setIframeHeight", height: h }, "*");
+    }
+    window.onload = sendHeight;
+    window.onresize = sendHeight;
+  </script>
+</body>
+</html>
